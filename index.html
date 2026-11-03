@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>개발자 체험 (Build Failed) · 새벽커밋</title>
 <meta name="description" content="코드 속 버그를 찾아 인턴에서 CTO까지. 개발자 생활 시뮬레이션 게임 「개발자 체험 (Build Failed)」 — 새벽커밋">
-<meta name="theme-color" content="#1F1F1F">
+<meta name="theme-color" content="#17142B">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dawncommitgames.com/">
 <meta property="og:title" content="개발자 체험 (Build Failed)">
@@ -18,86 +18,97 @@
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #181818; --editor: #1F1F1F; --card: #252526; --line: #2B2B2B; --line2: #3C3C3C;
-    --text: #CCCCCC; --strong: #FFFFFF; --muted: #9D9D9D; --faint: #6E7681;
-    --accent: #0078D4; --status: #007ACC; --ok: #16825D; --err: #F14C4C; --yellow: #F0E05A;
-    --kw: #569CD6; --ctl: #C586C0; --str: #CE9178; --fn: #DCDCAA; --var: #9CDCFE; --type: #4EC9B0; --cmt: #6A9955; --num: #B5CEA8;
+    --bg: #FFF8F1; --surface: #FFFFFF; --line: #EDE3D8; --line2: #DCCFC2;
+    --text: #2E2A3B; --strong: #17142B; --muted: #625C73; --faint: #8F88A0;
+    --accent: #5B3FD0; --accentSoft: #EFEBFF; --sun: #E8590C; --err: #D93A3A; --ok: #16825D;
+    --night: #17142B;
     --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     --sans: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Hiragino Sans", "Noto Sans KR", sans-serif;
+    /* The code editor demo keeps the game's dark editor colours. */
+    --ed: #1F1F1F; --edTab: #181818; --edLine: #2B2B2B; --edText: #CCCCCC; --edFaint: #6E7681;
+    --kw: #569CD6; --ctl: #C586C0; --str: #CE9178; --fn: #DCDCAA; --var: #9CDCFE; --cmt: #6A9955;
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 var(--sans); overflow-x: hidden; }
-  a { color: var(--var); text-decoration: none; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.75 var(--sans); overflow-x: hidden; }
+  html[lang="ko"] body { word-break: keep-all; overflow-wrap: anywhere; }
+  a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
 
-  /* Top bar: like the editor's title bar */
-  header { position: sticky; top: 0; z-index: 10; background: rgba(24,24,24,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; gap: 12px; }
-  .brand { display: flex; align-items: center; gap: 10px; color: var(--strong); font-weight: 700; }
-  .brand img { width: 28px; height: 28px; border-radius: 7px; }
+  header { position: sticky; top: 0; z-index: 10; background: rgba(23,20,43,.88); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,.08); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 12px; }
+  .brand { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 700; }
+  .brand img { width: 30px; height: 30px; border-radius: 8px; }
   .brand:hover { text-decoration: none; }
-  .lang { display: flex; border: 1px solid var(--line2); border-radius: 6px; overflow: hidden; }
-  .lang button { background: none; border: 0; color: var(--muted); font: 600 13px var(--mono); padding: 6px 10px; cursor: pointer; }
-  .lang button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .lang { display: flex; border: 1px solid rgba(255,255,255,.25); border-radius: 8px; overflow: hidden; }
+  .lang button { background: none; border: 0; color: rgba(255,255,255,.75); font: 600 13px var(--mono); padding: 7px 11px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: #fff; color: var(--night); }
 
-  /* Hero */
-  .hero { padding-top: 64px; padding-bottom: 40px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center; }
-  .eyebrow { font: 600 13px var(--mono); color: var(--type); letter-spacing: .04em; margin: 0 0 12px; }
-  h1 { font-family: "Black Han Sans", var(--sans); font-weight: 400; font-size: clamp(44px, 7vw, 72px); line-height: 1.05; color: var(--strong); margin: 0; }
-  .en-title { font: 700 clamp(18px, 2.4vw, 22px) var(--mono); color: var(--err); margin: 8px 0 20px; }
-  .en-title s { text-decoration-color: var(--err); }
+  .top { color: #fff; background:
+      radial-gradient(1.5px 1.5px at 12% 18%, rgba(255,255,255,.8) 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 28% 8%, rgba(255,255,255,.6) 50%, transparent 51%),
+      radial-gradient(1px 1px at 46% 22%, rgba(255,255,255,.7) 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 68% 10%, rgba(255,255,255,.6) 50%, transparent 51%),
+      radial-gradient(1px 1px at 84% 26%, rgba(255,255,255,.8) 50%, transparent 51%),
+      radial-gradient(1px 1px at 92% 6%, rgba(255,255,255,.5) 50%, transparent 51%),
+      radial-gradient(ellipse 70% 45% at 50% 115%, rgba(255,190,120,.55), transparent 70%),
+      linear-gradient(175deg, #17142B 0%, #2E2464 40%, #6B3F86 72%, #C46A7E 92%, #F2A27A 100%); }
+  .hero { padding-top: 64px; padding-bottom: 56px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center; }
+  .eyebrow { font: 600 14px var(--mono); color: #FFD8A8; margin: 0 0 12px; }
+  h1 { font-family: "Black Han Sans", var(--sans); font-weight: 400; font-size: clamp(44px, 7vw, 72px); line-height: 1.05; color: #fff; margin: 0; text-shadow: 0 2px 18px rgba(0,0,0,.25); }
+  .en-title { font: 700 clamp(18px, 2.4vw, 22px) var(--mono); color: #FF9B8F; margin: 10px 0 20px; }
   html:not([lang="ko"]) .en-title { display: none; }
-  .lead { font-size: 18px; color: var(--text); margin: 0 0 28px; max-width: 34em; }
+  html:not([lang="ko"]) h1 { margin-bottom: 20px; }
+  .lead { font-size: 18px; color: rgba(255,255,255,.92); margin: 0 0 28px; max-width: 34em; }
   .stores { display: flex; flex-wrap: wrap; gap: 12px; }
-  .store { display: flex; flex-direction: column; min-width: 168px; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--line2); background: var(--card); color: var(--strong); }
+  .store { display: flex; flex-direction: column; min-width: 168px; padding: 10px 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,.3); background: rgba(255,255,255,.1); color: #fff; backdrop-filter: blur(4px); }
   .store b { font-size: 15px; }
-  .store span { font-size: 12px; color: var(--muted); }
+  .store span { font-size: 13px; color: rgba(255,255,255,.75); }
 
-  /* Editor demo */
-  .editor { background: var(--editor); border: 1px solid var(--line2); border-radius: 12px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
-  .tabs { display: flex; align-items: center; background: #181818; border-bottom: 1px solid var(--line); height: 38px; }
+  .editor { background: var(--ed); border-radius: 14px; overflow: hidden; box-shadow: 0 24px 60px rgba(10,6,30,.45); border: 1px solid rgba(255,255,255,.12); }
+  .tabs { display: flex; align-items: center; background: var(--edTab); border-bottom: 1px solid var(--edLine); height: 38px; }
   .dots { display: flex; gap: 7px; padding: 0 14px; }
   .dots i { width: 11px; height: 11px; border-radius: 50%; background: #3C3C3C; display: block; }
-  .tab { height: 100%; display: flex; align-items: center; gap: 8px; padding: 0 14px; background: var(--editor); border-top: 2px solid var(--accent); font: 13px var(--mono); color: var(--strong); }
-  .tab .dirty { width: 8px; height: 8px; border-radius: 50%; background: var(--text); }
-  pre { margin: 0; padding: 14px 0; font: 14px/1.75 var(--mono); overflow-x: auto; }
+  .tab { height: 100%; display: flex; align-items: center; gap: 8px; padding: 0 14px; background: var(--ed); border-top: 2px solid #0078D4; font: 13px var(--mono); color: #fff; }
+  .tab .dirty { width: 8px; height: 8px; border-radius: 50%; background: var(--edText); }
+  pre { margin: 0; padding: 14px 0; font: 14px/1.75 var(--mono); color: var(--edText); overflow-x: auto; }
   .ln { display: flex; padding-right: 16px; }
-  .ln > em { font-style: normal; color: var(--faint); width: 44px; flex: 0 0 44px; text-align: right; padding-right: 16px; user-select: none; }
-  .ln.hl { background: #2A2D2E; }
-  .ln.shake { animation: shake .3s; background: rgba(241,76,76,.12); }
+  .ln > em { font-style: normal; color: var(--edFaint); width: 44px; flex: 0 0 44px; text-align: right; padding-right: 16px; user-select: none; }
+  .ln.shake { animation: shake .3s; background: rgba(241,76,76,.14); }
   @keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
-  .k { color: var(--kw); } .c { color: var(--ctl); } .s { color: var(--str); } .f { color: var(--fn); } .v { color: var(--var); } .t { color: var(--type); } .m { color: var(--cmt); } .n { color: var(--num); }
+  .k { color: var(--kw); } .c { color: var(--ctl); } .s { color: var(--str); } .f { color: var(--fn); } .v { color: var(--var); } .m { color: var(--cmt); }
   .ch { cursor: pointer; border-radius: 2px; }
-  .ch:hover { background: rgba(255,255,255,.08); }
-  .bug { text-decoration: underline wavy var(--err); text-underline-offset: 4px; }
-  .fixed { background: rgba(137,209,133,.22); text-decoration: none; }
-  .status { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: var(--status); color: #fff; font: 12.5px var(--mono); padding: 5px 12px; transition: background .25s; }
+  .ch:hover { background: rgba(255,255,255,.1); }
+  .bug { text-decoration: underline wavy #F14C4C; text-underline-offset: 4px; }
+  .fixed { background: rgba(137,209,133,.25); text-decoration: none; }
+  .status { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: #007ACC; color: #fff; font: 12.5px var(--mono); padding: 5px 12px; transition: background .25s; }
   .status.ok { background: var(--ok); }
-  .hint { font-size: 13px; color: var(--muted); margin: 12px 2px 0; }
+  .hint { font-size: 14px; color: var(--muted); margin: 12px 2px 0; }
+  .top .hint { color: rgba(255,255,255,.8); }
 
-  /* Sections */
-  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  section { padding: 64px 0; }
+  section.alt { background: #F3EEFB; }
   h2 { font-family: "Black Han Sans", var(--sans); font-weight: 400; font-size: clamp(28px, 4vw, 36px); color: var(--strong); margin: 0 0 8px; }
   .sub { color: var(--muted); margin: 0 0 28px; }
   .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
-  .card .file { font: 12px var(--mono); color: var(--faint); margin-bottom: 8px; }
-  .card h3 { margin: 0 0 6px; font-size: 18px; color: var(--strong); }
-  .card p { margin: 0; color: var(--text); font-size: 15px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  section.alt .card { background: var(--surface); }
+  .card .file { display: inline-block; font: 12px var(--mono); color: var(--accent); background: var(--accentSoft); border-radius: 6px; padding: 1px 8px; margin-bottom: 10px; }
+  .card h3 { margin: 0 0 6px; font-size: 19px; color: var(--strong); }
+  .card p { margin: 0; color: var(--text); font-size: 16px; }
   .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 16px; }
-  .stat { border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
-  .stat b { display: block; font: 700 28px var(--mono); color: var(--yellow); }
-  .stat span { font-size: 14px; color: var(--muted); }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; }
+  .stat b { display: block; font: 700 30px var(--mono); color: var(--sun); }
+  .stat span { font-size: 15px; color: var(--muted); }
 
   .help { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .help .card a { font-family: var(--mono); }
+  .help .card a { font-weight: 600; }
   ul.links { list-style: none; padding: 0; margin: 0; }
-  ul.links li { padding: 6px 0; border-bottom: 1px dashed var(--line); }
+  ul.links li { padding: 8px 0; border-bottom: 1px solid var(--line); }
   ul.links li:last-child { border-bottom: 0; }
 
-  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--faint); font-size: 13px; }
+  footer { background: var(--night); padding: 28px 0 40px; color: #B9B3CC; font-size: 14px; }
   footer p { margin: 2px 0; }
 
   @media (max-width: 860px) {
@@ -128,12 +139,12 @@
 </header>
 
 <main>
-  <div class="wrap hero">
+  <div class="top"><div class="wrap hero">
     <div>
       <p class="eyebrow" data-i="eyebrow">// 개발자 생활 시뮬레이션</p>
       <h1 data-i="title">개발자 체험</h1>
       <p class="en-title">Build <s>Failed</s></p>
-      <p class="lead" data-i="lead">코드 속에 숨은 버그를 찾고, 매주 일정을 짜고, 동료와 팀을 꾸려 100주를 버텨 보세요. 끝까지 살아남으면 CTO가 될 수도 있어요.</p>
+      <p class="lead" data-i="lead">코드 속에 숨은 버그를 찾고, 매주 일정을 짜고, 동료와 팀을 꾸려 100주를 버텨 보십시오. 끝까지 살아남으면 CTO가 될 수도 있습니다.</p>
       <div class="stores">
         <div class="store"><b>App Store</b><span data-i="soonIos">출시 준비 중</span></div>
         <div class="store"><b>Google Play</b><span data-i="soonAndroid">출시 준비 중</span></div>
@@ -149,21 +160,21 @@
 <pre id="code"><div class="ln"><em>1</em><span><span class="m" data-i="cmt">// 금요일 오후 6시. 배포 버튼을 눌렀다.</span></span></div><div class="ln"><em>2</em><span><span class="k">async function</span> <span class="f">deploy</span>(<span class="v">build</span>) {</span></div><div class="ln"><em>3</em><span>  <span class="c">if</span> (!<span class="v">build</span><span class="ch bug" id="bug">,</span><span class="v">passed</span>) {</span></div><div class="ln"><em>4</em><span>    <span class="c">return</span> <span class="f">rollback</span>(<span class="v">build</span>);</span></div><div class="ln"><em>5</em><span>  }</span></div><div class="ln"><em>6</em><span>  <span class="c">await</span> <span class="f">notify</span>(<span class="s" data-i="str">"배포 완료. 퇴근합니다"</span>);</span></div><div class="ln"><em>7</em><span>}</span></div></pre>
         <div class="status" id="status"><span id="statusL">✕ Build Failed · 1 error</span><span>JavaScript</span></div>
       </div>
-      <p class="hint" data-i="hint">👆 한 글자가 잘못됐어요. 찾아서 눌러 보세요.</p>
+      <p class="hint" data-i="hint">👆 한 글자가 잘못되었습니다. 찾아서 눌러 보십시오.</p>
     </div>
-  </div>
+  </div></div>
 
   <section>
     <div class="wrap">
-      <h2 data-i="featTitle">이런 게임이에요</h2>
-      <p class="sub" data-i="featSub">개발을 해 본 적이 없어도 괜찮아요. 튜토리얼이 처음부터 알려 줘요.</p>
+      <h2 data-i="featTitle">이런 게임입니다</h2>
+      <p class="sub" data-i="featSub">개발을 해 본 적이 없어도 괜찮습니다. 튜토리얼이 처음부터 차근차근 안내합니다.</p>
       <div class="grid">
-        <div class="card"><div class="file">classic/</div><h3 data-i="f1t">버그를 찾아라</h3><p data-i="f1">실제 코드처럼 생긴 파일에서 잘못된 한 줄을 찾아 고쳐요. 5개 언어, 500개 스테이지.</p></div>
-        <div class="card"><div class="file">career/</div><h3 data-i="f2t">인턴에서 CTO까지</h3><p data-i="f2">업무와 공부, 휴식의 균형을 정하고 티켓을 처리하세요. 승진, 연애, 결혼, 주식까지.</p></div>
-        <div class="card"><div class="file">team/</div><h3 data-i="f3t">동료와 팀 프로젝트</h3><p data-i="f3">카드팩에서 개성 넘치는 동료를 모으고 키워서 거대한 코드베이스에 도전해요.</p></div>
-        <div class="card"><div class="file">tower/</div><h3 data-i="f4t">무한 철야 · 서바이벌</h3><p data-i="f4">100층 철야 타워와 끝없는 서바이벌에서 한계에 도전하고 랭킹에 이름을 올려요.</p></div>
-        <div class="card"><div class="file">friends/</div><h3 data-i="f5t">친구와 함께</h3><p data-i="f5">최대 30명이 2만 줄 레거시 파일을 함께 뒤지는 깃 블레임, 코드 리뷰 1대1 대결.</p></div>
-        <div class="card"><div class="file">daily/</div><h3 data-i="f6t">매일 즐길 거리</h3><p data-i="f6">출석 체크, 매일 닉네임 추첨, 오늘의 핫픽스, 시즌 패스.</p></div>
+        <div class="card"><div class="file">classic/</div><h3 data-i="f1t">버그를 찾아라</h3><p data-i="f1">실제 코드처럼 생긴 파일에서 잘못된 한 줄을 찾아 고칩니다. 5개 언어, 500개 스테이지를 제공합니다.</p></div>
+        <div class="card"><div class="file">career/</div><h3 data-i="f2t">인턴에서 CTO까지</h3><p data-i="f2">업무와 공부, 휴식의 균형을 정하고 티켓을 처리합니다. 승진과 연애, 결혼, 주식 투자까지 경험할 수 있습니다.</p></div>
+        <div class="card"><div class="file">team/</div><h3 data-i="f3t">동료와 팀 프로젝트</h3><p data-i="f3">카드팩에서 개성 넘치는 동료를 모으고 성장시켜 거대한 코드베이스에 도전합니다.</p></div>
+        <div class="card"><div class="file">tower/</div><h3 data-i="f4t">무한 철야 · 서바이벌</h3><p data-i="f4">100층 철야 타워와 끝없는 서바이벌에서 한계에 도전하고 랭킹에 이름을 올립니다.</p></div>
+        <div class="card"><div class="file">friends/</div><h3 data-i="f5t">친구와 함께</h3><p data-i="f5">최대 30명이 2만 줄짜리 레거시 파일을 함께 살피는 깃 블레임과 코드 리뷰 1대1 대결을 즐길 수 있습니다.</p></div>
+        <div class="card"><div class="file">daily/</div><h3 data-i="f6t">매일 즐길 거리</h3><p data-i="f6">출석 체크, 매일 닉네임 추첨, 오늘의 핫픽스, 시즌 패스가 준비되어 있습니다.</p></div>
       </div>
       <div class="stats">
         <div class="stat"><b>500</b><span data-i="s1">클래식 스테이지</span></div>
@@ -174,16 +185,16 @@
     </div>
   </section>
 
-  <section>
+  <section class="alt">
     <div class="wrap">
       <h2 data-i="helpTitle">고객 지원</h2>
-      <p class="sub" data-i="helpSub">궁금한 점이나 문제가 있으면 언제든 알려 주세요.</p>
+      <p class="sub" data-i="helpSub">궁금한 점이나 문제가 있으면 언제든지 문의해 주십시오.</p>
       <div class="help">
         <div class="card">
           <div class="file">support.md</div>
           <h3 data-i="contactT">문의하기</h3>
           <p><a href="mailto:dawncommit.support@gmail.com">dawncommit.support@gmail.com</a></p>
-          <p class="hint" data-i="contactHint">게임 설정 화면의 플레이어 ID와, 결제 문의라면 주문번호를 함께 보내 주세요. 이름, 전화번호, 카드 정보는 보내지 않으셔도 돼요.</p>
+          <p class="hint" data-i="contactHint">게임 설정 화면의 플레이어 ID와, 결제 문의의 경우 주문번호를 함께 보내 주십시오. 이름, 전화번호, 카드 정보는 보내지 않으셔도 됩니다.</p>
         </div>
         <div class="card">
           <div class="file">legal/</div>
@@ -251,7 +262,7 @@
   // Korean is the text already in the page.
   document.querySelectorAll('[data-i]').forEach(function (el) { T.ko[el.getAttribute('data-i')] = el.innerHTML; });
   var META = {
-    ko: { t: '개발자 체험 (Build Failed) · 새벽커밋', status: ['✕ Build Failed · 1 error', '✓ Build Passed · 0 errors'], wrong: '✕ 거기가 아니에요' },
+    ko: { t: '개발자 체험 (Build Failed) · 새벽커밋', status: ['✕ Build Failed · 1 error', '✓ Build Passed · 0 errors'], wrong: '✕ 그곳이 아닙니다' },
     en: { t: 'Build Failed · Dawn commit', status: ['✕ Build Failed · 1 error', '✓ Build Passed · 0 errors'], wrong: '✕ Not there' },
     ja: { t: 'Build Failed · Dawn commit', status: ['✕ Build Failed · 1 error', '✓ Build Passed · 0 errors'], wrong: '✕ そこじゃないよ' }
   };
