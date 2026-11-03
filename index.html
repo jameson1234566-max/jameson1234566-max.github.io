@@ -3,48 +3,301 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>새벽커밋 (Dawn commit)</title>
-<meta name="description" content="새벽커밋 — 모바일 게임 「개발자 체험 (Build Failed)」 개발사">
+<title>개발자 체험 (Build Failed) · 새벽커밋</title>
+<meta name="description" content="코드 속 버그를 찾아 인턴에서 CTO까지. 개발자 생활 시뮬레이션 게임 「개발자 체험 (Build Failed)」 — 새벽커밋">
+<meta name="theme-color" content="#1F1F1F">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dawncommitgames.com/">
+<meta property="og:title" content="개발자 체험 (Build Failed)">
+<meta property="og:description" content="코드 속 버그를 찾아 인턴에서 CTO까지. 개발자 생활 시뮬레이션 게임.">
+<meta property="og:image" content="https://dawncommitgames.com/icon-512.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  :root { color-scheme: light dark; --bg:#ffffff; --fg:#1f1f1f; --mute:#666; --line:#e5e5e5; --accent:#2f7d4f; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#141414; --fg:#eaeaea; --mute:#a0a0a0; --line:#2b2b2b; --accent:#6fcf97; } }
-  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
-  main { max-width:680px; margin:0 auto; padding:48px 16px 64px; }
-  h1 { font-size:28px; margin:0 0 4px; }
-  h2 { font-size:18px; margin:40px 0 8px; border-bottom:1px solid var(--line); padding-bottom:6px; }
-  .sub { color:var(--mute); margin:0; }
-  a { color:var(--accent); }
-  ul { padding-left:20px; }
-  footer { margin-top:48px; color:var(--mute); font-size:14px; }
+  :root {
+    --bg: #181818; --editor: #1F1F1F; --card: #252526; --line: #2B2B2B; --line2: #3C3C3C;
+    --text: #CCCCCC; --strong: #FFFFFF; --muted: #9D9D9D; --faint: #6E7681;
+    --accent: #0078D4; --status: #007ACC; --ok: #16825D; --err: #F14C4C; --yellow: #F0E05A;
+    --kw: #569CD6; --ctl: #C586C0; --str: #CE9178; --fn: #DCDCAA; --var: #9CDCFE; --type: #4EC9B0; --cmt: #6A9955; --num: #B5CEA8;
+    --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Hiragino Sans", "Noto Sans KR", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 var(--sans); overflow-x: hidden; }
+  a { color: var(--var); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+  /* Top bar: like the editor's title bar */
+  header { position: sticky; top: 0; z-index: 10; background: rgba(24,24,24,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; gap: 12px; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--strong); font-weight: 700; }
+  .brand img { width: 28px; height: 28px; border-radius: 7px; }
+  .brand:hover { text-decoration: none; }
+  .lang { display: flex; border: 1px solid var(--line2); border-radius: 6px; overflow: hidden; }
+  .lang button { background: none; border: 0; color: var(--muted); font: 600 13px var(--mono); padding: 6px 10px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+  /* Hero */
+  .hero { padding-top: 64px; padding-bottom: 40px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center; }
+  .eyebrow { font: 600 13px var(--mono); color: var(--type); letter-spacing: .04em; margin: 0 0 12px; }
+  h1 { font-family: "Black Han Sans", var(--sans); font-weight: 400; font-size: clamp(44px, 7vw, 72px); line-height: 1.05; color: var(--strong); margin: 0; }
+  .en-title { font: 700 clamp(18px, 2.4vw, 22px) var(--mono); color: var(--err); margin: 8px 0 20px; }
+  .en-title s { text-decoration-color: var(--err); }
+  html:not([lang="ko"]) .en-title { display: none; }
+  .lead { font-size: 18px; color: var(--text); margin: 0 0 28px; max-width: 34em; }
+  .stores { display: flex; flex-wrap: wrap; gap: 12px; }
+  .store { display: flex; flex-direction: column; min-width: 168px; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--line2); background: var(--card); color: var(--strong); }
+  .store b { font-size: 15px; }
+  .store span { font-size: 12px; color: var(--muted); }
+
+  /* Editor demo */
+  .editor { background: var(--editor); border: 1px solid var(--line2); border-radius: 12px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
+  .tabs { display: flex; align-items: center; background: #181818; border-bottom: 1px solid var(--line); height: 38px; }
+  .dots { display: flex; gap: 7px; padding: 0 14px; }
+  .dots i { width: 11px; height: 11px; border-radius: 50%; background: #3C3C3C; display: block; }
+  .tab { height: 100%; display: flex; align-items: center; gap: 8px; padding: 0 14px; background: var(--editor); border-top: 2px solid var(--accent); font: 13px var(--mono); color: var(--strong); }
+  .tab .dirty { width: 8px; height: 8px; border-radius: 50%; background: var(--text); }
+  pre { margin: 0; padding: 14px 0; font: 14px/1.75 var(--mono); overflow-x: auto; }
+  .ln { display: flex; padding-right: 16px; }
+  .ln > em { font-style: normal; color: var(--faint); width: 44px; flex: 0 0 44px; text-align: right; padding-right: 16px; user-select: none; }
+  .ln.hl { background: #2A2D2E; }
+  .ln.shake { animation: shake .3s; background: rgba(241,76,76,.12); }
+  @keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+  .k { color: var(--kw); } .c { color: var(--ctl); } .s { color: var(--str); } .f { color: var(--fn); } .v { color: var(--var); } .t { color: var(--type); } .m { color: var(--cmt); } .n { color: var(--num); }
+  .ch { cursor: pointer; border-radius: 2px; }
+  .ch:hover { background: rgba(255,255,255,.08); }
+  .bug { text-decoration: underline wavy var(--err); text-underline-offset: 4px; }
+  .fixed { background: rgba(137,209,133,.22); text-decoration: none; }
+  .status { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: var(--status); color: #fff; font: 12.5px var(--mono); padding: 5px 12px; transition: background .25s; }
+  .status.ok { background: var(--ok); }
+  .hint { font-size: 13px; color: var(--muted); margin: 12px 2px 0; }
+
+  /* Sections */
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  h2 { font-family: "Black Han Sans", var(--sans); font-weight: 400; font-size: clamp(28px, 4vw, 36px); color: var(--strong); margin: 0 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  .card .file { font: 12px var(--mono); color: var(--faint); margin-bottom: 8px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; color: var(--strong); }
+  .card p { margin: 0; color: var(--text); font-size: 15px; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 16px; }
+  .stat { border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  .stat b { display: block; font: 700 28px var(--mono); color: var(--yellow); }
+  .stat span { font-size: 14px; color: var(--muted); }
+
+  .help { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .help .card a { font-family: var(--mono); }
+  ul.links { list-style: none; padding: 0; margin: 0; }
+  ul.links li { padding: 6px 0; border-bottom: 1px dashed var(--line); }
+  ul.links li:last-child { border-bottom: 0; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--faint); font-size: 13px; }
+  footer p { margin: 2px 0; }
+
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 40px; }
+    .grid { grid-template-columns: 1fr 1fr; }
+    .stats { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .grid, .help { grid-template-columns: 1fr; }
+    pre { font-size: 12.5px; }
+    .ln > em { width: 34px; flex-basis: 34px; padding-right: 10px; }
+    .store { flex: 1 1 140px; min-width: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { .ln.shake { animation: none; } }
 </style>
 </head>
 <body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="./"><img src="favicon.png" alt=""> <span data-i="studio">새벽커밋</span></a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ko">KO</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ja">JA</button>
+    </div>
+  </div>
+</header>
+
 <main>
-  <h1>새벽커밋 <span style="font-weight:400">(Dawn commit)</span></h1>
-  <p class="sub">모바일 게임을 만드는 게임 개발사입니다. · A mobile game studio.</p>
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow" data-i="eyebrow">// 개발자 생활 시뮬레이션</p>
+      <h1 data-i="title">개발자 체험</h1>
+      <p class="en-title">Build <s>Failed</s></p>
+      <p class="lead" data-i="lead">코드 속에 숨은 버그를 찾고, 매주 일정을 짜고, 동료와 팀을 꾸려 100주를 버텨 보세요. 끝까지 살아남으면 CTO가 될 수도 있어요.</p>
+      <div class="stores">
+        <div class="store"><b>App Store</b><span data-i="soonIos">출시 준비 중</span></div>
+        <div class="store"><b>Google Play</b><span data-i="soonAndroid">출시 준비 중</span></div>
+      </div>
+    </div>
 
-  <h2>개발자 체험 (Build Failed)</h2>
-  <p>코드 속 버그를 찾아 인턴에서 CTO까지 올라가는 개발자 생활 시뮬레이션 게임입니다. 한국어 · English · 日本語를 지원합니다.</p>
-  <p>A developer life sim: hunt bugs hidden in real-looking code and climb from intern to CTO.</p>
+    <div>
+      <div class="editor" aria-label="Find the bug demo">
+        <div class="tabs">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <div class="tab">deploy.js <span class="dirty" id="dirty"></span></div>
+        </div>
+<pre id="code"><div class="ln"><em>1</em><span><span class="m" data-i="cmt">// 금요일 오후 6시. 배포 버튼을 눌렀다.</span></span></div><div class="ln"><em>2</em><span><span class="k">async function</span> <span class="f">deploy</span>(<span class="v">build</span>) {</span></div><div class="ln"><em>3</em><span>  <span class="c">if</span> (!<span class="v">build</span><span class="ch bug" id="bug">,</span><span class="v">passed</span>) {</span></div><div class="ln"><em>4</em><span>    <span class="c">return</span> <span class="f">rollback</span>(<span class="v">build</span>);</span></div><div class="ln"><em>5</em><span>  }</span></div><div class="ln"><em>6</em><span>  <span class="c">await</span> <span class="f">notify</span>(<span class="s" data-i="str">"배포 완료. 퇴근합니다"</span>);</span></div><div class="ln"><em>7</em><span>}</span></div></pre>
+        <div class="status" id="status"><span id="statusL">✕ Build Failed · 1 error</span><span>JavaScript</span></div>
+      </div>
+      <p class="hint" data-i="hint">👆 한 글자가 잘못됐어요. 찾아서 눌러 보세요.</p>
+    </div>
+  </div>
 
-  <h2>약관 · 정책 (Terms &amp; Policies)</h2>
-  <ul>
-    <li><a href="https://stormy-dugout-b21.notion.site/TERMS-40012cccfbef8067baa6fe5390f20769">이용약관 (Terms of Service)</a></li>
-    <li><a href="https://stormy-dugout-b21.notion.site/PRIVACY-9b112cccfbef82cd952c01317725d9bf">개인정보처리방침 (Privacy Policy)</a></li>
-  </ul>
+  <section>
+    <div class="wrap">
+      <h2 data-i="featTitle">이런 게임이에요</h2>
+      <p class="sub" data-i="featSub">개발을 해 본 적이 없어도 괜찮아요. 튜토리얼이 처음부터 알려 줘요.</p>
+      <div class="grid">
+        <div class="card"><div class="file">classic/</div><h3 data-i="f1t">버그를 찾아라</h3><p data-i="f1">실제 코드처럼 생긴 파일에서 잘못된 한 줄을 찾아 고쳐요. 5개 언어, 500개 스테이지.</p></div>
+        <div class="card"><div class="file">career/</div><h3 data-i="f2t">인턴에서 CTO까지</h3><p data-i="f2">업무와 공부, 휴식의 균형을 정하고 티켓을 처리하세요. 승진, 연애, 결혼, 주식까지.</p></div>
+        <div class="card"><div class="file">team/</div><h3 data-i="f3t">동료와 팀 프로젝트</h3><p data-i="f3">카드팩에서 개성 넘치는 동료를 모으고 키워서 거대한 코드베이스에 도전해요.</p></div>
+        <div class="card"><div class="file">tower/</div><h3 data-i="f4t">무한 철야 · 서바이벌</h3><p data-i="f4">100층 철야 타워와 끝없는 서바이벌에서 한계에 도전하고 랭킹에 이름을 올려요.</p></div>
+        <div class="card"><div class="file">friends/</div><h3 data-i="f5t">친구와 함께</h3><p data-i="f5">최대 30명이 2만 줄 레거시 파일을 함께 뒤지는 깃 블레임, 코드 리뷰 1대1 대결.</p></div>
+        <div class="card"><div class="file">daily/</div><h3 data-i="f6t">매일 즐길 거리</h3><p data-i="f6">출석 체크, 매일 닉네임 추첨, 오늘의 핫픽스, 시즌 패스.</p></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>500</b><span data-i="s1">클래식 스테이지</span></div>
+        <div class="stat"><b>100</b><span data-i="s2">주 회사 생활</span></div>
+        <div class="stat"><b>90+</b><span data-i="s3">엔딩</span></div>
+        <div class="stat"><b>3</b><span data-i="s4">언어 (한 · 영 · 일)</span></div>
+      </div>
+    </div>
+  </section>
 
-  <h2>문의 (Contact)</h2>
-  <p>이메일: <a href="mailto:dawncommit.support@gmail.com">dawncommit.support@gmail.com</a></p>
-  <p>문의하실 때는 게임 설정 화면의 플레이어 ID와, 결제 문의라면 주문번호를 함께 보내 주세요.</p>
-
-  <h2>사업자 정보</h2>
-  <ul>
-    <li>상호: 새벽커밋 (Dawn commit)</li>
-    <li>대표: 이병기</li>
-    <li>사업자등록번호: 618-05-24337</li>
-  </ul>
-
-  <footer>© 2026 새벽커밋</footer>
+  <section>
+    <div class="wrap">
+      <h2 data-i="helpTitle">고객 지원</h2>
+      <p class="sub" data-i="helpSub">궁금한 점이나 문제가 있으면 언제든 알려 주세요.</p>
+      <div class="help">
+        <div class="card">
+          <div class="file">support.md</div>
+          <h3 data-i="contactT">문의하기</h3>
+          <p><a href="mailto:dawncommit.support@gmail.com">dawncommit.support@gmail.com</a></p>
+          <p class="hint" data-i="contactHint">게임 설정 화면의 플레이어 ID와, 결제 문의라면 주문번호를 함께 보내 주세요. 이름, 전화번호, 카드 정보는 보내지 않으셔도 돼요.</p>
+        </div>
+        <div class="card">
+          <div class="file">legal/</div>
+          <h3 data-i="legalT">약관 · 정책</h3>
+          <ul class="links">
+            <li><a href="https://stormy-dugout-b21.notion.site/TERMS-40012cccfbef8067baa6fe5390f20769" data-i="terms">이용약관</a></li>
+            <li><a href="https://stormy-dugout-b21.notion.site/PRIVACY-9b112cccfbef82cd952c01317725d9bf" data-i="privacy">개인정보처리방침</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <p data-i="biz">상호: 새벽커밋 (Dawn commit) · 대표: 이병기 · 사업자등록번호: 618-05-24337</p>
+    <p>© 2026 Dawn commit</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var T = {
+    ko: {},
+    en: {
+      studio: 'Dawn commit', eyebrow: '// a developer life sim', title: 'Build Failed',
+      lead: 'Hunt bugs hidden in real-looking code, plan your weeks, build a team, and survive 100 weeks at the company. Make it to the end and you might just become CTO.',
+      soonIos: 'Coming soon', soonAndroid: 'Coming soon',
+      cmt: '// Friday, 6 PM. You hit deploy.', str: '"Deployed. Heading home"',
+      hint: '👆 One character is wrong. Find it and tap it.',
+      featTitle: 'What is it?', featSub: 'Never coded before? The tutorial walks you through everything.',
+      f1t: 'Spot the bug', f1: 'Find the one broken line in files that look like real code. 5 languages, 500 stages.',
+      f2t: 'From intern to CTO', f2: 'Balance work, study and rest, close tickets, get promoted, date, marry, and play the stock market.',
+      f3t: 'Build your team', f3: 'Collect quirky coworkers from card packs, level them up, and take on huge codebases.',
+      f4t: 'Endless overtime', f4: 'Climb the 100-floor All-nighter tower and endless Survival, and get on the leaderboards.',
+      f5t: 'Play with friends', f5: 'Up to 30 friends dig through a 20,000-line legacy file in Git Blame, or face off in a 1v1 code review.',
+      f6t: 'Every day', f6: 'Daily check-in, a daily nickname draw, today\'s hotfix and the season pass.',
+      s1: 'classic stages', s2: 'weeks at the company', s3: 'endings', s4: 'languages (KO · EN · JA)',
+      helpTitle: 'Support', helpSub: 'Questions or problems? Let us know any time.',
+      contactT: 'Contact us', contactHint: 'Please include your Player ID from the in-game Settings, and your order number for payment questions. No need to send your name, phone number or card details.',
+      legalT: 'Terms & policies', terms: 'Terms of Service (Korean)', privacy: 'Privacy Policy (Korean)',
+      biz: 'Dawn commit (새벽커밋) · Representative: 이병기 · Business registration no. 618-05-24337'
+    },
+    ja: {
+      studio: 'Dawn commit', eyebrow: '// エンジニア人生シミュレーション', title: 'Build Failed',
+      lead: 'コードに潜むバグを見つけ、毎週の予定を立て、同僚とチームを組んで、100週の会社生活を生き抜こう。最後まで生き残れば、CTOになれるかも。',
+      soonIos: 'リリース準備中', soonAndroid: 'リリース準備中',
+      cmt: '// 金曜の午後6時。デプロイボタンを押した。', str: '"デプロイ完了。帰ります"',
+      hint: '👆 1文字だけ間違っています。見つけてタップしてみよう。',
+      featTitle: 'どんなゲーム？', featSub: 'プログラミング未経験でも大丈夫。チュートリアルが一から教えてくれます。',
+      f1t: 'バグを探せ', f1: '本物そっくりのコードから、間違った1行を見つけて直そう。5言語、全500ステージ。',
+      f2t: 'インターンからCTOへ', f2: '仕事・勉強・休息のバランスを決めて、チケットを片付けよう。昇進、恋愛、結婚、株式投資まで。',
+      f3t: '同僚とチームプロジェクト', f3: 'カードパックから個性豊かな同僚を集めて育て、巨大なコードベースに挑戦。',
+      f4t: '無限徹夜・サバイバル', f4: '100階建ての徹夜タワーと終わりのないサバイバルで、ランキングに名前を刻もう。',
+      f5t: '友だちと一緒に', f5: '最大30人で2万行のレガシーファイルに挑む「ブレイム」、コードレビュー1対1対決。',
+      f6t: '毎日の楽しみ', f6: '出席チェック、毎日のニックネーム抽選、今日のホットフィックス、シーズンパス。',
+      s1: 'クラシックステージ', s2: '週の会社生活', s3: 'エンディング', s4: '言語（韓・英・日）',
+      helpTitle: 'サポート', helpSub: 'ご質問や問題があれば、いつでもご連絡ください。',
+      contactT: 'お問い合わせ', contactHint: 'ゲームの設定画面にあるプレイヤーIDと、決済に関するお問い合わせの場合は注文番号を添えてお送りください。氏名・電話番号・カード情報は不要です。',
+      legalT: '規約・ポリシー', terms: '利用規約（韓国語）', privacy: 'プライバシーポリシー（韓国語）',
+      biz: 'Dawn commit（새벽커밋）・代表：이병기・事業者登録番号 618-05-24337'
+    }
+  };
+  // Korean is the text already in the page.
+  document.querySelectorAll('[data-i]').forEach(function (el) { T.ko[el.getAttribute('data-i')] = el.innerHTML; });
+  var META = {
+    ko: { t: '개발자 체험 (Build Failed) · 새벽커밋', status: ['✕ Build Failed · 1 error', '✓ Build Passed · 0 errors'], wrong: '✕ 거기가 아니에요' },
+    en: { t: 'Build Failed · Dawn commit', status: ['✕ Build Failed · 1 error', '✓ Build Passed · 0 errors'], wrong: '✕ Not there' },
+    ja: { t: 'Build Failed · Dawn commit', status: ['✕ Build Failed · 1 error', '✓ Build Passed · 0 errors'], wrong: '✕ そこじゃないよ' }
+  };
+  var lang = 'ko', solved = false;
+  var statusEl = document.getElementById('status'), statusL = document.getElementById('statusL');
+
+  function setLang(l) {
+    lang = T[l] ? l : 'ko';
+    document.documentElement.lang = lang;
+    document.title = META[lang].t;
+    document.querySelectorAll('[data-i]').forEach(function (el) {
+      var v = T[lang][el.getAttribute('data-i')];
+      if (v != null) el.innerHTML = v;
+    });
+    document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang)); });
+    statusL.textContent = META[lang].status[solved ? 1 : 0];
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+  }
+  document.querySelectorAll('.lang button').forEach(function (b) { b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); }); });
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  var nav = (navigator.language || 'ko').slice(0, 2);
+  setLang(saved || (nav === 'ja' ? 'ja' : nav === 'ko' ? 'ko' : 'en'));
+
+  // Find-the-bug demo: tapping the wrong character fixes the build; anything else shakes the line.
+  var bug = document.getElementById('bug');
+  bug.addEventListener('click', function (e) {
+    e.stopPropagation();
+    if (solved) return;
+    solved = true;
+    bug.textContent = '.';
+    bug.classList.remove('bug');
+    bug.classList.add('fixed');
+    statusEl.classList.add('ok');
+    statusL.textContent = META[lang].status[1];
+    document.getElementById('dirty').style.visibility = 'hidden';
+  });
+  document.querySelectorAll('#code .ln').forEach(function (ln) {
+    ln.addEventListener('click', function () {
+      if (solved) return;
+      ln.classList.remove('shake'); void ln.offsetWidth; ln.classList.add('shake');
+      statusL.textContent = META[lang].wrong;
+      setTimeout(function () { if (!solved) statusL.textContent = META[lang].status[0]; }, 900);
+    });
+  });
+})();
+</script>
 </body>
 </html>
