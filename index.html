@@ -63,6 +63,7 @@
   .lead { font-size: 18px; color: rgba(255,255,255,.92); margin: 0 0 28px; max-width: 34em; }
   .stores { display: flex; flex-wrap: wrap; gap: 12px; }
   .store { display: flex; flex-direction: column; min-width: 168px; padding: 10px 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,.3); background: rgba(255,255,255,.1); color: #fff; backdrop-filter: blur(4px); }
+  a.store:hover { background: rgba(255,255,255,.2); text-decoration: none; }
   .store b { font-size: 15px; }
   .store span { font-size: 13px; color: rgba(255,255,255,.75); }
 
@@ -147,7 +148,7 @@
       <p class="lead" data-i="lead">코드 속에 숨은 버그를 찾고, 매주 일정을 짜고, 동료와 팀을 꾸려 100주를 버텨 보십시오. 끝까지 살아남으면 CTO가 될 수도 있습니다.</p>
       <div class="stores">
         <div class="store"><b>App Store</b><span data-i="soonIos">출시 준비 중</span></div>
-        <div class="store"><b>Google Play</b><span data-i="soonAndroid">출시 준비 중</span></div>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.dawncommit.devexperience" target="_blank" rel="noopener"><b>Google Play</b><span data-i="soonAndroid">지금 다운로드</span></a>
       </div>
     </div>
 
@@ -223,7 +224,7 @@
     en: {
       studio: 'Dawn commit', eyebrow: '// a developer life sim', title: 'Build Failed',
       lead: 'Hunt bugs hidden in real-looking code, plan your weeks, build a team, and survive 100 weeks at the company. Make it to the end and you might just become CTO.',
-      soonIos: 'Coming soon', soonAndroid: 'Coming soon',
+      soonIos: 'Coming soon', soonAndroid: 'Download now',
       cmt: '// Friday, 6 PM. You hit deploy.', str: '"Deployed. Heading home"',
       hint: '👆 One character is wrong. Find it and tap it.',
       featTitle: 'What is it?', featSub: 'Never coded before? The tutorial walks you through everything.',
@@ -242,7 +243,7 @@
     ja: {
       studio: 'Dawn commit', eyebrow: '// エンジニア人生シミュレーション', title: 'Build Failed',
       lead: 'コードに潜むバグを見つけ、毎週の予定を立て、同僚とチームを組んで、100週の会社生活を生き抜こう。最後まで生き残れば、CTOになれるかも。',
-      soonIos: 'リリース準備中', soonAndroid: 'リリース準備中',
+      soonIos: 'リリース準備中', soonAndroid: '今すぐダウンロード',
       cmt: '// 金曜の午後6時。デプロイボタンを押した。', str: '"デプロイ完了。帰ります"',
       hint: '👆 1文字だけ間違っています。見つけてタップしてみよう。',
       featTitle: 'どんなゲーム？', featSub: 'プログラミング未経験でも大丈夫。チュートリアルが一から教えてくれます。',
