@@ -34,6 +34,20 @@
   var scrim = $('.scrim');
   if (scrim) scrim.addEventListener('click', function () { setNav(false); });
   $$('.side a').forEach(function (a) { a.addEventListener('click', function () { setNav(false); }); });
+  // Tree: a link inside a summary goes to its page and leaves the branch open (the caret alone folds it).
+  $$('.tree summary a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var d = a.closest('details');
+      setTimeout(function () { if (d) d.open = true; }, 0);
+    });
+  });
+  var ta = $('.tree-all');
+  if (ta) ta.addEventListener('click', function () {
+    var open = ta.getAttribute('data-open') === '1';
+    $$('.tree details').forEach(function (d) { d.open = open; });
+    ta.setAttribute('data-open', open ? '0' : '1');
+    ta.textContent = open ? '모두 접기' : '모두 펼치기';
+  });
   var cur = $('.nav a.cur');
   if (cur && cur.scrollIntoView) { var side = $('.side'); if (side) side.scrollTop = Math.max(0, cur.offsetTop - 80); }
 

@@ -294,3 +294,37 @@ a.sec-card:hover { text-decoration: none; border-color: var(--accent); transform
 @media (min-width: 1024px) { .home-hero .in { max-width: 1240px; padding-left: calc(16px + var(--side) + 40px); } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 @media print { .gh, .side, .totop, .pager, .gf { display: none !important; } .layout { display: block; } details.spoiler > :not(summary) { display: block; } }
+
+/* ---------- tree sidebar (접었다 펼치기) ---------- */
+.side-title { display: flex; align-items: center; gap: 8px; }
+.tree-all { margin-left: auto; font: 600 12px var(--sans); color: var(--accent); background: none; border: 1px solid var(--line2, var(--line)); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
+.tree details > summary { list-style: none; display: flex; align-items: center; cursor: pointer; border-radius: 9px; }
+.tree details > summary::-webkit-details-marker { display: none; }
+.tree details > summary > a { flex: 1 1 auto; min-width: 0; }
+.tree .caret { flex: 0 0 26px; height: 30px; display: inline-flex; align-items: center; justify-content: center; margin-right: -4px; }
+.tree .caret::before { content: ""; width: 7px; height: 7px; border-right: 2px solid var(--faint); border-bottom: 2px solid var(--faint); transform: rotate(-45deg); transition: transform .15s ease; }
+.tree details[open] > summary > .caret::before { transform: rotate(45deg); }
+.tree summary:hover .caret::before { border-color: var(--accent); }
+.tree li.leaf { padding-left: 22px; }
+.tree > li.leaf { padding-left: 22px; }
+.tree ul { margin-left: 12px; }
+.tree ul.subs { border-left: 0; padding-left: 0; margin-left: 4px; }
+.tree ul.subs > li > details > summary > a, .tree ul.subs > li.leaf > a { font-size: 14.5px; color: var(--text); }
+
+/* ---------- category chips (분류 버튼) ---------- */
+.chipbar { background: var(--surface); border-bottom: 1px solid var(--line); }
+.chips { max-width: 1240px; margin: 0 auto; padding: 10px 16px; display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: 0 0 auto; white-space: nowrap; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font-size: 14.5px; font-weight: 600; line-height: 1.4; }
+.chip:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+:root[data-theme="dark"] .chip.on, :root[data-dark="1"] .chip.on { color: #17142B; }
+
+.topics { display: grid; gap: 14px; margin: 10px 0 8px; }
+.topic-group { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px 16px; }
+.topic-group h3 { margin: 0 0 10px; font-size: 16.5px; color: var(--strong); }
+.topic-btns { display: grid; grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); gap: 8px; }
+.topic-btn { display: flex; align-items: center; gap: 7px; min-height: 44px; padding: 8px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font-size: 14.5px; font-weight: 600; line-height: 1.35; word-break: keep-all; }
+.topic-btn .em { flex: 0 0 auto; font-size: 17px; }
+.topic-btn:hover { border-color: var(--accent); background: var(--accentSoft); color: var(--accent); text-decoration: none; }
+@media (max-width: 360px) { .topic-btns { grid-template-columns: repeat(2, minmax(0, 1fr)); } .topic-btn { font-size: 14px; padding: 8px 10px; } }
