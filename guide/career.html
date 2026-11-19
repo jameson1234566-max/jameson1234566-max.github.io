@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>승진·커리어·퇴사 루트 · 개발자 체험 공략집</title>
+<meta name="description" content="직급 10단계 승진 조건, 인사평가 점수 계산, 커리어 트랙, 회사 5곳과 사가, 이직, 창업·프리랜서 퇴사 루트, 읽씹 규칙까지">
+<meta name="theme-color" content="#17142B">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="개발자 체험 (Build Failed) · 새벽커밋">
+<meta property="og:url" content="https://dawncommitgames.com/guide/career.html">
+<meta property="og:title" content="승진·커리어·퇴사 루트 · 개발자 체험 공략집">
+<meta property="og:description" content="직급 10단계 승진 조건, 인사평가 점수 계산, 커리어 트랙, 회사 5곳과 사가, 이직, 창업·프리랜서 퇴사 루트, 읽씹 규칙까지">
+<meta property="og:image" content="https://dawncommitgames.com/icon-512.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://dawncommitgames.com/guide/career.html">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="assets/guide.css?v=3ba08b4a">
+<script>try{var t=localStorage.getItem('guide-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#content">본문으로 건너뛰기</a>
+<header class="gh"><div class="gh-in">
+  <button class="icon-btn menu-btn" type="button" aria-label="목차 열기" aria-expanded="false" aria-controls="side"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="gh-brand" href="index.html"><img src="../favicon.png" alt="" width="30" height="30">공략집 <small>개발자 체험</small></a>
+  <div class="gh-search" role="search">
+    <svg class="sicon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="공략집 검색 (예: 아영, 커피, 창업)" autocomplete="off" aria-label="공략집 검색">
+    <div class="results" role="listbox" aria-label="검색 결과"></div>
+  </div>
+  <button class="icon-btn search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+  <button class="icon-btn theme-btn" type="button" aria-label="다크 모드로 바꾸기"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+</div></header>
+<div class="layout">
+<nav class="side" id="side" aria-label="공략집 목차"><p class="side-title">공략집 목차</p><ul class="nav"><li><a href="index.html"><span class="em">🏠</span>공략집 홈</a></li><li><a href="start.html"><span class="em">🚀</span>시작 가이드</a></li><li><a href="career.html" class="cur" aria-current="page"><span class="em">📈</span>승진·커리어·퇴사 루트</a><ul class="toc"><li><a href="#run-rules">회차 구조부터 알고 가요 🗓️</a></li><li><a href="#ranks">직급 10단계와 월급 💼</a></li><li><a href="#review">인사평가 점수, 이렇게 계산돼요 📋</a><ul><li><a href="#%ED%8F%89%EA%B0%80-%EA%B8%B0%EC%A4%80%EC%A0%90-%EC%9D%B4-%EC%A0%90%EC%88%98%EB%A5%BC-%EB%84%98%EC%96%B4%EC%95%BC-%EC%8A%B9%EC%A7%84-%ED%9B%84%EB%B3%B4">평가 기준점 (이 점수를 넘어야 승진 후보)</a></li><li><a href="#%ED%8F%89%EA%B0%80-%EC%A0%90%EC%88%98-%EA%B3%B5%EC%8B%9D">평가 점수 공식</a></li><li><a href="#%EC%A3%BC%EA%B0%84-%EC%84%B1%EA%B3%BC%EB%8A%94-%EC%96%B4%EB%94%94%EC%84%9C-%EB%82%98%EC%99%80%EC%9A%94">주간 성과는 어디서 나와요?</a></li><li><a href="#nego">연봉 협상: 뭘 눌러야 이득일까? 💸</a></li></ul></li><li><a href="#promo-table">직급별 승진 조건 총정리 🪜</a><ul><li><a href="#%EA%B8%B0%EC%88%A0-11%EA%B0%9C-%EC%BB%A4%EB%B0%8B%EC%9C%BC%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EC%9A%94">기술 11개 (커밋으로 배워요)</a></li></ul></li><li><a href="#tracks">커리어 트랙(커트) 5개 분야 🛤️</a></li><li><a href="#companies">회사 5곳 비교 🏢</a></li><li><a href="#job-change">이직과 헤드헌터 🤝</a><ul><li><a href="#%EC%9D%B4%EC%A7%81%ED%95%98%EB%A9%B4-%EB%B0%94%EB%80%8C%EB%8A%94-%EA%B2%83">이직하면 바뀌는 것</a></li></ul></li><li><a href="#saga">회사 사가: 회사마다 큰 사건이 터져요 🎬</a><ul><li><a href="#%EB%8C%80%EA%B8%B0%EC%97%85-%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC-%EC%83%88%EB%B2%BD%EC%BB%A4%EB%B0%8B-%EA%B2%B0%EC%A0%9C-%EB%8C%80%EC%9E%A5%EC%95%A0">대기업 · 주식회사 새벽커밋: 결제 대장애</a></li><li><a href="#%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%ED%94%BC%EB%B4%87%EB%9E%A9%EC%8A%A4-%EB%8D%B0%EB%AA%A8%EC%97%90%EC%84%9C-%EC%97%91%EC%8B%9C%ED%8A%B8%EA%B9%8C%EC%A7%80">스타트업 · 피봇랩스: 데모에서 엑시트까지</a></li><li><a href="#%EC%99%B8%EA%B5%AD%EA%B3%84-%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%85%8C%ED%81%AC-%EC%A7%80%EC%82%AC-%EC%9D%B4%EA%B4%80-%EC%86%8C%EB%AC%B8">외국계 · 글로벌테크 지사: 이관 소문</a></li><li><a href="#%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EC%87%BC%ED%95%91%EB%AA%B0-%EC%99%B8%EC%A3%BC%EC%99%80-%EC%9E%94%EA%B8%88-%EC%B2%B4%EB%B6%88">프리랜서: 쇼핑몰 외주와 잔금 체불</a></li></ul></li><li><a href="#founder">퇴사 루트 ① 연쇄 창업가 🚀</a><ul><li><a href="#%ED%87%B4%EC%82%AC-%ED%9B%84-%EB%8F%88-%EA%B3%84%EC%82%B0-%EC%97%AC%EA%B8%B0%EA%B0%80-%EC%A7%84%EC%A7%9C-%EA%B2%8C%EC%9E%84">퇴사 후 돈 계산 (여기가 진짜 게임)</a></li><li><a href="#%EC%B0%BD%EC%97%85-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98-%EA%B2%B0%EA%B3%BC">창업 시뮬레이션 결과</a></li><li><a href="#%EC%97%B0%EC%87%84-%EC%B0%BD%EC%97%85%EA%B0%80-%EC%97%94%EB%94%A9-6%EA%B0%9C">연쇄 창업가 엔딩 6개</a></li></ul></li><li><a href="#side-found">퇴사 루트 ② 사이드 프로젝트 창업 💡</a></li><li><a href="#freelance">퇴사 루트 ③ 프리랜서와 디지털 노마드 🏝️</a></li><li><a href="#title-early">일찍 끝나는 칭호 루트 ⏱️</a></li><li><a href="#early-end">회차가 갑자기 끝나는 함정 🪤</a></li><li><a href="#ignore">읽씹 규칙 총정리 📵</a></li><li><a href="#job-endings">직장인 엔딩 모음 🏆</a></li><li><a href="#sim">시뮬레이션으로 본 현실 🎲</a></li><li><a href="#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">자주 묻는 질문</a></li></ul></li><li><a href="heroines.html"><span class="em">💌</span>히로인 공략</a><ul><li><a href="heroine-seoyun.html">한서윤 공략</a></li><li><a href="heroine-harin.html">윤하린 공략</a></li><li><a href="heroine-daeun.html">정다은 공략</a></li><li><a href="heroine-minji.html">김민지 공략</a></li><li><a href="heroine-yuna.html">강아영 공략</a></li><li><a href="heroine-hyeyun.html">송혜윤 공략</a></li><li><a href="heroine-eunseo.html">백은서 공략</a></li><li><a href="heroine-sora.html">이소라 공략</a></li><li><a href="heroine-jiwoo.html">박지우 공략</a></li><li><a href="heroine-hana.html">최하나 공략</a></li><li><a href="heroine-sophie.html">소피 공략</a></li><li><a href="heroine-sohyun.html">이소현 공략</a></li><li><a href="heroine-eunhye.html">여은혜 공략</a></li></ul></li><li><a href="titles.html"><span class="em">🏷️</span>칭호</a></li><li><a href="gear.html"><span class="em">🎒</span>장비·소모품</a></li><li><a href="invest.html"><span class="em">💹</span>투자</a></li><li><a href="home.html"><span class="em">🏠</span>동거·신혼·앨범·가족</a></li><li><a href="endings.html"><span class="em">📖</span>엔딩 도감</a></li></ul><p class="side-foot"><a href="../">← 개발자 체험 홈페이지</a></p></nav><div class="scrim"></div>
+<main class="main" id="content"><article class="article">
+<p class="crumb"><a href="index.html">공략집</a> › 승진·커리어·퇴사 루트</p>
+<h1 class="page-title">승진·커리어·퇴사 루트</h1>
+<p class="page-desc">직급 10단계 승진 조건, 인사평가 점수 계산, 커리어 트랙, 회사 5곳과 사가, 이직, 창업·프리랜서 퇴사 루트, 읽씹 규칙까지</p>
+<p class="meta">마지막 업데이트 <time datetime="2026-11-19">2026-11-19</time></p>
+<div class="tldr"><b>한 줄 요약</b>
+<ul>
+  <li>📋 인사평가는 <b>4·16·28·40·52·64·76·88·99주차</b>, 딱 9번이에요. 한 번에 한 직급씩만 올라서 인턴 시작이면 <b>9번 전부 붙어야</b> CTO예요.</li>
+  <li>🧮 평가 점수 = 성과 50% + 평판 30% + 팀장 호감도 20% + 보너스. 점수가 넘어도 <b>직급별 승진 조건</b>을 못 채우면 막혀요.</li>
+  <li>🏁 코인·경력 포인트(CP)는 <b>100주를 끝까지 마친 회차만</b> 받아요. 창업·칭호 엔딩처럼 일찍 끝나면 0이에요.</li>
+  <li>🚪 퇴사 루트는 연쇄 창업가(20주 퇴사, 잔고 2,000만 원), 프리랜서(칭호 없는 회차 24주~), 사이드 프로젝트 창업(사이드 90) 3가지예요.</li>
+</ul>
+</div>
+
+<h2 id="run-rules">회차 구조부터 알고 가요 🗓️<a class="anchor" href="#run-rules" aria-label="이 제목 링크">#</a></h2>
+<p>한 회차는 <span class="num">100주</span>예요. 매주 일정을 짜고, 티켓을 풀고, 메시지에 답하고, 「한 주 마감하기」를 누르면 한 주가 지나가요. 출발은 언제나 <b>대기업 · 주식회사 새벽커밋</b>의 <b>인턴</b>이고, 시작 능력치는 코딩력 25 · 집중력 60 · 체력 80 · 스트레스 20 · 평판 20, 잔고 3,000,000원, 커밋 10이에요(회차 보너스로 올릴 수 있어요).</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>회차가 끝나는 방식</th><th>코인 · CP</th><th>도중에 충족한 엔딩</th><th>「완주」로 셈</th></tr></thead>
+  <tbody>
+    <tr><td>100주를 끝까지 마침</td><td>받음 (직급 따라)</td><td>전부 기록 ✅</td><td>예</td></tr>
+    <tr><td>칭호 이야기 엔딩으로 일찍 끝남 (연쇄 창업가의 상장 · 텅장 창업 등 포함)</td><td>0</td><td>그 엔딩 하나만</td><td>예</td></tr>
+    <tr><td>권고사직 · 치킨집 사장 · 사이드 프로젝트 창업(창업 대박 · 폐업)</td><td>0</td><td>그 엔딩 하나만</td><td>아니요</td></tr>
+    <tr><td>홈의 「회차 종료」 버튼</td><td>0</td><td>아무것도 안 남음</td><td>아니요</td></tr>
+  </tbody>
+</table></div>
+
+<ul>
+  <li><b>경력 포인트(CP)</b> = 20 + 직급 번호 (인턴 20 … CTO 29). 회차 보너스 「경력 관리」로 +1 / +3 / +5.</li>
+  <li><b>코인</b> = 2,000 + 직급 번호 × 100 (인턴 2,000 … CTO 2,900). 「퇴직금 적립」으로 단계마다 +5%.</li>
+  <li>퇴사한 창업자는 직급이 없어서 인턴과 똑같이 계산돼요(CP 20, 코인 2,000).</li>
+  <li>화면을 만지며 플레이한 시간이 <b>10분 미만</b>인 회차는 CP · 코인 · 커밋 XP · 일일 퀘스트가 없어요(엔딩은 남아요).</li>
+  <li>처음 보는 엔딩마다 카드팩이 나와요. 기본 엔딩은 레어 팩, 칭호 엔딩은 에픽 팩이고, 일찍 끝난 회차도 받아요.</li>
+</ul>
+
+<div class="callout trap"><b>이거 모르면 손해</b><p>회차 도중에 「엔딩 충족!」 배너가 뜬 엔딩(예: 회사 사가 결말, 해외 본사 입성, 사이드 프로젝트 인수)은 <b>100주를 끝까지 마쳐야</b> 도감에 함께 남아요. 칭호 엔딩이나 창업으로 회차가 일찍 끝나면 <b>그 엔딩 하나만</b> 기록되고, 앞서 모은 배너 엔딩은 사라져요. 수집이 목적이면 일찍 끝나는 선택은 마지막에 하세요.</p></div>
+
+<div class="callout"><p>「엔딩 충족!」 배너가 안 뜨는 <b>조용한 엔딩</b>도 있어요: 평범한 개발자, 만년 대리, AI에게 자리를 넘김, 귀농 개발자, 워라밸 마스터. 이 다섯은 100주차 최종 판정에서만 나오고, 더 앞 순위의 엔딩(결혼, CTO, 사이드 엔딩 등)을 하나라도 채우면 밀려나요.</p></div>
+
+<h2 id="ranks">직급 10단계와 월급 💼<a class="anchor" href="#ranks" aria-label="이 제목 링크">#</a></h2>
+<p>직급은 아래 10단계예요. 월급은 <b>기본급 × 회사 배율 × (1 + 기술 연봉 보너스 + 연봉 인상 누적)</b>이고, 주급은 월급 ÷ 4예요. 매주 생활비 <b>450,000원</b>이 빠져요(월 1,800,000원).</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>직급</th><th class="r">대기업 월급</th><th class="r">스타트업 (×0.8)</th><th class="r">외국계 (×1.4)</th><th class="r">아침 커밋 (×1.2)</th></tr></thead>
+  <tbody>
+    <tr data-id="rank:0" id="rank-0"><td>인턴</td><td class="r">2,000,000원</td><td class="r">1,600,000원</td><td class="r">2,800,000원</td><td class="r">2,400,000원</td></tr>
+    <tr data-id="rank:1" id="rank-1"><td>사원</td><td class="r">3,000,000원</td><td class="r">2,400,000원</td><td class="r">4,200,000원</td><td class="r">3,600,000원</td></tr>
+    <tr data-id="rank:2" id="rank-2"><td>주임</td><td class="r">3,400,000원</td><td class="r">2,720,000원</td><td class="r">4,760,000원</td><td class="r">4,080,000원</td></tr>
+    <tr data-id="rank:3" id="rank-3"><td>대리</td><td class="r">4,000,000원</td><td class="r">3,200,000원</td><td class="r">5,600,000원</td><td class="r">4,800,000원</td></tr>
+    <tr data-id="rank:4" id="rank-4"><td>과장</td><td class="r">4,800,000원</td><td class="r">3,840,000원</td><td class="r">6,720,000원</td><td class="r">5,760,000원</td></tr>
+    <tr data-id="rank:5" id="rank-5"><td>차장</td><td class="r">5,600,000원</td><td class="r">4,480,000원</td><td class="r">7,840,000원</td><td class="r">6,720,000원</td></tr>
+    <tr data-id="rank:6" id="rank-6"><td>부장</td><td class="r">6,500,000원</td><td class="r">5,200,000원</td><td class="r">9,100,000원</td><td class="r">7,800,000원</td></tr>
+    <tr data-id="rank:7" id="rank-7"><td>이사</td><td class="r">8,000,000원</td><td class="r">6,400,000원</td><td class="r">11,200,000원</td><td class="r">9,600,000원</td></tr>
+    <tr data-id="rank:8" id="rank-8"><td>상무</td><td class="r">10,000,000원</td><td class="r">8,000,000원</td><td class="r">14,000,000원</td><td class="r">12,000,000원</td></tr>
+    <tr data-id="rank:9" id="rank-9"><td>CTO</td><td class="r">15,000,000원</td><td class="r">12,000,000원</td><td class="r">21,000,000원</td><td class="r">18,000,000원</td></tr>
+  </tbody>
+</table></div>
+<p>표는 기술·인상 보너스가 하나도 없을 때의 월급이에요(10,000원 단위 반올림). 프리랜서는 월급이 없고 따로 계산해요(<a href="#freelance">프리랜서</a> 참고).</p>
+<ul>
+  <li>💰 <b>기술 연봉 보너스</b>: TypeScript +3%, React +5%, Java +3%, 클라우드 +5% (전부 합치면 +16%).</li>
+  <li>📈 <b>연봉 협상</b>으로 오른 몫과 <b>이직</b>할 때마다 +5%가 계속 쌓여요.</li>
+  <li>🎖️ 회차 보너스 「연봉 협상의 달인」은 주급을 +5% / +10% / +15% 올려 줘요.</li>
+  <li>🎫 직급이 오르면 티켓도 어려워져요: 인턴·사원 1단계, 주임·대리 2단계, 과장~부장 3단계, 이사부터 4단계.</li>
+</ul>
+
+<h2 id="review">인사평가 점수, 이렇게 계산돼요 📋<a class="anchor" href="#review" aria-label="이 제목 링크">#</a></h2>
+<figure class="shot" data-shot="career-week-review"><img src="img/career-week-review.png" alt="주 마감 화면의 인사평가 결과와 연봉 협상 버튼 3개" loading="lazy" decoding="async"><figcaption>평가 주에 「한 주 마감하기」를 누르면 나오는 인사평가 화면. 점수와 기준, 연봉 협상 버튼 3개가 보여요.</figcaption></figure>
+
+<h3 id="평가-기준점-이-점수를-넘어야-승진-후보">평가 기준점 (이 점수를 넘어야 승진 후보)<a class="anchor" href="#%ED%8F%89%EA%B0%80-%EA%B8%B0%EC%A4%80%EC%A0%90-%EC%9D%B4-%EC%A0%90%EC%88%98%EB%A5%BC-%EB%84%98%EC%96%B4%EC%95%BC-%EC%8A%B9%EC%A7%84-%ED%9B%84%EB%B3%B4" aria-label="이 제목 링크">#</a></h3>
+<p>인턴에서 사원으로 갈 때만 <b>30점</b> 고정이고, 그 뒤로는 <b>50 + 지금 직급 번호 × 5 + 회사 보정</b>이에요. 스타트업은 −6이라 쉽고, 외국계는 +4라 빡빡해요.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>지금 직급 → 다음</th><th class="r">대기업 · 아침 커밋</th><th class="r">스타트업</th><th class="r">외국계</th></tr></thead>
+  <tbody>
+    <tr><td>인턴 → 사원</td><td class="r">30</td><td class="r">30</td><td class="r">30</td></tr>
+    <tr><td>사원 → 주임</td><td class="r">55</td><td class="r">49</td><td class="r">59</td></tr>
+    <tr><td>주임 → 대리</td><td class="r">60</td><td class="r">54</td><td class="r">64</td></tr>
+    <tr><td>대리 → 과장</td><td class="r">65</td><td class="r">59</td><td class="r">69</td></tr>
+    <tr><td>과장 → 차장</td><td class="r">70</td><td class="r">64</td><td class="r">74</td></tr>
+    <tr><td>차장 → 부장</td><td class="r">75</td><td class="r">69</td><td class="r">79</td></tr>
+    <tr><td>부장 → 이사</td><td class="r">80</td><td class="r">74</td><td class="r">84</td></tr>
+    <tr><td>이사 → 상무</td><td class="r">85</td><td class="r">79</td><td class="r">89</td></tr>
+    <tr><td>상무 → CTO</td><td class="r">90</td><td class="r">84</td><td class="r">94</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="평가-점수-공식">평가 점수 공식<a class="anchor" href="#%ED%8F%89%EA%B0%80-%EC%A0%90%EC%88%98-%EA%B3%B5%EC%8B%9D" aria-label="이 제목 링크">#</a></h3>
+<p><b>점수 = 성과 점수 × 0.5 + 평판 × 0.3 + 팀장 호감도 × 0.2 + 보너스</b> (반올림)</p>
+<ul>
+  <li><b>성과 점수</b> = (지난 평가 이후 주간 성과의 평균 ÷ 12) × 100, 최대 100. 즉 <b>매주 성과 12</b>면 만점이에요.</li>
+  <li>평판 · 팀장 호감도는 평가하는 그 순간의 값이에요.</li>
+  <li><b>보너스</b> (전부 더해져요):
+    <ul>
+      <li>발표 기술 +5, 리더십 기술 +5</li>
+      <li>외국계에서 비즈니스 영어 +3</li>
+      <li>장비 「일정 관리 앱 구독」 +3</li>
+      <li>사이드 프로젝트 50 이상 +3, 100 이상이면 +3 더</li>
+      <li>회차 보너스 「발표 천재」 +2 / +4 / +7</li>
+      <li>결혼 후 육아 중 사랑 효과 「가정적인 개발자」 +3</li>
+    </ul>
+  </li>
+</ul>
+<div class="callout tip"><b>예시로 감 잡기</b><p>대기업 대리(기준 65)인데 주간 성과 평균 10.3, 평판 50, 팀장 호감도 60이면 → 42.9 + 15 + 12 = <b>70점</b>. 통과예요. 발표 기술 하나만 있어도 +5라서 훨씬 여유로워져요.</p></div>
+
+<h3 id="주간-성과는-어디서-나와요">주간 성과는 어디서 나와요?<a class="anchor" href="#%EC%A3%BC%EA%B0%84-%EC%84%B1%EA%B3%BC%EB%8A%94-%EC%96%B4%EB%94%94%EC%84%9C-%EB%82%98%EC%99%80%EC%9A%94" aria-label="이 제목 링크">#</a></h3>
+<ul>
+  <li><b>업무</b> 하루 1.2, <b>야근</b> 하루 2.2 (회사 성과 배율을 곱해요: 대기업 · 아침 커밋 0.9, 스타트업 1.2, 외국계 · 프리랜서 1).</li>
+  <li><b>티켓</b>: S 6 · A 4 · B 2 · C 1 (× 성과 배율). 티켓을 못 풀면 성과 −3, 평판 −3, 팀장 호감도 −5, 스트레스 +3.</li>
+  <li><b>팀 프로젝트</b> 승리: ★1 1.5, ★2 2.5, ★3 4 (× 성과 배율, 한 주 최대 6).</li>
+  <li>메시지 답장 중 성과가 붙는 것도 있어요.</li>
+  <li><b>요일 효과</b>: 같은 업무·야근·공부·사이드를 3일 연속 넣으면 3일째부터 +20%, 월요일 −10%, 금요일 +10%, 야근 다음 날 업무·야근은 성과·평판 −30%, 주말 칸은 ×1.4, <b>평가 주간엔 성과 ×1.5</b>.</li>
+</ul>
+
+<p>요일 효과까지 넣어 계산한 <b>일정별 한 주</b>예요(대기업, 평가 주 아님, 장비·회차 보너스·메시지 제외).</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>일정 (월~금, 주말)</th><th class="r">일정 성과</th><th class="r">+ 티켓 S</th><th class="r">스트레스/주</th><th class="r">체력/주</th></tr></thead>
+  <tbody>
+    <tr><td>기본 일정: 업무 · 업무 · 공부 · 업무 · 업무 · 휴식</td><td class="r">4.32</td><td class="r">9.72</td><td class="r">+10.2</td><td class="r">−10.8</td></tr>
+    <tr><td>점심 · 업무 · 업무 · 업무 · 업무 · 휴식</td><td class="r">4.88</td><td class="r">10.28</td><td class="r">−6.8</td><td class="r">−8.8</td></tr>
+    <tr><td>점심 · 업무 · 업무 · 업무 · 공부 · 휴식</td><td class="r">3.46</td><td class="r">8.86</td><td class="r">−8.8</td><td class="r">−5.8</td></tr>
+    <tr><td>업무 5일 · 휴식</td><td class="r">6.07</td><td class="r">11.47</td><td class="r">+12.2</td><td class="r">−13.8</td></tr>
+    <tr><td>업무 · 야근 · 휴식 · 업무 · 야근 · 휴식</td><td class="r">6.21</td><td class="r">11.61</td><td class="r">+9.2</td><td class="r">−10.8</td></tr>
+    <tr><td>야근 5일 · 휴식</td><td class="r">8.32</td><td class="r">13.72</td><td class="r">+32.2</td><td class="r">−38.8</td></tr>
+  </tbody>
+</table></div>
+<p>스트레스에는 회사가 매주 더하는 몫(대기업 +2)이 들어 있어요. 평가 주간에는 일정 성과가 1.5배라 같은 일정이 훨씬 세져요(예: 점심 · 업무 4 · 휴식 → 7.32).</p>
+
+<div class="callout trap"><b>함정: 기본 일정 그대로 두기</b><p>처음 깔려 있는 기본 일정(업무 · 업무 · 공부 · 업무 · 업무 · 휴식)은 스트레스가 <b>매주 +10</b>쯤 쌓여요. 손대지 않으면 몇 주 만에 번아웃이 오고, 번아웃 3번이면 <a href="#early-end">치킨집 사장 엔딩으로 회차가 끝나요</a>. 실제로 기본 일정 그대로 돌린 시뮬레이션은 <b>2,000번 중 2,000번 모두 번아웃 3번으로 치킨집 사장</b>(가운데값 35주차, 가장 빠르면 28주차)였어요(<a href="#sim">시뮬레이션</a>).</p></div>
+
+<div class="callout tip"><b>점수 올리는 꿀팁</b>
+<ul>
+  <li>🍜 <b>동료와 점심</b>을 매주 1번: 팀장 호감도 +6, 스트레스 −15. 팀장 호감도가 50 이상인데 그 주에 점심이 없으면 −3이에요. 80 이상부터는 기대치 때문에 매주 −2라서 점심이 꼭 필요해요.</li>
+  <li>⭐ <b>평가 주간</b>(4·16·28…주)에는 일정(업무 · 야근)으로 얻는 성과가 1.5배예요. 이 주엔 업무를 몰아 넣으세요.</li>
+  <li>🎤 <b>발표</b>(커밋 80)는 평가 +5짜리라 가장 먼저 배울 만해요. 리더십(160, 발표 필요)도 +5.</li>
+  <li>🚀 사이드 프로젝트를 50까지 키우면 평가 +3, 100이면 +6이에요.</li>
+  <li>🎫 티켓은 직접 풀어서 S를 노리세요. 「대충 처리」는 최고가 A이고, 3주 연속부터 점수가 15씩 깎여요. 스트레스 70 이상이면 아예 못 써요.</li>
+</ul></div>
+
+<h3 id="nego">연봉 협상: 뭘 눌러야 이득일까? 💸<a class="anchor" href="#nego" aria-label="이 제목 링크">#</a></h3>
+<p>평가가 끝나면 승진 여부와 상관없이 연봉 협상이 나와요. 버튼에 확률이 그대로 적혀 있어요.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>버튼</th><th>성공 확률</th><th>승진했을 때</th><th>승진 못 했을 때</th><th>실패하면</th></tr></thead>
+  <tbody>
+    <tr><td>그대로 수락</td><td>100%</td><td>+3%</td><td>+1%</td><td>없음</td></tr>
+    <tr><td>조금 더 요청</td><td>55% (협상 기술 75%)</td><td>+8%</td><td>+3%</td><td>그래도 +2%</td></tr>
+    <tr><td>크게 요구</td><td>30% + 평판 ÷ 400 (협상 기술 +20%p)</td><td>+15%</td><td>+6%</td><td>0%, 팀장 호감도 −10</td></tr>
+  </tbody>
+</table></div>
+<p>버튼의 확률 × 인상률로 계산한 <b>평균 인상률</b>이에요(승진했을 때). 실제 함수로 20,000번씩 굴려 본 결과도 0.1%p 안에서 같았어요.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>상황</th><th class="r">그대로 수락</th><th class="r">조금 더 요청</th><th class="r">크게 요구</th><th class="r">크게 요구의 평균 팀장 호감도</th></tr></thead>
+  <tbody>
+    <tr><td>협상 기술 없음, 평판 20</td><td class="r">3.00%</td><td class="r">5.30%</td><td class="r">5.25%</td><td class="r">−6.5</td></tr>
+    <tr><td>협상 기술 없음, 평판 60</td><td class="r">3.00%</td><td class="r">5.30%</td><td class="r">6.75%</td><td class="r">−5.5</td></tr>
+    <tr><td>협상 기술 없음, 평판 100</td><td class="r">3.00%</td><td class="r">5.30%</td><td class="r">8.25%</td><td class="r">−4.5</td></tr>
+    <tr><td>협상 기술, 평판 60</td><td class="r">3.00%</td><td class="r">6.50%</td><td class="r">9.75%</td><td class="r">−3.5</td></tr>
+    <tr><td>협상 기술, 평판 100</td><td class="r">3.00%</td><td class="r">6.50%</td><td class="r">11.25%</td><td class="r">−2.5</td></tr>
+  </tbody>
+</table></div>
+<div class="callout tip"><b>결론</b><p>「조금 더 요청」은 실패해도 +2%라 <b>손해가 없어요</b>. 무조건 이쪽이 「그대로 수락」보다 나아요. 「크게 요구」는 평균은 더 높지만 팀장 호감도가 깎여서, <b>부장부터 PM 호감도 90~100이 승진 조건</b>인 걸 생각하면 고직급에선 「조금 더 요청」이 안전해요.</p></div>
+
+<h2 id="promo-table">직급별 승진 조건 총정리 🪜<a class="anchor" href="#promo-table" aria-label="이 제목 링크">#</a></h2>
+<figure class="shot" data-shot="career-promo-sheet"><img src="img/career-promo-sheet.png" alt="승진 조건 시트: 다음 직급 조건 목록과 충족 여부" loading="lazy" decoding="async"><figcaption>홈에서 직급을 누르면 열리는 「커리어」 화면의 「승진 조건」 버튼. 조건을 누르면 그걸 채우러 가는 화면으로 바로 가요.</figcaption></figure>
+<p>평가 점수가 기준점을 넘고 <b>아래 조건을 전부</b> 채워야 승진해요. 점수만 넘으면 「점수는 충분했지만 승진 조건이 부족해요」가 떠요.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>다음 직급</th><th>회차 안 조건</th><th>회차 밖 조건 (이전 기록 인정)</th></tr></thead>
+  <tbody>
+    <tr><td>사원</td><td>코딩력 20, 집중력 10, 스트레스 80 이하</td><td>없음</td></tr>
+    <tr><td>주임</td><td>기술 1개, 코딩력 30, 집중력 20, 스트레스 80 이하</td><td>없음</td></tr>
+    <tr><td>대리</td><td>기술 2개, 코딩력 40, 평판 20, 스트레스 80 이하</td><td>없음</td></tr>
+    <tr><td>과장</td><td>기술 3개, 평판 40</td><td>없음</td></tr>
+    <tr><td>차장</td><td>기술 5개, 코딩력 60, 주니어(인턴) 호감도 50</td><td>클래식 챌린지 150단계까지, 커리어 트랙 한 분야 40단계 이상</td></tr>
+    <tr><td>부장</td><td>기술 7개, 평판 60, PM 호감도 90</td><td>클래식 300단계까지, 커리어 트랙 풀스택 9챕터 80단계</td></tr>
+    <tr><td>이사</td><td>리더십 기술, PM 호감도 95</td><td>서바이벌 보통 클리어, 클래식 370단계까지, 커리어 트랙 프론트엔드 10챕터 85단계</td></tr>
+    <tr><td>상무</td><td>기술 10개, 평판 75, 코딩력 75, PM 호감도 100</td><td>클래식 440단계까지, 커리어 트랙 백엔드 11챕터 90단계</td></tr>
+    <tr><td>CTO</td><td>기술 11개 전부, 평판 100, 코딩력 100, PM 호감도 100, 이번 회차 티켓 S등급 95% 이상</td><td>클래식 1~500 전부 ★★★, 커리어 트랙 5개 분야 전 단계 ★★★, 팀 프로젝트 오픈소스 #12 「프레임워크 2.0」 ★★★</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout warn"><b>과장의 벽</b><p>과장까지는 회차 안에서만 채우면 되지만, <b>차장부터는 클래식 · 커리어 트랙 기록</b>이 필요해요. 회차만 열심히 돌리면 과장에서 멈춰요. 클스와 커트는 회차 밖에서 꾸준히 밀어 두세요. 기록은 어느 회차에서 깼든 인정돼요.</p></div>
+
+<div class="callout trap"><b>CTO는 「9연속 승진」</b><p>평가는 9번, 승진은 평가마다 1단계예요. 인턴으로 시작하면 <b>단 한 번도 미끄러지면 안 돼요</b>. 4주차 첫 평가(기준 30)부터 조건을 맞춰 두세요. 회차 보너스 「경력직 입사」(200 / 400 CP)로 사원이나 주임에서 시작하면 1~2번 여유가 생겨요.</p></div>
+
+<h3 id="기술-11개-커밋으로-배워요">기술 11개 (커밋으로 배워요)<a class="anchor" href="#%EA%B8%B0%EC%88%A0-11%EA%B0%9C-%EC%BB%A4%EB%B0%8B%EC%9C%BC%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EC%9A%94" aria-label="이 제목 링크">#</a></h3>
+<figure class="shot" data-shot="career-tech"><img src="img/career-tech.png" alt="기술 화면: 폴더처럼 나열된 기술 11개와 커밋 비용" loading="lazy" decoding="async"><figcaption>「기술」 화면. 파일 탐색기처럼 생겼고, 커밋을 써서 배워요.</figcaption></figure>
+<div class="table-wrap"><table>
+  <thead><tr><th>기술</th><th class="r">커밋</th><th>먼저 필요</th><th>효과</th></tr></thead>
+  <tbody>
+    <tr><td>Git 마스터</td><td class="r">50</td><td>-</td><td>오답 페널티 10초 → 8초</td></tr>
+    <tr><td>TypeScript</td><td class="r">65</td><td>-</td><td>TS 티켓, 연봉 +3%</td></tr>
+    <tr><td>Python</td><td class="r">65</td><td>-</td><td>Python 티켓</td></tr>
+    <tr><td>SQL</td><td class="r">65</td><td>-</td><td>SQL 티켓</td></tr>
+    <tr><td>발표</td><td class="r">80</td><td>-</td><td>인사평가 +5</td></tr>
+    <tr><td>Java</td><td class="r">80</td><td>-</td><td>Java 티켓, 연봉 +3%</td></tr>
+    <tr><td>비즈니스 영어</td><td class="r">95</td><td>-</td><td>외국계 제안을 받을 수 있어요 (외국계에서 평가 +3)</td></tr>
+    <tr><td>협상</td><td class="r">95</td><td>발표</td><td>연봉 협상 성공률 +20%</td></tr>
+    <tr><td>React</td><td class="r">95</td><td>TypeScript</td><td>사이드 프로젝트 ×1.2, 연봉 +5%</td></tr>
+    <tr><td>클라우드</td><td class="r">130</td><td>SQL</td><td>매주 스트레스 −1, 연봉 +5%</td></tr>
+    <tr><td>리더십</td><td class="r">160</td><td>발표</td><td>인사평가 +5, 인턴 호감도 상승 1.5배 (이사 승진 필수)</td></tr>
+  </tbody>
+</table></div>
+<p>합계 <b>980커밋</b>이면 11개를 다 배워요. 공부(하루 커밋 5)가 제일 빨라요. 11개를 전부 배우면 엔딩 <a href="#job-endings">전설의 아키텍트</a>도 따라와요.</p>
+
+<h2 id="tracks">커리어 트랙(커트) 5개 분야 🛤️<a class="anchor" href="#tracks" aria-label="이 제목 링크">#</a></h2>
+<figure class="shot" data-shot="career-track"><img src="img/career-track.png" alt="업무 탭의 커리어 트랙 목록: 프론트엔드, 백엔드, 파이썬/AI, 데이터, 풀스택" loading="lazy" decoding="async"><figcaption>업무 탭의 「커리어 트랙」. 5개 분야 중 어디든 바로 시작할 수 있어요.</figcaption></figure>
+<p>커트는 코드 리뷰(O/X) 모드예요. 분야마다 <b>12챕터 × 100단계 = 1,200단계</b>, 5개 분야 합쳐 6,000단계예요. 모든 챕터가 처음부터 열려 있고, 챕터 안에서는 한 단계씩 열려요.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>분야</th><th>언어</th><th>챕터 (1 → 12)</th></tr></thead>
+  <tbody>
+    <tr data-id="track:frontend" id="track-frontend"><td>프론트엔드</td><td>JavaScript, TypeScript</td><td>첫 버튼 · 폼 검증 · 목록 렌더링 · 상태 관리 · API 연동 · 라우팅 · 타입 도입 · 컴포넌트 설계 · 성능 최적화 · 디자인 시스템 · 대규모 리팩터링 · 프론트 리드</td></tr>
+    <tr data-id="track:backend" id="track-backend"><td>백엔드</td><td>Java, TypeScript</td><td>Hello 서버 · REST API · DB 연결 · 인증 · 트랜잭션 · 캐시 · 배치 작업 · 메시지 큐 · MSA 분리 · 장애 대응 · 대용량 트래픽 · 백엔드 리드</td></tr>
+    <tr data-id="track:python-ai" id="track-python-ai"><td>파이썬/AI</td><td>Python</td><td>파이썬 기초 · 리스트와 딕셔너리 · 파일 처리 · 크롤러 · 데이터 전처리 · 시각화 · 첫 모델 · 특성 공학 · 딥러닝 · LLM 연동 · 모델 서빙 · AI 리드</td></tr>
+    <tr data-id="track:data" id="track-data"><td>데이터</td><td>SQL, Python</td><td>SELECT · 조인 · 집계 · 서브쿼리 · 스키마 설계 · 마이그레이션 · ETL · 대시보드 · 데이터 웨어하우스 · 실시간 처리 · 데이터 품질 · 데이터 리드</td></tr>
+    <tr data-id="track:fullstack" id="track-fullstack"><td>풀스택</td><td>JavaScript, TypeScript, Python, Java, SQL</td><td>사이드 프로젝트 · 랜딩 페이지 · 회원가입 · 결제 · 관리자 페이지 · 통계 · 알림 · 검색 · 추천 · 글로벌 출시 · 스케일업 · CTO</td></tr>
+  </tbody>
+</table></div>
+<ul>
+  <li>⭐ <b>1~80단계</b>는 정확도로 별을 줘요: 80% 이상 ★★★, 60% 이상 ★★, 그 아래 ★. 아무렇게나 찍으면(약 50%) ★ 하나예요.</li>
+  <li>🔥 <b>81~100단계</b>는 「지옥 구간」이라 시간으로 별을 줘요. 오류가 100개에서 1,000개까지 늘고, 오답 1번에 30초가 붙어요.</li>
+  <li>☕ 새로 얻은 별 1개마다 커피 1잔(단계당 최대 3잔).</li>
+  <li>📈 승진에 쓰이는 단계: 차장(아무 분야 40단계), 부장(풀스택 9챕터 80단계), 이사(프론트엔드 10챕터 85단계), 상무(백엔드 11챕터 90단계), CTO(전 분야 전 단계 ★★★).</li>
+</ul>
+<div class="callout tip"><b>꿀팁</b><p>차장 조건의 「한 분야 40단계」는 챕터 상관없이 <b>그 분야에서 깬 단계 수</b>예요. 그리고 부장~상무 조건은 챕터 1부터 다 깰 필요 없이 <b>그 챕터의 그 단계</b>만 깨면 돼요(챕터 안에서는 한 단계씩 열리니 그 단계 앞까지는 순서대로 깨야 해요). 커트 자체 공략은 <a href="start.html#track">시작 가이드</a>에 있어요.</p></div>
+
+<h2 id="companies">회사 5곳 비교 🏢<a class="anchor" href="#companies" aria-label="이 제목 링크">#</a></h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>회사</th><th class="r">월급 배율</th><th class="r">매주 스트레스</th><th class="r">성과 배율</th><th class="r">사이드 배율</th><th class="r">평가 기준</th><th>들어가는 법</th></tr></thead>
+  <tbody>
+    <tr data-id="company:bigcorp" id="company-bigcorp"><td>대기업 · 주식회사 새벽커밋</td><td class="r">×1</td><td class="r">+2</td><td class="r">×0.9</td><td class="r">×1</td><td class="r">±0</td><td>모든 회차의 시작 (야근 수당 하루 30,000원)</td></tr>
+    <tr data-id="company:startup" id="company-startup"><td>스타트업 · 피봇랩스</td><td class="r">×0.8</td><td class="r">+4</td><td class="r">×1.2</td><td class="r">×1.3</td><td class="r">−6</td><td>헤드헌터 (12주~, 코딩력 90)</td></tr>
+    <tr data-id="company:foreign" id="company-foreign"><td>외국계 · 글로벌테크 지사</td><td class="r">×1.4</td><td class="r">+3</td><td class="r">×1</td><td class="r">×1</td><td class="r">+4</td><td>헤드헌터 (16주~, 비즈니스 영어 + 코딩력 90)</td></tr>
+    <tr data-id="company:morning" id="company-morning"><td>아침 커밋</td><td class="r">×1.2</td><td class="r">+2</td><td class="r">×0.9</td><td class="r">×1</td><td class="r">±0</td><td>헤드헌터 「대기업 경력직」 (20주~, 첫 회사를 떠난 뒤)</td></tr>
+    <tr data-id="company:freelance" id="company-freelance"><td>프리랜서</td><td class="r">월급 없음</td><td class="r">+1</td><td class="r">×1</td><td class="r">×1.2</td><td class="r">승진 없음</td><td>헤드헌터 (24주~, 평판 70, 칭호 없는 회차)</td></tr>
+  </tbody>
+</table></div>
+<ul>
+  <li><b>스타트업</b>: 승진은 제일 쉽지만 월급 0.8배, 스트레스 +4. 비밀연애 히로인 <a href="heroine-sohyun.html">소현</a>을 만나는 곳이에요.</li>
+  <li><b>외국계</b>: 월급 1.4배로 최고. 평가는 빡빡하지만 영어 보너스 +3이 있어요. <a href="heroine-sophie.html">소피</a>가 있는 곳.</li>
+  <li><b>아침 커밋</b>: 경쟁 대기업. 월급 1.2배에 사내 감사가 업계 최강으로 깐깐해요. 회사 사가 대신 감사관 <a href="heroine-eunhye.html">여은혜</a>의 감사가 이야기예요. 의심도가 100이 되면 그 주에 <b>징계 해고</b>로 회차가 끝나니 조심하세요.</li>
+</ul>
+
+<h2 id="job-change">이직과 헤드헌터 🤝<a class="anchor" href="#job-change" aria-label="이 제목 링크">#</a></h2>
+<p>헤드헌터 메시지는 <b>주 마감 화면에서만</b> 와요. 「제안을 받아 본다」를 누르면 <b>메신저 탭 맨 위 「받은 제안」</b>에 회사가 올라오고, 「입사하기」나 「거절」을 고르면 돼요.</p>
+<figure class="shot" data-shot="career-offers"><img src="img/career-offers.png" alt="메신저 탭 위쪽 받은 제안 칸: 회사 이름과 입사하기, 거절 버튼" loading="lazy" decoding="async"><figcaption>메신저 탭의 「받은 제안」. 다음 주까지 답하지 않으면 자동으로 거절돼요.</figcaption></figure>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>제안</th><th>오는 조건</th><th>오는 방식</th></tr></thead>
+  <tbody>
+    <tr><td>스타트업 · 피봇랩스</td><td>12주차~, 코딩력 90 이상, 스타트업에 가 본 적 없음</td><td>조건을 채운 첫 주에 반드시</td></tr>
+    <tr><td>외국계 · 글로벌테크 지사</td><td>16주차~, 비즈니스 영어, 코딩력 90 이상, 외국계에 가 본 적 없음</td><td>조건을 채운 첫 주에 반드시</td></tr>
+    <tr><td>아침 커밋 (대기업 경력직)</td><td>20주차~, 지금 스타트업 · 프리랜서 · 외국계, 아침 커밋에 가 본 적 없음</td><td>조건을 채운 첫 주에 반드시</td></tr>
+    <tr><td>프리랜서</td><td>24주차~, 평판 70 이상, <b>칭호 없는 회차</b></td><td>조건을 채운 첫 주에 반드시, 회차당 1번</td></tr>
+    <tr><td>해외 본사 (→ 외국계 제안)</td><td>60주차~, 비즈니스 영어, 코딩력 75 이상</td><td>가끔 무작위로</td></tr>
+    <tr><td>카운터 오퍼</td><td>30주차~, 평판 55 이상</td><td>가끔 무작위로. 협상하면 60%로 +1,500,000원 · 팀장 −5, 실패하면 팀장 −10 · 스트레스 +6</td></tr>
+  </tbody>
+</table></div>
+<p>회사 사가 선택지에서 제안이 오기도 해요(대기업 「조용히 이력서를 업데이트한다」 → 외국계, 스타트업 정산 → 다른 회사 등).</p>
+
+<figure class="shot" data-shot="career-job-warn"><img src="img/career-job-warn.png" alt="이직할까요 확인 창: 이직할 회사와 연락이 끊기는 히로인 이름이 빨간색으로 표시" loading="lazy" decoding="async"><figcaption>「입사하기」를 누르면 확인 창이 떠요. 떠나면 연락이 끊기는 히로인이 빨간 글씨로 나와요.</figcaption></figure>
+
+<h3 id="이직하면-바뀌는-것">이직하면 바뀌는 것<a class="anchor" href="#%EC%9D%B4%EC%A7%81%ED%95%98%EB%A9%B4-%EB%B0%94%EB%80%8C%EB%8A%94-%EA%B2%83" aria-label="이 제목 링크">#</a></h3>
+<ul>
+  <li>✅ <b>직급은 그대로</b> 들고 가요. 연봉 인상 누적 <b>+5%</b>(프리랜서로 갈 때는 없음).</li>
+  <li>🔄 새 회사 동료 호감도는 <b>5~15</b>에서 새로 시작, 이번 분기 성과도 초기화돼요. 팀장 호감도가 평가 점수의 20%이고 부장부터는 PM 호감도 90~100이 조건이라, 고직급일수록 이직 직후 평가가 힘들어요.</li>
+  <li>👋 이전 회사 사람들(팀장 · 선배 · 후배 · 인사팀 · 대표)은 메신저에서 바로 사라져요.</li>
+  <li>💔 회사 히로인: 첫 회사의 하린 · 서윤, 외국계의 소피, 아침 커밋의 여은혜는 <b>썸 이상이 아니면 연락이 끊겨요</b>. 스타트업의 소현은 스타트업을 떠나면 끝이에요.</li>
+  <li>🚫 한 번 떠난 회사는 이번 회차에 다시 못 가요. 거절하거나 답을 안 한 회사의 제안도 다시 안 와요.</li>
+</ul>
+<div class="callout tip"><b>이거 모르면 손해</b><p>외국계 제안 조건(비즈니스 영어 + 코딩력 90)이 곧 엔딩 <b>「해외 본사 입성」</b> 조건(외국계 재직 + 코딩력 90 + 비즈니스 영어)이에요. 헤드헌터를 통해 외국계에 들어가는 순간 「엔딩 충족!」이 떠요. 100주까지 마치면 도감에 남아요.</p></div>
+
+<h2 id="saga">회사 사가: 회사마다 큰 사건이 터져요 🎬<a class="anchor" href="#saga" aria-label="이 제목 링크">#</a></h2>
+<p>대기업 · 스타트업 · 외국계 · 프리랜서에는 <b>6주차부터 60주대까지 이어지는 이야기</b>가 있어요. 단계는 대략 6 → 16 → 28 → 40(38) → 54(50) → 62주에 열리고, 앞 단계의 선택에 따라 결말이 갈려요. 결말은 <b>도중 충족 엔딩</b>이라 회차는 계속돼요.</p>
+<ul>
+  <li>사가 메시지는 답해야 주가 넘어가는 중요 메시지예요. <b>읽씹하면 그 회사 이야기는 이번 회차 끝</b>이에요.</li>
+  <li>도중에 이직하면 사가가 멈춰요(그 회사 조건이 안 맞음). 연쇄 창업가로 퇴사해도 사가는 오지 않아요.</li>
+  <li>단계마다 정해진 건 <b>가장 이른 주차</b>예요. 이직해서 들어간 회사는 그 주차가 이미 지났으면 입사 뒤 앞 단계부터 차례로 와요.</li>
+  <li>아침 커밋에는 사가가 없어요. 대신 여은혜의 감사가 이어져요.</li>
+</ul>
+
+<h3 id="대기업-주식회사-새벽커밋-결제-대장애">대기업 · 주식회사 새벽커밋: 결제 대장애<a class="anchor" href="#%EB%8C%80%EA%B8%B0%EC%97%85-%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC-%EC%83%88%EB%B2%BD%EC%BB%A4%EB%B0%8B-%EA%B2%B0%EC%A0%9C-%EB%8C%80%EC%9E%A5%EC%95%A0" aria-label="이 제목 링크">#</a></h3>
+<p>6주차 새벽 결제 장애로 시작해 책임 공방(16주) → 감사(28주) → TF 리드 제안(40주) → 54주 결말이에요.</p>
+<details class="spoiler"><summary>스포일러: 대기업 사가 결말 3개와 갈림길</summary>
+  <ul>
+    <li>6주 장애: 「잠옷 바람으로 접속해 직접 롤백한다」 60% 성공(실패해도 다음 단계는 열려요), 「김 선배에게 전화한다」, 「장애 공지 템플릿부터 채운다」.</li>
+    <li>16주 책임 공방: 「"네, 그렇게 하시죠"」(인턴 탓, 인턴 호감도 −25), 「"제 온콜이었습니다…"」(책임짐), 「레거시 모듈 폭로」 50%(실패하면 책임진 걸로).</li>
+    <li>28주: 인턴 탓을 했다면 감사에서 「인정하고 사과」(징계) / 「"팀장님 지시였습니다" 폭로」 50% / 「끝까지 "기억이 안 납니다"」 35%. 실패하면 징계. 아니면 일반 감사.</li>
+    <li>40주 TF 리드(징계가 없을 때): 「수락한다」 75% 성공.</li>
+  </ul>
+  <div class="cards">
+    <div class="card item" data-id="ending:bigcorp-promoted" id="ending-bigcorp-promoted">
+      <div class="card-head"><b class="name">장애가 만든 승진</b><span class="badge">54주~</span></div>
+      <dl class="kv"><dt>조건</dt><dd>징계 없이 감사를 넘기고 40주 TF 리드 「수락한다」 성공 → 54주 특별 승진 메시지.</dd><dt>보상</dt><dd>답에 따라 3,000,000원 또는 1,500,000원 + 평판. <b>직급이 오르는 건 아니에요.</b></dd></dl>
+    </div>
+    <div class="card item" data-id="ending:bigcorp-sidelined" id="ending-bigcorp-sidelined">
+      <div class="card-head"><b class="name">흐지부지</b><span class="badge">54주~</span></div>
+      <dl class="kv"><dt>조건</dt><dd>징계 없이 감사를 넘기고 TF 리드를 「정중히 사양」하거나 수락했다 실패 → 54주 메시지. 「조용히 이력서를 업데이트한다」를 고르면 외국계 제안도 와요.</dd></dl>
+    </div>
+    <div class="card item" data-id="ending:bigcorp-exiled" id="ending-bigcorp-exiled">
+      <div class="card-head"><b class="name">지방 데이터센터로</b><span class="badge">54주~</span></div>
+      <dl class="kv"><dt>조건</dt><dd>인턴 탓 → 감사에서 징계 → 54주 지방 전보 메시지에서 「받아들이고 내려간다」. 「사표를 내고 스타트업으로 간다」를 고르면 엔딩 없이 바로 스타트업으로 옮겨요.</dd></dl>
+    </div>
+  </div>
+</details>
+
+<h3 id="스타트업-피봇랩스-데모에서-엑시트까지">스타트업 · 피봇랩스: 데모에서 엑시트까지<a class="anchor" href="#%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%ED%94%BC%EB%B4%87%EB%9E%A9%EC%8A%A4-%EB%8D%B0%EB%AA%A8%EC%97%90%EC%84%9C-%EC%97%91%EC%8B%9C%ED%8A%B8%EA%B9%8C%EC%A7%80" aria-label="이 제목 링크">#</a></h3>
+<p>6주 투자 데모 → 16주 투자 유치 → 26주 크런치 → 38주 번아웃 위기 또는 연봉 반납 → 50주 인수 제안 → 62주 결말이에요.</p>
+<details class="spoiler"><summary>스포일러: 스타트업 사가 결말 3개와 갈림길</summary>
+  <ul>
+    <li>16주 투자 유치에서 「스톡옵션을 더 달라고 한다」 60% 성공이 <b>대박 엑시트의 열쇠</b>예요.</li>
+    <li>26주 크런치: 「갈아 넣는다」나 「이 인턴과 배포 자동화」 실패(45%)면 38주에 선배 번아웃 이야기로, 아니면 연봉 반납 이야기로 가요.</li>
+    <li>50주 인수 제안: 「찬성」 또는 「서비스 유지 조건으로 역제안」(45%)이 성공하면 매각, 「반대」나 역제안 실패면 피벗.</li>
+  </ul>
+  <div class="cards">
+    <div class="card item" data-id="ending:startup-exit-rich" id="ending-startup-exit-rich">
+      <div class="card-head"><b class="name">대박 엑시트</b><span class="badge">62주~</span></div>
+      <dl class="kv"><dt>조건</dt><dd>스톡옵션 확보 + 50주 매각 → 62주 정산 메시지.</dd><dt>보상</dt><dd>정산금 30,000,000원. 「인수한 회사로 출근한다」는 이직 제안도 붙고, 「정산금으로 일단 쉰다」는 2주 휴식.</dd></dl>
+    </div>
+    <div class="card item" data-id="ending:startup-exit-small" id="ending-startup-exit-small">
+      <div class="card-head"><b class="name">작은 엑시트</b><span class="badge">62주~</span></div>
+      <dl class="kv"><dt>조건</dt><dd>스톡옵션 없이 매각 → 62주 고용 승계 메시지.</dd><dt>보상</dt><dd>3,000,000원 + 다른 회사 제안.</dd></dl>
+    </div>
+    <div class="card item" data-id="ending:startup-pivot" id="ending-startup-pivot">
+      <div class="card-head"><b class="name">또 피벗</b><span class="badge">62주~</span></div>
+      <dl class="kv"><dt>조건</dt><dd>50주 인수에 「반대」 또는 역제안 실패 → 62주 피벗 메시지. 「끝까지 함께한다」 40%면 +10,000,000원.</dd></dl>
+    </div>
+  </div>
+</details>
+
+<h3 id="외국계-글로벌테크-지사-이관-소문">외국계 · 글로벌테크 지사: 이관 소문<a class="anchor" href="#%EC%99%B8%EA%B5%AD%EA%B3%84-%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%85%8C%ED%81%AC-%EC%A7%80%EC%82%AC-%EC%9D%B4%EA%B4%80-%EC%86%8C%EB%AC%B8" aria-label="이 제목 링크">#</a></h3>
+<p>6주 타운홀 → 16주 이관 소문 → 28주 희망퇴직 안내 → 40주 노조 총회 · 본사 1:1 · 버티기 → 54주 결말이에요.</p>
+<details class="spoiler"><summary>스포일러: 외국계 사가 결말 4개와 갈림길</summary>
+  <ul>
+    <li>28주 희망퇴직 안내에서 「노조 설립 서명지에 이름을 쓴다」 = 노조 루트.</li>
+    <li>16주 「본사 레포에 PR」(70%) 또는 28주 「해외 허브 이관 TF에 자원」(50%)이 성공하고 노조 서명을 안 했다면 40주 본사 1:1로. 여기서 「영어로 정면 승부한다」 60% 성공이면 본사 오퍼.</li>
+    <li>둘 다 아니면 40주 「버틴다」 / 「헤드헌터에게 전화를 건다」(스타트업 제안, 이미 스타트업을 다녀왔으면 제안 없음) → 54주 지사 해산.</li>
+  </ul>
+  <div class="cards">
+    <div class="card item" data-id="ending:foreign-union" id="ending-foreign-union"><div class="card-head"><b class="name">지사 노조</b><span class="badge">54주~</span></div><dl class="kv"><dt>조건</dt><dd>노조 서명 → 40주 노조 총회 → 54주 교섭 메시지(어느 답이든).</dd></dl></div>
+    <div class="card item" data-id="ending:foreign-hq" id="ending-foreign-hq"><div class="card-head"><b class="name">본사 팀 소속</b><span class="badge">54주~</span></div><dl class="kv"><dt>조건</dt><dd>본사 PR이나 이관 TF 성공 → 1:1 「영어로 정면 승부」 성공 → 54주 오퍼에서 「사인한다」 (+5,000,000원).</dd></dl></div>
+    <div class="card item" data-id="ending:foreign-loyal" id="ending-foreign-loyal"><div class="card-head"><b class="name">의리맨</b><span class="badge">54주~</span></div><dl class="kv"><dt>조건</dt><dd>같은 길로 본사 오퍼까지 가서 「지사에 남은 동료들을 생각해 거절한다」.</dd></dl></div>
+    <div class="card item" data-id="ending:foreign-shutdown" id="ending-foreign-shutdown"><div class="card-head"><b class="name">지사 해산</b><span class="badge">54주~</span></div><dl class="kv"><dt>조건</dt><dd>노조 서명도, 본사 오퍼도 없음 → 54주 지사 해산 메시지(어느 답이든).</dd></dl></div>
+  </div>
+</details>
+
+<h3 id="프리랜서-쇼핑몰-외주와-잔금-체불">프리랜서: 쇼핑몰 외주와 잔금 체불<a class="anchor" href="#%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EC%87%BC%ED%95%91%EB%AA%B0-%EC%99%B8%EC%A3%BC%EC%99%80-%EC%9E%94%EA%B8%88-%EC%B2%B4%EB%B6%88" aria-label="이 제목 링크">#</a></h3>
+<p>6주 쇼핑몰 외주 → 16주 기능 추가 → 28주 잔금 체불 → 40주 소송 · 피해자 모임 · 재의뢰 → 54주 결말이에요. 프리랜서는 칭호 없는 회차에만 될 수 있으니 이 사가도 칭호 없는 회차 전용이에요.</p>
+<details class="spoiler"><summary>스포일러: 프리랜서 사가 결말 2개와 갈림길</summary>
+  <ul>
+    <li>6주 「"계약서와 선금 30%부터요"」 60% 성공이면 계약서 확보(+9,000,000원) → 40주 소송에서 유리해요.</li>
+    <li>28주 잔금 체불: 「내용증명을 보낸다」 = 소송 루트, 「개발자 커뮤니티에 사연을 올린다」 = 피해자 모임 루트, 「유지보수 중단을 정식으로 통보한다」 45%면 21,000,000원을 바로 받고 재의뢰 루트.</li>
+  </ul>
+  <div class="cards">
+    <div class="card item" data-id="ending:freelance-agency" id="ending-freelance-agency"><div class="card-head"><b class="name">계약서부터 씁니다</b><span class="badge">54주~</span></div><dl class="kv"><dt>조건</dt><dd>40주 단계에서 피해자 대표를 맡지 않은 모든 길 → 54주 에이전시 제안(어느 답이든: 에이전시 / 정규직 제안 / 단가 인상).</dd></dl></div>
+    <div class="card item" data-id="ending:freelance-crusader" id="ending-freelance-crusader"><div class="card-head"><b class="name">체불 사냥꾼</b><span class="badge">54주~</span></div><dl class="kv"><dt>조건</dt><dd>28주 커뮤니티에 사연 → 40주 피해자 12명 메시지에서 「대표를 맡는다」 → 54주 단체소송 승리(+21,000,000원).</dd></dl></div>
+  </div>
+</details>
+
+<h2 id="founder">퇴사 루트 ① 연쇄 창업가 🚀<a class="anchor" href="#founder" aria-label="이 제목 링크">#</a></h2>
+<p>칭호 <a href="titles.html">「연쇄 창업가」</a>를 끼고 시작하면 친구가 앱 창업을 꼬셔요. 핵심은 <b>20주차 인사팀 메시지</b>예요.</p>
+<ol class="steps">
+  <li><b>2주~ 아이디어</b>「당장 시작하자」 또는 「시장 조사부터」. 「회사 일이 먼저야」를 고르면 이야기가 끝나요.</li>
+  <li><b>7주~ MVP</b>「직접 풀코딩」 또는 「노코드 툴로 빠르게」(−100,000원).</li>
+  <li><b>12주~ 기업 고객 / 16주~ 엔젤 투자</b>「기업용으로 간다」(+1,000,000원) 또는 「투자 받는다」(+3,000,000원)로 <b>시드</b>를 확보해요. 시드가 있어야 40주 인수 제안과 45주 런웨이 이벤트가 와요.</li>
+  <li><b>20주~ 겸업 금지 조항</b>「퇴사하고 올인한다 (잔고 2,000만 원 필요, 스트레스 +8)」. 돈은 <b>보여 주기만</b> 하면 되고 빠져나가지 않아요. 잔고가 모자라면 버튼이 막혀서 「꾹 참고 회사를 다닌다」만 남는데, 그러면 창업 이야기는 끝이에요.</li>
+  <li><b>26주~ 피벗</b>「AI 플랫폼으로 피벗」 / 「반찬 배달로 피벗」 / 「버틴다」.</li>
+  <li><b>34주~ 시리즈 A</b>「화려한 피치덱」 50% (+5,000,000원) 또는 「솔직한 숫자」 60% (+3,000,000원). <b>딱 한 번</b>만 와요.</li>
+  <li><b>45주~ 런웨이 2.3개월</b>「직원을 줄인다」(+2,000,000원, 운영비 절반, 상장 불가) / 「대출로 버틴다」(+3,000,000원, 이자 매주 100,000원) / 「대표 월급을 0원으로」(+1,000,000원).</li>
+  <li><b>52~60주 결말 메시지</b>아래 엔딩 카드 참고. 엔딩을 고르면 그 자리에서 회차가 끝나요.</li>
+</ol>
+<figure class="shot" data-shot="career-founder-quit"><img src="img/career-founder-quit.png" alt="주 마감 화면의 인사팀 겸업 금지 메시지와 퇴사하고 올인한다 버튼" loading="lazy" decoding="async"><figcaption>20주차 인사팀 메시지. 잔고가 2,000만 원 미만이면 「퇴사하고 올인한다」가 눌리지 않아요.</figcaption></figure>
+
+<div class="callout trap"><b>잔고 2,000만 원, 생각보다 빡빡해요</b><p>회차 보너스 없이 시작하면 20주차 잔고는 생각보다 적어요. 실제 함수로 2,000번씩 돌려 본 결과(매주 점심 1번 · 업무 3 · 사이드 1 · 주말 휴식, 시드 투자 2번 다 받음), 20주차 잔고는 보너스 없음 <b>약 1,190만 원</b>, 「부모님 지원금」 1단계 <b>약 1,490만 원</b>, 2단계 <b>약 1,990만 원</b>(딱 몇만 원 모자라 <b>퇴사 성공 0%</b>), 3단계 <b>약 2,870만 원</b>(<b>100%</b>)이었어요. 2단계라면 점심(주급의 15%)을 줄여 아껴야 넘겨요. 같은 2단계라도 20주 동안 점심을 휴식으로 바꾸면 20주차 잔고가 <b>약 2,076만 원</b>이 돼서 <b>100%</b> 퇴사할 수 있었어요.</p></div>
+
+<h3 id="퇴사-후-돈-계산-여기가-진짜-게임">퇴사 후 돈 계산 (여기가 진짜 게임)<a class="anchor" href="#%ED%87%B4%EC%82%AC-%ED%9B%84-%EB%8F%88-%EA%B3%84%EC%82%B0-%EC%97%AC%EA%B8%B0%EA%B0%80-%EC%A7%84%EC%A7%9C-%EA%B2%8C%EC%9E%84" aria-label="이 제목 링크">#</a></h3>
+<p>퇴사하면 <b>월급이 0</b>이 되고, 매주 결산이 이렇게 바뀌어요.</p>
+<ul>
+  <li><b>앱 매출</b> = 사이드 20 이상일 때 (사이드 ÷ 100)² × 400,000원 × 1.5 (사이드 100이면 600,000원). 회사원 때의 사이드 수입은 이걸로 바뀌어요.</li>
+  <li><b>피벗 매출</b>: 반찬 250,000원(바로), AI 500,000원(<b>시리즈 A를 받은 뒤에만</b>, 그 전엔 0), 버틴다 100,000원.</li>
+  <li><b>운영비</b>: 500,000원, 시리즈 A 뒤 900,000원. 직원 감축이면 절반, 대출이면 +100,000원.</li>
+  <li><b>생활비</b> 450,000원은 그대로 빠져요.</li>
+  <li>💡 퇴사 뒤엔 업무를 해도 월급이 없어요. 매출은 사이드 진행도에서 나오니 <b>일정을 사이드 위주</b>로 바꾸세요(사이드 3일 연속이면 +20%).</li>
+  <li>회사 사람들(팀장 · 선배 · 후배 · 인사팀 · 대표) 메시지 · 회사 사가 · 헤드헌터는 더 이상 오지 않아요. 창업 이야기와 히로인 · 엄마 · 친구 메시지는 계속 와요. 첫 회사의 하린 · 서윤(썸 미만)은 연락이 끊겨요.</li>
+</ul>
+<p>주간 손익(앱 매출 + 피벗 − 운영비 − 생활비)을 사이드 진행도별로 계산하면 이래요.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>상태</th><th class="r">사이드 60</th><th class="r">사이드 80</th><th class="r">사이드 100</th></tr></thead>
+  <tbody>
+    <tr><td>반찬 피벗</td><td class="r">−484,000</td><td class="r">−316,000</td><td class="r">−100,000</td></tr>
+    <tr><td>반찬 피벗 + 시리즈 A</td><td class="r">−884,000</td><td class="r">−716,000</td><td class="r">−500,000</td></tr>
+    <tr><td>AI 피벗 (시리즈 A 전)</td><td class="r">−734,000</td><td class="r">−566,000</td><td class="r">−350,000</td></tr>
+    <tr><td>AI 피벗 + 시리즈 A</td><td class="r">−634,000</td><td class="r">−466,000</td><td class="r">−250,000</td></tr>
+    <tr><td>버틴다</td><td class="r">−634,000</td><td class="r">−466,000</td><td class="r">−250,000</td></tr>
+    <tr><td>반찬 + 직원 감축</td><td class="r">−234,000</td><td class="r">−66,000</td><td class="r">+150,000</td></tr>
+    <tr><td>AI + 시리즈 A + 직원 감축</td><td class="r">−184,000</td><td class="r">−16,000</td><td class="r">+200,000</td></tr>
+  </tbody>
+</table></div>
+<p>단위는 원/주. 메시지로 들어오고 나가는 돈은 빠진 값이에요.</p>
+<div class="callout warn"><b>텅장 창업 주의</b><p>매주 결산 뒤 잔고가 <b>0원 이하</b>가 되면 그 자리에서 <b>텅장 창업</b> 엔딩으로 회차가 끝나요. 시리즈 A는 한 번에 300~500만 원을 주지만 운영비가 매주 400,000원 늘어서, 반찬 피벗에선 오히려 독이 될 수 있어요.</p></div>
+
+<h3 id="창업-시뮬레이션-결과">창업 시뮬레이션 결과<a class="anchor" href="#%EC%B0%BD%EC%97%85-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98-%EA%B2%B0%EA%B3%BC" aria-label="이 제목 링크">#</a></h3>
+<p>퇴사 뒤 일정을 <b>사이드 · 사이드 · 사이드 · 운동 · 사이드 · 휴식</b>으로 두고(사이드가 금방 100이 돼요), 피벗 · 런웨이 선택만 바꿔 각각 2,000번 돌렸어요(「부모님 지원금」 3단계, 시리즈 A는 「솔직한 숫자」라 약 61%가 성공).</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>선택 (피벗 / 45주 런웨이 / 60주 상장)</th><th>결과</th><th class="r">100주 잔고 (가운데값)</th></tr></thead>
+  <tbody>
+    <tr><td>반찬 / 대표 월급 0원 / 아직 이르다</td><td>100% 버텨낸 창업가</td><td class="r">시리즈 A 받음 약 48만 원 · 못 받음 약 2,428만 원</td></tr>
+    <tr><td>AI / 대표 월급 0원 / 상장 도전</td><td>11.9% 상장 (시리즈 A 받은 회차의 19.5%), 나머지 버텨낸 창업가</td><td class="r">시리즈 A 받음 약 1,329만 원 · 못 받음 약 559만 원</td></tr>
+    <tr><td>AI / 직원 감축 / (상장 불가)</td><td>100% 버텨낸 창업가</td><td class="r">시리즈 A 받음 약 4,149만 원 · 못 받음 약 2,059만 원</td></tr>
+    <tr><td>버틴다 / 대표 월급 0원 / 아직 이르다</td><td><b>시리즈 A를 받은 회차는 100% 텅장 창업</b>(84주), 못 받은 회차만 버텨낸 창업가</td><td class="r">못 받음 약 1,290만 원</td></tr>
+    <tr><td>반찬 / 대표 월급 0원 / 아직 이르다, 단 퇴사 뒤 일정을 업무 · 업무 · 휴식 · 업무 · 업무 · 휴식으로</td><td>사이드가 79에서 멈추고, <b>시리즈 A를 받은 회차는 100% 텅장 창업</b>(75주), 못 받은 회차만 버텨낸 창업가</td><td class="r">-</td></tr>
+  </tbody>
+</table></div>
+<div class="callout tip"><b>정리</b><ul>
+  <li>💸 <b>가장 안전한 건 AI 피벗 + 직원 감축</b>이에요. 대신 감축하면 상장 메시지가 안 와요.</li>
+  <li>📈 <b>상장을 노린다면 AI 피벗</b>이 짝이에요. AI 매출 500,000원은 시리즈 A 뒤에만 나오니, AI인데 시리즈 A를 놓치면 돈이 가장 빨리 줄어요.</li>
+  <li>🪤 <b>「버틴다」 + 시리즈 A는 함정</b>이에요. 운영비 900,000원을 못 버텨서 84주에 텅장이 나요. 텅장 창업 엔딩을 모으고 싶을 때만 쓰세요.</li>
+  <li>🍱 반찬 피벗은 시리즈 A를 받으면 거의 0원까지 내려가요. 52주 반찬가게 엔딩을 노리는 루트로 쓰는 게 좋아요.</li>
+</ul></div>
+
+<h3 id="연쇄-창업가-엔딩-6개">연쇄 창업가 엔딩 6개<a class="anchor" href="#%EC%97%B0%EC%87%84-%EC%B0%BD%EC%97%85%EA%B0%80-%EC%97%94%EB%94%A9-6%EA%B0%9C" aria-label="이 제목 링크">#</a></h3>
+<div class="cards">
+  <div class="card item" data-id="ending:founder-ipo" id="ending-founder-ipo">
+    <div class="card-head"><b class="name">상장</b><span class="badge">60주~</span></div>
+    <dl class="kv"><dt>조건</dt><dd>퇴사 + 피벗 + 시리즈 A 성공 + 직원 감축 안 함 → 60주 증권사 메시지 「상장에 도전한다」 <b>20%</b>. 실패하면 −2,000,000원 · 스트레스 +15이고 다시 오지 않아요. 「아직 이르다」는 이야기 끝.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:founder-acquihire" id="ending-founder-acquihire">
+    <div class="card-head"><b class="name">인수합병</b><span class="badge">55주~</span></div>
+    <dl class="kv"><dt>조건</dt><dd>시드 확보 → 40주 인수 제안 「일단 얘기 들어본다」 → 퇴사 → 55주 계약서 「서명한다」.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:founder-banchan" id="ending-founder-banchan">
+    <div class="card-head"><b class="name">반찬가게 사장님</b><span class="badge">52주~</span></div>
+    <dl class="kv"><dt>조건</dt><dd>퇴사 + 「반찬 배달로 피벗」 → 52주 「구독자 1만 명」 메시지에서 「반찬 사업에 올인」.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:founder-back-to-work" id="ending-founder-back-to-work">
+    <div class="card-head"><b class="name">다시 직장인</b><span class="badge">58주~</span></div>
+    <dl class="kv"><dt>조건</dt><dd>퇴사 + 피벗(아무거나) → 58주 경력직 제안에서 「창업을 접고 취직한다」.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:founder-broke" id="ending-founder-broke">
+    <div class="card-head"><b class="name">텅장 창업</b><span class="badge">퇴사 후 언제든</span></div>
+    <dl class="kv"><dt>조건</dt><dd>퇴사 후 주 결산에서 잔고가 0원 이하. 퇴사해 놓고 「아직 이르다」로 이야기를 접어도 돈은 계속 빠지니, 자연스럽게 이리로 가요.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:founder-survivor" id="ending-founder-survivor">
+    <div class="card-head"><b class="name">버텨낸 창업가</b><span class="badge">100주</span></div>
+    <dl class="kv"><dt>조건</dt><dd>퇴사하고 다른 창업가 엔딩 없이 잔고를 0원 위로 지켜 100주를 마침. 100주를 마치니 코인 2,000 · CP 20을 받고, 도중 충족 엔딩도 다 남아요.</dd></dl>
+  </div>
+</div>
+<div class="callout"><p>퇴사한 창업자는 직급이 「창업자 (직급 없음)」으로 바뀌어서 인사평가가 없고, CTO · 워라밸 마스터 · 만년 대리 엔딩도 안 나와요. 상장 · 인수합병 · 반찬가게 · 다시 직장인 · 텅장 창업은 100주 전에 끝나니 코인 · CP는 0이에요.</p></div>
+
+<h2 id="side-found">퇴사 루트 ② 사이드 프로젝트 창업 💡<a class="anchor" href="#side-found" aria-label="이 제목 링크">#</a></h2>
+<p>칭호와 상관없이, 사이드 프로젝트가 <b>90 이상</b>이 되면 친구가 「네 사이드 프로젝트 투자하고 싶다는 사람이 있어. 회사 나올래?」라고 해요(무작위로 오고, 회차당 1번).</p>
+<ul>
+  <li>「창업한다!」를 누르면 <b>그 즉시 회차가 끝나요</b>. 그 순간 사이드 90 · 코딩력 90 · 잔고 1억 원 · 평판 80을 <b>모두</b> 넘으면 대박, 하나라도 모자라면 폐업이에요.</li>
+  <li>「아직은 회사에 남는다」를 고르면 이 기회는 다시 오지 않아요.</li>
+</ul>
+<div class="cards">
+  <div class="card item" data-id="ending:startup-success" id="ending-startup-success"><div class="card-head"><b class="name">창업 대박</b><span class="badge warn">즉시 종료</span></div><dl class="kv"><dt>조건</dt><dd>「창업한다!」 순간 사이드 90, 코딩력 90, 돈 100,000,000원, 평판 80 모두 이상.</dd></dl></div>
+  <div class="card item" data-id="ending:startup-fail" id="ending-startup-fail"><div class="card-head"><b class="name">창업, 그리고 폐업</b><span class="badge warn">즉시 종료</span></div><dl class="kv"><dt>조건</dt><dd>「창업한다!」 순간 위 4개 중 하나라도 미달.</dd></dl></div>
+</div>
+<p>회사를 나가지 않고 사이드 프로젝트만 키워도 엔딩이 나와요. 사이드 수입은 사이드 20부터 매주 (사이드 ÷ 100)² × 400,000원이고, 25 · 50 · 75 · 100에서 한 번씩 보상이 있어요(75에서 +5,000,000원).</p>
+<div class="cards">
+  <div class="card item" data-id="ending:acqui-hire" id="ending-acqui-hire"><div class="card-head"><b class="name">사이드 프로젝트 인수</b></div><dl class="kv"><dt>조건</dt><dd>사이드 100 + 평판 70 이상 (도중 충족).</dd></dl></div>
+  <div class="card item" data-id="ending:indie-hacker" id="ending-indie-hacker"><div class="card-head"><b class="name">인디 해커</b></div><dl class="kv"><dt>조건</dt><dd>사이드 100 + 그 순간 평판 70 미만 (도중 충족).</dd></dl></div>
+  <div class="card item" data-id="ending:youtuber" id="ending-youtuber"><div class="card-head"><b class="name">영상 크리에이터</b></div><dl class="kv"><dt>조건</dt><dd>사이드 100 + 평판 80 이상 (도중 충족, 사이드 프로젝트 인수와 같이 나와요).</dd></dl></div>
+</div>
+<div class="callout tip"><b>순서 팁</b><p>사이드 100 엔딩들은 도중 충족이라 <b>100주를 마쳐야</b> 남아요. 사이드 프로젝트 창업(즉시 종료)까지 노린다면 다른 회차로 나누는 게 좋아요.</p></div>
+
+<h2 id="freelance">퇴사 루트 ③ 프리랜서와 디지털 노마드 🏝️<a class="anchor" href="#freelance" aria-label="이 제목 링크">#</a></h2>
+<p>프리랜서 제안은 <b>칭호를 끼지 않은 회차</b>에서 24주차 이후 평판 70이 되면 와요(회차당 1번). 칭호를 낀 회차에는 절대 오지 않아요.</p>
+<ul>
+  <li>💵 월급 대신 매주 <b>티켓 등급 단가 × 그 주 사이드 프로젝트 칸 수</b>를 받아요: S 1,000,000 · A 700,000 · B 450,000 · C 200,000원. S에 사이드 6칸이면 주 6,000,000원.</li>
+  <li>📛 직급 대신 「프리랜서」로 표시되고, 승진 · 인사평가가 없어요. CTO · 만년 대리 엔딩도 없어요.</li>
+  <li>🔕 팀장 · 선배 · 후배 · 인사팀 · 대표 메시지가 끊기고(프리랜서용 메시지만), 매주 스트레스는 +1로 가장 낮아요. 사이드 배율 ×1.2.</li>
+  <li>프리랜서 전용 사가(<a href="#saga">위</a>)가 프리랜서가 되자마자 시작돼요(앞 단계 주차가 이미 지나 있어서 몇 주 사이에 이어서 와요). 아침 커밋 헤드헌터 제안도 와요.</li>
+</ul>
+<div class="cards">
+  <div class="card item" data-id="ending:nomad" id="ending-nomad">
+    <div class="card-head"><b class="name">디지털 노마드</b><span class="badge">도중 충족</span></div>
+    <dl class="kv"><dt>조건</dt><dd>칭호 없는 회차에서 프리랜서로 현금 200,000,000원 이상.</dd><dt>공략</dt><dd>티켓 S + 사이드 칸을 최대로 넣으면 주 600만 원. 사가에서 계약서 · 소송으로 받는 1,000~2,000만 원대 돈도 크게 도와요. 칭호 회차에서는 프리랜서 제안이 안 오니, 이 엔딩은 칭호 없는 회차 전용이에요.</dd></dl>
+  </div>
+</div>
+<figure class="shot" data-shot="career-freelance-warn"><img src="img/career-freelance-warn.png" alt="프리랜서 제안 수락 확인 창" loading="lazy" decoding="async"><figcaption>프리랜서 제안을 수락할 때 나오는 확인 창.</figcaption></figure>
+
+<h2 id="title-early">일찍 끝나는 칭호 루트 ⏱️<a class="anchor" href="#title-early" aria-label="이 제목 링크">#</a></h2>
+<p>칭호 이야기의 엔딩 선택지를 고르면 <b>그 자리에서 회차가 끝나요</b>. 특히 아래 4개 칭호는 <b>20~34주</b>에 끝나도록 만들어져 있어서 빨리 도감을 채우기 좋지만, 코인 · CP는 0이에요(완주로는 세요). 각 엔딩의 정확한 갈림길은 <a href="titles.html">칭호</a> 글에 있어요.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>칭호</th><th>엔딩이 열리는 가장 이른 주차</th></tr></thead>
+  <tbody>
+    <tr><td>치킨집 개발자</td><td>기름값 폭등 20주 · 배달 앱 창업 24주 · 치킨 프랜차이즈 CTO 26주 · 가업 승계 30주 (모두 12주 2호점 투자 1,500만 원 필요)</td></tr>
+    <tr><td>인디 게임 개발자</td><td>퍼블리셔 계약 22주 · 인디 게임 대박 26주 · 전설의 모더 27주 · 영원한 얼리 액세스 34주</td></tr>
+    <tr><td>이직의 달인</td><td>카운터 오퍼의 승자 22주 · 빅테크 입성 26주 · 헤드헌터가 됐다 30주 · 이력서가 소설이 됐다 34주</td></tr>
+    <tr><td>코딩 강사</td><td>질문 지옥 24주 · 베스트셀러 저자 26주 · 코딩 학원 원장 28주 · 모두의 사수 32주</td></tr>
+    <tr><td>그 밖의 칭호</td><td>개발 인플루언서 54~64주 · 오픈소스 메인테이너 52~62주 · 연쇄 창업가 52~60주 · 화이트해커 56~64주 · AI 연구자 52~62주 · 디지털 노마드 54~60주</td></tr>
+  </tbody>
+</table></div>
+<div class="callout trap"><b>칭호 이야기 읽씹 금지</b><p>칭호 이야기 메시지를 읽씹하거나, 「회사 일이 먼저야」 · 「꾹 참고 회사를 다닌다」 · 「아직 이르다」처럼 이야기를 접는 답을 고르면 <b>그 회차의 칭호 이야기는 끝</b>이에요.</p></div>
+
+<h2 id="early-end">회차가 갑자기 끝나는 함정 🪤<a class="anchor" href="#early-end" aria-label="이 제목 링크">#</a></h2>
+<div class="cards">
+  <div class="card item" data-id="ending:chicken" id="ending-chicken">
+    <div class="card-head"><b class="name">치킨집 사장</b><span class="badge err">즉시 종료</span></div>
+    <dl class="kv"><dt>조건</dt><dd>한 회차에 <b>번아웃 3번</b>. 주 마감 때 스트레스가 100이면(그 주에 한 번이라도 100을 찍었으면) 번아웃이에요: 평판 −10, 머리카락 −5, 2주 쉬고, 스트레스는 40으로.</dd><dt>막는 법</dt><dd>스트레스 70부터 매주 머리카락도 빠져요. 휴식 · 운동 · 점심으로 70 아래를 지키세요. 장비 「진정해 친구」, 회차 보너스 「실손보험」 · 「황금 낙하산」이 번아웃을 막거나 줄여 줘요.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:fired" id="ending-fired">
+    <div class="card-head"><b class="name">권고사직</b><span class="badge err">즉시 종료</span></div>
+    <dl class="kv"><dt>조건</dt><dd>티켓을 안 풀거나 「대충 처리」로 C를 받은 주가 <b>5주 연속</b>. 3주째부터 팀장이 경고해요.</dd><dt>막는 법</dt><dd>직접 푼 티켓, 머신러닝 자동 처리, B 이상이면 카운트가 0으로 돌아가요. 쉬는 주는 세지 않아요.</dd></dl>
+  </div>
+</div>
+<p>체력이 0이 되면 다음 주는 병가예요(그 주 일정 · 티켓 없음). 「구사일생」 장비가 한 번 막아 줘요.</p>
+
+<h2 id="ignore">읽씹 규칙 총정리 📵<a class="anchor" href="#ignore" aria-label="이 제목 링크">#</a></h2>
+<p>메시지를 「읽씹하기 (거절로 처리돼요)」로 넘기거나, 「알림 N개 지우기」로 지우거나, 답하지 않은 채 다음 주를 마감하면 전부 <b>읽씹</b>이에요. 누가 보냈느냐에 따라 잃는 게 달라요.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>보낸 사람 / 메시지</th><th>읽씹하면</th></tr></thead>
+  <tbody>
+    <tr><td>히로인 (일상 메시지)</td><td>그 히로인 호감도 −15</td></tr>
+    <tr><td>관계를 끝내는 답(이별 · 아기 거절 · 이혼)이 들어 있는 메시지</td><td>그 답을 고른 것으로 처리 (관계가 끝날 수 있어요)</td></tr>
+    <tr><td>호감도 0이 된 히로인의 작별 「…알겠어」</td><td>그 답을 고른 것과 같아요 (스트레스)</td></tr>
+    <tr><td>동거 제안</td><td>거절. 벌점은 없지만 다시 오지 않아요</td></tr>
+    <tr><td>팀장 · 선배 · 후배(인턴)</td><td>그 사람 호감도 −3</td></tr>
+    <tr><td>엄마 · 인사팀 · 대표 · 친구 · 클라이언트 · 시스템 알림</td><td>잃는 것 없음</td></tr>
+    <tr><td>헤드헌터 제안</td><td>그 회사 제안 거절 (이번 회차에 다시 안 옴)</td></tr>
+    <tr><td>칭호 이야기 메시지</td><td>그 칭호 이야기 끝</td></tr>
+    <tr><td>회사 사가 메시지</td><td>그 회사 사가 끝</td></tr>
+  </tbody>
+</table></div>
+<ul>
+  <li>일부 메시지는 자기만의 읽씹 효과가 정해져 있어요(예: 여은혜의 감사 메모, 신혼 메시지). 히로인별 규칙은 <a href="heroine-seoyun.html#common-rules">히로인 공략의 공통 규칙</a>과 각 히로인 글에 있어요.</li>
+  <li>인턴의 첫 인사를 읽씹해도 인턴은 팀에 들어와요.</li>
+  <li>「CTO 직행 일정표」의 추천 배치 자동을 켜 두면, 주 마감 때 자동으로 읽씹되는 팀장 · 선배 · 후배 메시지는 −3이 없어요(직접 읽씹하면 그대로 −3).</li>
+</ul>
+<div class="callout tip"><b>꿀팁</b><p>호감도가 걸린 팀장 · 히로인 메시지만 챙기고, 엄마 · 대표 · 시스템 알림은 「알림 N개 지우기」로 정리해도 손해가 없어요. 단 <b>팀장 호감도는 부장부터 90~100이 승진 조건</b>이라 팀장 메시지는 꼭 답하세요.</p></div>
+
+<h2 id="job-endings">직장인 엔딩 모음 🏆<a class="anchor" href="#job-endings" aria-label="이 제목 링크">#</a></h2>
+<div class="cards">
+  <div class="card item" data-id="ending:cto" id="ending-cto">
+    <div class="card-head"><b class="name">CTO 취임</b><span class="badge">99주 평가</span></div>
+    <dl class="kv"><dt>조건</dt><dd>직급 CTO (프리랜서 · 퇴사 창업자 제외). 조건은 <a href="#promo-table">승진 조건 표</a>의 CTO 줄 전부.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:silicon-valley" id="ending-silicon-valley">
+    <div class="card-head"><b class="name">해외 본사 입성</b><span class="badge">도중 충족</span></div>
+    <dl class="kv"><dt>조건</dt><dd>외국계 · 글로벌테크 지사 재직 중 코딩력 90 + 비즈니스 영어.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:architect" id="ending-architect">
+    <div class="card-head"><b class="name">전설의 아키텍트</b><span class="badge">도중 충족</span></div>
+    <dl class="kv"><dt>조건</dt><dd>기술 11개 전부 (합계 980커밋).</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:wlb" id="ending-wlb">
+    <div class="card-head"><b class="name">워라밸 마스터</b><span class="badge">조용한 엔딩</span></div>
+    <dl class="kv"><dt>조건</dt><dd>100주차에 주간 평균 스트레스 25 이하 + 직급 과장 이상 (창업자 제외), 그리고 더 앞 순위 엔딩 조건이 하나도 없을 때.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:eternal-daeri" id="ending-eternal-daeri">
+    <div class="card-head"><b class="name">만년 대리</b><span class="badge">조용한 엔딩</span></div>
+    <dl class="kv"><dt>조건</dt><dd>100주차에 직급 대리 이하 (프리랜서 · 창업자 제외), 다른 엔딩 조건이 없을 때.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:ai-replaced" id="ending-ai-replaced">
+    <div class="card-head"><b class="name">AI에게 자리를 넘김</b><span class="badge">조용한 엔딩</span></div>
+    <dl class="kv"><dt>조건</dt><dd>100주차에 코딩력 30 미만 (이혼 · 자녀 · 육아 엔딩 조건이 없을 때). 판정 순위가 높아서 만년 대리 · 워라밸 마스터 같은 다른 조용한 엔딩보다 먼저 나와요. 결혼 · 사이드 엔딩처럼 따로 기록되는 엔딩은 그대로 남아요.</dd></dl>
+  </div>
+  <div class="card item" data-id="ending:ordinary" id="ending-ordinary">
+    <div class="card-head"><b class="name">평범한 개발자</b><span class="badge">조용한 엔딩</span></div>
+    <dl class="kv"><dt>조건</dt><dd>100주차에 어떤 엔딩 조건도 맞지 않을 때.</dd></dl>
+  </div>
+</div>
+<div class="callout"><p>귀농 개발자(체력 85 · 스트레스 20 이하 · 돈 1,000만 원 미만) 같은 생활형 엔딩과 결혼 · 연애 엔딩은 <a href="endings.html">엔딩 도감</a>에 모아 뒀어요.</p></div>
+
+<h2 id="sim">시뮬레이션으로 본 현실 🎲<a class="anchor" href="#sim" aria-label="이 제목 링크">#</a></h2>
+<p>실제 게임 함수로 회차를 통째로 돌려 봤어요. 공통 가정: 티켓은 매주 직접 S, 연봉은 「그대로 수락」, 기술은 커밋이 모이는 대로 배움, 메시지는 회차를 끝내지 않는 첫 번째 답장. 메시지 답장 방식이 다르면 결과도 달라지니 <b>경향</b>으로 봐 주세요.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>계정 · 일정</th><th>100주 최종 직급 (2,000회차)</th><th>승진한 평가 주차 (가운데값)</th><th>엔딩</th></tr></thead>
+  <tbody>
+    <tr><td>새 계정 · 기본 일정 그대로</td><td>대리 83.4%, 주임 16.6% (회차가 일찍 끝남)</td><td>사원 4주 · 주임 16주 · 대리 28주</td><td>100% 치킨집 사장 (번아웃 3번, 가운데값 35주차)</td></tr>
+    <tr><td>새 계정 · 점심 · 업무 · 업무 · 업무 · 공부 · 휴식</td><td>과장 100%</td><td>4 · 16 · 28 · 40주, 그 뒤로 막힘</td><td>100% 워라밸 마스터</td></tr>
+    <tr><td>클스 · 커트 · 서바이벌 · 팀 프로젝트를 다 깬 계정 · 같은 일정</td><td>이사 99.0%, 부장 0.9%, 차장 0.1%</td><td>4 · 16 · 28 · 40 · 52주, 부장 76주, 이사 88주</td><td>100% 워라밸 마스터</td></tr>
+  </tbody>
+</table></div>
+<div class="callout tip"><b>여기서 배울 점</b><ul>
+  <li>🔥 기본 일정은 그대로 두면 <b>무조건</b> 번아웃 엔딩이에요. 첫 주에 휴식 · 점심을 섞어 바꾸세요.</li>
+  <li>🧱 회차 밖 기록이 없으면 일정이 아무리 좋아도 <b>과장(40주)에서 끝</b>이에요. 차장부터는 클스 150 · 커트 40단계가 필요하거든요.</li>
+  <li>👔 기록을 다 깨도 점심 주 1번으로는 <b>PM 호감도가 90~100까지 잘 안 올라요</b>. 팀장 호감도 80부터 매주 −2라서, 부장 승진이 64주 평가를 한 번 놓치고 76주로 밀려요. 그러면 CTO까지 갈 평가가 모자라요. 점심을 주 2번 넣거나 팀장 메시지에 호감도가 오르는 답을 골라 미리 90 이상을 만들어 두세요.</li>
+</ul></div>
+
+<h2 id="자주-묻는-질문">자주 묻는 질문<a class="anchor" href="#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8" aria-label="이 제목 링크">#</a></h2>
+<dl class="faq">
+  <dt>점수는 기준을 넘었는데 승진을 못 했어요.</dt><dd>직급별 조건 중 하나가 모자란 거예요. 홈에서 직급을 눌러 「커리어」 화면의 「승진 조건」을 열고, 아직 못 채운 줄을 확인하세요. 차장부터는 클스 · 커트 기록이 필요해서 회차 안에서만으로는 못 채워요.</dd>
+  <dt>이직하면 직급이 초기화되나요?</dt><dd>아니요. 직급은 그대로, 연봉 인상 누적은 +5%예요. 대신 동료 호감도와 이번 분기 성과가 새로 시작돼요.</dd>
+  <dt>프리랜서 제안이 안 와요.</dt><dd>칭호를 낀 회차에는 오지 않아요. 칭호 없이 24주차 이후 평판 70을 넘기면 그 주에 와요. 한 회차에 한 번뿐이고, 거절하거나 읽씹하면 끝이에요.</dd>
+  <dt>창업하려는데 「퇴사하고 올인한다」가 안 눌려요.</dt><dd>잔고 2,000만 원이 필요해요. 그 돈은 빠져나가지 않고 확인만 해요. 회차 보너스 「부모님 지원금」, 점심을 줄여 저축하기, 시드 투자금으로 맞춰 보세요.</dd>
+  <dt>시리즈 A나 상장에 실패하면 다시 기회가 와요?</dt><dd>아니요. 시리즈 A(34주)와 상장(60주, 20%)은 회차당 한 번이에요. 실패하면 그 회차에선 끝이에요.</dd>
+  <dt>칭호 엔딩으로 일찍 끝냈는데 코인이 0이에요.</dt><dd>코인과 CP는 100주를 끝까지 마친 회차만 줘요. 대신 처음 보는 칭호 엔딩이면 에픽 카드팩이 나오고, 완주 횟수로도 세요.</dd>
+  <dt>회사 사가 엔딩이 떴는데 도감에 없어요.</dt><dd>사가 결말은 도중 충족 엔딩이라 100주를 마쳐야 도감에 남아요. 그 전에 칭호 엔딩이나 창업으로 회차가 끝나면 사라져요.</dd>
+</dl>
+<nav class="pager" aria-label="이전·다음 글"><a class="prev" href="start.html"><small>← 이전 글</small>시작 가이드</a><a class="next" href="heroines.html"><small>다음 글 →</small>히로인 공략</a></nav>
+</article></main>
+</div>
+<button class="totop" type="button" aria-label="맨 위로">↑</button>
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="크게 보기 (Esc로 닫기)" tabindex="-1"><div><p></p></div></div>
+<footer class="gf"><p>이 공략집은 게임 코드를 기준으로 정리했어요. 업데이트로 수치가 바뀔 수 있어요.</p><p><a href="../">개발자 체험 (Build Failed)</a> · © 2026 새벽커밋 (Dawn commit)</p></footer>
+<script src="assets/guide.js?v=3ba08b4a" defer></script>
+</body>
+</html>
