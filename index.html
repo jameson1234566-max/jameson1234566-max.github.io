@@ -109,16 +109,34 @@
   ul.links li { padding: 8px 0; border-bottom: 1px solid var(--line); }
   ul.links li:last-child { border-bottom: 0; }
 
+  .guide-sec { padding: 40px 0 8px; }
+  .guide-banner { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 22px; padding: 26px 28px; border-radius: 20px; color: #fff; background: linear-gradient(135deg, #2A1F5C 0%, #5B3FD0 55%, #E8590C 120%); box-shadow: 0 14px 40px rgba(91,63,208,.28); text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+  .guide-banner:hover { transform: translateY(-2px); box-shadow: 0 18px 46px rgba(91,63,208,.36); text-decoration: none; }
+  .gb-icon { font-size: 54px; line-height: 1; filter: drop-shadow(0 4px 10px rgba(0,0,0,.25)); }
+  .gb-body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .gb-eyebrow { font: 600 13px var(--mono); color: #FFD8A8; }
+  .gb-title { font-family: "Black Han Sans", var(--sans); font-size: clamp(26px, 3.6vw, 34px); line-height: 1.2; }
+  .gb-desc { font-size: 16px; line-height: 1.6; color: rgba(255,255,255,.88); }
+  .gb-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .gb-tags span { font-size: 13.5px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.22); white-space: nowrap; }
+  .gb-cta { justify-self: end; font-weight: 800; font-size: 17px; padding: 14px 22px; border-radius: 14px; background: #fff; color: var(--accent); white-space: nowrap; }
+  @media (max-width: 760px) {
+    .guide-banner { grid-template-columns: 1fr; gap: 14px; padding: 22px 20px; }
+    .gb-icon { font-size: 44px; }
+    .gb-cta { justify-self: stretch; text-align: center; }
+  }
+
   footer { background: var(--night); padding: 28px 0 40px; color: #B9B3CC; font-size: 14px; }
   footer p { margin: 2px 0; }
 
   @media (max-width: 860px) {
-    .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 40px; }
+    .hero { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-top: 40px; }
+    .hero > * { min-width: 0; }
     .grid { grid-template-columns: 1fr 1fr; }
     .stats { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 560px) {
-    .grid, .help { grid-template-columns: 1fr; }
+    .grid, .help { grid-template-columns: minmax(0, 1fr); }
     pre { font-size: 12.5px; }
     .ln > em { width: 34px; flex-basis: 34px; padding-right: 10px; }
     .store { flex: 1 1 140px; min-width: 0; }
@@ -149,7 +167,6 @@
       <div class="stores">
         <div class="store"><b>App Store</b><span data-i="soonIos">출시 준비 중</span></div>
         <a class="store" href="https://play.google.com/store/apps/details?id=com.dawncommit.devexperience" target="_blank" rel="noopener"><b>Google Play</b><span data-i="soonAndroid">지금 다운로드</span></a>
-        <a class="store" href="guide/"><b data-i="guideT">📖 공략집</b><span data-i="guideSub">승진, 히로인, 투자</span></a>
       </div>
     </div>
 
@@ -165,6 +182,21 @@
       <p class="hint" data-i="hint">👆 한 글자가 잘못되었습니다. 찾아서 눌러 보십시오.</p>
     </div>
   </div></div>
+
+  <section class="guide-sec" id="guide">
+    <div class="wrap">
+      <a class="guide-banner" href="guide/">
+        <span class="gb-icon" aria-hidden="true">📖</span>
+        <span class="gb-body">
+          <span class="gb-eyebrow" data-i="guideEyebrow">// 공략집</span>
+          <span class="gb-title" data-i="guideTitle">개발자 체험 공략집</span>
+          <span class="gb-desc" data-i="guideDesc">승진 조건부터 히로인 13명 공략, 칭호, 장비, 투자, 동거와 신혼까지. 막히는 곳이 있다면 여기서 찾아보십시오.</span>
+          <span class="gb-tags"><span data-i="gt1">🚀 시작 가이드</span><span data-i="gt2">📈 승진</span><span data-i="gt3">💌 히로인</span><span data-i="gt4">🏷️ 칭호</span><span data-i="gt5">🎒 장비</span><span data-i="gt6">💹 투자</span><span data-i="gt7">🏠 가족</span></span>
+        </span>
+        <span class="gb-cta" data-i="guideCta">공략집 보러 가기 →</span>
+      </a>
+    </div>
+  </section>
 
   <section>
     <div class="wrap">
@@ -225,7 +257,7 @@
     en: {
       studio: 'Dawn commit', eyebrow: '// a developer life sim', title: 'Build Failed',
       lead: 'Hunt bugs hidden in real-looking code, plan your weeks, build a team, and survive 100 weeks at the company. Make it to the end and you might just become CTO.',
-      soonIos: 'Coming soon', soonAndroid: 'Download now', guideT: '📖 Guide', guideSub: 'Strategy guide (Korean)',
+      soonIos: 'Coming soon', soonAndroid: 'Download now', guideEyebrow: '// Guide', guideTitle: 'Strategy guide', guideDesc: 'Promotion rules, all 13 heroines, titles, gear, investing and married life. Stuck somewhere? Look it up here. (Korean only for now.)', gt1: '🚀 Getting started', gt2: '📈 Promotions', gt3: '💌 Heroines', gt4: '🏷️ Titles', gt5: '🎒 Gear', gt6: '💹 Investing', gt7: '🏠 Family', guideCta: 'Open the guide →',
       cmt: '// Friday, 6 PM. You hit deploy.', str: '"Deployed. Heading home"',
       hint: '👆 One character is wrong. Find it and tap it.',
       featTitle: 'What is it?', featSub: 'Never coded before? The tutorial walks you through everything.',
@@ -244,7 +276,7 @@
     ja: {
       studio: 'Dawn commit', eyebrow: '// エンジニア人生シミュレーション', title: 'Build Failed',
       lead: 'コードに潜むバグを見つけ、毎週の予定を立て、同僚とチームを組んで、100週の会社生活を生き抜こう。最後まで生き残れば、CTOになれるかも。',
-      soonIos: 'リリース準備中', soonAndroid: '今すぐダウンロード', guideT: '📖 攻略ガイド', guideSub: '攻略まとめ（韓国語）',
+      soonIos: 'リリース準備中', soonAndroid: '今すぐダウンロード', guideEyebrow: '// 攻略', guideTitle: '攻略ガイド', guideDesc: '昇進の条件、ヒロイン13人の攻略、称号、装備、投資、同居と新婚まで。迷ったらここで探してください（現在は韓国語のみ）。', gt1: '🚀 はじめに', gt2: '📈 昇進', gt3: '💌 ヒロイン', gt4: '🏷️ 称号', gt5: '🎒 装備', gt6: '💹 投資', gt7: '🏠 家族', guideCta: '攻略ガイドを見る →',
       cmt: '// 金曜の午後6時。デプロイボタンを押した。', str: '"デプロイ完了。帰ります"',
       hint: '👆 1文字だけ間違っています。見つけてタップしてみよう。',
       featTitle: 'どんなゲーム？', featSub: 'プログラミング未経験でも大丈夫。チュートリアルが一から教えてくれます。',
