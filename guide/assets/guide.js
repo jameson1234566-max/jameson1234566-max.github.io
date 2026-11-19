@@ -163,7 +163,7 @@
     hits.sort(function (a, b) { return b.score - a.score; });
     hits = hits.slice(0, 30);
     sel = -1;
-    if (!hits.length) { box.innerHTML = '<div class="r-empty">「' + esc(q) + '」 검색 결과가 없어요 😢</div>'; box.classList.add('open'); return; }
+    if (!hits.length) { box.innerHTML = '<div class="r-empty"><b>' + esc(q) + '</b> 검색 결과가 없어요 😢</div>'; box.classList.add('open'); return; }
     var re = termRe(terms);
     box.innerHTML = hits.map(function (h) {
       var e = h.e, inX = nterms.some(function (t) { return e.nX.indexOf(t) >= 0 || e.nHead.indexOf(t) >= 0; });

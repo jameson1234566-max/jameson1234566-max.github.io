@@ -328,3 +328,6 @@ a.sec-card:hover { text-decoration: none; border-color: var(--accent); transform
 .topic-btn .em { flex: 0 0 auto; font-size: 17px; }
 .topic-btn:hover { border-color: var(--accent); background: var(--accentSoft); color: var(--accent); text-decoration: none; }
 @media (max-width: 360px) { .topic-btns { grid-template-columns: repeat(2, minmax(0, 1fr)); } .topic-btn { font-size: 14px; padding: 8px 10px; } }
+
+/* 강조: 게임 용어 · 버튼 이름 (「」 대신, user 2026-11-19) */
+.kw { font-weight: 700; color: var(--strong); background: linear-gradient(transparent 62%, var(--mark) 62%); border-radius: 2px; padding: 0 1px; }
