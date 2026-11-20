@@ -331,3 +331,8 @@ a.sec-card:hover { text-decoration: none; border-color: var(--accent); transform
 
 /* 강조: 게임 용어 · 버튼 이름 (「」 대신, user 2026-11-19) */
 .kw { font-weight: 700; color: var(--strong); background: linear-gradient(transparent 62%, var(--mark) 62%); border-radius: 2px; padding: 0 1px; }
+
+/* 챕터 맨 아래: 공략집 홈으로 (user 2026-11-20) */
+.back-home { margin: 28px 0 0; text-align: center; }
+.back-home a { display: inline-block; padding: 12px 22px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--accent); font-weight: 700; font-size: 15.5px; }
+.back-home a:hover { background: var(--accentSoft); text-decoration: none; }
