@@ -5,6 +5,13 @@
   var body = document.body;
   var $ = function (s, el) { return (el || document).querySelector(s); };
   var $$ = function (s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); };
+  /* UI words by page language (guide/, guide/en/, guide/ja/) */
+  var WORDS = {
+    ko: { light: '라이트 모드로 바꾸기', dark: '다크 모드로 바꾸기', fold: '모두 접기', unfold: '모두 펼치기', none: ' 검색 결과가 없어요 😢', spoil: '🙈 스포일러 접기 안에 있어요' },
+    en: { light: 'Switch to light mode', dark: 'Switch to dark mode', fold: 'Collapse all', unfold: 'Expand all', none: ': no results 😢', spoil: '🙈 Inside a spoiler fold' },
+    ja: { light: 'ライトモードにする', dark: 'ダークモードにする', fold: 'すべて閉じる', unfold: 'すべて開く', none: ' の検索結果はありません 😢', spoil: '🙈 ネタバレの折りたたみの中にあります' }
+  };
+  var L = WORDS[root.lang] || WORDS.ko;
 
   /* ---------- theme ---------- */
   var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
@@ -12,7 +19,7 @@
   function isDark() { var t = root.getAttribute('data-theme'); return t ? t === 'dark' : !!(mq && mq.matches); }
   function syncDark() {
     root.setAttribute('data-dark', isDark() ? '1' : '0');
-    var b = $('.theme-btn'); if (b) b.setAttribute('aria-label', isDark() ? '라이트 모드로 바꾸기' : '다크 모드로 바꾸기');
+    var b = $('.theme-btn'); if (b) b.setAttribute('aria-label', isDark() ? L.light : L.dark);
   }
   syncDark();
   if (mq && mq.addEventListener) mq.addEventListener('change', function () { if (!stored()) syncDark(); });
@@ -23,6 +30,9 @@
     try { localStorage.setItem('guide-theme', next); } catch (e) { /* storage blocked: theme lasts this page only */ }
     syncDark();
   });
+
+  /* ---------- language menu: close on outside click ---------- */
+  document.addEventListener('click', function (e) { $$('.lang-menu[open]').forEach(function (d) { if (!d.contains(e.target)) d.open = false; }); });
 
   /* ---------- sidebar (mobile drawer) ---------- */
   function setNav(open) {
@@ -46,7 +56,7 @@
     var open = ta.getAttribute('data-open') === '1';
     $$('.tree details').forEach(function (d) { d.open = open; });
     ta.setAttribute('data-open', open ? '0' : '1');
-    ta.textContent = open ? '모두 접기' : '모두 펼치기';
+    ta.textContent = open ? L.fold : L.unfold;
   });
   var cur = $('.nav a.cur');
   if (cur && cur.scrollIntoView) { var side = $('.side'); if (side) side.scrollTop = Math.max(0, cur.offsetTop - 80); }
@@ -163,12 +173,12 @@
     hits.sort(function (a, b) { return b.score - a.score; });
     hits = hits.slice(0, 30);
     sel = -1;
-    if (!hits.length) { box.innerHTML = '<div class="r-empty"><b>' + esc(q) + '</b> 검색 결과가 없어요 😢</div>'; box.classList.add('open'); return; }
+    if (!hits.length) { box.innerHTML = '<div class="r-empty"><b>' + esc(q) + '</b>' + L.none + '</div>'; box.classList.add('open'); return; }
     var re = termRe(terms);
     box.innerHTML = hits.map(function (h) {
       var e = h.e, inX = nterms.some(function (t) { return e.nX.indexOf(t) >= 0 || e.nHead.indexOf(t) >= 0; });
       var head = esc(e.h || e.t).replace(new RegExp(re.source, 'gi'), '<mark>$1</mark>');
-      var snip = inX ? '<span class="r-snip">' + snippet(e.x, re) + '</span>' : '<span class="r-snip"><span class="r-sp">🙈 스포일러 접기 안에 있어요</span></span>';
+      var snip = inX ? '<span class="r-snip">' + snippet(e.x, re) + '</span>' : '<span class="r-snip"><span class="r-sp">' + L.spoil + '</span></span>';
       return '<a href="' + e.p + (e.a ? '#' + encodeURIComponent(e.a) : '') + '"><span class="r-path">' + esc(e.t) + '</span><span class="r-head">' + head + '</span>' + snip + '</a>';
     }).join('');
     box.classList.add('open');

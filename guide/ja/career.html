@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>昇進、キャリア | 開発者体験 攻略本</title>
+<meta name="description" content="役職10段階の昇進条件、人事評価スコアの計算、キャリアトラック、会社5社とサーガ、転職まで">
+<meta name="theme-color" content="#17142B">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="開発者体験 (Build Failed), Dawn commit">
+<meta property="og:url" content="https://dawncommitgames.com/guide/ja/career.html">
+<meta property="og:title" content="昇進、キャリア | 開発者体験 攻略本">
+<meta property="og:description" content="役職10段階の昇進条件、人事評価スコアの計算、キャリアトラック、会社5社とサーガ、転職まで">
+<meta property="og:image" content="https://dawncommitgames.com/icon-512.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://dawncommitgames.com/guide/ja/career.html">
+<link rel="alternate" hreflang="ko" href="https://dawncommitgames.com/guide/career.html">
+<link rel="alternate" hreflang="en" href="https://dawncommitgames.com/guide/en/career.html">
+<link rel="alternate" hreflang="ja" href="https://dawncommitgames.com/guide/ja/career.html">
+<link rel="alternate" hreflang="x-default" href="https://dawncommitgames.com/guide/career.html">
+<link rel="icon" type="image/png" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="stylesheet" href="assets/guide.css?v=7457ec55">
+<script>try{var t=localStorage.getItem('guide-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へスキップ</a>
+<header class="gh"><div class="gh-in">
+  <button class="icon-btn menu-btn" type="button" aria-label="目次を開く" aria-expanded="false" aria-controls="side"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="gh-brand" href="index.html"><img src="../../favicon.png" alt="" width="30" height="30">攻略本 <small>開発者体験</small></a>
+  <div class="gh-search" role="search">
+    <svg class="sicon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="攻略本を検索（例: 優奈、コーヒー、起業）" autocomplete="off" aria-label="攻略本を検索">
+    <div class="results" role="listbox" aria-label="検索結果"></div>
+  </div>
+  <button class="icon-btn search-btn" type="button" aria-label="検索を開く" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+  <details class="lang-menu"><summary class="icon-btn" aria-label="言語を変える" title="言語を変える"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></summary><div class="lang-pop"><a href="../career.html" lang="ko" hreflang="ko">한국어</a><a href="../en/career.html" lang="en" hreflang="en">English</a><a href="career.html" lang="ja" hreflang="ja" aria-current="true">日本語</a></div></details>
+  <button class="icon-btn theme-btn" type="button" aria-label="ダークモードにする"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+</div></header>
+<nav class="chipbar" aria-label="分類"><div class="chips"><a class="chip" href="index.html#topics">🔘 すべてのテーマ</a><a class="chip" href="start.html">🚀 スタート</a><a class="chip on" href="career.html" aria-current="true">📈 キャリア</a><a class="chip" href="heroines.html">💌 ヒロイン</a><a class="chip" href="titles.html">🏷️ 称号</a><a class="chip" href="gear.html">🎒 装備</a><a class="chip" href="invest.html">💹 投資</a><a class="chip" href="home.html">🏠 家族</a></div></nav>
+<div class="layout">
+<nav class="side" id="side" aria-label="攻略本の目次"><p class="side-title">攻略本の目次 <button class="tree-all" type="button" data-open="1">すべて開く</button></p><ul class="nav tree"><li class="leaf"><a href="index.html"><span class="em">🏠</span>攻略本ホーム</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html"><span class="em">🚀</span>スタートガイド</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#tabs">タブをひと目で 🗺️</a></summary><ul><li class="leaf"><a href="start.html#%ED%99%88">ホーム 🏠</a></li><li class="leaf"><a href="start.html#%EC%97%85%EB%AC%B4">業務 💻</a></li><li class="leaf"><a href="start.html#%EB%A9%94%EC%8B%A0%EC%A0%80">メッセンジャー 💬</a></li><li class="leaf"><a href="start.html#%ED%8C%80">チーム 👥</a></li><li class="leaf"><a href="start.html#%ED%88%AC%EC%9E%90">投資 📈</a></li></ul></details></li><li class="leaf"><a href="start.html#tutorial">最初の周回の流れ: チュートリアル1〜4章 🎓</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#classic-vs-track">クラシックステージとキャリアトラック、何が違う？ 🧩</a></summary><ul><li class="leaf"><a href="start.html#classic">クラシックステージ（画面の名前はクラシックチャレンジ）の攻略</a></li><li class="leaf"><a href="start.html#track">キャリアトラックの攻略</a></li><li class="leaf"><a href="start.html#suspend">セーブして出る</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#career-week">キャリアの周回: 1週間はこう流れます 📅</a></summary><ul><li class="leaf"><a href="start.html#plan">今週のスケジュールの組み方</a></li><li class="leaf"><a href="start.html#ticket">今週のチケット</a></li><li class="leaf"><a href="start.html#burnout">体力、ストレス、燃え尽き、倒れる 🔥</a></li><li class="leaf"><a href="start.html#messages">メッセージの返信、既読スルー</a></li><li class="leaf"><a href="start.html#run-end">周回の終わりの報酬: CPとコイン</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#resources">通貨の総まとめ: コーヒー、コイン、カード 💰</a></summary><ul><li class="leaf"><a href="start.html#coffee">コーヒー ☕ の手に入れ方すべて</a></li><li class="leaf"><a href="start.html#coins">コイン 💰 の手に入れ方、使い方</a></li><li class="leaf"><a href="start.html#packs">カードパック 🃏 の確率と天井</a></li><li class="leaf"><a href="start.html#mythic-shards">神話のかけら</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#daily">毎日こなすルーティン ✅</a></summary><ul><li class="leaf"><a href="start.html#attendance">出席チェック</a></li><li class="leaf"><a href="start.html#quests">クエスト</a></li><li class="leaf"><a href="start.html#ads">報酬型広告</a></li><li class="leaf"><a href="start.html#season-pass">シーズンパス（コミットXP）</a></li><li class="leaf"><a href="start.html#mailbox">受信箱</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#team">同僚とチームプロジェクト 👥</a></summary><ul><li class="leaf"><a href="start.html#coworkers">同僚カード</a></li><li class="leaf"><a href="start.html#fusion">合成</a></li><li class="leaf"><a href="start.html#team-projects">チームプロジェクトとチームパワー</a></li><li class="leaf"><a href="start.html#skill-trees">スキルツリー</a></li><li class="leaf"><a href="start.html#%EB%8F%99%EB%A3%8C-%EC%B1%84%EB%84%90%EA%B3%BC-%EC%B9%9C%EB%B0%80%EB%8F%84">同僚チャンネルと親密度</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#challenge-modes">業務タブのチャレンジモード 🏆</a></summary><ul><li class="leaf"><a href="start.html#survival">サバイバル</a></li><li class="leaf"><a href="start.html#tower">無限徹夜（タワー）</a></li><li class="leaf"><a href="start.html#no-coffee">ノーコーヒー挑戦</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#social">フレンドと一緒に 🤝</a></summary><ul><li class="leaf"><a href="start.html#system-popularity">人気度（いいね） 👍</a></li><li class="leaf"><a href="start.html#system-blame-relay">Git Blameリレー 🔍</a></li><li class="leaf"><a href="start.html#draw">今日のニックネーム抽選 🎰</a></li><li class="leaf"><a href="start.html#system-hotfix-outage">今日のホットフィックス 🔥</a></li><li class="leaf"><a href="start.html#outage">サーバー障害対応 🚨</a></li><li class="leaf"><a href="start.html#system-friends">フレンドとコーヒー ☕</a></li><li class="leaf"><a href="start.html#system-leaderboard">ランキング 🏆</a></li><li class="leaf"><a href="start.html#system-duel">コードレビュー1対1 ⚔️</a></li><li class="leaf"><a href="start.html#system-bug-bounty">バグバウンティ 🐛</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#perks">周回ボーナス（CP） 🎓</a></summary><ul><li class="leaf"><a href="start.html#perk-tier">CPのティア: 何から買う？</a></li><li class="leaf"><a href="start.html#perk-effects">ボーナス効果の一覧</a></li><li class="leaf"><a href="start.html#perk-costs">CP費用の一覧</a></li></ul></details></li><li class="leaf"><a href="start.html#fast-runs">次の周回を早く回すコツ ⏩</a></li><li class="leaf"><a href="start.html#shop-iap">ショップの有料商品（画面のまま）</a></li><li class="leaf"><a href="start.html#mistakes">初心者によくあるミス ⚠️</a></li><li class="leaf"><a href="start.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details open><summary><span class="caret" aria-hidden="true"></span><a href="career.html" class="cur" aria-current="page"><span class="em">📈</span>昇進、キャリア</a></summary><ul class="toc"><li class="leaf"><a href="#run-rules">まずは周回のしくみから 🗓️</a></li><li class="leaf"><a href="#ranks">役職10段階と月給 💼</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#review">人事評価スコアはこう計算されます 📋</a></summary><ul class="toc"><li class="leaf"><a href="#%ED%8F%89%EA%B0%80-%EA%B8%B0%EC%A4%80%EC%A0%90-%EC%9D%B4-%EC%A0%90%EC%88%98%EB%A5%BC-%EB%84%98%EC%96%B4%EC%95%BC-%EC%8A%B9%EC%A7%84-%ED%9B%84%EB%B3%B4">評価の基準点（このスコアを超えると昇進候補）</a></li><li class="leaf"><a href="#%ED%8F%89%EA%B0%80-%EC%A0%90%EC%88%98%EB%8A%94-%EB%AD%98%EB%A1%9C-%EC%A0%95%ED%95%B4%EC%A0%B8%EC%9A%94">評価スコアは何で決まる？</a></li><li class="leaf"><a href="#%EC%A3%BC%EA%B0%84-%EC%84%B1%EA%B3%BC%EB%8A%94-%EC%96%B4%EB%94%94%EC%84%9C-%EB%82%98%EC%99%80%EC%9A%94">週の成果はどこから出る？</a></li><li class="leaf"><a href="#nego">年俸交渉: どれを押すと得？ 💸</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#promo-table">役職別の昇進条件の総まとめ 📶</a></summary><ul class="toc"><li class="leaf"><a href="#%EA%B8%B0%EC%88%A0-11%EA%B0%9C-%EC%BB%A4%EB%B0%8B%EC%9C%BC%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EC%9A%94">スキル11個（コミットで覚えます）</a></li></ul></details></li><li class="leaf"><a href="#tracks">キャリアトラック5分野 🛤️</a></li><li class="leaf"><a href="#companies">会社5社の比較 🏢</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#job-change">転職とヘッドハンター 🤝</a></summary><ul class="toc"><li class="leaf"><a href="#%EC%9D%B4%EC%A7%81%ED%95%98%EB%A9%B4-%EB%B0%94%EB%80%8C%EB%8A%94-%EA%B2%83">転職すると変わること</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#saga">会社のサーガ: 会社ごとに大事件が起こる 🎬</a></summary><ul class="toc"><li class="leaf"><a href="#%EB%8C%80%EA%B8%B0%EC%97%85-%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC-%EC%83%88%EB%B2%BD%EC%BB%A4%EB%B0%8B-%EA%B2%B0%EC%A0%9C-%EB%8C%80%EC%9E%A5%EC%95%A0">大企業、株式会社夜明けコミット: 決済の大障害</a></li><li class="leaf"><a href="#%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%ED%94%BC%EB%B4%87%EB%9E%A9%EC%8A%A4-%EB%8D%B0%EB%AA%A8%EC%97%90%EC%84%9C-%EC%97%91%EC%8B%9C%ED%8A%B8%EA%B9%8C%EC%A7%80">スタートアップ、ピボットラボ: デモからイグジットまで</a></li><li class="leaf"><a href="#%EC%99%B8%EA%B5%AD%EA%B3%84-%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%85%8C%ED%81%AC-%EC%A7%80%EC%82%AC-%EC%9D%B4%EA%B4%80-%EC%86%8C%EB%AC%B8">外資系、グローバルテック支社: 移管のうわさ</a></li><li class="leaf"><a href="#%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EC%87%BC%ED%95%91%EB%AA%B0-%EC%99%B8%EC%A3%BC%EC%99%80-%EC%9E%94%EA%B8%88-%EC%B2%B4%EB%B6%88">フリーランス: ショッピングサイトの外注と残金の未払い</a></li></ul></details></li><li class="leaf"><a href="#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroines.html"><span class="em">💌</span>ヒロイン攻略</a></summary><ul><li class="leaf"><a href="heroines.html#pick">誰から攻略する？ 目的別のおすすめ 🎯</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroines.html#compare">13人をひと目で比較 🗂️</a></summary><ul><li class="leaf"><a href="heroines.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EB%B2%95%EA%B3%BC-%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C">出会い方と固有システム</a></li><li class="leaf"><a href="heroines.html#%EB%90%98%EB%8A%94-%EA%B2%83-%EA%B2%B0%ED%98%BC-%EC%97%94%EB%94%A9-%EB%B3%B4%EC%83%81">できること、結婚エンディングの報酬</a></li></ul></details></li><li class="leaf"><a href="heroines.html#common">すべてのヒロイン共通ルールのまとめ 📌</a></li><li class="leaf"><a href="heroines.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul><ul class="subs"><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-seoyun.html">高橋美咲 攻略</a></summary><ul><li class="leaf"><a href="heroine-seoyun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-seoyun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-seoyun.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-seoyun.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-seoyun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-seoyun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-seoyun.html#fail">失敗、別れの条件と避け方</a></li><li class="leaf"><a href="heroine-seoyun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-seoyun.html#common-rules">📌 すべてのヒロイン共通ルール</a></summary><ul><li class="leaf"><a href="heroine-seoyun.html#%EB%A7%A4%EC%A3%BC-%EC%A7%80%EC%BC%9C%EC%95%BC-%ED%95%A0-%EA%B2%83">毎週守ること</a></li><li class="leaf"><a href="heroine-seoyun.html#%EB%84%98%EC%B9%9C-%ED%98%B8%EA%B0%90%EB%8F%84-%ED%9A%A8%EA%B3%BC">あふれた好感度の効果</a></li></ul></details></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-harin.html">佐々木彩花 攻略</a></summary><ul><li class="leaf"><a href="heroine-harin.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-harin.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-harin.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-harin.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-harin.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-harin.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-harin.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-harin.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-daeun.html">中村七海 攻略</a></summary><ul><li class="leaf"><a href="heroine-daeun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-daeun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-daeun.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-daeun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-minji.html">小林莉子 攻略</a></summary><ul><li class="leaf"><a href="heroine-minji.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-minji.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-minji.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-minji.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-minji.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-minji.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-minji.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-minji.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-yuna.html">松本優奈 攻略</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-yuna.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></summary><ul><li class="leaf"><a href="heroine-yuna.html#%EB%B2%88%ED%98%B8-%EB%A9%94%EC%8B%9C%EC%A7%80">番号のメッセージ</a></li></ul></details></li><li class="leaf"><a href="heroine-yuna.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-yuna.html#%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0-%EA%B2%B0%ED%98%BC">告白 → 交際 → 結婚</a></li><li class="leaf"><a href="heroine-yuna.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-yuna.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-yuna.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-yuna.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-hyeyun.html">山本葵 攻略</a></summary><ul><li class="leaf"><a href="heroine-hyeyun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-hyeyun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%9D%B4%EB%B3%84-%EC%8D%B8-%ED%98%9C%EC%9C%A4%EB%A7%8C%EC%9D%98-%ED%9D%90%EB%A6%84">別れ → 片想い（葵だけの流れ）</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-hyeyun.html#%EC%97%B0%EC%95%A0-%EA%B2%B0%ED%98%BC">交際、結婚</a></summary><ul><li class="leaf"><a href="heroine-hyeyun.html#%EC%97%B0%EC%95%A0-%EC%A4%91-%ED%98%9C%EC%9C%A4-%EC%A0%84%EC%9A%A9-%EB%A9%94%EC%8B%9C%EC%A7%80">交際中の葵専用メッセージ</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%B2%AD%ED%98%BC%EA%B3%BC-%EA%B2%B0%ED%98%BC-%ED%9B%84">プロポーズと結婚後</a></li></ul></details></li><li class="leaf"><a href="heroine-hyeyun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunseo.html">井上楓 攻略</a></summary><ul><li class="leaf"><a href="heroine-eunseo.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-eunseo.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95-%EB%8F%88-%EB%A9%94%EC%8B%9C%EC%A7%80-vs-%EB%A7%88%EC%9D%8C-%EB%A9%94%EC%8B%9C%EC%A7%80">好感度の上げ方: お金のメッセージ vs 心のメッセージ</a></li><li class="leaf"><a href="heroine-eunseo.html#%EA%B3%B5%EB%B6%80-%EC%A7%84%EB%8F%84%EC%99%80-%ED%95%A9%EA%B2%A9-%ED%99%95%EB%A5%A0">勉強の進み具合と合格確率</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-eunseo.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-eunseo.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sora.html">水野穂乃果 攻略</a></summary><ul><li class="leaf"><a href="heroine-sora.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-sora.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-sora.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-sora.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-sora.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-sora.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-sora.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-sora.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%9C%EB%B0%9C-%EC%9D%B8%ED%94%8C%EB%A3%A8%EC%96%B8%EC%84%9C-%EC%B9%AD%ED%98%B8-%EC%8A%A4%ED%86%A0%EB%A6%AC">固有システム: 開発系インフルエンサーの称号ストーリー</a></li><li class="leaf"><a href="heroine-sora.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-jiwoo.html">藤田美桜 攻略</a></summary><ul><li class="leaf"><a href="heroine-jiwoo.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-jiwoo.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-hana.html">石川真由 攻略</a></summary><ul><li class="leaf"><a href="heroine-hana.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-hana.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-hana.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-hana.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-hana.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-hana.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-hana.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-hana.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sophie.html">ソフィー 攻略</a></summary><ul><li class="leaf"><a href="heroine-sophie.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-sophie.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sophie.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%90%ED%8F%AC-%EC%B9%9C%EA%B5%AC-%ED%80%B4%EC%A6%88">固有システム: 在米コリアンの友達のクイズ</a></summary><ul><li class="leaf"><a href="heroine-sophie.html#%EB%AC%B4%EA%B2%B0%EC%A0%90-%EC%97%94%EB%94%A9">全問正解のエンディング</a></li></ul></details></li><li class="leaf"><a href="heroine-sophie.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-sophie.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-sophie.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-sophie.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-sophie.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-sophie.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sohyun.html">早瀬紗希 攻略</a></summary><ul><li class="leaf"><a href="heroine-sohyun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sohyun.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%B9%84%EB%B0%80%EC%97%B0%EC%95%A0%EC%99%80-%EC%9D%98%EC%8B%AC%EB%8F%84">固有システム: 秘密の交際と疑惑度</a></summary><ul><li class="leaf"><a href="heroine-sohyun.html#%EB%93%A4%ED%82%AC-%ED%99%95%EB%A5%A0">バレる確率</a></li><li class="leaf"><a href="heroine-sohyun.html#%EB%B9%84%EB%B0%80-%EB%8D%B0%EC%9D%B4%ED%8A%B8-2%EC%A3%BC%EB%A7%88%EB%8B%A4">秘密のデート（2週ごと）</a></li></ul></details></li><li class="leaf"><a href="heroine-sohyun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-sohyun.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-sohyun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunhye.html">氷室麗華 攻略</a></summary><ul><li class="leaf"><a href="heroine-eunhye.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunhye.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%90%EC%82%AC-%EB%A9%94%EB%AA%A8%EC%99%80-%EC%9D%98%EC%8B%AC%EB%8F%84">固有システム: 監査メモと疑惑度</a></summary><ul><li class="leaf"><a href="heroine-eunhye.html#%EA%B0%90%EC%82%AC-%EB%A9%94%EB%AA%A8-%ED%8B%80%EB%A6%B0-%EC%A4%84-%EC%B0%BE%EA%B8%B0">📝 監査メモ（間違った行を探す）</a></li><li class="leaf"><a href="heroine-eunhye.html#%EB%A7%A4%EC%9D%BC-%EA%B0%90%EC%82%AC-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%A7%A4%EC%A3%BC-1%ED%86%B5">📨 毎日の監査メッセージ（毎週1通）</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%A3%BC-%EB%A7%88%EA%B0%90-%ED%98%90%EC%9D%98-11%EA%B0%80%EC%A7%80-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B2%83-1%EA%B0%9C%EB%A7%8C-%EC%A0%81%EC%9A%A9">⚖️ 週の締めの容疑11種類（いちばん大きいもの1つだけ適用）</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunhye.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></summary><ul><li class="leaf"><a href="heroine-eunhye.html#%EB%A9%94%EB%AA%A8-%EC%8B%A4%EB%A0%A5%EB%B3%84-%EA%B2%B0%EA%B3%BC">メモの実力別の結果</a></li></ul></details></li><li class="leaf"><a href="heroine-eunhye.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-eunhye.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-eunhye.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="titles.html"><span class="em">🏷️</span>称号</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="titles.html#basics">称号はこう回ります 🧭</a></summary><ul><li class="leaf"><a href="titles.html#%EA%BC%AD-%EC%95%8C%EC%95%84-%EB%91%98-%EA%B7%9C%EC%B9%99-7%EA%B0%80%EC%A7%80">必ず知っておくべきルール7つ</a></li><li class="leaf"><a href="titles.html#%EC%B9%AD%ED%98%B8-%EC%97%94%EB%94%A9%EC%9C%BC%EB%A1%9C-%EB%81%9D%EB%82%98%EB%A9%B4-%EB%AD%98-%EB%B0%9B%EC%95%84%EC%9A%94">称号エンディングで終わったら何がもらえる？</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="titles.html#unlock">称号11個の開き方 🔓</a></summary><ul><li class="leaf"><a href="titles.html#%EC%B2%AB-%EC%B9%AD%ED%98%B8-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EC%97%B4%EB%A9%B4-%EB%B9%A8%EB%9D%BC%EC%9A%94">最初の称号はこうすれば早く開く 🏃</a></li></ul></details></li><li class="leaf"><a href="titles.html#early">早期終了の称号、退職の称号のまとめ 🚪</a></li><li class="leaf"><a href="titles.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html"><span class="em">🎒</span>装備、消耗品</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#basics">まずはショップの使い方から 🛒</a></summary><ul><li class="leaf"><a href="gear.html#bag">バッグで使う</a></li><li class="leaf"><a href="gear.html#sell">装備の売り戻し（10%）</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#tier">等級表: 何から買えばいい？ 🏆</a></summary><ul><li class="leaf"><a href="gear.html#tier-heroine">ヒロイン専用装備 💌</a></li></ul></details></li><li class="leaf"><a href="gear.html#trial">体験周回でまず使ってみる 🧪</a></li><li class="leaf"><a href="gear.html#gear-work">業務が楽になる装備 💻</a></li><li class="leaf"><a href="gear.html#gear-body">体力、ストレス、集中力の装備 💪</a></li><li class="leaf"><a href="gear.html#gear-safety">1回だけ助けてくれる保険の装備 ☂️</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#gear-love">恋愛装備 💌</a></summary><ul><li class="leaf"><a href="gear.html#gear-juggle">キープ装備（まさか、ですよね…？） 🐙</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#gear-invest">投資装備 💹</a></summary><ul><li class="leaf"><a href="gear.html#luck-sim">運七技三、どれくらい強い？</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#consumables">消耗品 🥤</a></summary><ul><li class="leaf"><a href="gear.html#price-formula">消耗品は週が進むほど高くなります</a></li><li class="leaf"><a href="gear.html#consumable-table">消耗品の全価格表（常連割引なし）</a></li><li class="leaf"><a href="gear.html#gacha">ランダム消耗品4種、得なの？ 🎲</a></li><li class="leaf"><a href="gear.html#consumable-tier">消耗品のおすすめ等級</a></li></ul></details></li><li class="leaf"><a href="gear.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="invest.html"><span class="em">💹</span>投資</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="invest.html#open">投資タブはいつ開く？ 🔓</a></summary><ul><li class="leaf"><a href="invest.html#net-worth">純資産と階級 💳</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="invest.html#stocks">📈 株式: ニュースを読む人が勝つ</a></summary><ul><li class="leaf"><a href="invest.html#stock-list">10銘柄をひと目で</a></li><li class="leaf"><a href="invest.html#price-model">株価はこう動きます</a></li><li class="leaf"><a href="invest.html#news-sources">ニュースの出どころ4つ: これがすべて 📰</a></li><li class="leaf"><a href="invest.html#earnings">決算発表: 期待との差 で動きます</a></li><li class="leaf"><a href="invest.html#events">予定イベント: 開示の事前のシグナルがカギ ⭐</a></li><li class="leaf"><a href="invest.html#links">関連銘柄: 1週遅れでついて動きます</a></li><li class="leaf"><a href="invest.html#costs">手数料、短期売買税、配当</a></li><li class="leaf"><a href="invest.html#thin-book">個人投資家の投げ売り: 1銘柄2,222万円が限界です 💣</a></li><li class="leaf"><a href="invest.html#luck">運: 株式タブを開くたびに振ります 🍀</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="invest.html#estate">🏠 不動産: 遅いけれど裏切りません</a></summary><ul><li class="leaf"><a href="invest.html#estate-types">物件の種類9つ</a></li><li class="leaf"><a href="invest.html#regions">地域11か所と固定物件42軒 🗺️</a></li><li class="leaf"><a href="invest.html#estate-price">価格はこう動きます</a></li><li class="leaf"><a href="invest.html#estate-news">不動産ニュースと信頼度</a></li><li class="leaf"><a href="invest.html#estate-sell">売り方: 売り出し価格を決める</a></li><li class="leaf"><a href="invest.html#islands">島3か所と島のオーナーのエンディング 🏝️</a></li><li class="leaf"><a href="invest.html#homes">家とヒロイン: 同棲、夢の家、私たちの家 💞</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="invest.html#goods">⌚ 実物資産: 1週でも大きく揺れるジェットコースター</a></summary><ul><li class="leaf"><a href="invest.html#goods-list">品目9つ</a></li><li class="leaf"><a href="invest.html#goods-rules">必ず知っておくべきルール4つ</a></li><li class="leaf"><a href="invest.html#goods-feed">今日のゴシップの読み方</a></li><li class="leaf"><a href="invest.html#goods-hold">装備なしで買ったら？</a></li><li class="leaf"><a href="invest.html#trendsetter">😎 トレンドセッターを付けるとまったく別のゲームです</a></li></ul></details></li><li class="leaf"><a href="invest.html#taste">🌟 ヒロインの好み: 新婚中に彼女の夢を全部買ってあげる</a></li><li class="leaf"><a href="invest.html#plan">おすすめの運用法: 序盤、中盤、終盤 🧭</a></li><li class="leaf"><a href="invest.html#fail">破産するパターンTOP 7 💀</a></li><li class="leaf"><a href="invest.html#invest-endings">投資関連のエンディング、実績まとめ</a></li><li class="leaf"><a href="invest.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html"><span class="em">🏠</span>同棲、新婚、アルバム、家族</a></summary><ul><li class="leaf"><a href="home.html#who-can">ヒロイン別にできることをひと目で 🗂️</a></li><li class="leaf"><a href="home.html#flow">家族ルートの全体の流れ 🧭</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#cohab">同棲 💞</a></summary><ul><li class="leaf"><a href="home.html#cohab-when">同棲の提案が来る条件</a></li><li class="leaf"><a href="home.html#cohab-effect">同棲すると変わること</a></li></ul></details></li><li class="leaf"><a href="home.html#dream-home">夢の家9軒 🏡</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#honeymoon">新婚 💐</a></summary><ul><li class="leaf"><a href="home.html#honey-when">新婚の提案の条件</a></li><li class="leaf"><a href="home.html#honey-lines">新婚15週: 毎週来るロマンチックなイベント</a></li><li class="leaf"><a href="home.html#honey-trip">新婚旅行（島のリゾートがあれば）</a></li></ul></details></li><li class="leaf"><a href="home.html#us-tab">ふたり タブ 💬</a></li><li class="leaf"><a href="home.html#taste">ヒロインの好み: 夢を全部かなえてあげる 🌟</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#married-life">結婚生活: 家事 🧺</a></summary><ul><li class="leaf"><a href="home.html#love-perks">関係の特典（あふれた好感度で付くもの）</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#baby">赤ちゃん 👶</a></summary><ul><li class="leaf"><a href="home.html#parenting">育児の枠と赤ちゃんの時期のメッセージ</a></li></ul></details></li><li class="leaf"><a href="home.html#kid-grow">子どもの成長、子どもの好感度、子どものメッセージ 🎒</a></li><li class="leaf"><a href="home.html#kid-events">子どものエンディング 🎓</a></li><li class="leaf"><a href="home.html#album">家族アルバム 📷</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#divorce">別れ、離婚、結婚後の出来事 💔</a></summary><ul><li class="leaf"><a href="home.html#breakup-dating">交際中の別れ</a></li><li class="leaf"><a href="home.html#divorce-talk">結婚中の離婚</a></li></ul></details></li><li class="leaf"><a href="home.html#family-endings">家族のエンディングの総まとめ 📖</a></li><li class="leaf"><a href="home.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li></ul><p class="side-foot"><a href="../../">← 開発者体験 ホームページ</a></p></nav><div class="scrim"></div>
+<main class="main" id="content"><article class="article">
+<p class="crumb"><a href="index.html">攻略本</a> › 昇進、キャリア</p>
+<h1 class="page-title">昇進、キャリア</h1>
+<p class="page-desc">役職10段階の昇進条件、人事評価スコアの計算、キャリアトラック、会社5社とサーガ、転職まで</p>
+<p class="meta">最終更新 <time datetime="2026-11-19">2026-11-19</time></p>
+<div class="tldr"><b>ひとことまとめ</b>
+<ul>
+  <li>📋 人事評価は<b>第4、16、28、40、52、64、76、88、99週</b>、ちょうど9回です。1回に1役職ずつしか上がらないので、インターンから始めると<b>9回全部通らないと</b>CTOになれません。</li>
+  <li>🧮 評価スコアは<b>成果</b>をいちばん重く見て、次に評判、リーダーの好感度を見ます。スコアが超えても<b>役職ごとの昇進条件</b>を満たしていないと止まります。</li>
+  <li>🏁 コイン、キャリアポイント（CP）は<b>100週を最後まで終えた周回だけ</b>もらえます。起業、称号エンディングのように早く終わると0です。</li>
+</ul>
+</div>
+
+<h2 id="run-rules">まずは周回のしくみから 🗓️<a class="anchor" href="#run-rules" aria-label="この見出しへのリンク">#</a></h2>
+<p>1周回は<span class="num">100週</span>です。毎週スケジュールを組み、チケットを解き、メッセージに答えて、<b class="kw">1週間を締める</b>を押すと1週が過ぎます。スタートはいつも<b>大企業、株式会社夜明けコミット</b>の<b>インターン</b>で、最初の能力値はコーディング力25、集中力60、体力80、ストレス20、評判20、残高¥333,333、コミット10です（周回ボーナスで上げられます）。</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>周回の終わり方</th><th>コイン、CP</th><th>途中で満たしたエンディング</th><th><b class="kw">完走</b>として数える</th></tr></thead>
+  <tbody>
+    <tr><td>100週を最後まで終えた</td><td>もらえる（役職に応じて）</td><td>すべて記録 ✅</td><td>はい</td></tr>
+    <tr><td>称号ストーリーのエンディングで早く終わった（連続起業家の上場、すっからかん起業などを含む）</td><td>0</td><td>そのエンディング1つだけ</td><td>はい</td></tr>
+    <tr><td>退職勧告、唐揚げ屋の店主、サイドプロジェクトの起業（起業大成功、廃業）</td><td>0</td><td>そのエンディング1つだけ</td><td>いいえ</td></tr>
+    <tr><td>ホームの<b class="kw">周回を終了</b>ボタン</td><td>0</td><td>何も残らない</td><td>いいえ</td></tr>
+  </tbody>
+</table></div>
+
+<ul>
+  <li><b>キャリアポイント（CP）</b>は役職が高いほど多くなります（インターン20、1役職ごとに +1、CTO 29）。周回ボーナス<b class="kw">キャリア管理</b>で +1 / +3 / +5。</li>
+  <li><b>コイン</b>も役職が高いほど多くなります（インターン2,000、1役職ごとに +100、CTO 2,900）。<b class="kw">退職金積立</b>で段階ごとに +5%。</li>
+  <li>退職した起業家は役職がないので、インターンと同じに計算されます（CP 20、コイン2,000）。</li>
+  <li>画面を触ってプレイした時間が<b>10分未満</b>の周回は、CP、コイン、コミットXP、デイリークエストがありません（エンディングは残ります）。</li>
+  <li>初めて見るエンディングごとにカードパックが出ます。ふつうのエンディングはレアパック、称号エンディングはエピックパックで、早く終わった周回でももらえます。</li>
+</ul>
+
+<div class="callout trap"><b>知らないと損</b><p>周回の途中で<b class="kw">エンディング条件クリア！</b>のバナーが出たエンディング（例: 会社のサーガの結末、海外本社へ、サイドプロジェクト買収）は<b>100週を最後まで終えないと</b>図鑑に一緒に残りません。称号エンディングや起業で周回が早く終わると<b>そのエンディング1つだけ</b>が記録され、前に集めたバナーのエンディングは消えます。収集が目的なら、早く終わる選択は最後にしましょう。</p></div>
+
+<div class="callout"><p><b class="kw">エンディング条件クリア！</b>のバナーが出ない<b>静かなエンディング</b>もあります: 平凡な開発者、万年係長、AIに席を譲る、帰農デベロッパー、ワークライフバランスの達人。この5つは第100週の最終判定でだけ出て、もっと上の順位のエンディング（結婚、CTO、サイドのエンディングなど）を1つでも満たすと押し出されます。</p></div>
+
+<h2 id="ranks">役職10段階と月給 💼<a class="anchor" href="#ranks" aria-label="この見出しへのリンク">#</a></h2>
+<p>役職は下の10段階です。月給は<b>役職と会社</b>で決まり、スキルの年俸ボーナスと昇給が積み重なるほどさらに上がります。週給は月給の4分の1です。毎週生活費<b>¥50,000</b>が引かれます（月¥200,000）。</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>役職</th><th class="r">大企業の月給</th><th class="r">スタートアップ</th><th class="r">外資系</th><th class="r">朝コミット</th></tr></thead>
+  <tbody>
+    <tr data-id="rank:0" id="rank-0"><td>インターン</td><td class="r">¥222,222</td><td class="r">¥177,778</td><td class="r">¥311,111</td><td class="r">¥266,667</td></tr>
+    <tr data-id="rank:1" id="rank-1"><td>社員</td><td class="r">¥333,333</td><td class="r">¥266,667</td><td class="r">¥466,667</td><td class="r">¥400,000</td></tr>
+    <tr data-id="rank:2" id="rank-2"><td>主任</td><td class="r">¥377,778</td><td class="r">¥302,222</td><td class="r">¥528,889</td><td class="r">¥453,333</td></tr>
+    <tr data-id="rank:3" id="rank-3"><td>係長</td><td class="r">¥444,444</td><td class="r">¥355,556</td><td class="r">¥622,222</td><td class="r">¥533,333</td></tr>
+    <tr data-id="rank:4" id="rank-4"><td>課長</td><td class="r">¥533,333</td><td class="r">¥426,667</td><td class="r">¥746,667</td><td class="r">¥640,000</td></tr>
+    <tr data-id="rank:5" id="rank-5"><td>次長</td><td class="r">¥622,222</td><td class="r">¥497,778</td><td class="r">¥871,111</td><td class="r">¥746,667</td></tr>
+    <tr data-id="rank:6" id="rank-6"><td>部長</td><td class="r">¥722,222</td><td class="r">¥577,778</td><td class="r">¥1,011,111</td><td class="r">¥866,667</td></tr>
+    <tr data-id="rank:7" id="rank-7"><td>役員</td><td class="r">¥888,889</td><td class="r">¥711,111</td><td class="r">¥1,244,444</td><td class="r">¥1,066,667</td></tr>
+    <tr data-id="rank:8" id="rank-8"><td>常務</td><td class="r">¥1,111,111</td><td class="r">¥888,889</td><td class="r">¥1,555,556</td><td class="r">¥1,333,333</td></tr>
+    <tr data-id="rank:9" id="rank-9"><td>CTO</td><td class="r">¥1,666,667</td><td class="r">¥1,333,333</td><td class="r">¥2,333,333</td><td class="r">¥2,000,000</td></tr>
+  </tbody>
+</table></div>
+<p>表はスキル、昇給のボーナスが1つもないときの月給です。フリーランスは月給がなく、別に計算します（フリーランス参照）。</p>
+<ul>
+  <li>💰 <b>スキルの年俸ボーナス</b>: TypeScript +3%、React +5%、Java +3%、クラウド +5%（全部合わせると +16%）。</li>
+  <li>📈 <b>年俸交渉</b>で上がった分と、<b>転職</b>するたびの +5%が積み重なっていきます。</li>
+  <li>🎖️ 周回ボーナス<b class="kw">年俸交渉の達人</b>は週給を +5% / +10% / +15%上げてくれます。</li>
+  <li>🎫 役職が上がるとチケットも難しくなります: インターン、社員は1段階、主任、係長は2段階、課長〜部長は3段階、役員からは4段階。</li>
+</ul>
+
+<h2 id="review">人事評価スコアはこう計算されます 📋<a class="anchor" href="#review" aria-label="この見出しへのリンク">#</a></h2>
+<figure class="shot" data-shot="career-week-review"><img src="img/career-week-review.png" alt="週の締め画面の人事評価の結果と年俸交渉のボタン3つ" loading="lazy" decoding="async"><figcaption>評価の週に<b class="kw">1週間を締める</b>を押すと出る人事評価の画面。スコアと基準、年俸交渉のボタン3つが見えます。</figcaption></figure>
+
+<h3 id="평가-기준점-이-점수를-넘어야-승진-후보">評価の基準点（このスコアを超えると昇進候補）<a class="anchor" href="#%ED%8F%89%EA%B0%80-%EA%B8%B0%EC%A4%80%EC%A0%90-%EC%9D%B4-%EC%A0%90%EC%88%98%EB%A5%BC-%EB%84%98%EC%96%B4%EC%95%BC-%EC%8A%B9%EC%A7%84-%ED%9B%84%EB%B3%B4" aria-label="この見出しへのリンク">#</a></h3>
+<p>インターンから社員に上がるときだけ<b>30点</b>固定で、そのあとは<b>55点</b>から始まり、役職が1つ上がるごとに<b>5点</b>ずつ高くなります。スタートアップは6点低くて簡単、外資系は4点高くて厳しいです。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>今の役職 → 次</th><th class="r">大企業、朝コミット</th><th class="r">スタートアップ</th><th class="r">外資系</th></tr></thead>
+  <tbody>
+    <tr><td>インターン → 社員</td><td class="r">30</td><td class="r">30</td><td class="r">30</td></tr>
+    <tr><td>社員 → 主任</td><td class="r">55</td><td class="r">49</td><td class="r">59</td></tr>
+    <tr><td>主任 → 係長</td><td class="r">60</td><td class="r">54</td><td class="r">64</td></tr>
+    <tr><td>係長 → 課長</td><td class="r">65</td><td class="r">59</td><td class="r">69</td></tr>
+    <tr><td>課長 → 次長</td><td class="r">70</td><td class="r">64</td><td class="r">74</td></tr>
+    <tr><td>次長 → 部長</td><td class="r">75</td><td class="r">69</td><td class="r">79</td></tr>
+    <tr><td>部長 → 役員</td><td class="r">80</td><td class="r">74</td><td class="r">84</td></tr>
+    <tr><td>役員 → 常務</td><td class="r">85</td><td class="r">79</td><td class="r">89</td></tr>
+    <tr><td>常務 → CTO</td><td class="r">90</td><td class="r">84</td><td class="r">94</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="평가-점수는-뭘로-정해져요">評価スコアは何で決まる？<a class="anchor" href="#%ED%8F%89%EA%B0%80-%EC%A0%90%EC%88%98%EB%8A%94-%EB%AD%98%EB%A1%9C-%EC%A0%95%ED%95%B4%EC%A0%B8%EC%9A%94" aria-label="この見出しへのリンク">#</a></h3>
+<p>スコアは<b>成果</b>をいちばん重く見て、次に<b>評判</b>、<b>リーダーの好感度</b>の順に見ます。そこに<b>ボーナス</b>がそのまま足されます。</p>
+<ul>
+  <li><b>成果</b>は前回の評価から毎週出した成果を見ます。<b>毎週成果12</b>をこつこつ出せば満点です。</li>
+  <li>評判、リーダーの好感度は評価するその瞬間の値です。</li>
+  <li><b>ボーナス</b>（全部足されます）:
+    <ul>
+      <li>プレゼンのスキル +5、リーダーシップのスキル +5</li>
+      <li>外資系でビジネス英語 +3</li>
+      <li>装備<b class="kw">スケジュール管理アプリのサブスク</b> +3</li>
+      <li>サイドプロジェクト50以上で +3、100以上ならさらに +3</li>
+      <li>周回ボーナス<b class="kw">発表の天才</b> +2 / +4 / +7</li>
+      <li>結婚後の育児中の恋愛効果<b class="kw">家庭的な開発者</b> +3</li>
+    </ul>
+  </li>
+</ul>
+<div class="callout tip"><b>例で感じをつかむ</b><p>大企業の係長（基準65）で週の成果の平均10.3、評判50、リーダーの好感度60なら<b>70点</b>で合格です。プレゼンのスキル1つだけでも +5なのでずっと余裕ができます。</p></div>
+
+<h3 id="주간-성과는-어디서-나와요">週の成果はどこから出る？<a class="anchor" href="#%EC%A3%BC%EA%B0%84-%EC%84%B1%EA%B3%BC%EB%8A%94-%EC%96%B4%EB%94%94%EC%84%9C-%EB%82%98%EC%99%80%EC%9A%94" aria-label="この見出しへのリンク">#</a></h3>
+<ul>
+  <li><b>業務</b>1日1.2、<b>残業</b>1日2.2（会社ごとに違い、スタートアップは多めに、大企業と朝コミットは少し少なめに貯まります）。</li>
+  <li><b>チケット</b>: S 6、A 4、B 2、C 1（会社によって少し違います）。チケットを解けないと成果 −3、評判 −3、リーダーの好感度 −5、ストレス +3。</li>
+  <li><b>チームプロジェクト</b>勝利: ★1 1.5、★2 2.5、★3 4（1週最大6）。</li>
+  <li>メッセージの返信にも成果が付くものがあります。</li>
+  <li><b>曜日の効果</b>: 同じ業務、残業、勉強、サイドを3日連続で入れると3日目から +20%、月曜 −10%、金曜 +10%、残業の翌日の業務、残業は成果、評判 −30%、週末の枠は1.4倍、<b>評価の週は成果1.5倍</b>。</li>
+</ul>
+
+<p>曜日の効果まで入れて計算した<b>スケジュール別の1週</b>です（大企業、評価の週ではない、装備、周回ボーナス、メッセージを除く）。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>スケジュール（月〜金、週末）</th><th class="r">スケジュールの成果</th><th class="r">+ チケットS</th><th class="r">ストレス/週</th><th class="r">体力/週</th></tr></thead>
+  <tbody>
+    <tr><td>基本のスケジュール: 業務、業務、勉強、業務、業務、休憩</td><td class="r">4.32</td><td class="r">9.72</td><td class="r">+10.2</td><td class="r">−10.8</td></tr>
+    <tr><td>同僚とランチ、業務、業務、業務、業務、休憩</td><td class="r">4.88</td><td class="r">10.28</td><td class="r">−6.8</td><td class="r">−8.8</td></tr>
+    <tr><td>同僚とランチ、業務、業務、業務、勉強、休憩</td><td class="r">3.46</td><td class="r">8.86</td><td class="r">−8.8</td><td class="r">−5.8</td></tr>
+    <tr><td>業務5日、休憩</td><td class="r">6.07</td><td class="r">11.47</td><td class="r">+12.2</td><td class="r">−13.8</td></tr>
+    <tr><td>業務、残業、休憩、業務、残業、休憩</td><td class="r">6.21</td><td class="r">11.61</td><td class="r">+9.2</td><td class="r">−10.8</td></tr>
+    <tr><td>残業5日、休憩</td><td class="r">8.32</td><td class="r">13.72</td><td class="r">+32.2</td><td class="r">−38.8</td></tr>
+  </tbody>
+</table></div>
+<p>ストレスには会社が毎週足す分（大企業 +2）が入っています。評価の週はスケジュールの成果が1.5倍なので、同じスケジュールがずっと強くなります（例: 同僚とランチ、業務4、休憩 → 7.32）。</p>
+
+<div class="callout trap"><b>落とし穴: 基本のスケジュールのままにする</b><p>最初に入っている基本のスケジュール（業務、業務、勉強、業務、業務、休憩）はストレスが<b>毎週 +10</b>くらい貯まります。手を付けないと数週で燃え尽きが来て、燃え尽き3回で唐揚げ屋の店主のエンディングで周回が終わります。基本のスケジュールのままだと<b>100% 燃え尽き3回で唐揚げ屋の店主</b>です（ふつう第35週くらい、早ければ第28週）。</p></div>
+
+<div class="callout tip"><b>スコアを上げるヒント</b>
+<ul>
+  <li>🍜 <b>同僚とランチ</b>を毎週1回: リーダーの好感度 +6、ストレス −15。リーダーの好感度が50以上なのにその週にランチがないと −3です。80以上からは期待値のせいで毎週 −2なので、ランチが必ず必要です。</li>
+  <li>⭐ <b>評価の週</b>（第4、16、28…週）は、スケジュール（業務、残業）で得る成果が1.5倍です。この週は業務を詰め込みましょう。</li>
+  <li>🎤 <b>プレゼン</b>（コミット80）は評価 +5なので、いちばん先に覚える価値があります。リーダーシップ（160、プレゼンが必要）も +5。</li>
+  <li>🚀 サイドプロジェクトを50まで育てると評価 +3、100なら +6です。</li>
+  <li>🎫 チケットは自分で解いてSを狙いましょう。<b class="kw">適当に処理</b>は最高がAで、3週連続からスコアが15ずつ削られます。ストレス70以上だとまったく使えません。</li>
+</ul></div>
+
+<h3 id="nego">年俸交渉: どれを押すと得？ 💸<a class="anchor" href="#nego" aria-label="この見出しへのリンク">#</a></h3>
+<p>評価が終わると、昇進したかどうかに関係なく年俸交渉が出ます。ボタンに確率がそのまま書いてあります。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>ボタン</th><th>成功確率</th><th>昇進したとき</th><th>昇進しなかったとき</th><th>失敗すると</th></tr></thead>
+  <tbody>
+    <tr><td>そのまま受け入れる</td><td>100%</td><td>+3%</td><td>+1%</td><td>なし</td></tr>
+    <tr><td>もう少しお願い</td><td>55%（交渉スキルで75%）</td><td>+8%</td><td>+3%</td><td>それでも +2%</td></tr>
+    <tr><td>大きく要求</td><td>30〜55%、評判が高いほど上がる（交渉スキル +20%p）</td><td>+15%</td><td>+6%</td><td>0%、リーダーの好感度 −10</td></tr>
+  </tbody>
+</table></div>
+<div class="callout tip"><b>結論</b><p><b class="kw">もう少しお願い</b>は失敗しても +2%なので<b>損がありません</b>。必ず<b class="kw">そのまま受け入れる</b>よりこちらがいいです。<b class="kw">大きく要求</b>は平均は高いですがリーダーの好感度が削られるので、<b>部長からリーダーの好感度90〜100が昇進条件</b>なのを考えると、高い役職では<b class="kw">もう少しお願い</b>が安全です。</p></div>
+
+<h2 id="promo-table">役職別の昇進条件の総まとめ 📶<a class="anchor" href="#promo-table" aria-label="この見出しへのリンク">#</a></h2>
+<figure class="shot" data-shot="career-promo-sheet"><img src="img/career-promo-sheet.png" alt="昇進条件のシート。次の役職の条件の一覧と達成状況" loading="lazy" decoding="async"><figcaption>ホームで役職を押すと開く<b class="kw">キャリア</b>画面の<b class="kw">昇進条件</b>ボタン。条件を押すと、それを満たしに行く画面にすぐ移ります。</figcaption></figure>
+<p>評価スコアが基準点を超え、<b>下の条件を全部</b>満たすと昇進します。スコアだけ超えると<b class="kw">スコアは十分でしたが、昇進条件が足りません</b>と出ます。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>次の役職</th><th>周回内の条件</th><th>周回外の条件（以前の記録も認定）</th></tr></thead>
+  <tbody>
+    <tr><td>社員</td><td>コーディング力20、集中力10、ストレス80以下</td><td>なし</td></tr>
+    <tr><td>主任</td><td>スキル1つ、コーディング力30、集中力20、ストレス80以下</td><td>なし</td></tr>
+    <tr><td>係長</td><td>スキル2つ、コーディング力40、評判20、ストレス80以下</td><td>なし</td></tr>
+    <tr><td>課長</td><td>スキル3つ、評判40</td><td>なし</td></tr>
+    <tr><td>次長</td><td>スキル5つ、コーディング力60、後輩（インターン）の好感度50</td><td>クラシックチャレンジ150段階まで、キャリアトラック1分野で40段階以上</td></tr>
+    <tr><td>部長</td><td>スキル7つ、評判60、リーダーの好感度90</td><td>クラシック300段階まで、キャリアトラックのフルスタック9章80段階</td></tr>
+    <tr><td>役員</td><td>リーダーシップのスキル、リーダーの好感度95</td><td>サバイバルのノーマルをクリア、クラシック370段階まで、キャリアトラックのフロントエンド10章85段階</td></tr>
+    <tr><td>常務</td><td>スキル10個、評判75、コーディング力75、リーダーの好感度100</td><td>クラシック440段階まで、キャリアトラックのバックエンド11章90段階</td></tr>
+    <tr><td>CTO</td><td>スキル11個すべて、評判100、コーディング力100、リーダーの好感度100、今の周回のチケットS評価95%以上</td><td>クラシック1〜500すべて★★★、キャリアトラック5分野の全段階★★★、チームプロジェクトのオープンソース#12<b class="kw">フレームワーク2.0</b>★★★</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout warn"><b>課長の壁</b><p>課長までは周回の中だけで満たせばいいですが、<b>次長からはクラシック、キャリアトラックの記録</b>が必要です。周回だけがんばって回すと課長で止まります。クラシックステージとキャリアトラックは周回の外でこつこつ進めておきましょう。記録はどの周回でクリアしても認められます。</p></div>
+
+<div class="callout trap"><b>CTOは<b class="kw">9回連続の昇進</b></b><p>評価は9回、昇進は評価ごとに1段階です。インターンから始めると<b>一度も落ちてはいけません</b>。第4週の最初の評価（基準30）から条件をそろえておきましょう。周回ボーナス<b class="kw">経験者採用</b>（200 / 400 CP）で社員や主任から始めると1〜2回の余裕ができます。</p></div>
+
+<h3 id="기술-11개-커밋으로-배워요">スキル11個（コミットで覚えます）<a class="anchor" href="#%EA%B8%B0%EC%88%A0-11%EA%B0%9C-%EC%BB%A4%EB%B0%8B%EC%9C%BC%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EC%9A%94" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="career-tech"><img src="img/career-tech.png" alt="スキル画面。フォルダのように並んだスキル11個とコミットの費用" loading="lazy" decoding="async"><figcaption><b class="kw">スキル</b>画面。ファイルエクスプローラーのような見た目で、コミットを使って覚えます。</figcaption></figure>
+<div class="table-wrap"><table>
+  <thead><tr><th>スキル</th><th class="r">コミット</th><th>先に必要</th><th>効果</th></tr></thead>
+  <tbody>
+    <tr><td>Gitマスター</td><td class="r">50</td><td>-</td><td>誤タップのペナルティ10秒 → 8秒</td></tr>
+    <tr><td>TypeScript</td><td class="r">65</td><td>-</td><td>TSチケット、年俸 +3%</td></tr>
+    <tr><td>Python</td><td class="r">65</td><td>-</td><td>Pythonチケット</td></tr>
+    <tr><td>SQL</td><td class="r">65</td><td>-</td><td>SQLチケット</td></tr>
+    <tr><td>プレゼン</td><td class="r">80</td><td>-</td><td>人事評価 +5</td></tr>
+    <tr><td>Java</td><td class="r">80</td><td>-</td><td>Javaチケット、年俸 +3%</td></tr>
+    <tr><td>ビジネス英語</td><td class="r">95</td><td>-</td><td>外資系の提案を受けられる（外資系で評価 +3）</td></tr>
+    <tr><td>交渉</td><td class="r">95</td><td>プレゼン</td><td>年俸交渉の成功率 +20%</td></tr>
+    <tr><td>React</td><td class="r">95</td><td>TypeScript</td><td>サイドプロジェクト1.2倍、年俸 +5%</td></tr>
+    <tr><td>クラウド</td><td class="r">130</td><td>SQL</td><td>毎週ストレス −1、年俸 +5%</td></tr>
+    <tr><td>リーダーシップ</td><td class="r">160</td><td>プレゼン</td><td>人事評価 +5、インターンの好感度の上昇1.5倍（役員の昇進に必須）</td></tr>
+  </tbody>
+</table></div>
+<p>合計<b>980コミット</b>で11個全部覚えられます。勉強（1日コミット5）がいちばん早いです。11個全部覚えるとエンディング伝説のアーキテクトもついてきます。</p>
+
+<h2 id="tracks">キャリアトラック5分野 🛤️<a class="anchor" href="#tracks" aria-label="この見出しへのリンク">#</a></h2>
+<figure class="shot" data-shot="career-track"><img src="img/career-track.png" alt="業務タブのキャリアトラックの一覧。フロントエンド、バックエンド、Python・AI、データ、フルスタック" loading="lazy" decoding="async"><figcaption>業務タブの<b class="kw">キャリアトラック</b>。5分野のどれでもすぐ始められます。</figcaption></figure>
+<p>キャリアトラックはコードレビュー（O/X）モードです。分野ごとに<b>12章</b>、章ごとに100段階で<b>1,200段階</b>、5分野合わせて6,000段階です。すべての章が最初から開いていて、章の中では1段階ずつ開きます。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>分野</th><th>言語</th><th>章（1 → 12）</th></tr></thead>
+  <tbody>
+    <tr data-id="track:frontend" id="track-frontend"><td>フロントエンド</td><td>JavaScript, TypeScript</td><td>初めてのボタン、フォームバリデーション、リストのレンダリング、状態管理、API連携、ルーティング、型の導入、コンポーネント設計、パフォーマンス最適化、デザインシステム、大規模リファクタリング、フロントリード</td></tr>
+    <tr data-id="track:backend" id="track-backend"><td>バックエンド</td><td>Java, TypeScript</td><td>Helloサーバー、REST API、DB接続、認証、トランザクション、キャッシュ、バッチ処理、メッセージキュー、MSA分割、障害対応、大量トラフィック、バックエンドリード</td></tr>
+    <tr data-id="track:python-ai" id="track-python-ai"><td>Python・AI</td><td>Python</td><td>Python基礎、リストと辞書、ファイル処理、クローラー、データ前処理、可視化、初めてのモデル、特徴量エンジニアリング、ディープラーニング、LLM連携、モデルサービング、AIリード</td></tr>
+    <tr data-id="track:data" id="track-data"><td>データ</td><td>SQL, Python</td><td>SELECT、結合、集計、サブクエリ、スキーマ設計、マイグレーション、ETL、ダッシュボード、データウェアハウス、リアルタイム処理、データ品質、データリード</td></tr>
+    <tr data-id="track:fullstack" id="track-fullstack"><td>フルスタック</td><td>JavaScript, TypeScript, Python, Java, SQL</td><td>サイドプロジェクト、ランディングページ、会員登録、決済、管理画面、統計、通知、検索、レコメンド、グローバルリリース、スケールアップ、CTO</td></tr>
+  </tbody>
+</table></div>
+<ul>
+  <li>⭐ <b>1〜80段階</b>は正確さで星をくれます: 80%以上★★★、60%以上★★、それ未満★。適当に押すと（約50%）★1つです。</li>
+  <li>🔥 <b>81〜100段階</b>は<b class="kw">地獄の区間</b>で、時間で星をくれます。バグが100個から1,000個まで増え、不正解1回に30秒が付きます。</li>
+  <li>☕ 新しく取った星1つごとにコーヒー1杯（1段階につき最大3杯）。</li>
+  <li>📈 昇進に使われる段階: 次長（どの分野でも40段階）、部長（フルスタック9章80段階）、役員（フロントエンド10章85段階）、常務（バックエンド11章90段階）、CTO（全分野全段階★★★）。</li>
+</ul>
+<div class="callout tip"><b>お役立ちヒント</b><p>次長の条件の<b class="kw">1分野40段階</b>は章に関係なく<b>その分野でクリアした段階の数</b>です。そして部長〜常務の条件は1章から全部クリアする必要はなく、<b>その章のその段階</b>だけクリアすればOKです（章の中では1段階ずつ開くので、その段階の手前までは順番にクリアする必要があります）。キャリアトラックそのものの攻略は<a href="start.html#track">スタートガイド</a>にあります。</p></div>
+
+<h2 id="companies">会社5社の比較 🏢<a class="anchor" href="#companies" aria-label="この見出しへのリンク">#</a></h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>会社</th><th class="r">月給の倍率</th><th class="r">毎週のストレス</th><th class="r">成果の倍率</th><th class="r">サイドの倍率</th><th class="r">評価の基準</th><th>入り方</th></tr></thead>
+  <tbody>
+    <tr data-id="company:bigcorp" id="company-bigcorp"><td>大企業、株式会社夜明けコミット</td><td class="r">1倍</td><td class="r">+2</td><td class="r">0.9倍</td><td class="r">1倍</td><td class="r">0</td><td>すべての周回のスタート（残業手当1日¥3,333）</td></tr>
+    <tr data-id="company:startup" id="company-startup"><td>スタートアップ、ピボットラボ</td><td class="r">0.8倍</td><td class="r">+4</td><td class="r">1.2倍</td><td class="r">1.3倍</td><td class="r">−6</td><td>ヘッドハンター（第12週〜、コーディング力90）</td></tr>
+    <tr data-id="company:foreign" id="company-foreign"><td>外資系、グローバルテック支社</td><td class="r">1.4倍</td><td class="r">+3</td><td class="r">1倍</td><td class="r">1倍</td><td class="r">+4</td><td>ヘッドハンター（第16週〜、ビジネス英語 + コーディング力90）</td></tr>
+    <tr data-id="company:morning" id="company-morning"><td>朝コミット</td><td class="r">1.2倍</td><td class="r">+2</td><td class="r">0.9倍</td><td class="r">1倍</td><td class="r">0</td><td>ヘッドハンターの<b class="kw">大企業の経験者採用</b>（第20週〜、最初の会社を離れたあと）</td></tr>
+    <tr data-id="company:freelance" id="company-freelance"><td>フリーランス</td><td class="r">月給なし</td><td class="r">+1</td><td class="r">1倍</td><td class="r">1.2倍</td><td class="r">昇進なし</td><td>ヘッドハンター（第24週〜、評判70、称号なしの周回）</td></tr>
+  </tbody>
+</table></div>
+<ul>
+  <li><b>スタートアップ</b>: 昇進はいちばん簡単ですが、月給0.8倍、ストレス +4。秘密の恋愛のヒロイン<a href="heroine-sohyun.html">紗希</a>に出会う場所です。</li>
+  <li><b>外資系</b>: 月給1.4倍で最高。評価は厳しいですが、英語のボーナス +3があります。<a href="heroine-sophie.html">ソフィー</a>がいる場所。</li>
+  <li><b>朝コミット</b>: ライバルの大企業。月給1.2倍で、社内監査が業界最強に厳しいです。会社のサーガのかわりに監査官<a href="heroine-eunhye.html">麗華</a>の監査がストーリーです。疑惑度が100になるとその週に<b>懲戒解雇</b>で周回が終わるので気をつけましょう。</li>
+</ul>
+
+<h2 id="job-change">転職とヘッドハンター 🤝<a class="anchor" href="#job-change" aria-label="この見出しへのリンク">#</a></h2>
+<p>ヘッドハンターのメッセージは<b>週の締め画面でだけ</b>来ます。<b class="kw">オファーを聞いてみる</b>を押すと<b>メッセンジャータブのいちばん上の<b class="kw">届いたオファー</b></b>に会社が載り、<b class="kw">入社する</b>か<b class="kw">拒否</b>を選べばOKです。</p>
+<figure class="shot" data-shot="career-offers"><img src="img/career-offers.png" alt="メッセンジャータブの上の届いたオファー欄。会社の名前と入社する、拒否ボタン" loading="lazy" decoding="async"><figcaption>メッセンジャータブの<b class="kw">届いたオファー</b>。翌週までに答えないと自動で断ったことになります。</figcaption></figure>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>提案</th><th>来る条件</th><th>来かた</th></tr></thead>
+  <tbody>
+    <tr><td>スタートアップ、ピボットラボ</td><td>第12週〜、コーディング力90以上、スタートアップに行ったことがない</td><td>条件を満たした最初の週に必ず</td></tr>
+    <tr><td>外資系、グローバルテック支社</td><td>第16週〜、ビジネス英語、コーディング力90以上、外資系に行ったことがない</td><td>条件を満たした最初の週に必ず</td></tr>
+    <tr><td>朝コミット（大企業の経験者採用）</td><td>第20週〜、今スタートアップ、フリーランス、外資系にいて、朝コミットに行ったことがない</td><td>条件を満たした最初の週に必ず</td></tr>
+    <tr><td>フリーランス</td><td>第24週〜、評判70以上、<b>称号なしの周回</b></td><td>条件を満たした最初の週に必ず、周回ごとに1回</td></tr>
+    <tr><td>海外本社（→ 外資系の提案）</td><td>第60週〜、ビジネス英語、コーディング力75以上</td><td>ときどきランダムで</td></tr>
+    <tr><td>カウンターオファー</td><td>第30週〜、評判55以上</td><td>ときどきランダムで。交渉すると60%で +¥166,667、リーダー −5、失敗するとリーダー −10、ストレス +6</td></tr>
+  </tbody>
+</table></div>
+<p>会社のサーガの選択肢から提案が来ることもあります（大企業の<b class="kw">静かに履歴書を更新する</b> → 外資系、スタートアップの精算 → ほかの会社など）。</p>
+
+<figure class="shot" data-shot="career-job-warn"><img src="img/career-job-warn.png" alt="転職しますか？の確認ウィンドウ。転職先の会社と、連絡が途切れるヒロインの名前が赤で表示" loading="lazy" decoding="async"><figcaption><b class="kw">入社する</b>を押すと確認ウィンドウが出ます。辞めると連絡が途切れるヒロインが赤い字で出ます。</figcaption></figure>
+
+<h3 id="이직하면-바뀌는-것">転職すると変わること<a class="anchor" href="#%EC%9D%B4%EC%A7%81%ED%95%98%EB%A9%B4-%EB%B0%94%EB%80%8C%EB%8A%94-%EA%B2%83" aria-label="この見出しへのリンク">#</a></h3>
+<ul>
+  <li>✅ <b>役職はそのまま</b>持っていきます。昇給の累積<b>+5%</b>（フリーランスに行くときはなし）。</li>
+  <li>🔄 新しい会社の同僚の好感度は<b>5〜15</b>から新しく始まり、今期の成果もリセットされます。リーダーの好感度が評価スコアの20%で、部長からはリーダーの好感度90〜100が条件なので、高い役職ほど転職直後の評価が大変です。</li>
+  <li>👋 前の会社の人たち（リーダー、先輩、後輩、人事チーム、社長）はメッセンジャーからすぐ消えます。</li>
+  <li>💔 会社のヒロイン: 最初の会社の彩花、美咲、外資系のソフィー、朝コミットの麗華は<b>片想い以上でなければ連絡が途切れます</b>。スタートアップの紗希はスタートアップを離れたら終わりです。</li>
+  <li>🚫 一度辞めた会社には今の周回でもう行けません。断ったり答えなかったりした会社の提案も二度と来ません。</li>
+</ul>
+<div class="callout tip"><b>知らないと損</b><p>外資系の提案の条件（ビジネス英語 + コーディング力90）が、そのままエンディング<b><b class="kw">海外本社へ</b></b>の条件（外資系に在職 + コーディング力90 + ビジネス英語）です。ヘッドハンターを通して外資系に入った瞬間に<b class="kw">エンディング条件クリア！</b>が出ます。100週まで終えれば図鑑に残ります。</p></div>
+
+<h2 id="saga">会社のサーガ: 会社ごとに大事件が起こる 🎬<a class="anchor" href="#saga" aria-label="この見出しへのリンク">#</a></h2>
+<p>大企業、スタートアップ、外資系、フリーランスには<b>第6週から第60週台まで続くストーリー</b>があります。段階はおおよそ第6 → 16 → 28 → 40（38）→ 54（50）→ 62週に開き、前の段階の選択によって結末が分かれます。結末は<b>途中で満たすエンディング</b>なので、周回は続きます。</p>
+<ul>
+  <li>サーガのメッセージは答えないと週が進まない重要なメッセージです。<b>既読スルーするとその会社のストーリーは今の周回では終わり</b>です。</li>
+  <li>途中で転職するとサーガが止まります（その会社の条件に合わない）。連続起業家で退職してもサーガは来ません。</li>
+  <li>段階ごとに決まっているのは<b>いちばん早い週</b>です。転職して入った会社は、その週がもう過ぎていれば入社後に前の段階から順番に来ます。</li>
+  <li>朝コミットにはサーガがありません。かわりに麗華の監査が続きます。</li>
+</ul>
+
+<h3 id="대기업-주식회사-새벽커밋-결제-대장애">大企業、株式会社夜明けコミット: 決済の大障害<a class="anchor" href="#%EB%8C%80%EA%B8%B0%EC%97%85-%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC-%EC%83%88%EB%B2%BD%EC%BB%A4%EB%B0%8B-%EA%B2%B0%EC%A0%9C-%EB%8C%80%EC%9E%A5%EC%95%A0" aria-label="この見出しへのリンク">#</a></h3>
+<p>第6週の深夜の決済障害で始まり、責任の押し付け合い（第16週）→ 監査（第28週）→ TFリーダーの提案（第40週）→ 第54週の結末です。</p>
+<details class="spoiler"><summary>ネタバレ: 大企業のサーガの結末3つと分かれ道</summary>
+  <ul>
+    <li>第6週の障害: <b class="kw">パジャマのまま接続して自分でロールバック</b> 60%で成功（失敗しても次の段階は開きます）、<b class="kw">結翔先輩に電話する</b>、<b class="kw">まず障害告知テンプレートを埋める</b>。</li>
+    <li>第16週の責任の押し付け合い: <b class="kw">「はい、それでお願いします」</b>（インターンのせい、インターンの好感度 −25）、<b class="kw">「僕のオンコールでした…」</b>（責任を取る）、<b class="kw">レガシーモジュールの暴露</b> 50%（失敗すると責任を取ったことに）。</li>
+    <li>第28週: インターンのせいにしたなら、監査で<b class="kw">認めて謝る</b>（懲戒）/ <b class="kw">「課長の指示でした」と暴露する</b> 50% / <b class="kw">最後まで「記憶にありません」</b> 35%。失敗すると懲戒。そうでなければふつうの監査。</li>
+    <li>第40週のTFリーダー（懲戒がないとき）: <b class="kw">引き受ける</b> 75%で成功。</li>
+  </ul>
+  <div class="cards">
+    <div class="card item" data-id="ending:bigcorp-promoted" id="ending-bigcorp-promoted">
+      <div class="card-head"><b class="name">障害が生んだ昇進</b><span class="badge">第54週〜</span></div>
+      <dl class="kv"><dt>条件</dt><dd>懲戒なしで監査を乗り切り、第40週のTFリーダーを<b class="kw">引き受ける</b>で成功 → 第54週の特別昇進のメッセージ。</dd><dt>報酬</dt><dd>返信によって¥333,333または¥166,667 + 評判。<b>役職が上がるわけではありません。</b></dd></dl>
+    </div>
+    <div class="card item" data-id="ending:bigcorp-sidelined" id="ending-bigcorp-sidelined">
+      <div class="card-head"><b class="name">うやむや</b><span class="badge">第54週〜</span></div>
+      <dl class="kv"><dt>条件</dt><dd>懲戒なしで監査を乗り切り、TFリーダーを<b class="kw">丁寧に辞退</b>するか、引き受けて失敗 → 第54週のメッセージ。<b class="kw">静かに履歴書を更新する</b>を選ぶと外資系の提案も来ます。</dd></dl>
+    </div>
+    <div class="card item" data-id="ending:bigcorp-exiled" id="ending-bigcorp-exiled">
+      <div class="card-head"><b class="name">地方のデータセンターへ</b><span class="badge">第54週〜</span></div>
+      <dl class="kv"><dt>条件</dt><dd>インターンのせい → 監査で懲戒 → 第54週の地方転勤のメッセージで<b class="kw">受け入れて地方へ行く</b>。<b class="kw">辞表を出してスタートアップへ行く</b>を選ぶと、エンディングなしですぐスタートアップに移ります。</dd></dl>
+    </div>
+  </div>
+</details>
+
+<h3 id="스타트업-피봇랩스-데모에서-엑시트까지">スタートアップ、ピボットラボ: デモからイグジットまで<a class="anchor" href="#%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%ED%94%BC%EB%B4%87%EB%9E%A9%EC%8A%A4-%EB%8D%B0%EB%AA%A8%EC%97%90%EC%84%9C-%EC%97%91%EC%8B%9C%ED%8A%B8%EA%B9%8C%EC%A7%80" aria-label="この見出しへのリンク">#</a></h3>
+<p>第6週の投資デモ → 第16週の資金調達 → 第26週のクランチ → 第38週の燃え尽きの危機または給料返上 → 第50週の買収提案 → 第62週の結末です。</p>
+<details class="spoiler"><summary>ネタバレ: スタートアップのサーガの結末3つと分かれ道</summary>
+  <ul>
+    <li>第16週の資金調達で<b class="kw">ストックオプションの上乗せを求める</b> 60%の成功が<b>大型イグジットのカギ</b>です。</li>
+    <li>第26週のクランチ: <b class="kw">全力で身を削る</b>か<b class="kw">陽菜さんとデプロイ自動化</b>の失敗（45%）なら第38週に先輩の燃え尽きのストーリーへ、そうでなければ給料返上のストーリーへ行きます。</li>
+    <li>第50週の買収提案: <b class="kw">賛成</b>または<b class="kw">サービス存続を条件に逆提案</b>（45%）が成功すれば売却、<b class="kw">反対</b>や逆提案の失敗ならピボット。</li>
+  </ul>
+  <div class="cards">
+    <div class="card item" data-id="ending:startup-exit-rich" id="ending-startup-exit-rich">
+      <div class="card-head"><b class="name">大型イグジット</b><span class="badge">第62週〜</span></div>
+      <dl class="kv"><dt>条件</dt><dd>ストックオプション確保 + 第50週に売却 → 第62週の精算のメッセージ。</dd><dt>報酬</dt><dd>精算金¥3,333,333。<b class="kw">買収した会社に出社する</b>は転職の提案も付き、<b class="kw">精算金でひとまず休む</b>は2週の休み。</dd></dl>
+    </div>
+    <div class="card item" data-id="ending:startup-exit-small" id="ending-startup-exit-small">
+      <div class="card-head"><b class="name">小さなイグジット</b><span class="badge">第62週〜</span></div>
+      <dl class="kv"><dt>条件</dt><dd>ストックオプションなしで売却 → 第62週の雇用承継のメッセージ。</dd><dt>報酬</dt><dd>¥333,333 + ほかの会社の提案。</dd></dl>
+    </div>
+    <div class="card item" data-id="ending:startup-pivot" id="ending-startup-pivot">
+      <div class="card-head"><b class="name">またピボット</b><span class="badge">第62週〜</span></div>
+      <dl class="kv"><dt>条件</dt><dd>第50週の買収に<b class="kw">反対</b>または逆提案の失敗 → 第62週のピボットのメッセージ。<b class="kw">最後まで一緒にやる</b> 40%なら +¥1,111,111。</dd></dl>
+    </div>
+  </div>
+</details>
+
+<h3 id="외국계-글로벌테크-지사-이관-소문">外資系、グローバルテック支社: 移管のうわさ<a class="anchor" href="#%EC%99%B8%EA%B5%AD%EA%B3%84-%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%85%8C%ED%81%AC-%EC%A7%80%EC%82%AC-%EC%9D%B4%EA%B4%80-%EC%86%8C%EB%AC%B8" aria-label="この見出しへのリンク">#</a></h3>
+<p>第6週のタウンホール → 第16週の移管のうわさ → 第28週の希望退職の案内 → 第40週の労組総会、本社1on1、耐える → 第54週の結末です。</p>
+<details class="spoiler"><summary>ネタバレ: 外資系のサーガの結末4つと分かれ道</summary>
+  <ul>
+    <li>第28週の希望退職の案内で<b class="kw">労組設立の署名に名前を書く</b> = 労組ルート。</li>
+    <li>第16週の<b class="kw">本社リポジトリにPR</b>（70%）または第28週の<b class="kw">海外ハブ移管TFに志願する</b>（50%）が成功し、労組の署名をしていなければ第40週の本社1on1へ。ここで<b class="kw">英語で真っ向勝負する</b> 60%の成功なら本社のオファー。</li>
+    <li>どちらでもなければ第40週<b class="kw">耐える</b> / <b class="kw">ヘッドハンターに電話する</b>（スタートアップの提案、すでにスタートアップに行ったことがあれば提案なし）→ 第54週に支社解散。</li>
+  </ul>
+  <div class="cards">
+    <div class="card item" data-id="ending:foreign-union" id="ending-foreign-union"><div class="card-head"><b class="name">支社の労組</b><span class="badge">第54週〜</span></div><dl class="kv"><dt>条件</dt><dd>労組の署名 → 第40週の労組総会 → 第54週の交渉のメッセージ（どの返信でも）。</dd></dl></div>
+    <div class="card item" data-id="ending:foreign-hq" id="ending-foreign-hq"><div class="card-head"><b class="name">本社チーム所属</b><span class="badge">第54週〜</span></div><dl class="kv"><dt>条件</dt><dd>本社PRや移管TFが成功 → 1on1で<b class="kw">英語で真っ向勝負</b>が成功 → 第54週のオファーで<b class="kw">サインする</b>（+¥555,556）。</dd></dl></div>
+    <div class="card item" data-id="ending:foreign-loyal" id="ending-foreign-loyal"><div class="card-head"><b class="name">義理堅い男</b><span class="badge">第54週〜</span></div><dl class="kv"><dt>条件</dt><dd>同じ道で本社のオファーまで行って<b class="kw">支社に残る同僚を思って断る</b>。</dd></dl></div>
+    <div class="card item" data-id="ending:foreign-shutdown" id="ending-foreign-shutdown"><div class="card-head"><b class="name">支社解散</b><span class="badge">第54週〜</span></div><dl class="kv"><dt>条件</dt><dd>労組の署名も本社のオファーもなし → 第54週の支社解散のメッセージ（どの返信でも）。</dd></dl></div>
+  </div>
+</details>
+
+<h3 id="프리랜서-쇼핑몰-외주와-잔금-체불">フリーランス: ショッピングサイトの外注と残金の未払い<a class="anchor" href="#%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EC%87%BC%ED%95%91%EB%AA%B0-%EC%99%B8%EC%A3%BC%EC%99%80-%EC%9E%94%EA%B8%88-%EC%B2%B4%EB%B6%88" aria-label="この見出しへのリンク">#</a></h3>
+<p>第6週のショッピングサイトの外注 → 第16週の機能追加 → 第28週の残金の未払い → 第40週の訴訟、被害者の会、再依頼 → 第54週の結末です。フリーランスは称号のない周回でしかなれないので、このサーガも称号のない周回専用です。</p>
+<details class="spoiler"><summary>ネタバレ: フリーランスのサーガの結末2つと分かれ道</summary>
+  <ul>
+    <li>第6週の<b class="kw">「契約書と前金30％が先です」</b> 60%の成功で契約書を確保（+¥1,000,000）→ 第40週の訴訟で有利です。</li>
+    <li>第28週の残金の未払い: <b class="kw">内容証明を送る</b> = 訴訟ルート、<b class="kw">開発者コミュニティに経緯を投稿する</b> = 被害者の会ルート、<b class="kw">保守の停止を正式に通知する</b> 45%なら¥2,333,333をすぐ受け取って再依頼ルート。</li>
+  </ul>
+  <div class="cards">
+    <div class="card item" data-id="ending:freelance-agency" id="ending-freelance-agency"><div class="card-head"><b class="name">契約書が先です</b><span class="badge">第54週〜</span></div><dl class="kv"><dt>条件</dt><dd>第40週の段階で被害者の代表を引き受けなかったすべての道 → 第54週のエージェンシーの提案（どの返信でも: エージェンシー / 正社員の提案 / 単価アップ）。</dd></dl></div>
+    <div class="card item" data-id="ending:freelance-crusader" id="ending-freelance-crusader"><div class="card-head"><b class="name">未払いハンター</b><span class="badge">第54週〜</span></div><dl class="kv"><dt>条件</dt><dd>第28週にコミュニティに経緯を投稿 → 第40週の被害者12人のメッセージで<b class="kw">代表を引き受ける</b> → 第54週に集団訴訟で勝利（+¥2,333,333）。</dd></dl></div>
+  </div>
+</details>
+
+<h2 id="자주-묻는-질문">よくある質問<a class="anchor" href="#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8" aria-label="この見出しへのリンク">#</a></h2>
+<dl class="faq">
+  <dt>スコアは基準を超えたのに昇進できませんでした。</dt><dd>役職ごとの条件のどれかが足りないんです。ホームで役職を押して<b class="kw">キャリア</b>画面の<b class="kw">昇進条件</b>を開き、まだ満たしていない行を確認しましょう。次長からはクラシックステージ、キャリアトラックの記録が必要なので、周回の中だけでは満たせません。</dd>
+  <dt>転職すると役職はリセットされますか？</dt><dd>いいえ。役職はそのまま、昇給の累積は +5%です。そのかわり同僚の好感度と今期の成果が新しく始まります。</dd>
+  <dt>フリーランスの提案が来ません。</dt><dd>称号を付けた周回には来ません。称号なしで第24週以降に評判70を超えるとその週に来ます。1周回に1回だけで、断ったり既読スルーしたりすると終わりです。</dd>
+  <dt>起業したいのに<b class="kw">退職して全力投球</b>が押せません。</dt><dd>残高222万円が必要です。そのお金は引かれず、確認だけです。周回ボーナス<b class="kw">親からの仕送り</b>、ランチを減らして貯金、シード投資金でそろえましょう。</dd>
+  <dt>シリーズAや上場に失敗したら、またチャンスは来ますか？</dt><dd>いいえ。シリーズA（第34週）と上場（第60週、20%）は周回ごとに1回です。失敗したらその周回では終わりです。</dd>
+  <dt>称号エンディングで早く終えたらコインが0です。</dt><dd>コインとCPは100週を最後まで終えた周回だけもらえます。そのかわり初めて見る称号エンディングならエピックパックが出て、完走の回数にも数えます。</dd>
+  <dt>会社のサーガのエンディングが出たのに図鑑にありません。</dt><dd>サーガの結末は途中で満たすエンディングなので、100週を終えないと図鑑に残りません。その前に称号エンディングや起業で周回が終わると消えます。</dd>
+</dl>
+<nav class="pager" aria-label="前のページと次のページ"><a class="prev" href="start.html"><small>← 前のページ</small>スタートガイド</a><a class="next" href="heroines.html"><small>次のページ →</small>ヒロイン攻略</a></nav>
+<p class="back-home"><a href="index.html">📖 攻略本ホームへ戻る</a></p>
+</article></main>
+</div>
+<button class="totop" type="button" aria-label="ページの先頭へ">↑</button>
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="拡大表示（Escで閉じる）" tabindex="-1"><div><p></p></div></div>
+<footer class="gf"><p>この攻略本は今のゲームに合わせてまとめています。アップデートで数値が変わることがあります。</p><p><a href="../../">開発者体験 (Build Failed)</a></p><p>© 2026 Dawn commit</p></footer>
+<script src="assets/guide.js?v=7457ec55" defer></script>
+</body>
+</html>

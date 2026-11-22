@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>投資の攻略 | 開発者体験 攻略本</title>
+<meta name="description" content="株10銘柄、不動産42軒、実物資産9品目のしくみと収益率、おすすめの運用法と破産するパターン、投資エンディングまで">
+<meta name="theme-color" content="#17142B">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="開発者体験 (Build Failed), Dawn commit">
+<meta property="og:url" content="https://dawncommitgames.com/guide/ja/invest.html">
+<meta property="og:title" content="投資の攻略 | 開発者体験 攻略本">
+<meta property="og:description" content="株10銘柄、不動産42軒、実物資産9品目のしくみと収益率、おすすめの運用法と破産するパターン、投資エンディングまで">
+<meta property="og:image" content="https://dawncommitgames.com/icon-512.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://dawncommitgames.com/guide/ja/invest.html">
+<link rel="alternate" hreflang="ko" href="https://dawncommitgames.com/guide/invest.html">
+<link rel="alternate" hreflang="en" href="https://dawncommitgames.com/guide/en/invest.html">
+<link rel="alternate" hreflang="ja" href="https://dawncommitgames.com/guide/ja/invest.html">
+<link rel="alternate" hreflang="x-default" href="https://dawncommitgames.com/guide/invest.html">
+<link rel="icon" type="image/png" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="stylesheet" href="assets/guide.css?v=7457ec55">
+<script>try{var t=localStorage.getItem('guide-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へスキップ</a>
+<header class="gh"><div class="gh-in">
+  <button class="icon-btn menu-btn" type="button" aria-label="目次を開く" aria-expanded="false" aria-controls="side"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="gh-brand" href="index.html"><img src="../../favicon.png" alt="" width="30" height="30">攻略本 <small>開発者体験</small></a>
+  <div class="gh-search" role="search">
+    <svg class="sicon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="攻略本を検索（例: 優奈、コーヒー、起業）" autocomplete="off" aria-label="攻略本を検索">
+    <div class="results" role="listbox" aria-label="検索結果"></div>
+  </div>
+  <button class="icon-btn search-btn" type="button" aria-label="検索を開く" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+  <details class="lang-menu"><summary class="icon-btn" aria-label="言語を変える" title="言語を変える"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></summary><div class="lang-pop"><a href="../invest.html" lang="ko" hreflang="ko">한국어</a><a href="../en/invest.html" lang="en" hreflang="en">English</a><a href="invest.html" lang="ja" hreflang="ja" aria-current="true">日本語</a></div></details>
+  <button class="icon-btn theme-btn" type="button" aria-label="ダークモードにする"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+</div></header>
+<nav class="chipbar" aria-label="分類"><div class="chips"><a class="chip" href="index.html#topics">🔘 すべてのテーマ</a><a class="chip" href="start.html">🚀 スタート</a><a class="chip" href="career.html">📈 キャリア</a><a class="chip" href="heroines.html">💌 ヒロイン</a><a class="chip" href="titles.html">🏷️ 称号</a><a class="chip" href="gear.html">🎒 装備</a><a class="chip on" href="invest.html" aria-current="true">💹 投資</a><a class="chip" href="home.html">🏠 家族</a></div></nav>
+<div class="layout">
+<nav class="side" id="side" aria-label="攻略本の目次"><p class="side-title">攻略本の目次 <button class="tree-all" type="button" data-open="1">すべて開く</button></p><ul class="nav tree"><li class="leaf"><a href="index.html"><span class="em">🏠</span>攻略本ホーム</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html"><span class="em">🚀</span>スタートガイド</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#tabs">タブをひと目で 🗺️</a></summary><ul><li class="leaf"><a href="start.html#%ED%99%88">ホーム 🏠</a></li><li class="leaf"><a href="start.html#%EC%97%85%EB%AC%B4">業務 💻</a></li><li class="leaf"><a href="start.html#%EB%A9%94%EC%8B%A0%EC%A0%80">メッセンジャー 💬</a></li><li class="leaf"><a href="start.html#%ED%8C%80">チーム 👥</a></li><li class="leaf"><a href="start.html#%ED%88%AC%EC%9E%90">投資 📈</a></li></ul></details></li><li class="leaf"><a href="start.html#tutorial">最初の周回の流れ: チュートリアル1〜4章 🎓</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#classic-vs-track">クラシックステージとキャリアトラック、何が違う？ 🧩</a></summary><ul><li class="leaf"><a href="start.html#classic">クラシックステージ（画面の名前はクラシックチャレンジ）の攻略</a></li><li class="leaf"><a href="start.html#track">キャリアトラックの攻略</a></li><li class="leaf"><a href="start.html#suspend">セーブして出る</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#career-week">キャリアの周回: 1週間はこう流れます 📅</a></summary><ul><li class="leaf"><a href="start.html#plan">今週のスケジュールの組み方</a></li><li class="leaf"><a href="start.html#ticket">今週のチケット</a></li><li class="leaf"><a href="start.html#burnout">体力、ストレス、燃え尽き、倒れる 🔥</a></li><li class="leaf"><a href="start.html#messages">メッセージの返信、既読スルー</a></li><li class="leaf"><a href="start.html#run-end">周回の終わりの報酬: CPとコイン</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#resources">通貨の総まとめ: コーヒー、コイン、カード 💰</a></summary><ul><li class="leaf"><a href="start.html#coffee">コーヒー ☕ の手に入れ方すべて</a></li><li class="leaf"><a href="start.html#coins">コイン 💰 の手に入れ方、使い方</a></li><li class="leaf"><a href="start.html#packs">カードパック 🃏 の確率と天井</a></li><li class="leaf"><a href="start.html#mythic-shards">神話のかけら</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#daily">毎日こなすルーティン ✅</a></summary><ul><li class="leaf"><a href="start.html#attendance">出席チェック</a></li><li class="leaf"><a href="start.html#quests">クエスト</a></li><li class="leaf"><a href="start.html#ads">報酬型広告</a></li><li class="leaf"><a href="start.html#season-pass">シーズンパス（コミットXP）</a></li><li class="leaf"><a href="start.html#mailbox">受信箱</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#team">同僚とチームプロジェクト 👥</a></summary><ul><li class="leaf"><a href="start.html#coworkers">同僚カード</a></li><li class="leaf"><a href="start.html#fusion">合成</a></li><li class="leaf"><a href="start.html#team-projects">チームプロジェクトとチームパワー</a></li><li class="leaf"><a href="start.html#skill-trees">スキルツリー</a></li><li class="leaf"><a href="start.html#%EB%8F%99%EB%A3%8C-%EC%B1%84%EB%84%90%EA%B3%BC-%EC%B9%9C%EB%B0%80%EB%8F%84">同僚チャンネルと親密度</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#challenge-modes">業務タブのチャレンジモード 🏆</a></summary><ul><li class="leaf"><a href="start.html#survival">サバイバル</a></li><li class="leaf"><a href="start.html#tower">無限徹夜（タワー）</a></li><li class="leaf"><a href="start.html#no-coffee">ノーコーヒー挑戦</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#social">フレンドと一緒に 🤝</a></summary><ul><li class="leaf"><a href="start.html#system-popularity">人気度（いいね） 👍</a></li><li class="leaf"><a href="start.html#system-blame-relay">Git Blameリレー 🔍</a></li><li class="leaf"><a href="start.html#draw">今日のニックネーム抽選 🎰</a></li><li class="leaf"><a href="start.html#system-hotfix-outage">今日のホットフィックス 🔥</a></li><li class="leaf"><a href="start.html#outage">サーバー障害対応 🚨</a></li><li class="leaf"><a href="start.html#system-friends">フレンドとコーヒー ☕</a></li><li class="leaf"><a href="start.html#system-leaderboard">ランキング 🏆</a></li><li class="leaf"><a href="start.html#system-duel">コードレビュー1対1 ⚔️</a></li><li class="leaf"><a href="start.html#system-bug-bounty">バグバウンティ 🐛</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="start.html#perks">周回ボーナス（CP） 🎓</a></summary><ul><li class="leaf"><a href="start.html#perk-tier">CPのティア: 何から買う？</a></li><li class="leaf"><a href="start.html#perk-effects">ボーナス効果の一覧</a></li><li class="leaf"><a href="start.html#perk-costs">CP費用の一覧</a></li></ul></details></li><li class="leaf"><a href="start.html#fast-runs">次の周回を早く回すコツ ⏩</a></li><li class="leaf"><a href="start.html#shop-iap">ショップの有料商品（画面のまま）</a></li><li class="leaf"><a href="start.html#mistakes">初心者によくあるミス ⚠️</a></li><li class="leaf"><a href="start.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="career.html"><span class="em">📈</span>昇進、キャリア</a></summary><ul><li class="leaf"><a href="career.html#run-rules">まずは周回のしくみから 🗓️</a></li><li class="leaf"><a href="career.html#ranks">役職10段階と月給 💼</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="career.html#review">人事評価スコアはこう計算されます 📋</a></summary><ul><li class="leaf"><a href="career.html#%ED%8F%89%EA%B0%80-%EA%B8%B0%EC%A4%80%EC%A0%90-%EC%9D%B4-%EC%A0%90%EC%88%98%EB%A5%BC-%EB%84%98%EC%96%B4%EC%95%BC-%EC%8A%B9%EC%A7%84-%ED%9B%84%EB%B3%B4">評価の基準点（このスコアを超えると昇進候補）</a></li><li class="leaf"><a href="career.html#%ED%8F%89%EA%B0%80-%EC%A0%90%EC%88%98%EB%8A%94-%EB%AD%98%EB%A1%9C-%EC%A0%95%ED%95%B4%EC%A0%B8%EC%9A%94">評価スコアは何で決まる？</a></li><li class="leaf"><a href="career.html#%EC%A3%BC%EA%B0%84-%EC%84%B1%EA%B3%BC%EB%8A%94-%EC%96%B4%EB%94%94%EC%84%9C-%EB%82%98%EC%99%80%EC%9A%94">週の成果はどこから出る？</a></li><li class="leaf"><a href="career.html#nego">年俸交渉: どれを押すと得？ 💸</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="career.html#promo-table">役職別の昇進条件の総まとめ 📶</a></summary><ul><li class="leaf"><a href="career.html#%EA%B8%B0%EC%88%A0-11%EA%B0%9C-%EC%BB%A4%EB%B0%8B%EC%9C%BC%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EC%9A%94">スキル11個（コミットで覚えます）</a></li></ul></details></li><li class="leaf"><a href="career.html#tracks">キャリアトラック5分野 🛤️</a></li><li class="leaf"><a href="career.html#companies">会社5社の比較 🏢</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="career.html#job-change">転職とヘッドハンター 🤝</a></summary><ul><li class="leaf"><a href="career.html#%EC%9D%B4%EC%A7%81%ED%95%98%EB%A9%B4-%EB%B0%94%EB%80%8C%EB%8A%94-%EA%B2%83">転職すると変わること</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="career.html#saga">会社のサーガ: 会社ごとに大事件が起こる 🎬</a></summary><ul><li class="leaf"><a href="career.html#%EB%8C%80%EA%B8%B0%EC%97%85-%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC-%EC%83%88%EB%B2%BD%EC%BB%A4%EB%B0%8B-%EA%B2%B0%EC%A0%9C-%EB%8C%80%EC%9E%A5%EC%95%A0">大企業、株式会社夜明けコミット: 決済の大障害</a></li><li class="leaf"><a href="career.html#%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%ED%94%BC%EB%B4%87%EB%9E%A9%EC%8A%A4-%EB%8D%B0%EB%AA%A8%EC%97%90%EC%84%9C-%EC%97%91%EC%8B%9C%ED%8A%B8%EA%B9%8C%EC%A7%80">スタートアップ、ピボットラボ: デモからイグジットまで</a></li><li class="leaf"><a href="career.html#%EC%99%B8%EA%B5%AD%EA%B3%84-%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%85%8C%ED%81%AC-%EC%A7%80%EC%82%AC-%EC%9D%B4%EA%B4%80-%EC%86%8C%EB%AC%B8">外資系、グローバルテック支社: 移管のうわさ</a></li><li class="leaf"><a href="career.html#%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EC%87%BC%ED%95%91%EB%AA%B0-%EC%99%B8%EC%A3%BC%EC%99%80-%EC%9E%94%EA%B8%88-%EC%B2%B4%EB%B6%88">フリーランス: ショッピングサイトの外注と残金の未払い</a></li></ul></details></li><li class="leaf"><a href="career.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroines.html"><span class="em">💌</span>ヒロイン攻略</a></summary><ul><li class="leaf"><a href="heroines.html#pick">誰から攻略する？ 目的別のおすすめ 🎯</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroines.html#compare">13人をひと目で比較 🗂️</a></summary><ul><li class="leaf"><a href="heroines.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EB%B2%95%EA%B3%BC-%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C">出会い方と固有システム</a></li><li class="leaf"><a href="heroines.html#%EB%90%98%EB%8A%94-%EA%B2%83-%EA%B2%B0%ED%98%BC-%EC%97%94%EB%94%A9-%EB%B3%B4%EC%83%81">できること、結婚エンディングの報酬</a></li></ul></details></li><li class="leaf"><a href="heroines.html#common">すべてのヒロイン共通ルールのまとめ 📌</a></li><li class="leaf"><a href="heroines.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul><ul class="subs"><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-seoyun.html">高橋美咲 攻略</a></summary><ul><li class="leaf"><a href="heroine-seoyun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-seoyun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-seoyun.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-seoyun.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-seoyun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-seoyun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-seoyun.html#fail">失敗、別れの条件と避け方</a></li><li class="leaf"><a href="heroine-seoyun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-seoyun.html#common-rules">📌 すべてのヒロイン共通ルール</a></summary><ul><li class="leaf"><a href="heroine-seoyun.html#%EB%A7%A4%EC%A3%BC-%EC%A7%80%EC%BC%9C%EC%95%BC-%ED%95%A0-%EA%B2%83">毎週守ること</a></li><li class="leaf"><a href="heroine-seoyun.html#%EB%84%98%EC%B9%9C-%ED%98%B8%EA%B0%90%EB%8F%84-%ED%9A%A8%EA%B3%BC">あふれた好感度の効果</a></li></ul></details></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-harin.html">佐々木彩花 攻略</a></summary><ul><li class="leaf"><a href="heroine-harin.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-harin.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-harin.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-harin.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-harin.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-harin.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-harin.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-harin.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-daeun.html">中村七海 攻略</a></summary><ul><li class="leaf"><a href="heroine-daeun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-daeun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-daeun.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-daeun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-minji.html">小林莉子 攻略</a></summary><ul><li class="leaf"><a href="heroine-minji.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-minji.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-minji.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-minji.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-minji.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-minji.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-minji.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-minji.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-yuna.html">松本優奈 攻略</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-yuna.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></summary><ul><li class="leaf"><a href="heroine-yuna.html#%EB%B2%88%ED%98%B8-%EB%A9%94%EC%8B%9C%EC%A7%80">番号のメッセージ</a></li></ul></details></li><li class="leaf"><a href="heroine-yuna.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-yuna.html#%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0-%EA%B2%B0%ED%98%BC">告白 → 交際 → 結婚</a></li><li class="leaf"><a href="heroine-yuna.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-yuna.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-yuna.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-yuna.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-hyeyun.html">山本葵 攻略</a></summary><ul><li class="leaf"><a href="heroine-hyeyun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-hyeyun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%9D%B4%EB%B3%84-%EC%8D%B8-%ED%98%9C%EC%9C%A4%EB%A7%8C%EC%9D%98-%ED%9D%90%EB%A6%84">別れ → 片想い（葵だけの流れ）</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-hyeyun.html#%EC%97%B0%EC%95%A0-%EA%B2%B0%ED%98%BC">交際、結婚</a></summary><ul><li class="leaf"><a href="heroine-hyeyun.html#%EC%97%B0%EC%95%A0-%EC%A4%91-%ED%98%9C%EC%9C%A4-%EC%A0%84%EC%9A%A9-%EB%A9%94%EC%8B%9C%EC%A7%80">交際中の葵専用メッセージ</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%B2%AD%ED%98%BC%EA%B3%BC-%EA%B2%B0%ED%98%BC-%ED%9B%84">プロポーズと結婚後</a></li></ul></details></li><li class="leaf"><a href="heroine-hyeyun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunseo.html">井上楓 攻略</a></summary><ul><li class="leaf"><a href="heroine-eunseo.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-eunseo.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95-%EB%8F%88-%EB%A9%94%EC%8B%9C%EC%A7%80-vs-%EB%A7%88%EC%9D%8C-%EB%A9%94%EC%8B%9C%EC%A7%80">好感度の上げ方: お金のメッセージ vs 心のメッセージ</a></li><li class="leaf"><a href="heroine-eunseo.html#%EA%B3%B5%EB%B6%80-%EC%A7%84%EB%8F%84%EC%99%80-%ED%95%A9%EA%B2%A9-%ED%99%95%EB%A5%A0">勉強の進み具合と合格確率</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-eunseo.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-eunseo.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sora.html">水野穂乃果 攻略</a></summary><ul><li class="leaf"><a href="heroine-sora.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-sora.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-sora.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-sora.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-sora.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-sora.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-sora.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-sora.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%9C%EB%B0%9C-%EC%9D%B8%ED%94%8C%EB%A3%A8%EC%96%B8%EC%84%9C-%EC%B9%AD%ED%98%B8-%EC%8A%A4%ED%86%A0%EB%A6%AC">固有システム: 開発系インフルエンサーの称号ストーリー</a></li><li class="leaf"><a href="heroine-sora.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-jiwoo.html">藤田美桜 攻略</a></summary><ul><li class="leaf"><a href="heroine-jiwoo.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-jiwoo.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-hana.html">石川真由 攻略</a></summary><ul><li class="leaf"><a href="heroine-hana.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-hana.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-hana.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-hana.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-hana.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-hana.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-hana.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-hana.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sophie.html">ソフィー 攻略</a></summary><ul><li class="leaf"><a href="heroine-sophie.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-sophie.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sophie.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%90%ED%8F%AC-%EC%B9%9C%EA%B5%AC-%ED%80%B4%EC%A6%88">固有システム: 在米コリアンの友達のクイズ</a></summary><ul><li class="leaf"><a href="heroine-sophie.html#%EB%AC%B4%EA%B2%B0%EC%A0%90-%EC%97%94%EB%94%A9">全問正解のエンディング</a></li></ul></details></li><li class="leaf"><a href="heroine-sophie.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-sophie.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-sophie.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-sophie.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-sophie.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-sophie.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sohyun.html">早瀬紗希 攻略</a></summary><ul><li class="leaf"><a href="heroine-sohyun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sohyun.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%B9%84%EB%B0%80%EC%97%B0%EC%95%A0%EC%99%80-%EC%9D%98%EC%8B%AC%EB%8F%84">固有システム: 秘密の交際と疑惑度</a></summary><ul><li class="leaf"><a href="heroine-sohyun.html#%EB%93%A4%ED%82%AC-%ED%99%95%EB%A5%A0">バレる確率</a></li><li class="leaf"><a href="heroine-sohyun.html#%EB%B9%84%EB%B0%80-%EB%8D%B0%EC%9D%B4%ED%8A%B8-2%EC%A3%BC%EB%A7%88%EB%8B%A4">秘密のデート（2週ごと）</a></li></ul></details></li><li class="leaf"><a href="heroine-sohyun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-sohyun.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-sohyun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunhye.html">氷室麗華 攻略</a></summary><ul><li class="leaf"><a href="heroine-eunhye.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunhye.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%90%EC%82%AC-%EB%A9%94%EB%AA%A8%EC%99%80-%EC%9D%98%EC%8B%AC%EB%8F%84">固有システム: 監査メモと疑惑度</a></summary><ul><li class="leaf"><a href="heroine-eunhye.html#%EA%B0%90%EC%82%AC-%EB%A9%94%EB%AA%A8-%ED%8B%80%EB%A6%B0-%EC%A4%84-%EC%B0%BE%EA%B8%B0">📝 監査メモ（間違った行を探す）</a></li><li class="leaf"><a href="heroine-eunhye.html#%EB%A7%A4%EC%9D%BC-%EA%B0%90%EC%82%AC-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%A7%A4%EC%A3%BC-1%ED%86%B5">📨 毎日の監査メッセージ（毎週1通）</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%A3%BC-%EB%A7%88%EA%B0%90-%ED%98%90%EC%9D%98-11%EA%B0%80%EC%A7%80-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B2%83-1%EA%B0%9C%EB%A7%8C-%EC%A0%81%EC%9A%A9">⚖️ 週の締めの容疑11種類（いちばん大きいもの1つだけ適用）</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunhye.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></summary><ul><li class="leaf"><a href="heroine-eunhye.html#%EB%A9%94%EB%AA%A8-%EC%8B%A4%EB%A0%A5%EB%B3%84-%EA%B2%B0%EA%B3%BC">メモの実力別の結果</a></li></ul></details></li><li class="leaf"><a href="heroine-eunhye.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-eunhye.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-eunhye.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="titles.html"><span class="em">🏷️</span>称号</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="titles.html#basics">称号はこう回ります 🧭</a></summary><ul><li class="leaf"><a href="titles.html#%EA%BC%AD-%EC%95%8C%EC%95%84-%EB%91%98-%EA%B7%9C%EC%B9%99-7%EA%B0%80%EC%A7%80">必ず知っておくべきルール7つ</a></li><li class="leaf"><a href="titles.html#%EC%B9%AD%ED%98%B8-%EC%97%94%EB%94%A9%EC%9C%BC%EB%A1%9C-%EB%81%9D%EB%82%98%EB%A9%B4-%EB%AD%98-%EB%B0%9B%EC%95%84%EC%9A%94">称号エンディングで終わったら何がもらえる？</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="titles.html#unlock">称号11個の開き方 🔓</a></summary><ul><li class="leaf"><a href="titles.html#%EC%B2%AB-%EC%B9%AD%ED%98%B8-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EC%97%B4%EB%A9%B4-%EB%B9%A8%EB%9D%BC%EC%9A%94">最初の称号はこうすれば早く開く 🏃</a></li></ul></details></li><li class="leaf"><a href="titles.html#early">早期終了の称号、退職の称号のまとめ 🚪</a></li><li class="leaf"><a href="titles.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html"><span class="em">🎒</span>装備、消耗品</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#basics">まずはショップの使い方から 🛒</a></summary><ul><li class="leaf"><a href="gear.html#bag">バッグで使う</a></li><li class="leaf"><a href="gear.html#sell">装備の売り戻し（10%）</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#tier">等級表: 何から買えばいい？ 🏆</a></summary><ul><li class="leaf"><a href="gear.html#tier-heroine">ヒロイン専用装備 💌</a></li></ul></details></li><li class="leaf"><a href="gear.html#trial">体験周回でまず使ってみる 🧪</a></li><li class="leaf"><a href="gear.html#gear-work">業務が楽になる装備 💻</a></li><li class="leaf"><a href="gear.html#gear-body">体力、ストレス、集中力の装備 💪</a></li><li class="leaf"><a href="gear.html#gear-safety">1回だけ助けてくれる保険の装備 ☂️</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#gear-love">恋愛装備 💌</a></summary><ul><li class="leaf"><a href="gear.html#gear-juggle">キープ装備（まさか、ですよね…？） 🐙</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#gear-invest">投資装備 💹</a></summary><ul><li class="leaf"><a href="gear.html#luck-sim">運七技三、どれくらい強い？</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#consumables">消耗品 🥤</a></summary><ul><li class="leaf"><a href="gear.html#price-formula">消耗品は週が進むほど高くなります</a></li><li class="leaf"><a href="gear.html#consumable-table">消耗品の全価格表（常連割引なし）</a></li><li class="leaf"><a href="gear.html#gacha">ランダム消耗品4種、得なの？ 🎲</a></li><li class="leaf"><a href="gear.html#consumable-tier">消耗品のおすすめ等級</a></li></ul></details></li><li class="leaf"><a href="gear.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details open><summary><span class="caret" aria-hidden="true"></span><a href="invest.html" class="cur" aria-current="page"><span class="em">💹</span>投資</a></summary><ul class="toc"><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#open">投資タブはいつ開く？ 🔓</a></summary><ul class="toc"><li class="leaf"><a href="#net-worth">純資産と階級 💳</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#stocks">📈 株式: ニュースを読む人が勝つ</a></summary><ul class="toc"><li class="leaf"><a href="#stock-list">10銘柄をひと目で</a></li><li class="leaf"><a href="#price-model">株価はこう動きます</a></li><li class="leaf"><a href="#news-sources">ニュースの出どころ4つ: これがすべて 📰</a></li><li class="leaf"><a href="#earnings">決算発表: 期待との差 で動きます</a></li><li class="leaf"><a href="#events">予定イベント: 開示の事前のシグナルがカギ ⭐</a></li><li class="leaf"><a href="#links">関連銘柄: 1週遅れでついて動きます</a></li><li class="leaf"><a href="#costs">手数料、短期売買税、配当</a></li><li class="leaf"><a href="#thin-book">個人投資家の投げ売り: 1銘柄2,222万円が限界です 💣</a></li><li class="leaf"><a href="#luck">運: 株式タブを開くたびに振ります 🍀</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#estate">🏠 不動産: 遅いけれど裏切りません</a></summary><ul class="toc"><li class="leaf"><a href="#estate-types">物件の種類9つ</a></li><li class="leaf"><a href="#regions">地域11か所と固定物件42軒 🗺️</a></li><li class="leaf"><a href="#estate-price">価格はこう動きます</a></li><li class="leaf"><a href="#estate-news">不動産ニュースと信頼度</a></li><li class="leaf"><a href="#estate-sell">売り方: 売り出し価格を決める</a></li><li class="leaf"><a href="#islands">島3か所と島のオーナーのエンディング 🏝️</a></li><li class="leaf"><a href="#homes">家とヒロイン: 同棲、夢の家、私たちの家 💞</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#goods">⌚ 実物資産: 1週でも大きく揺れるジェットコースター</a></summary><ul class="toc"><li class="leaf"><a href="#goods-list">品目9つ</a></li><li class="leaf"><a href="#goods-rules">必ず知っておくべきルール4つ</a></li><li class="leaf"><a href="#goods-feed">今日のゴシップの読み方</a></li><li class="leaf"><a href="#goods-hold">装備なしで買ったら？</a></li><li class="leaf"><a href="#trendsetter">😎 トレンドセッターを付けるとまったく別のゲームです</a></li></ul></details></li><li class="leaf"><a href="#taste">🌟 ヒロインの好み: 新婚中に彼女の夢を全部買ってあげる</a></li><li class="leaf"><a href="#plan">おすすめの運用法: 序盤、中盤、終盤 🧭</a></li><li class="leaf"><a href="#fail">破産するパターンTOP 7 💀</a></li><li class="leaf"><a href="#invest-endings">投資関連のエンディング、実績まとめ</a></li><li class="leaf"><a href="#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html"><span class="em">🏠</span>同棲、新婚、アルバム、家族</a></summary><ul><li class="leaf"><a href="home.html#who-can">ヒロイン別にできることをひと目で 🗂️</a></li><li class="leaf"><a href="home.html#flow">家族ルートの全体の流れ 🧭</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#cohab">同棲 💞</a></summary><ul><li class="leaf"><a href="home.html#cohab-when">同棲の提案が来る条件</a></li><li class="leaf"><a href="home.html#cohab-effect">同棲すると変わること</a></li></ul></details></li><li class="leaf"><a href="home.html#dream-home">夢の家9軒 🏡</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#honeymoon">新婚 💐</a></summary><ul><li class="leaf"><a href="home.html#honey-when">新婚の提案の条件</a></li><li class="leaf"><a href="home.html#honey-lines">新婚15週: 毎週来るロマンチックなイベント</a></li><li class="leaf"><a href="home.html#honey-trip">新婚旅行（島のリゾートがあれば）</a></li></ul></details></li><li class="leaf"><a href="home.html#us-tab">ふたり タブ 💬</a></li><li class="leaf"><a href="home.html#taste">ヒロインの好み: 夢を全部かなえてあげる 🌟</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#married-life">結婚生活: 家事 🧺</a></summary><ul><li class="leaf"><a href="home.html#love-perks">関係の特典（あふれた好感度で付くもの）</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#baby">赤ちゃん 👶</a></summary><ul><li class="leaf"><a href="home.html#parenting">育児の枠と赤ちゃんの時期のメッセージ</a></li></ul></details></li><li class="leaf"><a href="home.html#kid-grow">子どもの成長、子どもの好感度、子どものメッセージ 🎒</a></li><li class="leaf"><a href="home.html#kid-events">子どものエンディング 🎓</a></li><li class="leaf"><a href="home.html#album">家族アルバム 📷</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#divorce">別れ、離婚、結婚後の出来事 💔</a></summary><ul><li class="leaf"><a href="home.html#breakup-dating">交際中の別れ</a></li><li class="leaf"><a href="home.html#divorce-talk">結婚中の離婚</a></li></ul></details></li><li class="leaf"><a href="home.html#family-endings">家族のエンディングの総まとめ 📖</a></li><li class="leaf"><a href="home.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li></ul><p class="side-foot"><a href="../../">← 開発者体験 ホームページ</a></p></nav><div class="scrim"></div>
+<main class="main" id="content"><article class="article">
+<p class="crumb"><a href="index.html">攻略本</a> › 投資</p>
+<h1 class="page-title">投資の攻略</h1>
+<p class="page-desc">株10銘柄、不動産42軒、実物資産9品目のしくみと収益率、おすすめの運用法と破産するパターン、投資エンディングまで</p>
+<p class="meta">最終更新 <time datetime="2026-11-20">2026-11-20</time></p>
+<div class="tldr"><b>ひとことまとめ</b><ul>
+  <li>💰 残高が<b>222万円</b>になると、投資タブの<b>株式、不動産、実物資産</b>が一度に開きます。</li>
+  <li>📈 株は<b class="kw">何の情報もなしに買うと元本どまり</b>になるように作った市場です。お金を稼ぐのは<b>ニュースの出どころを読む人</b>です。開示（90%）は信じて、ゴシップ（50%）はコイン投げです。</li>
+  <li>🏠 不動産は遅いけれど着実です（80週持つと相場だけでおおよそ +25〜50%、家賃は別）。大きな好材料が1発来ると3週で最大2.2倍。</li>
+  <li>⌚ 実物資産は1週で25%まで上下するジェットコースターです。買うと<b>10週のあいだ売れず</b>、新車は買った瞬間に20%が飛んでいきます。</li>
+  <li>🏆 投資エンディング: スーパー個人投資家（株1.1億円）、島のオーナー3種（島の物件3軒）、ヒロインの好み6種（新婚中に彼女が望むものすべて）。</li>
+</ul></div>
+
+<h2 id="open">投資タブはいつ開く？ 🔓<a class="anchor" href="#open" aria-label="この見出しへのリンク">#</a></h2>
+<div data-id="tab:stocks" id="tab-stocks">
+<p>下のタブバーの<b><b class="kw">投資</b></b>は最初<b class="kw">ロック中</b>です。周回中に<b>残高が222万円</b>を超えた瞬間（週の締めのとき、またはそのお金を持って投資タブに入るとその場で）、株式、不動産、実物資産が<b>同時に</b>開き、週の締めで開くとログに<b class="kw">📈 残高222万円突破！株式タブが開きました。</b>と出ます。そのあとは毎週の締めごとに3つの市場が1週ずつ動きます。</p>
+</div>
+<figure class="shot" data-shot="invest-locked"><img src="img/invest-locked.png" alt="投資タブがロックされていて、残高と222万円の進行バーが見える画面" loading="lazy" decoding="async"><figcaption>開く前。残高 / 222万円のバーが満ちていくのが見えます。</figcaption></figure>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>サブタブ</th><th>何を買う</th><th>性格</th><th>売り方</th></tr></thead>
+  <tbody>
+    <tr data-id="tab:stocks.stocks" id="tab-stocks-stocks"><td>📈 株式</td><td>10銘柄</td><td>ニュースを読めば稼げる<b class="kw">実力ゲーム</b></td><td>いつでもすぐ（手数料0.15%）</td></tr>
+    <tr data-id="tab:stocks.estate" id="tab-stocks-estate"><td>🏠 不動産</td><td>大陸マップの固定物件42軒</td><td>ゆっくり上がって家賃が入る</td><td>売り出し価格を決めて出す（急ぎ処分はすぐ、-10%）</td></tr>
+    <tr data-id="tab:stocks.goods" id="tab-stocks-goods"><td>⌚ 実物資産</td><td>9品目（品目ごとに最大5個）</td><td>1週で大きく上下する流行の品</td><td>鑑定期間10週のあと相場で（その前は質屋で40%）</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout tip"><b>知らないと損: 親からの仕送りIII</b><p>周回の最初の残高は33.3万円です。周回ボーナス<a href="start.html#perks">親からの仕送り</a>をIII段階（累計 +200万円）まで上げると<b>233万円でスタート</b>するので、第1週に投資タブに入った瞬間にすぐ開きます。スーパー個人投資家は始めるのが早いほど圧倒的に有利だからです（下の表）。</p></div>
+
+<h3 id="net-worth" data-id="system:wealth">純資産と階級 💳<a class="anchor" href="#net-worth" aria-label="この見出しへのリンク">#</a></h3>
+<p>ゲームの言う<b>純資産（総資産）</b>は<b>現金、株、不動産、実物資産を全部足した値</b>です。この値で名刺カードとホームの顔の<b class="kw">階級</b>が決まり（顔の小物がばんそうこうと汗 → なし → 眼鏡とネクタイ → サングラスと金のネックレス → 片眼鏡と口ひげ → 王冠の順に変わります）、クッキー諸島（5.6億円）が開きます。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>階級</th><th class="r">純資産</th><th>階級</th><th class="r">純資産</th></tr></thead>
+  <tbody>
+    <tr><td>金欠インターン</td><td class="r">0円〜</td><td>成金</td><td class="r">1.1億円〜</td></tr>
+    <tr><td>貯金の妖精</td><td class="r">111万円〜</td><td>ビルオーナー</td><td class="r">5.6億円〜</td></tr>
+    <tr><td>個人投資家</td><td class="r">556万円〜</td><td>大富豪</td><td class="r">11.1億円〜</td></tr>
+    <tr><td>貯金上手な社員</td><td class="r">1,111万円〜</td><td>財閥</td><td class="r">111億円〜</td></tr>
+    <tr><td>隠れ金持ち</td><td class="r">5,556万円〜</td><td>超富豪クラブ会長</td><td class="r">1,111億円〜</td></tr>
+  </tbody>
+</table></div>
+<p>ちなみに実績<b class="kw">1,111万円貯金</b>は純資産ではなく<b>現金の残高</b>1,111万円です。</p>
+
+
+<h2 id="stocks" data-id="system:stocks">📈 株式: ニュースを読む人が勝つ<a class="anchor" href="#stocks" aria-label="この見出しへのリンク">#</a></h2>
+<figure class="shot" data-shot="invest-stocks"><img src="img/invest-stocks.png" alt="株式タブ。わたしの口座のカードと市場の雰囲気、銘柄の一覧" loading="lazy" decoding="async"><figcaption>株式タブ。上が<b class="kw">わたしの口座</b>（評価損益、実現損益、受け取った配当、スーパー個人投資家のゲージ）、下が銘柄と市場ニュースです。</figcaption></figure>
+
+<h3 id="stock-list">10銘柄をひと目で<a class="anchor" href="#stock-list" aria-label="この見出しへのリンク">#</a></h3>
+<p>変動性は<b class="kw">1週でふつうどれくらい揺れるか</b>、ベータは<b class="kw">市場の雰囲気にどれくらい流されるか</b>です。配当は<b>4週持つごとに</b>1回出る金額（株価に対して）です。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>銘柄</th><th>業種</th><th class="r">最初の価格</th><th class="r">週の変動性</th><th class="r">ベータ</th><th class="r">配当（4週ごと）</th><th>予定イベント</th></tr></thead>
+  <tbody>
+    <tr data-id="stock:pharma" id="stock-pharma"><td>💊 ひのまる製薬</td><td>製薬・バイオ</td><td class="r">¥5,333</td><td class="r">6%</td><td class="r">0.6</td><td class="r">なし</td><td>新薬の第3相（±29.7%）</td></tr>
+    <tr data-id="stock:chips" id="stock-chips"><td>🔲 東都シリコン</td><td>半導体</td><td class="r">¥8,000</td><td class="r">3.5%</td><td class="r">1.4</td><td class="r">0.12%</td><td>なし</td></tr>
+    <tr data-id="stock:games" id="stock-games"><td>🎮 京ピコゲームス</td><td>ゲーム</td><td class="r">¥3,444</td><td class="r">5%</td><td class="r">1.1</td><td class="r">なし</td><td>新作リリース（±15.0%）</td></tr>
+    <tr data-id="stock:bank" id="stock-bank"><td>🏦 日ノ出銀行</td><td>銀行</td><td class="r">¥5,778</td><td class="r">1.5%</td><td class="r">0.7</td><td class="r">0.37%</td><td>なし</td></tr>
+    <tr data-id="stock:ev" id="stock-ev"><td>🚗 豊川モーターズ</td><td>電気自動車</td><td class="r">¥10,556</td><td class="r">4.5%</td><td class="r">1.3</td><td class="r">なし</td><td>なし</td></tr>
+    <tr data-id="stock:food" id="stock-food"><td>🍜 毎日麺食品</td><td>食品</td><td class="r">¥2,333</td><td class="r">1.2%</td><td class="r">0.3</td><td class="r">0.31%</td><td>なし</td></tr>
+    <tr data-id="stock:ship" id="stock-ship"><td>🚢 瀬戸波造船</td><td>造船</td><td class="r">¥2,000</td><td class="r">4%</td><td class="r">1.0</td><td class="r">なし</td><td>大型受注（±16.2%）</td></tr>
+    <tr data-id="stock:ent" id="stock-ent"><td>🎤 ほしぞらプロ</td><td>エンタメ</td><td class="r">¥4,444</td><td class="r">5%</td><td class="r">0.9</td><td class="r">なし</td><td>看板グループのカムバック（±13.9%）</td></tr>
+    <tr data-id="stock:cloud" id="stock-cloud"><td>☁️ 雲海クラウド</td><td>IT・クラウド</td><td class="r">¥7,333</td><td class="r">3%</td><td class="r">1.2</td><td class="r">なし</td><td>大型受注（±16.2%）</td></tr>
+    <tr data-id="stock:telecom" id="stock-telecom"><td>📡 日の本テレコム</td><td>通信</td><td class="r">¥3,778</td><td class="r">1%</td><td class="r">0.4</td><td class="r">0.34%</td><td>なし</td></tr>
+  </tbody>
+</table></div>
+<p>最初の価格は毎周回同じです。配当を1年（52週）に換算すると、日ノ出銀行4.8%、日の本テレコム4.4%、毎日麺食品4.0%、東都シリコン1.6%です。</p>
+
+<h3 id="price-model">株価はこう動きます<a class="anchor" href="#price-model" aria-label="この見出しへのリンク">#</a></h3>
+<p>株価は<b>基本価値</b>、<b>過熱</b>、<b>イベントの期待感</b>の3つが合わさって動きます。</p>
+<ul>
+  <li><b>基本価値</b>: 毎週少しずつ上下し（ノイズ）、会社ごとに隠れた<b class="kw">今期のトレンド</b>のぶんだけ少し引っ張られます。市場の雰囲気がよければベータのぶん一緒に上がります。</li>
+  <li><b>過熱</b>: ニュースに人々が過剰に反応した部分です。<b>毎週40%ずつ消えます</b>。だから大きく跳ねた株価は一部戻ってきます。</li>
+  <li><b>イベントの期待感</b>: 予定イベントが近づくと先に上がっておき、結果が出た瞬間に消えて結果が反映されます。</li>
+</ul>
+
+<h3 id="news-sources">ニュースの出どころ4つ: これがすべて 📰<a class="anchor" href="#news-sources" aria-label="この見出しへのリンク">#</a></h3>
+<p>市場ニュースごとに出どころのラベルが付き、<b>出どころごとに当たる確率が固定</b>です。画面の<b class="kw">市場の読み方</b>を開いても同じ内容が出ます。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>出どころ</th><th class="r">当たる確率</th><th>いつ出る</th><th>人々の反応</th></tr></thead>
+  <tbody>
+    <tr><td>開示</td><td class="r">90%</td><td>イベントの予告、事前のシグナル（40%）、結果、決算発表</td><td>結果そのもの</td></tr>
+    <tr><td>レポート</td><td class="r">78%</td><td>四半期の5〜11週目、銘柄ごとに週16%</td><td>ふつう</td></tr>
+    <tr><td>ゴシップ</td><td class="r">50%</td><td>レポートが出ない週は銘柄ごとに5%、イベントの事前のシグナル（60%、このときは55%）</td><td><b>いちばん大きい</b></td></tr>
+    <tr><td>マクロ</td><td class="r">100%</td><td>毎週12%: AI投資ブーム、景気後退の懸念、政策金利の引き上げ、利下げ期待</td><td>市場の雰囲気全体</td></tr>
+  </tbody>
+</table></div>
+<p>市場の雰囲気は悲観、弱含み、中立、堅調、楽観の5段階で見え、時間がたつと少しずつ中立に戻ります。AI投資ブーム、景気後退は雰囲気を大きく、金利のニュースは少し動かします。半導体、電気自動車、クラウドのようにベータが大きい銘柄がいちばん大きく流されます。</p>
+<div class="callout warn"><b>ゴシップの落とし穴</b><p>ゴシップは当たる確率がちょうど半々なのに、人々はレポートより大きく反応します。ゴシップに乗って買った株価は、翌週から過熱が抜けて戻ってきやすいです。<b class="kw">いいゴシップが出た銘柄を買う</b>は、80週後ふつう<b>-7.7%</b>です。</p></div>
+
+<h3 id="earnings">決算発表: <b class="kw">期待との差</b>で動きます<a class="anchor" href="#earnings" aria-label="この見出しへのリンク">#</a></h3>
+<p>決算はキャリアの<b>13週ごと（第13、26、39、52、65、78、91週）</b>の週の締めに出ます。銘柄の詳細に<b class="kw">第N週に決算発表、市場の期待 とても低い〜とても高い</b>が見えます。</p>
+<ol class="steps">
+  <li><b>隠れたトレンド</b>会社ごとに今期のトレンドが隠れています。レポートが78%の確率でその方向を教えてくれます。</li>
+  <li><b>市場の期待</b>レポート、ゴシップが出るたびに期待が少しずつ動きます（ゴシップはもっと少し）。画面に見える値です。</li>
+  <li><b>発表</b>株価は<b>実際のトレンドと市場の期待の差</b>のぶん動き、変動性の大きい銘柄ほど大きく動きます。そこに過熱が少し上乗せされます（すぐ抜けます）。実際が期待より明らかによければ<b class="kw">アーニングサプライズ！</b>、明らかに悪ければ<b class="kw">アーニングショック…</b>、近ければ<b class="kw">期待どおり</b>。</li>
+  <li><b>次の四半期</b>市場は今期がよければ次の期もいいだろうと大きく期待しますが、実際のトレンドはそれほど続きません。だから<b>大当たりの四半期のあとは期待が高すぎて</b>ショックが起きやすいです。</li>
+</ol>
+<div class="callout tip"><b>お役立ちヒント</b><p>四半期の後半（8〜12週目）にレポートが同じ方向で何度も出たのに、市場の期待がまだ<b class="kw">ふつう</b>ならチャンスです。逆に発表の直後に急騰した銘柄は、もう過熱が乗った価格なので遅いです。</p></div>
+
+<h3 id="events">予定イベント: 開示の事前のシグナルがカギ ⭐<a class="anchor" href="#events" aria-label="この見出しへのリンク">#</a></h3>
+<p>ひのまる製薬、京ピコゲームス、瀬戸波造船、ほしぞらプロ、雲海クラウドは、イベントがないとき毎週6%の確率で<b class="kw">4週後に発表</b>の予告が出ます。<b>結果は予告の瞬間に50:50ですでに決まっています。</b></p>
+<figure class="shot" data-shot="invest-stock-detail"><img src="img/invest-stock-detail.png" alt="銘柄の詳細シート。決算発表の市場の期待と予定イベント、事前のシグナル、関連銘柄、配当の案内" loading="lazy" decoding="async"><figcaption>銘柄を押すと出る詳細。📅 結果発表の週、市場の予想成功率、事前のシグナル（W-2）と出どころが見えます。</figcaption></figure>
+<div class="table-wrap"><table>
+  <thead><tr><th>残りの週</th><th>何が起きる</th><th>株価</th></tr></thead>
+  <tbody>
+    <tr><td>4週（予告）</td><td>開示で予告、市場の予想成功率50%</td><td>目標の期待感の30%を反映</td></tr>
+    <tr><td>3週</td><td>—</td><td>50%を反映</td></tr>
+    <tr><td>2週</td><td><b>事前のシグナル</b>: 40%は開示（90%当たる）、60%はゴシップ（55%当たる）。前向きなら市場の予想65%、否定的なら35%</td><td>75%を反映</td></tr>
+    <tr><td>1週</td><td>—</td><td>100%を反映</td></tr>
+    <tr><td>結果</td><td>成功/失敗の開示、期待感は消えて結果が基本価値に反映（過熱が少し上乗せ）</td><td>臨床 ±29.7%、受注 ±16.2%、新作 ±15.0%、カムバック ±13.9%</td></tr>
+  </tbody>
+</table></div>
+<p>期待感は<b>市場が予想する成功率が高いほど</b>大きくなり、上乗せも少しあります。臨床を例にすると、予想50%なら結果直前の株価が約 +3.9%、65%なら +12.4%、35%なら -5.4%上がって（下がって）います。市場はシグナルの出どころを見ずに65%/35%で同じように動くので、<b>出どころを見る人だけが得をします</b>。</p>
+<div class="callout tip"><b>定石のプレイ</b><ul>
+  <li>予告が出たら買って、期待感の上昇をいただきます（発表が近づくほど上がっていきます）。</li>
+  <li>2週前のシグナルが<b>開示 + 前向き</b>なら結果まで持っていきます（90%成功）。</li>
+  <li>シグナルが<b>ゴシップ</b>か<b>否定的</b>なら結果の前に売ります。ゴシップの前向きは55%しか当たらないのに上乗せまで乗っているので、持っていくと平均で損です。</li>
+</ul></div>
+
+<h3 id="links">関連銘柄: 1週遅れでついて動きます<a class="anchor" href="#links" aria-label="この見出しへのリンク">#</a></h3>
+<p>決算のサプライズやイベントの結果の恒久的な部分が、関連企業に<b>翌週</b>一部だけ広がります。重みが大きいほど多くついて動きます。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>ニュースが出た銘柄</th><th>ついて動く銘柄（重み）</th></tr></thead>
+  <tbody>
+    <tr><td>東都シリコン</td><td>雲海クラウド 0.4、豊川モーターズ 0.3</td></tr>
+    <tr><td>雲海クラウド</td><td>東都シリコン 0.3、日の本テレコム 0.2</td></tr>
+    <tr><td>豊川モーターズ</td><td>東都シリコン 0.25</td></tr>
+    <tr><td>京ピコゲームス ↔ ほしぞらプロ</td><td>お互いに0.3</td></tr>
+    <tr><td>瀬戸波造船</td><td>日ノ出銀行 0.2</td></tr>
+    <tr><td>ひのまる製薬</td><td>毎日麺食品 0.1</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="costs">手数料、短期売買税、配当<a class="anchor" href="#costs" aria-label="この見出しへのリンク">#</a></h3>
+<ul>
+  <li><b>手数料</b>: 買うとき、売るときそれぞれ0.15%。</li>
+  <li><b>短期売買税</b>: 最後に買ってから2週以内に売ると0.2%追加。<b>買い増すと2週がまた始まります</b>（銘柄の詳細に<b class="kw">⚠ 買ったばかりです</b>が出ます）。</li>
+  <li><b>配当</b>: 日ノ出銀行、毎日麺食品、日の本テレコム、東都シリコンは<b>最初に買ってから4週ごとに</b>、そのとき持っている数量すべてに配当が出ます。保有期間は買い増しでリセットされず、全部売ると最初からです。受け取った配当は実現損益に入ります。</li>
+</ul>
+<div class="callout tip"><b>知らないと損: 配当直前のナンピン</b><p>配当のカウントは<b class="kw">最初に買った日</b>から数えて、支払いは<b class="kw">そのときの保有数量すべて</b>なので、1株だけ先に買っておいて配当直前の週に大きく買っても4週分の配当を全部もらえます。詳細の<b class="kw">💰 4週保有ごとに配当N%（次の配当までN週）</b>を見ましょう。</p></div>
+<p>素早い売買のボタンは銘柄ごとに<b>全額買い、50%買い、50%売り、全部売り</b>、口座のカードには<b class="kw">保有銘柄をすべて売却</b>、<b class="kw">保有銘柄を50%売却</b>があります。手数料がなくなる装備は<a href="gear.html#gear-day-trader">短期売買はやめられないチュー</a>です。</p>
+
+<h3 id="thin-book">個人投資家の投げ売り: 1銘柄2,222万円が限界です 💣<a class="anchor" href="#thin-book" aria-label="この見出しへのリンク">#</a></h3>
+<p>1銘柄の評価額が<b>2,222万円以上</b>だと<b class="kw">板が薄い</b>状態です。毎週一定の確率で個人投資家が投げ売りして株価が下がり、これは<b>運（運七技三を含む）では防げません</b>。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>1銘柄の評価額</th><th class="r">毎週起きる確率</th><th class="r">起きたときの下落</th></tr></thead>
+  <tbody>
+    <tr><td>2,222万円未満</td><td class="r">0%</td><td class="r">—</td></tr>
+    <tr><td>2,222万円</td><td class="r">10%</td><td class="r">-8%</td></tr>
+    <tr><td>3,333万円</td><td class="r">15%</td><td class="r">-9%</td></tr>
+    <tr><td>4,444万円</td><td class="r">20%</td><td class="r">-10%</td></tr>
+    <tr><td>6,667万円</td><td class="r">30%</td><td class="r">-12%</td></tr>
+    <tr><td>1.1億円以上</td><td class="r">50%（最大）</td><td class="r">-16%</td></tr>
+    <tr><td>1.6億円以上</td><td class="r">50%</td><td class="r">-20%（最大）</td></tr>
+  </tbody>
+</table></div>
+<p>1銘柄にたくさん入れるほど、起きる確率も下落幅も大きくなります。素早い買いで2,222万円を超えようとすると、先に確認ウィンドウが出ます。</p>
+<figure class="shot" data-shot="invest-thin-book"><img src="img/invest-thin-book.png" alt="板が薄いの警告の確認ウィンドウ。毎週の確率と下落幅の表示" loading="lazy" decoding="async"><figcaption>2,222万円を超える買いの前に出る警告。確率と下落幅がそのまま書いてあります。</figcaption></figure>
+
+<h3 id="luck">運: 株式タブを開くたびに振ります 🍀<a class="anchor" href="#luck" aria-label="この見出しへのリンク">#</a></h3>
+<p>保有銘柄があって前回の確認から1週以上たっていれば、株式タブを開くときに<b><b class="kw">前回の確認以降の持ち株</b>のレポート</b>が出ます。このとき銘柄ごとに<b class="kw">前回見た価格（最初は平均購入価格）</b>に対する動きに運が付きます。運は1週に1回だけ振るので、同じ週にまた開いても新しくは振りません。</p>
+<figure class="shot" data-shot="invest-luck-report"><img src="img/invest-luck-report.png" alt="株のレポート。銘柄ごとの前回の確認以降の上下と、運で変わった行" loading="lazy" decoding="async"><figcaption>株式タブをまた開くと出るレポート。運が付いた行は別に表示されます。</figcaption></figure>
+<div class="table-wrap"><table>
+  <thead><tr><th></th><th>運10（基本）</th><th><a href="gear.html#gear-luck-seven">運七技三</a>（運70）</th></tr></thead>
+  <tbody>
+    <tr><td>下がった銘柄</td><td>-5%以上下がったときだけ、5%の確率で<b>+4%</b>に救済</td><td><b>少しでも下がれば100%</b> +6%に救済</td></tr>
+    <tr><td>上がった銘柄（+2%以上）</td><td>4%の確率で上がり幅が1.5倍</td><td>28%の確率で上がり幅が4.5倍</td></tr>
+    <tr><td>上限</td><td colspan="2">最大 +60%。株の評価額1.1億円から運がだんだん減り（2.2億円なら半分）、<b>3.3億円以上ならなくなります</b> <b class="kw">口座が大きくて運が味方しませんでした</b></td></tr>
+    <tr><td>例外</td><td colspan="2">その間に個人投資家の投げ売りを受けた銘柄には運が付きません</td></tr>
+  </tbody>
+</table></div>
+<p>運が付くと、その株価が<b>本当に</b>その値になります（基本価値まで変わるので、ひとりでに戻りません）。10銘柄に分けて買って運10で<b>毎週確認</b>すると80週後ふつう +13.0%、<b>一度も開かないと</b> +3.9%です。運10でも毎週開くのが得です。</p>
+
+<h2 id="estate" data-id="system:estate">🏠 不動産: 遅いけれど裏切りません<a class="anchor" href="#estate" aria-label="この見出しへのリンク">#</a></h2>
+<div class="tldr"><b>不動産をひとことで</b><p>本土の物件は80週持つと相場だけでおおよそ +25〜50%、家賃が付く種類はそれに +12〜45%がさらに付きます。大きな好材料のニュースが出た週に買うと、4週後に平均約 +40%です。</p></div>
+<figure class="shot" data-shot="invest-estate-map"><img src="img/invest-estate-map.png" alt="不動産タブの架空の大陸マップと選んだ地域の物件の一覧" loading="lazy" decoding="async"><figcaption>架空の大陸マップ。地域を押すとその地域のニュースと物件が下に出ます。</figcaption></figure>
+
+<h3 id="estate-types">物件の種類9つ<a class="anchor" href="#estate-types" aria-label="この見出しへのリンク">#</a></h3>
+<p>家賃、保有税は<b>毎週</b>その物件の価格に対する割合で出ます（週の締めのログ<b class="kw">🏠 家賃 +…、保有税 -…</b>）。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>種類</th><th class="r">価格の範囲</th><th class="r">週の家賃</th><th class="r">週の保有税</th><th>大きな好材料（倍率）</th></tr></thead>
+  <tbody>
+    <tr data-id="estate:farm" id="estate-farm"><td>🌾 農地・山林</td><td class="r">222万円〜1,111万円</td><td class="r">0</td><td class="r">0.005%</td><td>新都市指定（2.2倍）</td></tr>
+    <tr data-id="estate:room" id="estate-room"><td>🛏️ ワンルーム</td><td class="r">778万円</td><td class="r">0.2%</td><td class="r">0.01%</td><td>駅前再開発（1.4倍）</td></tr>
+    <tr data-id="estate:ofs" id="estate-ofs"><td>🏬 オフィステル</td><td class="r">1,111万円〜3,333万円</td><td class="r">0.22%</td><td class="r">0.02%</td><td>駅前開発確定（1.5倍）</td></tr>
+    <tr data-id="estate:apt" id="estate-apt"><td>🏘️ マンション</td><td class="r">3,333万円〜5.6億円</td><td class="r">0.12%</td><td class="r">0.02%</td><td>再建築確定（1.8倍）</td></tr>
+    <tr data-id="estate:villa" id="estate-villa"><td>🏡 別荘</td><td class="r">5,556万円〜2.2億円</td><td class="r">0</td><td class="r">0.015%</td><td>田園観光団地指定（1.5倍）</td></tr>
+    <tr data-id="estate:shop" id="estate-shop"><td>🏪 店舗</td><td class="r">3,333万円〜5.6億円</td><td class="r">0.3%</td><td class="r">0.02%</td><td>大型モール出店確定（1.6倍）</td></tr>
+    <tr data-id="estate:ware" id="estate-ware"><td>🏭 物流倉庫</td><td class="r">2.2億円〜11.1億円</td><td class="r">0.25%</td><td class="r">0.03%</td><td>物流ハブ指定（1.5倍）</td></tr>
+    <tr data-id="estate:resort" id="estate-resort"><td>🏖️ ペンション・リゾート</td><td class="r">1.1億円〜8.9億円</td><td class="r">0.3%（繁忙期2倍、閑散期半分）</td><td class="r">0.03%</td><td>観光特区指定（1.7倍）</td></tr>
+    <tr data-id="estate:tower" id="estate-tower"><td>🏙️ ビル</td><td class="r">5.6億円〜33.3億円</td><td class="r">0.22%</td><td class="r">0.04%</td><td>容積率の引き上げとランドマーク指定（1.5倍）</td></tr>
+  </tbody>
+</table></div>
+<ul>
+  <li><b>店舗</b>はその地域に<b class="kw">商業地の空室急増</b>が本当に出ると<b>4週のあいだ家賃0円</b>です。</li>
+  <li><b>リゾート</b>は13週単位で繁忙期（家賃2倍）、ふつう、繁忙期、閑散期（家賃半分）の順に回ります。繁忙期には画面に<b class="kw">🌞 繁忙期 🌞</b>が出ます。</li>
+  <li>ワンルーム、オフィステル、マンション、別荘は<b>住める家</b>なので、同棲、新婚とつながります（<a href="#homes">下</a>）。</li>
+</ul>
+
+<h3 id="regions">地域11か所と固定物件42軒 🗺️<a class="anchor" href="#regions" aria-label="この見出しへのリンク">#</a></h3>
+<p>地域ごとに物件は<b>固定</b>です（本土4軒、島3軒、レガシー旧市街だけワンルームがもう1軒）。毎周回同じ名前、同じ基本価格で出て、自分が買うと一覧から消え、売るとその日の相場で戻ってきます。下の価格は<b>基本価格</b>（市場が開いた日の価格）で、家賃、保有税はその価格基準の週の金額です。</p>
+<h4 data-id="region:mount">サーバー山脈 <span class="badge">地域の倍率0.8</span></h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>サーバー山脈の山林</td><td>農地・山林</td><td class="r">444万円</td><td class="r">0</td><td class="r">¥222</td></tr>
+    <tr><td>サーバー山脈のログハウス</td><td>別荘</td><td class="r">1.2億円</td><td class="r">0</td><td class="r">1.8万円</td></tr>
+    <tr><td>サーバー山脈のスキー場前のリゾート</td><td>ペンション・リゾート</td><td class="r">5.6億円</td><td class="r">167万円</td><td class="r">16.7万円</td></tr>
+    <tr><td>サーバー山脈の果樹園</td><td>農地・山林</td><td class="r">444万円</td><td class="r">0</td><td class="r">¥222</td></tr>
+  </tbody>
+</table></div>
+<h4 data-id="region:dawn">夜明け湾ニュータウン <span class="badge">地域の倍率1.1</span></h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>夜明け湾ニュータウンの新築3LDK</td><td>マンション</td><td class="r">2.1億円</td><td class="r">25.1万円</td><td class="r">4.2万円</td></tr>
+    <tr><td>夜明け湾ニュータウンの駅前オフィステル</td><td>オフィステル</td><td class="r">2,556万円</td><td class="r">5.6万円</td><td class="r">5,111円</td></tr>
+    <tr><td>夜明け湾ニュータウンのカフェ通りの2階</td><td>店舗</td><td class="r">4.7億円</td><td class="r">140万円</td><td class="r">9.4万円</td></tr>
+    <tr><td>夜明け湾ニュータウンの開発予定地そばの土地</td><td>農地・山林</td><td class="r">667万円</td><td class="r">0</td><td class="r">¥333</td></tr>
+  </tbody>
+</table></div>
+<h4 data-id="region:plain">コミット平野 <span class="badge">地域の倍率0.7</span></h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>コミット平野の田んぼ</td><td>農地・山林</td><td class="r">333万円</td><td class="r">0</td><td class="r">¥167</td></tr>
+    <tr><td>コミット平野の低温倉庫</td><td>物流倉庫</td><td class="r">5億円</td><td class="r">124万円</td><td class="r">14.9万円</td></tr>
+    <tr><td>コミット平野の庭の広い平屋</td><td>別荘</td><td class="r">1.3億円</td><td class="r">0</td><td class="r">1.9万円</td></tr>
+    <tr><td>コミット平野の畑</td><td>農地・山林</td><td class="r">444万円</td><td class="r">0</td><td class="r">¥222</td></tr>
+  </tbody>
+</table></div>
+<h4 data-id="region:river">リバービューシティ <span class="badge">地域の倍率1.4</span></h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>リバービューシティのリバーサイドのペントハウス</td><td>マンション</td><td class="r">2.7億円</td><td class="r">31.9万円</td><td class="r">5.3万円</td></tr>
+    <tr><td>リバービューシティのオフィスビル</td><td>ビル</td><td class="r">29.2億円</td><td class="r">642万円</td><td class="r">117万円</td></tr>
+    <tr><td>リバービューシティの駅前1階店舗</td><td>店舗</td><td class="r">6億円</td><td class="r">179万円</td><td class="r">11.9万円</td></tr>
+    <tr><td>リバービューシティのロフト付き</td><td>オフィステル</td><td class="r">3,000万円</td><td class="r">6.6万円</td><td class="r">6,000円</td></tr>
+  </tbody>
+</table></div>
+<h4 data-id="region:port">キャッシュ港 <span class="badge">地域の倍率1.0</span></h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>キャッシュ港の港の倉庫</td><td>物流倉庫</td><td class="r">4.9億円</td><td class="r">122万円</td><td class="r">14.7万円</td></tr>
+    <tr><td>キャッシュ港の市場通りの店舗</td><td>店舗</td><td class="r">3.2億円</td><td class="r">96.3万円</td><td class="r">6.4万円</td></tr>
+    <tr><td>キャッシュ港のワンルーム</td><td>オフィステル</td><td class="r">2,778万円</td><td class="r">6.1万円</td><td class="r">5,556円</td></tr>
+    <tr><td>キャッシュ港の大型物流センター</td><td>物流倉庫</td><td class="r">6.2億円</td><td class="r">156万円</td><td class="r">18.7万円</td></tr>
+  </tbody>
+</table></div>
+<h4 data-id="region:old">レガシー旧市街 <span class="badge">地域の倍率0.9</span></h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>レガシー旧市街の大学街の店舗</td><td>店舗</td><td class="r">1.7億円</td><td class="r">51.3万円</td><td class="r">3.4万円</td></tr>
+    <tr><td>レガシー旧市街の老朽化した商業ビル</td><td>ビル</td><td class="r">18.8億円</td><td class="r">413万円</td><td class="r">75万円</td></tr>
+    <tr><td>レガシー旧市街の再建築予定の旧築</td><td>マンション</td><td class="r">3.8億円</td><td class="r">45.9万円</td><td class="r">7.6万円</td></tr>
+    <tr><td>レガシー旧市街のワンルーム</td><td>オフィステル</td><td class="r">1,889万円</td><td class="r">4.2万円</td><td class="r">3,778円</td></tr>
+    <tr><td>レガシー旧市街の家具付きワンルーム</td><td>ワンルーム</td><td class="r">778万円</td><td class="r">1.6万円</td><td class="r">¥778</td></tr>
+  </tbody>
+</table></div>
+<h4 data-id="region:woods">デバッグの森 <span class="badge">地域の倍率0.6</span></h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>デバッグの森の山林</td><td>農地・山林</td><td class="r">333万円</td><td class="r">0</td><td class="r">¥167</td></tr>
+    <tr><td>デバッグの森の湖畔の別荘</td><td>別荘</td><td class="r">8,889万円</td><td class="r">0</td><td class="r">1.3万円</td></tr>
+    <tr><td>デバッグの森のグランピング場</td><td>ペンション・リゾート</td><td class="r">4.2億円</td><td class="r">125万円</td><td class="r">12.5万円</td></tr>
+    <tr><td>デバッグの森の果樹園</td><td>農地・山林</td><td class="r">333万円</td><td class="r">0</td><td class="r">¥167</td></tr>
+  </tbody>
+</table></div>
+<h4 data-id="region:coast">ホットフィックス海岸 <span class="badge">地域の倍率1.0</span></h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>ホットフィックス海岸のオーシャンビューのペンション</td><td>ペンション・リゾート</td><td class="r">3.4億円</td><td class="r">103万円</td><td class="r">10.3万円</td></tr>
+    <tr><td>ホットフィックス海岸の庭の広い平屋</td><td>別荘</td><td class="r">1.5億円</td><td class="r">0</td><td class="r">2.2万円</td></tr>
+    <tr><td>ホットフィックス海岸のカフェ通りの2階</td><td>店舗</td><td class="r">4.3億円</td><td class="r">128万円</td><td class="r">8.5万円</td></tr>
+    <tr><td>ホットフィックス海岸のグランピング場</td><td>ペンション・リゾート</td><td class="r">4.6億円</td><td class="r">138万円</td><td class="r">13.8万円</td></tr>
+  </tbody>
+</table></div>
+<h4>クラウド島 🏝️ <span class="badge">地域の倍率1.6</span></h4>
+<p><b class="kw">海底トンネル着工確定</b>の公示で開く、観光の大当たりが2倍</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>クラウド島のヨットマリーナリゾート</td><td>ペンション・リゾート</td><td class="r">5.5億円</td><td class="r">165万円</td><td class="r">16.5万円</td></tr>
+    <tr><td>クラウド島のプライベートビーチの別荘</td><td>別荘</td><td class="r">2.4億円</td><td class="r">0</td><td class="r">3.5万円</td></tr>
+    <tr><td>クラウド島のオフィスビル</td><td>ビル</td><td class="r">42.2億円</td><td class="r">929万円</td><td class="r">169万円</td></tr>
+  </tbody>
+</table></div>
+<h4>クッキー諸島 🏝️ <span class="badge">地域の倍率0.9</span></h4>
+<p>純資産5.6億円で開く、農地に家賃</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>クッキー諸島の熱帯フルーツ農園</td><td>農地・山林</td><td class="r">444万円</td><td class="r">8,889円</td><td class="r">¥222</td></tr>
+    <tr><td>クッキー諸島のオーシャンビューのペンション</td><td>ペンション・リゾート</td><td class="r">4.9億円</td><td class="r">146万円</td><td class="r">14.6万円</td></tr>
+    <tr><td>クッキー諸島の庭の広い平屋</td><td>別荘</td><td class="r">1.6億円</td><td class="r">0</td><td class="r">2.4万円</td></tr>
+  </tbody>
+</table></div>
+<h4>サンドボックス半島 🏝️ <span class="badge">地域の倍率0.5</span></h4>
+<p><b class="kw">規制サンドボックス特区指定</b>の公示で開く、保有税0円</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>物件</th><th>種類</th><th class="r">基本価格</th><th class="r">週の家賃</th><th class="r">週の保有税</th></tr></thead>
+  <tbody>
+    <tr><td>サンドボックス半島の開発予定地そばの土地</td><td>農地・山林</td><td class="r">222万円</td><td class="r">0</td><td class="r">0</td></tr>
+    <tr><td>サンドボックス半島のログハウス</td><td>別荘</td><td class="r">7,333万円</td><td class="r">0</td><td class="r">0</td></tr>
+    <tr><td>サンドボックス半島の低温倉庫</td><td>物流倉庫</td><td class="r">4.4億円</td><td class="r">111万円</td><td class="r">0</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="estate-price">価格はこう動きます<a class="anchor" href="#estate-price" aria-label="この見出しへのリンク">#</a></h3>
+<p>物件の価格は<b>地域の相場</b>、<b>種類の相場</b>、物件ごとの小さな揺れ、そして<b>好材料</b>で決まります。</p>
+<ul>
+  <li><b>地域の相場</b>: 長く見ると着実に上がる流れについていきます。80週で約 +38%なので、持っているだけで上がるしくみです。</li>
+  <li><b>種類の相場</b>: 種類ごとに少しずつ上下して、元の位置に戻る傾向です。</li>
+  <li><b>物件の揺れ</b>: 毎週少しずつ動きますが、大きくは外れません。</li>
+  <li>1つの物件の1週の変動は<b>最大8%</b>です（大きな好材料が入っているあいだは35%まで）。</li>
+</ul>
+<p>マップで地域の名前の横に<b class="kw">🔥 過熱投資</b>（好材料が進行中）、<b class="kw">▲ 上昇傾向</b>（地域の相場が本来の流れより4%を超えて高い）、<b class="kw">▼ 下落傾向</b>（4%を超えて低い）、<b class="kw">横ばい</b>が出ます。地域の相場は本来の流れに戻るので、<b>下落傾向の地域はまた上がってくる側</b>です。</p>
+
+<h3 id="estate-news">不動産ニュースと信頼度<a class="anchor" href="#estate-news" aria-label="この見出しへのリンク">#</a></h3>
+<p>毎週2〜4個のニュースが出ます。ラベルは<b>確定（いつも事実）</b>、<b>有力（70%）</b>、<b>噂（35%）</b>で、出る割合は1 : 2 : 2です。偽の有力、噂は翌週に<b class="kw">事実無根と釈明</b>が付いて何の効果もありません。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>ニュース</th><th>本当のときの効果</th></tr></thead>
+  <tbody>
+    <tr><td>大きな好材料（新都市指定、再建築確定…）</td><td>その地域のその種類がすべて<b>3週かけて</b>上の表の倍率だけ上がってそのまま（最大3倍）。地域ニュース1行が大きな好材料である確率は12%、クラウド島は24%（半分はリゾート）</td></tr>
+    <tr><td>グリーンベルト解除の保留</td><td>その地域の相場が4週のあいだ毎週1%ずつ下がる</td></tr>
+    <tr><td>投機過熱地区の指定</td><td>その地域の相場が4週のあいだ毎週1.5%ずつ下がる</td></tr>
+    <tr><td>利下げ / 利上げ</td><td>マンション、ビル、店舗、オフィステルが4週のあいだ毎週0.6%ずつ上がる / 下がる（一度に1つだけ）</td></tr>
+    <tr><td>観光客が過去最多</td><td>リゾートが4週のあいだ毎週0.4%ずつ上がる</td></tr>
+    <tr><td>商業地の空室急増</td><td>その地域の店舗の家賃が4週のあいだ0円</td></tr>
+  </tbody>
+</table></div>
+<p>大きな好材料のニュースが出た週にその地域のその種類の物件を買って4週後の価格を見ると: <b>確定</b>平均 +40.2%、<b>有力</b> +29.3%（本当なら +40.2%、偽なら +3.4%）、<b>噂</b> +16.2%（本当なら +40.0%、偽なら +3.3%）です。何のニュースもないマンションは同じ4週で平均 +2.8%です。大きな好材料は地域ごとに80週で平均約1.6回、クラウド島は約3.2回起きます。</p>
+<div class="callout tip"><b>知らないと損: 好材料は<b class="kw">確定</b>を見たらすぐ買う</b><p>大きな好材料はニュースが出た週には一部だけ反映されていて、残りが次の2週に入ってきます。確定なら100%本当なので、その週にその地域のその種類の物件を買うのが正解です。有力、噂は翌週に釈明が付くかを見て判断してもOK（本当なら2回目の上昇が見えます）。農地は222万〜667万円なので、新都市指定（2.2倍）の一発を狙うのにいちばん安いです。</p></div>
+
+<h3 id="estate-sell">売り方: 売り出し価格を決める<a class="anchor" href="#estate-sell" aria-label="この見出しへのリンク">#</a></h3>
+<p>自分の不動産を押すと<b class="kw">売り出し価格を決める</b>が出ます。急ぎ処分以外は<b>出した瞬間の価格で売り出し価格が固定</b>され、毎週の締めに1回ずつ売れるかを振ります。売れるまで家賃、保有税は出続けます。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>売り出し価格</th><th class="r">受け取る額</th><th class="r">毎週売れる確率</th><th class="r">平均の待ち</th><th class="r">行きつけの不動産屋</th></tr></thead>
+  <tbody>
+    <tr><td>急ぎ処分</td><td class="r">相場の90%</td><td class="r">すぐ</td><td class="r">0週</td><td class="r">相場の95%</td></tr>
+    <tr><td>相場</td><td class="r">相場そのまま</td><td class="r">55%</td><td class="r">約1.8週</td><td class="r">70%（約1.4週）</td></tr>
+    <tr><td>少し高め</td><td class="r">相場より10%高く</td><td class="r">25%</td><td class="r">約4週</td><td class="r">40%（約2.5週）</td></tr>
+    <tr><td>かなり高め</td><td class="r">相場より20%高く</td><td class="r">10%</td><td class="r">約10週</td><td class="r">25%（約4週）</td></tr>
+  </tbody>
+</table></div>
+<figure class="shot" data-shot="invest-estate-sell"><img src="img/invest-estate-sell.png" alt="保有物件のシートの売り出し価格を決める、急ぎ処分、相場、少し高め、かなり高めボタン" loading="lazy" decoding="async"><figcaption>売り出し価格4段階。急ぎ処分は2回押さないと売れません。</figcaption></figure>
+<div class="callout"><p>相場が上がっている途中なら<b class="kw">少し高め</b>で出して待っても、売り出し価格は固定なので損ではありません。ただし周回が終わるときに売れていない物件は評価額として残るだけです。不動産には<b>運七技三の効果がありません</b>。</p></div>
+
+<h3 id="islands">島3か所と島のオーナーのエンディング 🏝️<a class="anchor" href="#islands" aria-label="この見出しへのリンク">#</a></h3>
+<p>島は最初🔒です。クラウド島とサンドボックス半島は、市場が開いていればキャリアの第6週から毎週それぞれ5%の確率で<b class="kw">確定</b>の公示が出て開き、クッキー諸島は週の締めに純資産が5.6億円以上なら開きます。開くとログに<b class="kw">🗺️ …がマップに開きました！</b>と出ます。</p>
+<p>第20週に市場が開いたなら、クラウド島は第40週までに64.4%、第60週までに87.5%、第100週までに98.0%開き（ふつう第34週くらい）、サンドボックス半島は64.7%、87.9%、98.6%（ふつう第33週くらい）です。</p>
+<div class="cards">
+  <div class="card item" data-id="ending:island-cloud" id="ending-island-cloud">
+    <div class="card-head"><b class="name">☁️ クラウド島の主</b><span class="badge ok">エピックパック1個</span></div>
+    <dl class="kv">
+      <dt>島</dt><dd data-id="region:cloud">クラウド島: リゾート、別荘、ビル、地域の倍率1.6。<b class="kw">海底トンネル着工確定</b>の公示で開く。高級リゾートなので<b>観光の大当たり（大きな好材料）が2倍よく起きる</b></dd>
+      <dt>物件3軒</dt><dd>ヨットマリーナリゾート5.5億円、プライベートビーチの別荘2.4億円、オフィスビル42.2億円、合わせて約<b>50.1億円</b>（基本価格）</dd>
+      <dt>難易度</dt><dd>42.2億円のビルが関門なのでいちばん高いです。リゾートは80週の合計がふつう +377.2%で、マップ最高の物件です</dd>
+    </dl>
+  </div>
+  <div class="card item" data-id="ending:island-cookies" id="ending-island-cookies">
+    <div class="card-head"><b class="name">🍪 クッキー諸島の農園主</b><span class="badge ok">エピックパック1個</span></div>
+    <dl class="kv">
+      <dt>島</dt><dd data-id="region:cookies">クッキー諸島: 農地、リゾート、別荘、地域の倍率0.9。純資産5.6億円で開く。<b>熱帯フルーツ農園: この島の農地は家賃（週0.2%）が出ます</b></dd>
+      <dt>物件3軒</dt><dd>熱帯フルーツ農園444万円、オーシャンビューのペンション4.9億円、庭の広い平屋1.6億円、合わせて約<b>6.5億円</b></dd>
+      <dt>難易度</dt><dd>5.6億円を先に貯めないと開きませんが、島そのものは2番目に安いです</dd>
+    </dl>
+  </div>
+  <div class="card item" data-id="ending:island-sand" id="ending-island-sand">
+    <div class="card-head"><b class="name">🧪 サンドボックス特区の王</b><span class="badge ok">エピックパック1個</span></div>
+    <dl class="kv">
+      <dt>島</dt><dd data-id="region:sand">サンドボックス半島: 農地、別荘、倉庫、地域の倍率0.5。<b class="kw">規制サンドボックス特区指定</b>の公示で開く。<b>保有税0円、グリーンベルト、規制のニュースなし</b></dd>
+      <dt>物件3軒</dt><dd>開発予定地そばの土地222万円、ログハウス7,333万円、低温倉庫4.4億円、合わせて約<b>5.2億円</b></dd>
+      <dt>難易度</dt><dd>3つの島でいちばん安いです。島のエンディングの入門用</dd>
+    </dl>
+  </div>
+</div>
+<ul>
+  <li><b>島のオーナー</b>: 1つの島の物件を<b>3軒全部</b>持つと島のオーナー（マップに🚩）になり、その島の家賃が1.5倍になります。</li>
+  <li><b>エンディングの判定</b>: スーパー個人投資家と同じく、週の締め、返信のあとに3軒を持っていると<b class="kw">エンディング条件クリア！</b>として記録されます。第100週まで終えると認められます。</li>
+  <li>島のリゾート（クラウド島、クッキー諸島）を持っていると、新婚中に<b>新婚旅行</b>のストーリーが開きます（<a href="home.html">同棲、新婚</a>）。</li>
+</ul>
+
+<h3 id="homes">家とヒロイン: 同棲、夢の家、私たちの家 💞<a class="anchor" href="#homes" aria-label="この見出しへのリンク">#</a></h3>
+<p>詳しくは<a href="home.html">同棲、新婚、アルバム、家族</a>の記事にあり、投資の側で知っておくべきことだけまとめます。</p>
+<ul>
+  <li><b>同棲</b>: 交際中に住める家（ワンルーム、オフィステル、マンション、別荘）が1軒あると、翌週の締めのあとに彼女の同棲の提案が来ます（必ず答えなければならないメッセージ、断ったり既読スルーしたりすると二度と来ません）。楓、ソフィー、紗希、麗華には同棲がありません。いちばん安い家は<b>レガシー旧市街の家具付きワンルーム 778万円</b>です。</li>
+  <li><b>夢の家</b>: 結婚後15週以内に彼女の夢の家を持っていると（買った翌週が過ぎている必要があります）彼女の新婚の提案が来て、受けると15週のあいだ新婚が開きます（楓、ソフィー、紗希、麗華には夢の家がありません）。</li>
+  <li><b>私たちの家</b>: 同棲、結婚中は家1軒（夢の家、なければいちばん安い家）を<b>売れません</b>。売ろうとすると<b class="kw">ねえ…これ売ったら、私たちどこに住むの…？</b>（夢の家なら<b class="kw">ねえ…ここ、私たちの夢の家だよ…</b>）が出ます。</li>
+</ul>
+<div class="table-wrap"><table>
+  <thead><tr><th>ヒロイン</th><th>夢の家</th><th>種類</th><th class="r">基本価格</th></tr></thead>
+  <tbody>
+    <tr><td>美咲</td><td>リバービューシティのロフト付き</td><td>オフィステル</td><td class="r">3,000万円</td></tr>
+    <tr><td>彩花</td><td>夜明け湾ニュータウンの新築3LDK</td><td>マンション</td><td class="r">2.1億円</td></tr>
+    <tr><td>七海</td><td>キャッシュ港のワンルーム</td><td>オフィステル</td><td class="r">2,778万円</td></tr>
+    <tr><td>莉子</td><td>レガシー旧市街のワンルーム</td><td>オフィステル</td><td class="r">1,889万円</td></tr>
+    <tr><td>優奈</td><td>リバービューシティのリバーサイドのペントハウス</td><td>マンション</td><td class="r">2.7億円</td></tr>
+    <tr><td>葵</td><td>ホットフィックス海岸の庭の広い平屋</td><td>別荘</td><td class="r">1.5億円</td></tr>
+    <tr><td>穂乃果</td><td>夜明け湾ニュータウンの駅前オフィステル</td><td>オフィステル</td><td class="r">2,556万円</td></tr>
+    <tr><td>美桜</td><td>サーバー山脈のログハウス</td><td>別荘</td><td class="r">1.2億円</td></tr>
+    <tr><td>真由</td><td>デバッグの森の湖畔の別荘</td><td>別荘</td><td class="r">8,889万円</td></tr>
+    <tr><td>楓、ソフィー、紗希、麗華</td><td>なし</td><td>—</td><td class="r">—</td></tr>
+  </tbody>
+</table></div>
+
+
+<h2 id="goods" data-id="system:goods">⌚ 実物資産: 1週でも大きく揺れるジェットコースター<a class="anchor" href="#goods" aria-label="この見出しへのリンク">#</a></h2>
+<div class="tldr"><b>実物資産をひとことで</b><p>買うと10週縛られ、新車は買った瞬間に20%の損。装備がなくても長く持てばほとんど上がりますが、本当のゲームは😎 トレンドセッターを付けた<b>ハイエンド（1,111万円以上）</b>です。</p></div>
+<figure class="shot" data-shot="invest-goods"><img src="img/invest-goods.png" alt="実物資産タブ。今日のゴシップと相場ボード" loading="lazy" decoding="async"><figcaption>実物資産タブ。上が<b class="kw">今日のゴシップ</b>、下が<b class="kw">相場ボード</b>です。</figcaption></figure>
+
+<h3 id="goods-list">品目9つ<a class="anchor" href="#goods-list" aria-label="この見出しへのリンク">#</a></h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>品目</th><th>種類</th><th class="r">定価</th><th class="r">週の変動性</th><th class="r">週の流れ</th><th>特徴</th></tr></thead>
+  <tbody>
+    <tr data-id="goods:timepiece" id="goods-timepiece"><td>⌚ クロノベル<b class="kw">ディープブルー300</b></td><td>ダイバーズウォッチ</td><td class="r">422万円</td><td class="r">18%</td><td class="r">+1%</td><td>彩花、莉子の好み</td></tr>
+    <tr data-id="goods:sneaker" id="goods-sneaker"><td>👟 エアステップ<b class="kw">ムーンウォーカー・レトロ</b></td><td>限定スニーカー</td><td class="r">26.7万円</td><td class="r">30%</td><td class="r">+1%</td><td>七海の好み</td></tr>
+    <tr data-id="goods:figure" id="goods-figure"><td>🗿 ピクセル騎士団 1/6限定版</td><td>フィギュア</td><td class="r">12.2万円</td><td class="r">30%</td><td class="r">+0.5%</td><td>七海の好み</td></tr>
+    <tr data-id="goods:retrobox" id="goods-retrobox"><td>🎮 <b class="kw">レトロボックス64</b>未開封</td><td>レトロゲーム機</td><td class="r">50万円</td><td class="r">25%</td><td class="r">+1%</td><td>七海、葵の好み</td></tr>
+    <tr data-id="goods:bag" id="goods-bag"><td>👜 メゾン・ロワール<b class="kw">クラウドバッグ</b></td><td>ブランドバッグ</td><td class="r">133万円</td><td class="r">18%</td><td class="r">+0.8%</td><td>美咲の好み</td></tr>
+    <tr data-id="goods:newcar" id="goods-newcar"><td>🚗 豊川モーターズ<b class="kw">ノヴァストームGT</b></td><td>スポーツカー（新車）</td><td class="r">3,444万円</td><td class="r">6%</td><td class="r">-1.2%</td><td>💎 ハイエンド、買うとき -20%、優奈の好み</td></tr>
+    <tr data-id="goods:campvan" id="goods-campvan"><td>🚐 ノマドホーム<b class="kw">風の道520</b></td><td>キャンピングカー（新車）</td><td class="r">889万円</td><td class="r">7%</td><td class="r">-0.6%</td><td>買うとき -10%、優奈の好み</td></tr>
+    <tr data-id="goods:classic" id="goods-classic"><td>🏎️ ヴェローチェ<b class="kw">ロッソV12</b> 1972</td><td>クラシックカー</td><td class="r">3.1億円</td><td class="r">12%</td><td class="r">+1.2%</td><td>💎 ハイエンド、葵の好み</td></tr>
+    <tr data-id="goods:art" id="goods-art"><td>🖼️ 藤原悠真<b class="kw">夜明け連作No.7</b></td><td>美術品</td><td class="r">1.7億円</td><td class="r">22%</td><td class="r">+0.8%</td><td>💎 ハイエンド、美咲の好み</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="goods-rules">必ず知っておくべきルール4つ<a class="anchor" href="#goods-rules" aria-label="この見出しへのリンク">#</a></h3>
+<ol class="steps">
+  <li><b>鑑定期間10週</b>買ってから10週のあいだは<b class="kw">🔒 鑑定期間</b>なので正価で売れません（<a href="gear.html#gear-appraiser">鑑定士の友達</a>がいれば5週）。急いで売るなら<b>質屋</b>に相場よりずっと安く渡すしかありません（<a href="gear.html#gear-pawn-vip">質屋VIPカード</a>があれば損が少なくなります）。</li>
+  <li><b>1品目最大5個</b>同じ品目は5個までしか買えません（<b class="kw">🚫 買い占め禁止！</b>）。<a href="gear.html#gear-big-hand">VVIP大口</a>があれば15個まで。</li>
+  <li><b>新車は買った瞬間から損</b>スポーツカー、キャンピングカーのような新車は相場より高く買い、買ったあとも毎週少しずつ値段が下がります。お金を増やすより、ほしいときに買う物です。</li>
+  <li><b>値段は揺れても元に戻る</b>1週で大きく上下しますが、長く見ると品目ごとの決まった流れにまた引き戻されます。大きく上がった週に売り、大きく下がった週に買うのが基本です。</li>
+</ol>
+<figure class="shot" data-shot="invest-goods-sheet"><img src="img/invest-goods-sheet.png" alt="実物資産の品目シート。鑑定期間の案内と保有分ごとの残りの週、質屋ボタン" loading="lazy" decoding="async"><figcaption>品目シート。保有分ごとに<b class="kw">🔒 鑑定期間 残りN週</b>と質屋の値段が見えます。</figcaption></figure>
+
+<h3 id="goods-feed">今日のゴシップの読み方<a class="anchor" href="#goods-feed" aria-label="この見出しへのリンク">#</a></h3>
+<p>毎週3〜5品目の見出しが出ます。出どころは<b>ゴシップ（45%事実）、独占（65%）、速報（85%）</b>で、出る割合は2 : 2 : 1、55%が上がるニュースです。</p>
+<ul>
+  <li>見出しが出た瞬間、その品目は本当でも嘘でも<b>6%</b>上がるか下がります（もう反映された価格を見ることになります）。</li>
+  <li><b>翌週</b>、本当だったニュースだけがもう1回動きます。上がりならさらに8〜22%上がり、下がりならさらに8〜20%下がります。</li>
+</ul>
+<div class="table-wrap"><table>
+  <thead><tr><th>見出し</th><th class="r">翌週の平均</th><th class="r">翌週上がる確率</th><th class="r">10週後の平均</th></tr></thead>
+  <tbody>
+    <tr><td>速報 ▲</td><td class="r">+14.0%</td><td class="r">81.2%</td><td class="r">+25.2%</td></tr>
+    <tr><td>速報 ▼</td><td class="r">-10.4%</td><td class="r">19.2%</td><td class="r">+14.5%</td></tr>
+    <tr><td>独占 ▲</td><td class="r">+11.0%</td><td class="r">73.9%</td><td class="r">+23.1%</td></tr>
+    <tr><td>独占 ▼</td><td class="r">-7.4%</td><td class="r">27.4%</td><td class="r">+17.1%</td></tr>
+    <tr><td>ゴシップ ▲</td><td class="r">+7.9%</td><td class="r">66.3%</td><td class="r">+21.2%</td></tr>
+    <tr><td>ゴシップ ▼</td><td class="r">-4.5%</td><td class="r">35.1%</td><td class="r">+19.1%</td></tr>
+  </tbody>
+</table></div>
+<p>速報 ▲が出た品目は翌週平均 +14.0%（上がる確率81.2%）なので、かなり信頼できます。でも実物資産は<b>買うと10週縛られるので</b>翌週に売れません。10週後で見ると、どの品目を買ったのと（平均 +19.4%）大きな差がないので、ゴシップは<b class="kw">買うか買わないか</b>より<b><b class="kw">今週は買わないでおこう</b>（速報 ▼）</b>をふるい落とす用途に使うのがいいです。</p>
+
+<h3 id="goods-hold">装備なしで買ったら？<a class="anchor" href="#goods-hold" aria-label="この見出しへのリンク">#</a></h3>
+<p>第20週に品目ごとに1個ずつ買って、① 鑑定が終わる第30週に売るか、② 第100週まで持っていたとき（装備なし）の、買った値段に対する値です。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>品目</th><th class="r">第30週に売却の中央値</th><th class="r">利益の確率</th><th class="r">100週保有の中央値</th><th class="r">下位10%</th><th class="r">利益の確率</th></tr></thead>
+  <tbody>
+    <tr><td>⌚ ダイバーズウォッチ</td><td class="r">+23.0%</td><td class="r">71.5%</td><td class="r">+199.8%</td><td class="r">+60.6%</td><td class="r">99.1%</td></tr>
+    <tr><td>👟 限定スニーカー</td><td class="r">+25.1%</td><td class="r">66.2%</td><td class="r">+201.1%</td><td class="r">+34.8%</td><td class="r">96.5%</td></tr>
+    <tr><td>🗿 フィギュア</td><td class="r">+15.1%</td><td class="r">61.9%</td><td class="r">+73.8%</td><td class="r">-19.7%</td><td class="r">82.0%</td></tr>
+    <tr><td>🎮 レトロゲーム機</td><td class="r">+25.5%</td><td class="r">69.3%</td><td class="r">+198.5%</td><td class="r">+46.8%</td><td class="r">97.8%</td></tr>
+    <tr><td>👜 ブランドバッグ</td><td class="r">+21.5%</td><td class="r">70.3%</td><td class="r">+138.6%</td><td class="r">+37.9%</td><td class="r">98.2%</td></tr>
+    <tr><td>🚗 スポーツカー（新車）</td><td class="r">-35.1%</td><td class="r">5.1%</td><td class="r">-75.0%</td><td class="r">-83.6%</td><td class="r">0.0%</td></tr>
+    <tr><td>🚐 キャンピングカー（新車）</td><td class="r">-16.9%</td><td class="r">23.4%</td><td class="r">-48.5%</td><td class="r">-65.3%</td><td class="r">2.1%</td></tr>
+    <tr><td>🏎️ クラシックカー</td><td class="r">+30.9%</td><td class="r">79.8%</td><td class="r">+254.7%</td><td class="r">+118.7%</td><td class="r">100.0%</td></tr>
+    <tr><td>🖼️ 美術品</td><td class="r">+18.4%</td><td class="r">67.2%</td><td class="r">+136.0%</td><td class="r">+28.0%</td><td class="r">96.1%</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="trendsetter">😎 トレンドセッターを付けるとまったく別のゲームです<a class="anchor" href="#trendsetter" aria-label="この見出しへのリンク">#</a></h3>
+<p><a href="gear.html#gear-trendsetter">トレンドセッター</a>があると、実物資産タブを開くときに<b><b class="kw">実物資産レポート</b></b>が出て、前回の確認からの動きに効果が付きます（今週買った物は除く）。効果は相場ボードの価格ではなく<b>自分が持っているその物だけに</b>付いて積み重なります。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>効果</th><th>対象</th><th>内容</th></tr></thead>
+  <tbody>
+    <tr><td>😎 プレミアム発動！！</td><td>ハイエンド（定価1,111万円以上: スポーツカー、クラシックカー、美術品）</td><td>下がっていたら<b>いつも</b> +2%に反転</td></tr>
+    <tr><td>🛍️ 転売フィーバー!!</td><td>ハイエンド</td><td>上がっていたら30%（運七技三があれば70%）の確率で上がり幅が4倍（最大 +200%）</td></tr>
+    <tr><td>💎 限定品の先行購入</td><td>定価111万円以上の品目</td><td>毎週30%（VVIP大口があれば80%）の確率で相場の約40〜77%の価格、<b>1人1個</b>、その週だけ</td></tr>
+    <tr><td>⭐ 確実</td><td>運七技三もあるとき</td><td>今週の本物の上がるゴシップ1つに⭐</td></tr>
+  </tbody>
+</table></div>
+<figure class="shot" data-shot="invest-goods-report"><img src="img/invest-goods-report.png" alt="実物資産レポート。トレンドセッターのプレミアムと転売フィーバーの行" loading="lazy" decoding="async"><figcaption>トレンドセッターのレポート。ハイエンドが下がっていたらプレミアム、上がっていたら転売フィーバーが起きることがあります。</figcaption></figure>
+<p>ハイエンドは<b>下がる週がなくなり</b>（毎回 +2%）、上がる週にはときどき4倍になるので、毎週タブを開きながら長く持つほど指数関数的に膨らみます。下の値は市場が第20週に開いたときに、買った値段のふつう何倍になるかです。第20週に買って第100週まで持っていくと、毎週確認する場合、ふつうスポーツカー約126倍、クラシックカー約2,700倍、美術品約15,900倍まで膨らみます。</p>
+<div class="callout trap"><b>落とし穴: タブを開かないと効果もない</b><p>トレンドセッターの効果は<b>実物資産タブを開くとき</b>に1回付きます。何週も開かないとそのあいだの動き全体に1回だけ付くので、上の表のように4週ごとに開くと毎週開くときよりずっと少なく稼ぎます。そしてキャンピングカー（889万円）はハイエンドではないので何の効果もありません。</p></div>
+<div class="callout warn"><b>麗華ルートなら</b><p>麗華が監査中のときは、実物資産の保有（抜き打ち監査の週）、同じ品目4個以上、限定品の先行購入、転売フィーバーの利益、質屋、不動産2軒以上、株の2週連続の売買、30%を超える株の急騰がすべて容疑になります。詳しくは<a href="heroine-eunhye.html">麗華の攻略</a>。</p></div>
+
+
+<h2 id="taste" data-id="system:home-taste">🌟 ヒロインの好み: 新婚中に彼女の夢を全部買ってあげる<a class="anchor" href="#taste" aria-label="この見出しへのリンク">#</a></h2>
+<p>6人のヒロインは新婚中に<b class="kw">ふたり</b>でほしいものを1つずつひとりごとのように言います（もう持っているものは飛ばします）。<b>夢の家と下の好みを全部</b>そろえると黄色い行<b class="kw">私、もう全部手に入れたよ…</b>が1回出て、周回の最後まで結婚を続ければ好みのエンディング（エピックパック1個）です。不動産の好みは<b>夢の家以外のほかの物件</b>である必要があります。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>エンディング</th><th>ヒロイン</th><th>夢の家</th><th>好み（すべて）</th></tr></thead>
+  <tbody>
+    <tr data-id="ending:taste-yuna" id="ending-taste-yuna"><td>優奈のすべて</td><td>優奈</td><td>リバービューシティのリバーサイドのペントハウス</td><td>別荘（田舎の家/別荘のどれでも）、スポーツカー、キャンピングカー</td></tr>
+    <tr data-id="ending:taste-seoyun" id="ending-taste-seoyun"><td>美咲の完璧な最終案</td><td>美咲</td><td>リバービューシティのロフト付き</td><td>美術品、ブランドバッグ</td></tr>
+    <tr data-id="ending:taste-harin" id="ending-taste-harin"><td>彩花の企画、全部達成</td><td>彩花</td><td>夜明け湾ニュータウンの新築3LDK</td><td>貸し出す店舗やビル（店舗、ビル、物流倉庫のどれでも）、ダイバーズウォッチ</td></tr>
+    <tr data-id="ending:taste-daeun" id="ending-taste-daeun"><td>七海のレジェンド級の人生</td><td>七海</td><td>キャッシュ港のワンルーム</td><td>限定フィギュア、レトロゲーム機、限定スニーカー</td></tr>
+    <tr data-id="ending:taste-minji" id="ending-taste-minji"><td>莉子の証明、完了</td><td>莉子</td><td>レガシー旧市街のワンルーム</td><td>書斎用のオフィステル（オフィステル、ワンルームのどれでも）、ダイバーズウォッチ</td></tr>
+    <tr data-id="ending:taste-hyeyun" id="ending-taste-hyeyun"><td>葵の7年越しの夢</td><td>葵</td><td>ホットフィックス海岸の庭の広い平屋</td><td>クラシックカー、レトロゲーム機</td></tr>
+  </tbody>
+</table></div>
+<div class="callout tip"><b>お役立ちヒント</b><p>七海、莉子は夢の家と好みを全部合わせても数千万円なのでいちばん簡単です。葵はクラシックカー3.1億円、美咲は美術品1.7億円、優奈はペントハウス2.7億円にスポーツカー（実際の支払い4,306万円）まで必要なので、投資でお金を増やす必要があります。穂乃果、美桜、真由は夢の家はありますが好みのエンディングはありません。</p></div>
+
+
+<h2 id="plan">おすすめの運用法: 序盤、中盤、終盤 🧭<a class="anchor" href="#plan" aria-label="この見出しへのリンク">#</a></h2>
+<ol class="steps">
+  <li><b>序盤（投資タブが開く前）</b>222万円を早く貯めることがすべてです。親からの仕送りIIIなら第1週に開きます。装備は安くて無難な<a href="gear.html#gear-stock-app">株アプリ</a>（10,000コイン）から。</li>
+  <li><b>序盤（開いた直後、222万〜1,111万円）</b>運七技三があるなら<b>10銘柄に分けて買って毎週株式タブを開くだけ</b>が正解です。なければイベントの予告が出た銘柄を買って開示の前向きだけ持っていく<b class="kw">シグナル読み</b>で回します。交際中ならワンルーム（778万円）かオフィステルを同棲用に1つ買っておきましょう。</li>
+  <li><b>中盤（1,111万〜1.1億円）</b>1銘柄2,222万円を超えないようにしましょう。余ったお金は不動産へ: 家賃の強い店舗、倉庫、リゾート、または<b class="kw">確定</b>の好材料が出た地域。結婚が見えたら彼女の<b>夢の家</b>を先に買っておくと、結婚直後に新婚の提案がすぐ来ます。</li>
+  <li><b>終盤（1.1億円〜）</b>株の評価額が1.1億円を超えると運が減り始めます（3.3億円で0）。ここからはトレンドセッターを付けて<b>ハイエンドの実物資産</b>、島3軒（サンドボックス5.2億円 → クッキー6.6億円 → クラウド50.1億円の順に安い）に移りましょう。</li>
+  <li><b>最後の週</b>エンディングの判定は週の締めなので、島3軒、スーパー個人投資家は一度超えておけば記録されます。好みのエンディングは<b>最後まで結婚を続ける</b>のが条件なので、離婚にだけ気をつけましょう。</li>
+</ol>
+
+<h2 id="fail">破産するパターンTOP 7 💀<a class="anchor" href="#fail" aria-label="この見出しへのリンク">#</a></h2>
+<div class="callout trap"><b>1. 急騰株を追いかける</b><p>先週の1位の銘柄に全部入れる。過熱（毎週40%ずつ抜ける）を高く買うプレイなので、80週後ふつう<b>-42.9%</b>です。</p></div>
+<div class="callout trap"><b>2. ゴシップを信じてイベントの結果まで粘る</b><p>ゴシップの前向きは55%しか当たらないのに、株価には成功の期待と上乗せがもう乗っています。平均で損です。</p></div>
+<div class="callout trap"><b>3. 1銘柄に全力投資</b><p>2,222万円から個人投資家の投げ売り（最大毎週50%の確率で -20%）、運でも防げません。ひのまる製薬だけ持っていくと80週の中央値が -4.1%、下位10%は<b>-68.8%</b>です（利益が出た割合48.0%）。</p></div>
+<div class="callout trap"><b>4. 新車を投資として買う</b><p>スポーツカーは買った瞬間に20%、そのあとも毎週 -1.2%の流れです。装備なしで100週持つと中央値<b>-75.0%</b>。優奈の好みかトレンドセッターがあるときだけ買いましょう。</p></div>
+<div class="callout trap"><b>5. 実物資産を買ってすぐ現金が必要になる</b><p>10週の鑑定期間中は質屋で40%です。生活費がぎりぎりのときは実物資産に入れないでください。</p></div>
+<div class="callout trap"><b>6. 投資タブを開かない</b><p>株の運、実物資産のトレンドセッターの効果は<b>タブを開くとき</b>に付きます。運七技三、トレンドセッターを買っておいて開かないと効果がぐっと減ります。</p></div>
+<div class="callout trap"><b>7. 同棲中に家を全部売ろうとして止められる</b><p>同棲、結婚中は<b class="kw">私たちの家</b>1軒は売れません。家を整理したいなら、ほかの家を先に処分しましょう。</p></div>
+
+<h2 id="invest-endings">投資関連のエンディング、実績まとめ<a class="anchor" href="#invest-endings" aria-label="この見出しへのリンク">#</a></h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>エンディング、実績</th><th>条件</th><th>報酬</th></tr></thead>
+  <tbody>
+    <tr><td>スーパー個人投資家</td><td>株の評価額と実現利益を合わせて1.1億円</td><td>レジェンドパック2個</td></tr>
+    <tr><td><a href="#islands">クラウド島の主、クッキー諸島の農園主、サンドボックス特区の王</a></td><td>その島の物件3軒</td><td>それぞれエピックパック1個</td></tr>
+    <tr><td><a href="#taste">ヒロインの好み6種</a></td><td>新婚中に夢の家と好みすべて、最後まで結婚</td><td>それぞれエピックパック1個</td></tr>
+    <tr><td>実績<b class="kw">1,111万円貯金</b></td><td>現金の残高1,111万円</td><td>図鑑ノーマルパック1（実績全体）</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="자주-묻는-질문">よくある質問<a class="anchor" href="#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8" aria-label="この見出しへのリンク">#</a></h2>
+<dl class="faq">
+  <dt>投資タブが開きません。</dt><dd>現金の残高が222万円以上必要です。株の評価額ではなく<b>残高</b>です。週の締めのときか、そのお金を持って投資タブに入ると開きます。</dd>
+  <dt>株の隠れたトレンドは見られないの？</dt><dd>見られません。そのかわりレポート（78%正確）が方向を教えてくれるので、画面の<b class="kw">市場の期待</b>と比べればOKです。</dd>
+  <dt>イベントの結果はいつ決まる？</dt><dd>予告が出た瞬間です。2週前の事前のシグナルは、その結果を開示なら90%、ゴシップなら55%の確率で正しく教えてくれます。</dd>
+  <dt>運七技三は不動産、実物資産にも付きますか？</dt><dd>不動産には効果がありません。実物資産では、トレンドセッターと一緒のときに転売フィーバーの確率を30% → 70%にし、⭐ 確実の表示をくれます。</dd>
+  <dt>不動産の<b class="kw">急売り</b>はどこにある？</dt><dd>今の物件は固定の一覧なので、急売りは出ません。安く買うなら<b class="kw">▼ 下落傾向</b>の地域を狙いましょう（本来の流れにまた上がってくる傾向です）。</dd>
+  <dt>島のエンディングは周回の最後まで持っている必要がありますか？</dt><dd>週の締め、返信のあとに一度でも3軒を持っていれば<b class="kw">エンディング条件クリア！</b>として記録されます。ただし周回を第100週まで終えないと認められません。</dd>
+  <dt>配当はいつ入りますか？</dt><dd>最初に買った週から4週ごとに、週の締めに現金で入ります（ログ<b class="kw">💵 配当金</b>）。全部売ってまた買うと最初から数えます。</dd>
+</dl>
+<nav class="pager" aria-label="前のページと次のページ"><a class="prev" href="gear.html"><small>← 前のページ</small>装備、消耗品の攻略</a><a class="next" href="home.html"><small>次のページ →</small>同棲、新婚、アルバム、家族の攻略</a></nav>
+<p class="back-home"><a href="index.html">📖 攻略本ホームへ戻る</a></p>
+</article></main>
+</div>
+<button class="totop" type="button" aria-label="ページの先頭へ">↑</button>
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="拡大表示（Escで閉じる）" tabindex="-1"><div><p></p></div></div>
+<footer class="gf"><p>この攻略本は今のゲームに合わせてまとめています。アップデートで数値が変わることがあります。</p><p><a href="../../">開発者体験 (Build Failed)</a></p><p>© 2026 Dawn commit</p></footer>
+<script src="assets/guide.js?v=7457ec55" defer></script>
+</body>
+</html>

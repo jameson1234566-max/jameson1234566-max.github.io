@@ -1,0 +1,1172 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スタートガイド | 開発者体験 攻略本</title>
+<meta name="description" content="タブごとの説明からクラシックステージ、キャリアトラック、コイン、カード、コーヒーの集め方、周回を速く回す方法まで一度に">
+<meta name="theme-color" content="#17142B">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="開発者体験 (Build Failed), Dawn commit">
+<meta property="og:url" content="https://dawncommitgames.com/guide/ja/start.html">
+<meta property="og:title" content="スタートガイド | 開発者体験 攻略本">
+<meta property="og:description" content="タブごとの説明からクラシックステージ、キャリアトラック、コイン、カード、コーヒーの集め方、周回を速く回す方法まで一度に">
+<meta property="og:image" content="https://dawncommitgames.com/icon-512.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://dawncommitgames.com/guide/ja/start.html">
+<link rel="alternate" hreflang="ko" href="https://dawncommitgames.com/guide/start.html">
+<link rel="alternate" hreflang="en" href="https://dawncommitgames.com/guide/en/start.html">
+<link rel="alternate" hreflang="ja" href="https://dawncommitgames.com/guide/ja/start.html">
+<link rel="alternate" hreflang="x-default" href="https://dawncommitgames.com/guide/start.html">
+<link rel="icon" type="image/png" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="stylesheet" href="assets/guide.css?v=7457ec55">
+<script>try{var t=localStorage.getItem('guide-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へスキップ</a>
+<header class="gh"><div class="gh-in">
+  <button class="icon-btn menu-btn" type="button" aria-label="目次を開く" aria-expanded="false" aria-controls="side"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="gh-brand" href="index.html"><img src="../../favicon.png" alt="" width="30" height="30">攻略本 <small>開発者体験</small></a>
+  <div class="gh-search" role="search">
+    <svg class="sicon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="攻略本を検索（例: 優奈、コーヒー、起業）" autocomplete="off" aria-label="攻略本を検索">
+    <div class="results" role="listbox" aria-label="検索結果"></div>
+  </div>
+  <button class="icon-btn search-btn" type="button" aria-label="検索を開く" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+  <details class="lang-menu"><summary class="icon-btn" aria-label="言語を変える" title="言語を変える"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></summary><div class="lang-pop"><a href="../start.html" lang="ko" hreflang="ko">한국어</a><a href="../en/start.html" lang="en" hreflang="en">English</a><a href="start.html" lang="ja" hreflang="ja" aria-current="true">日本語</a></div></details>
+  <button class="icon-btn theme-btn" type="button" aria-label="ダークモードにする"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+</div></header>
+<nav class="chipbar" aria-label="分類"><div class="chips"><a class="chip" href="index.html#topics">🔘 すべてのテーマ</a><a class="chip on" href="start.html" aria-current="true">🚀 スタート</a><a class="chip" href="career.html">📈 キャリア</a><a class="chip" href="heroines.html">💌 ヒロイン</a><a class="chip" href="titles.html">🏷️ 称号</a><a class="chip" href="gear.html">🎒 装備</a><a class="chip" href="invest.html">💹 投資</a><a class="chip" href="home.html">🏠 家族</a></div></nav>
+<div class="layout">
+<nav class="side" id="side" aria-label="攻略本の目次"><p class="side-title">攻略本の目次 <button class="tree-all" type="button" data-open="1">すべて開く</button></p><ul class="nav tree"><li class="leaf"><a href="index.html"><span class="em">🏠</span>攻略本ホーム</a></li><li><details open><summary><span class="caret" aria-hidden="true"></span><a href="start.html" class="cur" aria-current="page"><span class="em">🚀</span>スタートガイド</a></summary><ul class="toc"><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#tabs">タブをひと目で 🗺️</a></summary><ul class="toc"><li class="leaf"><a href="#%ED%99%88">ホーム 🏠</a></li><li class="leaf"><a href="#%EC%97%85%EB%AC%B4">業務 💻</a></li><li class="leaf"><a href="#%EB%A9%94%EC%8B%A0%EC%A0%80">メッセンジャー 💬</a></li><li class="leaf"><a href="#%ED%8C%80">チーム 👥</a></li><li class="leaf"><a href="#%ED%88%AC%EC%9E%90">投資 📈</a></li></ul></details></li><li class="leaf"><a href="#tutorial">最初の周回の流れ: チュートリアル1〜4章 🎓</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#classic-vs-track">クラシックステージとキャリアトラック、何が違う？ 🧩</a></summary><ul class="toc"><li class="leaf"><a href="#classic">クラシックステージ（画面の名前はクラシックチャレンジ）の攻略</a></li><li class="leaf"><a href="#track">キャリアトラックの攻略</a></li><li class="leaf"><a href="#suspend">セーブして出る</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#career-week">キャリアの周回: 1週間はこう流れます 📅</a></summary><ul class="toc"><li class="leaf"><a href="#plan">今週のスケジュールの組み方</a></li><li class="leaf"><a href="#ticket">今週のチケット</a></li><li class="leaf"><a href="#burnout">体力、ストレス、燃え尽き、倒れる 🔥</a></li><li class="leaf"><a href="#messages">メッセージの返信、既読スルー</a></li><li class="leaf"><a href="#run-end">周回の終わりの報酬: CPとコイン</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#resources">通貨の総まとめ: コーヒー、コイン、カード 💰</a></summary><ul class="toc"><li class="leaf"><a href="#coffee">コーヒー ☕ の手に入れ方すべて</a></li><li class="leaf"><a href="#coins">コイン 💰 の手に入れ方、使い方</a></li><li class="leaf"><a href="#packs">カードパック 🃏 の確率と天井</a></li><li class="leaf"><a href="#mythic-shards">神話のかけら</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#daily">毎日こなすルーティン ✅</a></summary><ul class="toc"><li class="leaf"><a href="#attendance">出席チェック</a></li><li class="leaf"><a href="#quests">クエスト</a></li><li class="leaf"><a href="#ads">報酬型広告</a></li><li class="leaf"><a href="#season-pass">シーズンパス（コミットXP）</a></li><li class="leaf"><a href="#mailbox">受信箱</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#team">同僚とチームプロジェクト 👥</a></summary><ul class="toc"><li class="leaf"><a href="#coworkers">同僚カード</a></li><li class="leaf"><a href="#fusion">合成</a></li><li class="leaf"><a href="#team-projects">チームプロジェクトとチームパワー</a></li><li class="leaf"><a href="#skill-trees">スキルツリー</a></li><li class="leaf"><a href="#%EB%8F%99%EB%A3%8C-%EC%B1%84%EB%84%90%EA%B3%BC-%EC%B9%9C%EB%B0%80%EB%8F%84">同僚チャンネルと親密度</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#challenge-modes">業務タブのチャレンジモード 🏆</a></summary><ul class="toc"><li class="leaf"><a href="#survival">サバイバル</a></li><li class="leaf"><a href="#tower">無限徹夜（タワー）</a></li><li class="leaf"><a href="#no-coffee">ノーコーヒー挑戦</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#social">フレンドと一緒に 🤝</a></summary><ul class="toc"><li class="leaf"><a href="#system-popularity">人気度（いいね） 👍</a></li><li class="leaf"><a href="#system-blame-relay">Git Blameリレー 🔍</a></li><li class="leaf"><a href="#draw">今日のニックネーム抽選 🎰</a></li><li class="leaf"><a href="#system-hotfix-outage">今日のホットフィックス 🔥</a></li><li class="leaf"><a href="#outage">サーバー障害対応 🚨</a></li><li class="leaf"><a href="#system-friends">フレンドとコーヒー ☕</a></li><li class="leaf"><a href="#system-leaderboard">ランキング 🏆</a></li><li class="leaf"><a href="#system-duel">コードレビュー1対1 ⚔️</a></li><li class="leaf"><a href="#system-bug-bounty">バグバウンティ 🐛</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="#perks">周回ボーナス（CP） 🎓</a></summary><ul class="toc"><li class="leaf"><a href="#perk-tier">CPのティア: 何から買う？</a></li><li class="leaf"><a href="#perk-effects">ボーナス効果の一覧</a></li><li class="leaf"><a href="#perk-costs">CP費用の一覧</a></li></ul></details></li><li class="leaf"><a href="#fast-runs">次の周回を早く回すコツ ⏩</a></li><li class="leaf"><a href="#shop-iap">ショップの有料商品（画面のまま）</a></li><li class="leaf"><a href="#mistakes">初心者によくあるミス ⚠️</a></li><li class="leaf"><a href="#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="career.html"><span class="em">📈</span>昇進、キャリア</a></summary><ul><li class="leaf"><a href="career.html#run-rules">まずは周回のしくみから 🗓️</a></li><li class="leaf"><a href="career.html#ranks">役職10段階と月給 💼</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="career.html#review">人事評価スコアはこう計算されます 📋</a></summary><ul><li class="leaf"><a href="career.html#%ED%8F%89%EA%B0%80-%EA%B8%B0%EC%A4%80%EC%A0%90-%EC%9D%B4-%EC%A0%90%EC%88%98%EB%A5%BC-%EB%84%98%EC%96%B4%EC%95%BC-%EC%8A%B9%EC%A7%84-%ED%9B%84%EB%B3%B4">評価の基準点（このスコアを超えると昇進候補）</a></li><li class="leaf"><a href="career.html#%ED%8F%89%EA%B0%80-%EC%A0%90%EC%88%98%EB%8A%94-%EB%AD%98%EB%A1%9C-%EC%A0%95%ED%95%B4%EC%A0%B8%EC%9A%94">評価スコアは何で決まる？</a></li><li class="leaf"><a href="career.html#%EC%A3%BC%EA%B0%84-%EC%84%B1%EA%B3%BC%EB%8A%94-%EC%96%B4%EB%94%94%EC%84%9C-%EB%82%98%EC%99%80%EC%9A%94">週の成果はどこから出る？</a></li><li class="leaf"><a href="career.html#nego">年俸交渉: どれを押すと得？ 💸</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="career.html#promo-table">役職別の昇進条件の総まとめ 📶</a></summary><ul><li class="leaf"><a href="career.html#%EA%B8%B0%EC%88%A0-11%EA%B0%9C-%EC%BB%A4%EB%B0%8B%EC%9C%BC%EB%A1%9C-%EB%B0%B0%EC%9B%8C%EC%9A%94">スキル11個（コミットで覚えます）</a></li></ul></details></li><li class="leaf"><a href="career.html#tracks">キャリアトラック5分野 🛤️</a></li><li class="leaf"><a href="career.html#companies">会社5社の比較 🏢</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="career.html#job-change">転職とヘッドハンター 🤝</a></summary><ul><li class="leaf"><a href="career.html#%EC%9D%B4%EC%A7%81%ED%95%98%EB%A9%B4-%EB%B0%94%EB%80%8C%EB%8A%94-%EA%B2%83">転職すると変わること</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="career.html#saga">会社のサーガ: 会社ごとに大事件が起こる 🎬</a></summary><ul><li class="leaf"><a href="career.html#%EB%8C%80%EA%B8%B0%EC%97%85-%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC-%EC%83%88%EB%B2%BD%EC%BB%A4%EB%B0%8B-%EA%B2%B0%EC%A0%9C-%EB%8C%80%EC%9E%A5%EC%95%A0">大企業、株式会社夜明けコミット: 決済の大障害</a></li><li class="leaf"><a href="career.html#%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%ED%94%BC%EB%B4%87%EB%9E%A9%EC%8A%A4-%EB%8D%B0%EB%AA%A8%EC%97%90%EC%84%9C-%EC%97%91%EC%8B%9C%ED%8A%B8%EA%B9%8C%EC%A7%80">スタートアップ、ピボットラボ: デモからイグジットまで</a></li><li class="leaf"><a href="career.html#%EC%99%B8%EA%B5%AD%EA%B3%84-%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%85%8C%ED%81%AC-%EC%A7%80%EC%82%AC-%EC%9D%B4%EA%B4%80-%EC%86%8C%EB%AC%B8">外資系、グローバルテック支社: 移管のうわさ</a></li><li class="leaf"><a href="career.html#%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C-%EC%87%BC%ED%95%91%EB%AA%B0-%EC%99%B8%EC%A3%BC%EC%99%80-%EC%9E%94%EA%B8%88-%EC%B2%B4%EB%B6%88">フリーランス: ショッピングサイトの外注と残金の未払い</a></li></ul></details></li><li class="leaf"><a href="career.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroines.html"><span class="em">💌</span>ヒロイン攻略</a></summary><ul><li class="leaf"><a href="heroines.html#pick">誰から攻略する？ 目的別のおすすめ 🎯</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroines.html#compare">13人をひと目で比較 🗂️</a></summary><ul><li class="leaf"><a href="heroines.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EB%B2%95%EA%B3%BC-%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C">出会い方と固有システム</a></li><li class="leaf"><a href="heroines.html#%EB%90%98%EB%8A%94-%EA%B2%83-%EA%B2%B0%ED%98%BC-%EC%97%94%EB%94%A9-%EB%B3%B4%EC%83%81">できること、結婚エンディングの報酬</a></li></ul></details></li><li class="leaf"><a href="heroines.html#common">すべてのヒロイン共通ルールのまとめ 📌</a></li><li class="leaf"><a href="heroines.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul><ul class="subs"><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-seoyun.html">高橋美咲 攻略</a></summary><ul><li class="leaf"><a href="heroine-seoyun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-seoyun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-seoyun.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-seoyun.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-seoyun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-seoyun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-seoyun.html#fail">失敗、別れの条件と避け方</a></li><li class="leaf"><a href="heroine-seoyun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-seoyun.html#common-rules">📌 すべてのヒロイン共通ルール</a></summary><ul><li class="leaf"><a href="heroine-seoyun.html#%EB%A7%A4%EC%A3%BC-%EC%A7%80%EC%BC%9C%EC%95%BC-%ED%95%A0-%EA%B2%83">毎週守ること</a></li><li class="leaf"><a href="heroine-seoyun.html#%EB%84%98%EC%B9%9C-%ED%98%B8%EA%B0%90%EB%8F%84-%ED%9A%A8%EA%B3%BC">あふれた好感度の効果</a></li></ul></details></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-harin.html">佐々木彩花 攻略</a></summary><ul><li class="leaf"><a href="heroine-harin.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-harin.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-harin.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-harin.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-harin.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-harin.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-harin.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-harin.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-daeun.html">中村七海 攻略</a></summary><ul><li class="leaf"><a href="heroine-daeun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-daeun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-daeun.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-daeun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-daeun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-minji.html">小林莉子 攻略</a></summary><ul><li class="leaf"><a href="heroine-minji.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-minji.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-minji.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-minji.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-minji.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-minji.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-minji.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-minji.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-yuna.html">松本優奈 攻略</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-yuna.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></summary><ul><li class="leaf"><a href="heroine-yuna.html#%EB%B2%88%ED%98%B8-%EB%A9%94%EC%8B%9C%EC%A7%80">番号のメッセージ</a></li></ul></details></li><li class="leaf"><a href="heroine-yuna.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-yuna.html#%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0-%EA%B2%B0%ED%98%BC">告白 → 交際 → 結婚</a></li><li class="leaf"><a href="heroine-yuna.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-yuna.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-yuna.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-yuna.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-hyeyun.html">山本葵 攻略</a></summary><ul><li class="leaf"><a href="heroine-hyeyun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-hyeyun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%9D%B4%EB%B3%84-%EC%8D%B8-%ED%98%9C%EC%9C%A4%EB%A7%8C%EC%9D%98-%ED%9D%90%EB%A6%84">別れ → 片想い（葵だけの流れ）</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-hyeyun.html#%EC%97%B0%EC%95%A0-%EA%B2%B0%ED%98%BC">交際、結婚</a></summary><ul><li class="leaf"><a href="heroine-hyeyun.html#%EC%97%B0%EC%95%A0-%EC%A4%91-%ED%98%9C%EC%9C%A4-%EC%A0%84%EC%9A%A9-%EB%A9%94%EC%8B%9C%EC%A7%80">交際中の葵専用メッセージ</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%B2%AD%ED%98%BC%EA%B3%BC-%EA%B2%B0%ED%98%BC-%ED%9B%84">プロポーズと結婚後</a></li></ul></details></li><li class="leaf"><a href="heroine-hyeyun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-hyeyun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunseo.html">井上楓 攻略</a></summary><ul><li class="leaf"><a href="heroine-eunseo.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-eunseo.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95-%EB%8F%88-%EB%A9%94%EC%8B%9C%EC%A7%80-vs-%EB%A7%88%EC%9D%8C-%EB%A9%94%EC%8B%9C%EC%A7%80">好感度の上げ方: お金のメッセージ vs 心のメッセージ</a></li><li class="leaf"><a href="heroine-eunseo.html#%EA%B3%B5%EB%B6%80-%EC%A7%84%EB%8F%84%EC%99%80-%ED%95%A9%EA%B2%A9-%ED%99%95%EB%A5%A0">勉強の進み具合と合格確率</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-eunseo.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-eunseo.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-eunseo.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sora.html">水野穂乃果 攻略</a></summary><ul><li class="leaf"><a href="heroine-sora.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-sora.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-sora.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-sora.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-sora.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-sora.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-sora.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-sora.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%9C%EB%B0%9C-%EC%9D%B8%ED%94%8C%EB%A3%A8%EC%96%B8%EC%84%9C-%EC%B9%AD%ED%98%B8-%EC%8A%A4%ED%86%A0%EB%A6%AC">固有システム: 開発系インフルエンサーの称号ストーリー</a></li><li class="leaf"><a href="heroine-sora.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-jiwoo.html">藤田美桜 攻略</a></summary><ul><li class="leaf"><a href="heroine-jiwoo.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-jiwoo.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-jiwoo.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-hana.html">石川真由 攻略</a></summary><ul><li class="leaf"><a href="heroine-hana.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-hana.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-hana.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-hana.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-hana.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-hana.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-hana.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-hana.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sophie.html">ソフィー 攻略</a></summary><ul><li class="leaf"><a href="heroine-sophie.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li class="leaf"><a href="heroine-sophie.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sophie.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%90%ED%8F%AC-%EC%B9%9C%EA%B5%AC-%ED%80%B4%EC%A6%88">固有システム: 在米コリアンの友達のクイズ</a></summary><ul><li class="leaf"><a href="heroine-sophie.html#%EB%AC%B4%EA%B2%B0%EC%A0%90-%EC%97%94%EB%94%A9">全問正解のエンディング</a></li></ul></details></li><li class="leaf"><a href="heroine-sophie.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-sophie.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-sophie.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-sophie.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-sophie.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-sophie.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sohyun.html">早瀬紗希 攻略</a></summary><ul><li class="leaf"><a href="heroine-sohyun.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-sohyun.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%B9%84%EB%B0%80%EC%97%B0%EC%95%A0%EC%99%80-%EC%9D%98%EC%8B%AC%EB%8F%84">固有システム: 秘密の交際と疑惑度</a></summary><ul><li class="leaf"><a href="heroine-sohyun.html#%EB%93%A4%ED%82%AC-%ED%99%95%EB%A5%A0">バレる確率</a></li><li class="leaf"><a href="heroine-sohyun.html#%EB%B9%84%EB%B0%80-%EB%8D%B0%EC%9D%B4%ED%8A%B8-2%EC%A3%BC%EB%A7%88%EB%8B%A4">秘密のデート（2週ごと）</a></li></ul></details></li><li class="leaf"><a href="heroine-sohyun.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-sohyun.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-sohyun.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-sohyun.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunhye.html">氷室麗華 攻略</a></summary><ul><li class="leaf"><a href="heroine-eunhye.html#%EB%A7%8C%EB%82%98%EB%8A%94-%EC%A1%B0%EA%B1%B4">出会う条件</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunhye.html#%EA%B3%A0%EC%9C%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%90%EC%82%AC-%EB%A9%94%EB%AA%A8%EC%99%80-%EC%9D%98%EC%8B%AC%EB%8F%84">固有システム: 監査メモと疑惑度</a></summary><ul><li class="leaf"><a href="heroine-eunhye.html#%EA%B0%90%EC%82%AC-%EB%A9%94%EB%AA%A8-%ED%8B%80%EB%A6%B0-%EC%A4%84-%EC%B0%BE%EA%B8%B0">📝 監査メモ（間違った行を探す）</a></li><li class="leaf"><a href="heroine-eunhye.html#%EB%A7%A4%EC%9D%BC-%EA%B0%90%EC%82%AC-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%A7%A4%EC%A3%BC-1%ED%86%B5">📨 毎日の監査メッセージ（毎週1通）</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%A3%BC-%EB%A7%88%EA%B0%90-%ED%98%90%EC%9D%98-11%EA%B0%80%EC%A7%80-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EA%B2%83-1%EA%B0%9C%EB%A7%8C-%EC%A0%81%EC%9A%A9">⚖️ 週の締めの容疑11種類（いちばん大きいもの1つだけ適用）</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="heroine-eunhye.html#%ED%98%B8%EA%B0%90%EB%8F%84-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B2%95">好感度の上げ方</a></summary><ul><li class="leaf"><a href="heroine-eunhye.html#%EB%A9%94%EB%AA%A8-%EC%8B%A4%EB%A0%A5%EB%B3%84-%EA%B2%B0%EA%B3%BC">メモの実力別の結果</a></li></ul></details></li><li class="leaf"><a href="heroine-eunhye.html#%EC%8D%B8-%EA%B3%A0%EB%B0%B1-%EC%97%B0%EC%95%A0">片想い → 告白 → 交際</a></li><li class="leaf"><a href="heroine-eunhye.html#%EA%B2%B0%ED%98%BC-%EC%A1%B0%EA%B1%B4">結婚の条件</a></li><li class="leaf"><a href="heroine-eunhye.html#%EB%8F%99%EA%B1%B0-%EC%8B%A0%ED%98%BC-%EC%9C%A1%EC%95%84">同棲、新婚、育児</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%97%94%EB%94%A9-%EC%A0%84%EB%B6%80">エンディングすべて</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%8B%A4%ED%8C%A8-%EC%9D%B4%EB%B3%84-%EC%A1%B0%EA%B1%B4">失敗、別れの条件</a></li><li class="leaf"><a href="heroine-eunhye.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="titles.html"><span class="em">🏷️</span>称号</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="titles.html#basics">称号はこう回ります 🧭</a></summary><ul><li class="leaf"><a href="titles.html#%EA%BC%AD-%EC%95%8C%EC%95%84-%EB%91%98-%EA%B7%9C%EC%B9%99-7%EA%B0%80%EC%A7%80">必ず知っておくべきルール7つ</a></li><li class="leaf"><a href="titles.html#%EC%B9%AD%ED%98%B8-%EC%97%94%EB%94%A9%EC%9C%BC%EB%A1%9C-%EB%81%9D%EB%82%98%EB%A9%B4-%EB%AD%98-%EB%B0%9B%EC%95%84%EC%9A%94">称号エンディングで終わったら何がもらえる？</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="titles.html#unlock">称号11個の開き方 🔓</a></summary><ul><li class="leaf"><a href="titles.html#%EC%B2%AB-%EC%B9%AD%ED%98%B8-%EC%9D%B4%EB%A0%87%EA%B2%8C-%EC%97%B4%EB%A9%B4-%EB%B9%A8%EB%9D%BC%EC%9A%94">最初の称号はこうすれば早く開く 🏃</a></li></ul></details></li><li class="leaf"><a href="titles.html#early">早期終了の称号、退職の称号のまとめ 🚪</a></li><li class="leaf"><a href="titles.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html"><span class="em">🎒</span>装備、消耗品</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#basics">まずはショップの使い方から 🛒</a></summary><ul><li class="leaf"><a href="gear.html#bag">バッグで使う</a></li><li class="leaf"><a href="gear.html#sell">装備の売り戻し（10%）</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#tier">等級表: 何から買えばいい？ 🏆</a></summary><ul><li class="leaf"><a href="gear.html#tier-heroine">ヒロイン専用装備 💌</a></li></ul></details></li><li class="leaf"><a href="gear.html#trial">体験周回でまず使ってみる 🧪</a></li><li class="leaf"><a href="gear.html#gear-work">業務が楽になる装備 💻</a></li><li class="leaf"><a href="gear.html#gear-body">体力、ストレス、集中力の装備 💪</a></li><li class="leaf"><a href="gear.html#gear-safety">1回だけ助けてくれる保険の装備 ☂️</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#gear-love">恋愛装備 💌</a></summary><ul><li class="leaf"><a href="gear.html#gear-juggle">キープ装備（まさか、ですよね…？） 🐙</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#gear-invest">投資装備 💹</a></summary><ul><li class="leaf"><a href="gear.html#luck-sim">運七技三、どれくらい強い？</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="gear.html#consumables">消耗品 🥤</a></summary><ul><li class="leaf"><a href="gear.html#price-formula">消耗品は週が進むほど高くなります</a></li><li class="leaf"><a href="gear.html#consumable-table">消耗品の全価格表（常連割引なし）</a></li><li class="leaf"><a href="gear.html#gacha">ランダム消耗品4種、得なの？ 🎲</a></li><li class="leaf"><a href="gear.html#consumable-tier">消耗品のおすすめ等級</a></li></ul></details></li><li class="leaf"><a href="gear.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="invest.html"><span class="em">💹</span>投資</a></summary><ul><li><details><summary><span class="caret" aria-hidden="true"></span><a href="invest.html#open">投資タブはいつ開く？ 🔓</a></summary><ul><li class="leaf"><a href="invest.html#net-worth">純資産と階級 💳</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="invest.html#stocks">📈 株式: ニュースを読む人が勝つ</a></summary><ul><li class="leaf"><a href="invest.html#stock-list">10銘柄をひと目で</a></li><li class="leaf"><a href="invest.html#price-model">株価はこう動きます</a></li><li class="leaf"><a href="invest.html#news-sources">ニュースの出どころ4つ: これがすべて 📰</a></li><li class="leaf"><a href="invest.html#earnings">決算発表: 期待との差 で動きます</a></li><li class="leaf"><a href="invest.html#events">予定イベント: 開示の事前のシグナルがカギ ⭐</a></li><li class="leaf"><a href="invest.html#links">関連銘柄: 1週遅れでついて動きます</a></li><li class="leaf"><a href="invest.html#costs">手数料、短期売買税、配当</a></li><li class="leaf"><a href="invest.html#thin-book">個人投資家の投げ売り: 1銘柄2,222万円が限界です 💣</a></li><li class="leaf"><a href="invest.html#luck">運: 株式タブを開くたびに振ります 🍀</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="invest.html#estate">🏠 不動産: 遅いけれど裏切りません</a></summary><ul><li class="leaf"><a href="invest.html#estate-types">物件の種類9つ</a></li><li class="leaf"><a href="invest.html#regions">地域11か所と固定物件42軒 🗺️</a></li><li class="leaf"><a href="invest.html#estate-price">価格はこう動きます</a></li><li class="leaf"><a href="invest.html#estate-news">不動産ニュースと信頼度</a></li><li class="leaf"><a href="invest.html#estate-sell">売り方: 売り出し価格を決める</a></li><li class="leaf"><a href="invest.html#islands">島3か所と島のオーナーのエンディング 🏝️</a></li><li class="leaf"><a href="invest.html#homes">家とヒロイン: 同棲、夢の家、私たちの家 💞</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="invest.html#goods">⌚ 実物資産: 1週でも大きく揺れるジェットコースター</a></summary><ul><li class="leaf"><a href="invest.html#goods-list">品目9つ</a></li><li class="leaf"><a href="invest.html#goods-rules">必ず知っておくべきルール4つ</a></li><li class="leaf"><a href="invest.html#goods-feed">今日のゴシップの読み方</a></li><li class="leaf"><a href="invest.html#goods-hold">装備なしで買ったら？</a></li><li class="leaf"><a href="invest.html#trendsetter">😎 トレンドセッターを付けるとまったく別のゲームです</a></li></ul></details></li><li class="leaf"><a href="invest.html#taste">🌟 ヒロインの好み: 新婚中に彼女の夢を全部買ってあげる</a></li><li class="leaf"><a href="invest.html#plan">おすすめの運用法: 序盤、中盤、終盤 🧭</a></li><li class="leaf"><a href="invest.html#fail">破産するパターンTOP 7 💀</a></li><li class="leaf"><a href="invest.html#invest-endings">投資関連のエンディング、実績まとめ</a></li><li class="leaf"><a href="invest.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html"><span class="em">🏠</span>同棲、新婚、アルバム、家族</a></summary><ul><li class="leaf"><a href="home.html#who-can">ヒロイン別にできることをひと目で 🗂️</a></li><li class="leaf"><a href="home.html#flow">家族ルートの全体の流れ 🧭</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#cohab">同棲 💞</a></summary><ul><li class="leaf"><a href="home.html#cohab-when">同棲の提案が来る条件</a></li><li class="leaf"><a href="home.html#cohab-effect">同棲すると変わること</a></li></ul></details></li><li class="leaf"><a href="home.html#dream-home">夢の家9軒 🏡</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#honeymoon">新婚 💐</a></summary><ul><li class="leaf"><a href="home.html#honey-when">新婚の提案の条件</a></li><li class="leaf"><a href="home.html#honey-lines">新婚15週: 毎週来るロマンチックなイベント</a></li><li class="leaf"><a href="home.html#honey-trip">新婚旅行（島のリゾートがあれば）</a></li></ul></details></li><li class="leaf"><a href="home.html#us-tab">ふたり タブ 💬</a></li><li class="leaf"><a href="home.html#taste">ヒロインの好み: 夢を全部かなえてあげる 🌟</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#married-life">結婚生活: 家事 🧺</a></summary><ul><li class="leaf"><a href="home.html#love-perks">関係の特典（あふれた好感度で付くもの）</a></li></ul></details></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#baby">赤ちゃん 👶</a></summary><ul><li class="leaf"><a href="home.html#parenting">育児の枠と赤ちゃんの時期のメッセージ</a></li></ul></details></li><li class="leaf"><a href="home.html#kid-grow">子どもの成長、子どもの好感度、子どものメッセージ 🎒</a></li><li class="leaf"><a href="home.html#kid-events">子どものエンディング 🎓</a></li><li class="leaf"><a href="home.html#album">家族アルバム 📷</a></li><li><details><summary><span class="caret" aria-hidden="true"></span><a href="home.html#divorce">別れ、離婚、結婚後の出来事 💔</a></summary><ul><li class="leaf"><a href="home.html#breakup-dating">交際中の別れ</a></li><li class="leaf"><a href="home.html#divorce-talk">結婚中の離婚</a></li></ul></details></li><li class="leaf"><a href="home.html#family-endings">家族のエンディングの総まとめ 📖</a></li><li class="leaf"><a href="home.html#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8">よくある質問</a></li></ul></details></li></ul><p class="side-foot"><a href="../../">← 開発者体験 ホームページ</a></p></nav><div class="scrim"></div>
+<main class="main" id="content"><article class="article">
+<p class="crumb"><a href="index.html">攻略本</a> › スタートガイド</p>
+<h1 class="page-title">スタートガイド</h1>
+<p class="page-desc">タブごとの説明からクラシックステージ、キャリアトラック、コイン、カード、コーヒーの集め方、周回を速く回す方法まで一度に</p>
+<p class="meta">最終更新 <time datetime="2026-11-19">2026-11-19</time></p>
+<div class="tldr"><b>ひとことまとめ</b>
+  <ul>
+    <li>キャリアの1周目はインターンとして入社して<b>100週</b>耐えることです。毎週<b class="kw">スケジュールを組む → チケット → メッセージに返信 → 1週間を締める</b>がすべてです。</li>
+    <li>体力は0にならないように、ストレスは70を超えないように。この2つさえ守れば最初の周回は無難です 💪</li>
+    <li>CP、コインは<b>100週を最後まで</b>終えた周回でしか出ません。途中で終わると0です！</li>
+    <li>コーヒーはサバイバルで稼ぎ、毎日の出席、クエスト、無限徹夜は必ずこなしましょう ☕</li>
+  </ul>
+</div>
+
+<p>こんにちは！Dawn commitの<b class="kw">開発者体験</b>を始めたばかりの人から、もうエンディング図鑑を半分埋めた人まで、一度に見られる<b>スタートガイド</b>です。はじめてなら上から順番に、古参なら目次から必要なところだけ選んで見てください 😉</p>
+
+<h2 id="tabs">タブをひと目で 🗺️<a class="anchor" href="#tabs" aria-label="この見出しへのリンク">#</a></h2>
+
+<p>画面下のバーは6つです。メッセンジャーの枠1つに画面が5つ入っていて、上のスイッチで切り替えます。<b class="kw">自分</b>タブのようなものは別になく、成長、キャリアはホームから押して入ります。</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>タブ</th><th>中にあるもの</th><th>いつ行く</th></tr></thead>
+  <tbody>
+    <tr data-id="tab:index" id="tab-index"><td>🏠 ホーム</td><td>キャリアを始める、周回ボーナス、称号、今週のスケジュール、チケット、1週間を締める、出席チェック、ショップ、<b class="kw">攻略本</b>（チュートリアルをもう一度見る）ボタン、ランキング、フレンド、バグバウンティ、受信箱のアイコン</td><td>周回を進めるときはほとんどここ</td></tr>
+    <tr data-id="tab:work" id="tab-work"><td>💻 業務</td><td>セーブした面、サバイバル、無限徹夜、ノーコーヒー挑戦、キャリアトラック、クラシックチャレンジ</td><td>コーヒーを稼ぐ、クラシックステージ、キャリアトラックをクリアする</td></tr>
+    <tr data-id="tab:chat" id="tab-chat"><td>💬 メッセンジャー</td><td>メッセンジャー、家族、ふたり、アルバム、同僚チャンネル（上のスイッチ）</td><td>返信、恋愛、家族</td></tr>
+    <tr data-id="tab:team" id="tab-team"><td>👥 チーム</td><td>プロジェクト、同僚（一覧、同僚図鑑、合成、神話のかけら）、クエスト、図鑑</td><td>カード、同僚を育てる、クエストの報酬を受け取る</td></tr>
+    <tr data-id="tab:stocks" id="tab-stocks"><td>📈 投資</td><td>株式、不動産、実物資産</td><td>周回のお金を増やす（<a href="invest.html">投資</a>の記事参照）</td></tr>
+    <tr data-id="tab:settings" id="tab-settings"><td>⚙️ 設定</td><td>言語、サウンド、軽量モード、テーマ、開発の経験、アカウント（ログイン）、データ、お問い合わせ、規約とポリシー</td><td>ときどき</td></tr>
+  </tbody>
+</table></div>
+
+<p data-id="tab:shop">そしてタブではありませんが、よく開く<b>ショップ</b>があります。ホームの<b class="kw">ショップ</b>ボタンか、上のコイン、神話のかけらの数字を押すと開きます。</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>ショップの中のタブ</th><th>何を売っている</th></tr></thead>
+  <tbody>
+    <tr data-id="tab:shop.premium" id="tab-shop-premium"><td>特価商品</td><td>有料商品（下の<a href="#shop-iap">ショップの有料商品</a>）</td></tr>
+    <tr data-id="tab:shop.pass" id="tab-shop-pass"><td>シーズンパス</td><td>50段階の報酬を受け取る、シーズンパスの購入</td></tr>
+    <tr data-id="tab:shop.packs" id="tab-shop-packs"><td>カードパック</td><td>コインでパックを買う、確率表</td></tr>
+    <tr data-id="tab:shop.gear" id="tab-shop-gear"><td>装備</td><td>コインで買う永久アイテム（<a href="gear.html">装備、消耗品</a>）</td></tr>
+    <tr data-id="tab:shop.consumable" id="tab-shop-consumable"><td>消耗品</td><td>周回のお金で買う1周回用のアイテム</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="홈">ホーム 🏠<a class="anchor" href="#%ED%99%88" aria-label="この見出しへのリンク">#</a></h3>
+<div class="shots">
+  <figure class="shot" data-shot="start-home-prerun"><img src="img/start-home-prerun.png" alt="周回を始める前のホーム画面。キャリアを始めるボタンと周回ボーナスボタン、称号の一覧が見える" loading="lazy" decoding="async"><figcaption>周回開始前のホーム。<b class="kw">周回ボーナス</b>ボタンに自分のCPが見えます。</figcaption></figure>
+  <figure class="shot" data-shot="start-home"><img src="img/start-home.png" alt="周回中のホーム画面。週、役職、能力値のバー、今週のスケジュールが見える" loading="lazy" decoding="async"><figcaption>周回中のホーム。能力値のバーを押すと説明が出ます。</figcaption></figure>
+</div>
+<ul>
+  <li><b>周回開始前</b>: <b class="kw">キャリアを始める</b>、<b class="kw">周回ボーナス</b>（CPで買う永久ボーナス）、称号を選ぶ（<a href="titles.html">称号</a>の記事）。</li>
+  <li><b>周回中</b>: 上に週、周回（押すと過去の記録）、役職（押すとキャリア画面）、髪、サイドの進み具合、バッグ、能力値のバー（コーディング力、集中力、体力、ストレス、評判、運）、今週のスケジュール、今週のチケット、<b class="kw">1週間を締める</b>。</li>
+  <li><b>上の資源バー</b>: 周回のお金、コイン、コーヒー、神話のかけら。コーヒーの数字を押すとコーヒーのウィンドウが開きます。</li>
+  <li><b>上のアイコン</b>: ランキング、フレンド、バグバウンティ、受信箱。</li>
+</ul>
+
+<h3 id="업무">業務 💻<a class="anchor" href="#%EC%97%85%EB%AC%B4" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-work"><img src="img/start-work.png" alt="業務タブの上のほう。サバイバル4段階のカード、無限徹夜のカード、ロックされたノーコーヒー挑戦" loading="lazy" decoding="async"><figcaption>業務タブは上からセーブした面 → サバイバル → 無限徹夜 → ノーコーヒー挑戦 → キャリアトラック → クラシックチャレンジの順です。</figcaption></figure>
+
+<h3 id="메신저">メッセンジャー 💬<a class="anchor" href="#%EB%A9%94%EC%8B%A0%EC%A0%80" aria-label="この見出しへのリンク">#</a></h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>画面</th><th>説明</th></tr></thead>
+  <tbody>
+    <tr data-id="tab:chat.chat" id="tab-chat-chat"><td>メッセンジャー</td><td>リーダー、先輩、後輩、ヒロイン、家族、ヘッドハンターなどすべてのメッセージ。返信を選ぶ場所</td></tr>
+    <tr data-id="tab:chat.family" id="tab-chat-family"><td>家族</td><td>交際、結婚、育児の状態。今週のスケジュールにデート（交際中）、育児（子どもあり）、家事（結婚）が抜けていると赤い点</td></tr>
+    <tr data-id="tab:chat.us" id="tab-chat-us"><td>ふたり</td><td>同棲、新婚のときの2人だけのメッセージ（<a href="home.html">同棲、新婚、アルバム、家族</a>）</td></tr>
+    <tr data-id="tab:chat.album" id="tab-chat-album"><td>アルバム</td><td>子どもが生まれると開きます</td></tr>
+    <tr data-id="tab:chat.teamchat" id="tab-chat-teamchat"><td>同僚チャンネル</td><td>カードで集めた同僚たちとの会話、同僚のストーリー（下の<a href="#동료-채널과-친밀도">同僚チャンネル</a>）</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="팀">チーム 👥<a class="anchor" href="#%ED%8C%80" aria-label="この見出しへのリンク">#</a></h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>画面</th><th>説明</th></tr></thead>
+  <tbody>
+    <tr data-id="tab:team.projects" id="tab-team-projects"><td>プロジェクト</td><td>同僚と一緒にクリアするチームプロジェクト192個</td></tr>
+    <tr data-id="tab:team.crew" id="tab-team-crew"><td>同僚</td><td>中に一覧、同僚図鑑、合成、神話のかけら</td></tr>
+    <tr data-id="tab:team.crew.list" id="tab-team-crew-list"><td>同僚 › 一覧</td><td>自分の同僚カード、レベルアップ、スキル、スキルツリー</td></tr>
+    <tr data-id="tab:team.crew.codex" id="tab-team-crew-codex"><td>同僚 › 同僚図鑑</td><td>すべての同僚カードを見る</td></tr>
+    <tr data-id="tab:team.crew.fusion" id="tab-team-crew-fusion"><td>同僚 › 合成</td><td>重複で1段階上の同僚を作る</td></tr>
+    <tr data-id="tab:team.crew.shards" id="tab-team-crew-shards"><td>同僚 › 神話のかけら</td><td>かけらで神話と交換、星を上げる</td></tr>
+    <tr data-id="tab:team.quests" id="tab-team-quests"><td>クエスト</td><td>デイリークエスト、チャレンジクエストの報酬を<b class="kw">受け取る</b></td></tr>
+    <tr data-id="tab:team.codex" id="tab-team-codex"><td>図鑑</td><td>エンディング、実績、バグ（エンディング図鑑）</td></tr>
+  </tbody>
+</table></div>
+<p>チームタブのアイコンの数字は<b class="kw">受け取れるクエストの報酬 + 受け取れる図鑑の報酬</b>です。数字が出ていたら必ず入って受け取りましょう！</p>
+
+<h3 id="투자">投資 📈<a class="anchor" href="#%ED%88%AC%EC%9E%90" aria-label="この見出しへのリンク">#</a></h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>画面</th><th>説明</th></tr></thead>
+  <tbody>
+    <tr data-id="tab:stocks.stocks" id="tab-stocks-stocks"><td>株式</td><td>周回のお金で売買、市場ニュース</td></tr>
+    <tr data-id="tab:stocks.estate" id="tab-stocks-estate"><td>不動産</td><td>地域別の不動産</td></tr>
+    <tr data-id="tab:stocks.goods" id="tab-stocks-goods"><td>実物資産</td><td>実物資産への投資</td></tr>
+  </tbody>
+</table></div>
+<p>投資は周回のお金（円）だけを使い、周回が終わると消えます。詳しいしくみと運用法は<a href="invest.html">投資</a>の記事に別にまとめました。</p>
+
+<h2 id="tutorial" data-id="system:tutorial">最初の周回の流れ: チュートリアル1〜4章 🎓<a class="anchor" href="#tutorial" aria-label="この見出しへのリンク">#</a></h2>
+
+<p>初めて起動すると、4章のチュートリアルが本物の画面の上で進みます。指の表示に従って押すだけでOKです。</p>
+
+<ol class="steps">
+  <li><b>1章、クラシックステージ</b>業務タブ → クラシック1でバグ探しを覚え、コーヒー（ヒント）を1回使ってみます。クラシック2はひとりで。</li>
+  <li><b>2章、キャリアを始める、CP</b>ホームで周回の記録、周回ボーナス、称号を見て回り、<b class="kw">キャリアを始める</b>を押します。</li>
+  <li><b>3章、10週のお試し周回</b>ショップ、バッグ、能力値、スケジュール、チケット、メッセンジャー、投資をひと回りしたあと、<span class="num">10週</span>のサンプル周回を自分でプレイします。機械学習とおすすめ配置のスケジュールもここでだけ体験します。</li>
+  <li><b>4章、出席チェック、同僚</b>出席チェック、カードパックを開ける、同僚、スキル、スキルツリー、親密度、合成、神話のかけらまで。最後のセリフは<b class="kw">では本当の出勤に行きましょうか？</b>です。</li>
+</ol>
+
+<div class="callout tip"><b>知らないと損</b><p>チュートリアルを最後までやっても途中で<b class="kw">チュートリアル終了</b>を押しても、<b>エピックパック1個</b>が受信箱に届きます（アカウントごとに1回）。必ず受信箱で受け取りましょう 🎁</p></div>
+<div class="callout warn"><b>注意</b><p>チュートリアルでもらったコイン、装備、機械学習は<b>実際のゲームにはつながりません</b>。10週のサンプル周回もCP、コインは0です。チュートリアルの中では退職勧告も起きません。</p></div>
+<p>あとでまた見たいときは、ホームの<b class="kw">攻略本</b>ボタンから章を選んでもう一度見られます（報酬はもう一度はもらえません）。</p>
+
+<h2 id="classic-vs-track">クラシックステージとキャリアトラック、何が違う？ 🧩<a class="anchor" href="#classic-vs-track" aria-label="この見出しへのリンク">#</a></h2>
+
+<p>どちらも業務タブにあるひとりでやるコードのモードです。<b>クラシックステージ</b>（画面の名前はクラシックチャレンジ）はバグを自分で<b>見つけて直す</b>モード、<b>キャリアトラック</b>は行ごとにバグがあるかを<b>O/Xで判定</b>するモードです。</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th></th><th>クラシックステージ</th><th>キャリアトラック</th></tr></thead>
+  <tbody>
+    <tr><td>やること</td><td>ファイルの中の間違った記号を見つけて押す</td><td>行を見てバグあり O / きれい X</td></tr>
+    <tr><td>ステージ</td><td>500個、1番から1つずつ開く</td><td>トラック5つ、トラックごとに1,200個（12章、章ごとに100個）。章は全部開いていて、章の中は1つずつ</td></tr>
+    <tr><td>言語</td><td>JavaScript</td><td>トラックごとに違う（フロントエンド JS、TS、バックエンド Java、TS、Python・AI、データ SQL、Python、フルスタック 5つ全部）</td></tr>
+    <tr><td>星の基準</td><td>1〜300: 誤答数 / 301〜: 時間</td><td>章ごとに1〜80: 正答率 / 81〜100: 時間</td></tr>
+    <tr><td>コーヒーの報酬</td><td colspan="2">新しく取った星1つにつきコーヒー1杯（ステージごとに最大3杯）、同じステージは1日10回まで</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="classic" data-id="system:classic">クラシックステージ（画面の名前はクラシックチャレンジ）の攻略<a class="anchor" href="#classic" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-classic"><img src="img/start-classic.png" alt="クラシックステージのプレイ画面。コードエディター、上の時間、右のミニマップ、右上のコーヒーボタン" loading="lazy" decoding="async"><figcaption>クラシックステージの画面。真ん中の上に時間、右にミニマップ、右上の☕ボタンが<b class="kw">コーヒーを飲む</b>です。</figcaption></figure>
+
+<h4>直し方</h4>
+<ol class="steps">
+  <li><b><b class="kw">// 今日の業務</b>を確認</b>始める前に、このステージで探すバグの種類が出ます。<b class="kw">業務開始</b>を押すと時計が回ります。</li>
+  <li><b>怪しい行を押す</b>行が大きく見えたら<b>間違った記号</b>を押します。セミコロン、コロンが抜けたバグは<b class="kw">行末</b>を押します。</li>
+  <li><b>詰まったらコーヒー</b>右上の☕ボタン（<b class="kw">コーヒーを飲む</b>）を押すと、バグのある行が<b>黄色</b>になります。コーヒー1杯がかかります。</li>
+  <li><b>誤タップに注意</b>間違えて押すと<span class="num">10秒</span>が足されます。遅いとリーダーがせかしてきて、時間がさらに増えます。</li>
+</ol>
+<p>コードが長ければ横にめくり、ミニマップを押すか引っぱるとその行にすぐ行けます。<b class="kw">+</b><b class="kw">−</b>で文字の大きさも変えられます。</p>
+
+<h4>バグ13種類と登場順</h4>
+<p>1〜300はバグをグループごとに1つずつ教えてくれて、301からは13種類が全部混ざって出ます。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>ステージ</th><th>出るバグ</th><th>例</th></tr></thead>
+  <tbody>
+    <tr><td>1~20</td><td>抜けたセミコロン（;）</td><td><code>return total</code></td></tr>
+    <tr><td>21~40</td><td>対応していないかっこ、閉じる中かっこ } の場所に )</td><td><code>fetch(url]</code></td></tr>
+    <tr><td>41~80</td><td>上の3種類の復習</td><td></td></tr>
+    <tr><td>81~100</td><td>数字の0のかわりにアルファベットのO</td><td><code>limit = 1O0;</code></td></tr>
+    <tr><td>101~120</td><td>セミコロンの場所にコロン、コロンの場所にセミコロン</td><td><code>total = 0:</code></td></tr>
+    <tr><td>121~160</td><td>ここまでの復習</td><td></td></tr>
+    <tr><td>161~180</td><td>ピリオド（.）の場所にカンマ（,）、カンマの場所にピリオド</td><td><code>user,name</code></td></tr>
+    <tr><td>181~200</td><td>復習</td><td></td></tr>
+    <tr><td>201~210</td><td>対応していない引用符</td><td><code>name = 'admin";</code></td></tr>
+    <tr><td>211~220</td><td>大文字小文字が間違った値</td><td><code>isActive = True;</code></td></tr>
+    <tr><td>221~230</td><td>キーワードのタイプミス（文字の順番が入れ替わる）</td><td><code>retrun total;</code></td></tr>
+    <tr><td>231~240</td><td>引用符、大文字小文字、タイプミスの復習</td><td></td></tr>
+    <tr><td>241~250</td><td>間違った矢印（=&gt; / -&gt;）</td><td><code>items.map((x) -&gt; x.id)</code></td></tr>
+    <tr><td>251~260</td><td>全角入力のまま打った記号（；，）</td><td><code>count = 1；</code></td></tr>
+    <tr><td>261~270</td><td>矢印、全角記号の復習</td><td></td></tr>
+    <tr><td>271~300</td><td>引用符、大文字小文字、タイプミス、矢印、全角記号</td><td></td></tr>
+    <tr><td>301~500</td><td>13種類すべて</td><td></td></tr>
+  </tbody>
+</table></div>
+
+
+
+
+<h3 id="track" data-id="system:career-tracks">キャリアトラックの攻略<a class="anchor" href="#track" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-track"><img src="img/start-track.png" alt="キャリアトラックのステージ画面。1行のコードとO、Xボタン" loading="lazy" decoding="async"><figcaption>キャリアトラックは行ごとにO（バグあり）/ X（きれい）を選びます。</figcaption></figure>
+<ul>
+  <li>トラック5つ: <b>フロントエンド、バックエンド、Python・AI、データ、フルスタック</b>。いつでも変えられて、記録はトラックごとに別です。</li>
+  <li>章ごとに1〜80はバグを種類別に覚え、81〜100はすべてのバグが出る地獄の区間です。</li>
+  <li>星: 1〜80は<b>正答率60%なら★★、80%なら★★★</b>。81〜100は時間。</li>
+  <li>間違えるとバグの解説が出て、解説を見ているあいだは時間が止まります。勉強用にもいいです 📚</li>
+  <li>大きさ: 章の1番のステージは判定2回（60行）から始まり、80番は200回、100番は判定2,000回（100,000行）まで大きくなります。</li>
+</ul>
+<div class="callout tip"><b>お役立ちヒント</b><p>当てずっぽう（正答率50%前後）では★1つから上がりません。1〜80で★★★を取るには5回中4回は当てる必要があります。</p></div>
+
+<h3 id="suspend" data-id="system:suspend">セーブして出る<a class="anchor" href="#suspend" aria-label="この見出しへのリンク">#</a></h3>
+<p>クラシックステージ、キャリアトラックの途中で出ると、業務タブのいちばん上の<b class="kw">セーブした面</b>に同じファイル、時間、進み具合のまま残ります。モードごとに1枠なので、ほかのステージをセーブすると上書きします。続きからの1回は星とコーヒーはそのままもらえますが、<b>ノーコーヒーの記録には載りません</b>。</p>
+
+<h2 id="career-week" data-id="system:career-run">キャリアの周回: 1週間はこう流れます 📅<a class="anchor" href="#career-week" aria-label="この見出しへのリンク">#</a></h2>
+
+<p>キャリアはインターンとして<b class="kw">大企業、株式会社夜明けコミット</b>に入社して100週（2年）を過ごすモードです。最初の能力値はこうです。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>コーディング力</th><th>集中力</th><th>体力</th><th>ストレス</th><th>評判</th><th>お金</th><th>コミット</th></tr></thead>
+  <tbody><tr><td>25</td><td>60</td><td>80</td><td>20</td><td>20</td><td>33.3万円</td><td>10</td></tr></tbody>
+</table></div>
+<p>リーダー、先輩、後輩の好感度は5〜15のあいだでランダムに始まります。周回ボーナスでこの数字を上げられます（下の<a href="#perks">周回ボーナス</a>）。人事評価は第4週、そのあと12週ごと（第16、28 … 88週）、最後は第99週で全部で9回です。昇進は<a href="career.html">昇進、キャリア、退職ルート</a>の記事で詳しく扱います。</p>
+
+<ol class="steps">
+  <li><b>今週のスケジュールを組む</b>月〜金 + 週末、6枠に活動を入れます。</li>
+  <li><b>今週のチケット</b><b class="kw">自分でやる</b>または<b class="kw">適当に処理</b>。</li>
+  <li><b>メッセージに返信</b>メッセンジャーのメッセージに答えます。返信ごとに能力値、好感度が変わります。</li>
+  <li><b>1週間を締める</b>スケジュール、チケット、週給、生活費が精算され、必須のメッセージが来たら答えてから次の週へ。</li>
+</ol>
+
+<h3 id="plan" data-id="system:weekly-plan">今週のスケジュールの組み方<a class="anchor" href="#plan" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-plan"><img src="img/start-plan.png" alt="今週のスケジュール6枠と曜日の効果のバッジ、おすすめ配置ボタン" loading="lazy" decoding="async"><figcaption>枠を押すと活動を選べて、変わる数字が先に見えます。</figcaption></figure>
+<p>活動1つが1日で与える基本の効果です（会社、装備、周回ボーナスで少しずつ変わります）。週末の枠は1日半なので<b>効果が1.4倍</b>です。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>活動</th><th>いい点</th><th>悪い点</th><th>週末</th></tr></thead>
+  <tbody>
+    <tr><td>💻 業務</td><td>成果1.2、評判1、コーディング0.5、コミット1</td><td>体力 -5、ストレス +4、集中 -2</td><td>可能</td></tr>
+    <tr><td>🌙 残業</td><td>成果2.2、評判2、コーディング0.6、コミット1、大企業は残業手当3,333円</td><td>体力 -10、ストレス +8、集中 -4、髪 -0.5</td><td>なし</td></tr>
+    <tr><td>📚 勉強</td><td>コーディング2、コミット5、集中 +1</td><td>体力 -2、ストレス +2</td><td>可能</td></tr>
+    <tr><td>🏃 運動</td><td>体力 +9、ストレス -3、集中 +2</td><td></td><td>可能</td></tr>
+    <tr><td>🛋 休憩</td><td>体力 +8、ストレス -7、集中 +4</td><td></td><td>可能</td></tr>
+    <tr><td>🚀 サイドプロジェクト</td><td>サイド0.7、コミット3、ストレス -2、コーディング0.5</td><td>体力 -4</td><td>可能</td></tr>
+    <tr><td>🍜 同僚とランチ</td><td>ストレス -15、リーダーの好感度 +6、先輩、後輩 +3、評判1</td><td>週給の15%を使う</td><td>なし</td></tr>
+    <tr><td>💞 デート</td><td>関係維持、ストレス -8、集中 +1</td><td>体力 -2、お金 -5,556円</td><td>可能（相手がいるとき）</td></tr>
+    <tr><td>👶 育児</td><td>家族の維持、ストレス -2</td><td>体力 -5、お金 -2,222円</td><td>可能（子どもがいるとき）</td></tr>
+  </tbody>
+</table></div>
+
+<h4>曜日の効果（スケジュール配置のボーナス）</h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>効果</th><th>条件</th><th>結果</th></tr></thead>
+  <tbody>
+    <tr><td>🔥 連続集中</td><td>同じ活動（業務、残業、勉強、サイドのどれか）を3日連続</td><td>3日目からその活動の効果 +20%</td></tr>
+    <tr><td>🎉 花金</td><td>金曜日の業務、残業、勉強、サイド</td><td>+10%</td></tr>
+    <tr><td>😩 月曜病</td><td>月曜日の業務、残業、勉強、サイド</td><td>-10%</td></tr>
+    <tr><td>😵 残業の後遺症</td><td>残業の翌日に業務か残業</td><td>成果、評判 -30%（あいだに休憩、運動をはさむとなくなる）</td></tr>
+    <tr><td>⭐ 評価週</td><td>人事評価がある週</td><td>成果1.5倍</td></tr>
+    <tr><td>🛋 週末 ×1.4</td><td>週末の枠</td><td>何を入れても1.4倍</td></tr>
+    <tr><td>💔 週末出勤</td><td>交際、結婚中に週末の業務</td><td>相手の好感度 -2</td></tr>
+  </tbody>
+</table></div>
+<p>リーダーの好感度が50以上なのにその週に<b class="kw">同僚とランチ</b>が一度もないとリーダーの好感度 -3、80以上なら期待値が高くなって毎週 -2ずつ減ります。</p>
+
+<h4>スケジュール別の1週の変化の比較</h4>
+<p>スタート時のインターンで、スケジュールの枠だけで計算した1週の合計です。チケット、メッセージ、会社の週のストレス（大企業 +2）は除いています。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>スケジュール（月〜週末）</th><th class="r">成果</th><th class="r">体力</th><th class="r">ストレス</th><th class="r">評判</th><th class="r">コーディング</th></tr></thead>
+  <tbody>
+    <tr><td>基本: 業務、業務、勉強、業務、業務、休憩</td><td class="r">4.3</td><td class="r">-10.8</td><td class="r">+8.2</td><td class="r">+4.0</td><td class="r">+4.0</td></tr>
+    <tr><td>業務5 + 休憩</td><td class="r">6.1</td><td class="r">-13.8</td><td class="r">+10.2</td><td class="r">+5.6</td><td class="r">+2.8</td></tr>
+    <tr><td>業務、業務、ランチ、業務、業務、休憩</td><td class="r">4.3</td><td class="r">-8.8</td><td class="r">-8.8</td><td class="r">+5.0</td><td class="r">+2.0</td></tr>
+    <tr><td>業務、残業、休憩、業務、残業、休憩</td><td class="r">6.2</td><td class="r">-10.8</td><td class="r">+7.2</td><td class="r">+6.1</td><td class="r">+2.2</td></tr>
+    <tr><td>残業5 + 休憩</td><td class="r">8.3</td><td class="r">-38.8</td><td class="r">+30.2</td><td class="r">+8.4</td><td class="r">+3.4</td></tr>
+  </tbody>
+</table></div>
+<div class="callout trap"><b>落とし穴</b><p>残業5日は成果はいちばん高いですが、体力が1週に<b>38.8</b>ずつ減ります。体力80から始めると3週目に倒れ、ストレスもすぐ100になります。残業は<b class="kw">残業 → 休憩</b>のようにあいだに休む日をはさむと、後遺症（-30%）も避けられて体も持ちます。</p></div>
+<div class="callout tip"><b>お役立ちヒント</b><p><b class="kw">おすすめ配置</b>を押すと昇進に合わせてスケジュールをかわりに組んでくれます。無料で<b>1周回に20回</b>で、同じ週にまた押しても回数は減りません。ただし業務、残業、勉強、運動、休憩（平日はランチも）だけを使って<b>6枠を全部組み直すので、デート、育児の枠も消えます</b>。交際、育児中なら押したあとでその枠を入れ直しましょう 💞</p></div>
+
+<h4>サイドプロジェクト</h4>
+<p>サイドが20を超えると毎週収益が入ります（進み具合が上がるほど大きくなります）。25で評判 +3、コミット +20、50で評判 +6、75で55.6万円、評判 +4、100で評判 +10、コミット +50とサイドプロジェクト専用のエンディングが開きます。</p>
+
+<h3 id="ticket" data-id="system:tickets">今週のチケット<a class="anchor" href="#ticket" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-ticket"><img src="img/start-ticket.png" alt="ホームの今週のチケットのカード。チケットの種類、自分でやると適当に処理ボタン、機械学習のスイッチ" loading="lazy" decoding="async"><figcaption>チケットのカード。<b class="kw">自分でやる</b>と<b class="kw">適当に処理</b>から選びます。</figcaption></figure>
+
+<h4 data-id="system:ticket-modes">チケットの種類6つ</h4>
+<p>毎週1つずつ来て、6週ごとのまとまりに6種類が1回ずつ出ます。最初の週はいつもバグ修正で、同じ種類が2週連続で出ることはありません。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>種類</th><th>やること</th><th>コーヒーの助け</th></tr></thead>
+  <tbody>
+    <tr><td>🐛 バグ修正</td><td>コードの中のバグを探す（クラシックステージと同じ方式）</td><td>バグの行を表示</td></tr>
+    <tr><td>🔍 リリース前後の比較</td><td>2つの画面の間違い探し</td><td>変わった所を1か所教える</td></tr>
+    <tr><td>🔥 サーバー過負荷を防げ</td><td>過熱したサーバーを押して冷やす</td><td>サーバーを全部冷やす</td></tr>
+    <tr><td>🚀 デプロイ順を決めよう</td><td>必要なものから起動する</td><td>今起動できるカードを1枚表示</td></tr>
+    <tr><td>🔌 ネットワーク配線</td><td>タイルを回してケーブルをつなぐ</td><td>タイルを1つ合わせる</td></tr>
+    <tr><td>📋 ログ仕分け</td><td>赤い⛔ ERRORだけを押す（役職が上がると🚨 CRITICALも）</td><td>画面のERRORを全部処理</td></tr>
+  </tbody>
+</table></div>
+<p>バグ修正以外はコーディングを知らなくても大丈夫です。次長までは軽いです（バグ修正はバグ1〜5個、ほかの種類もラウンド半分）。部長からバグ修正はバグ10個、ファイルとミニゲームが役職ごとに大きくなります。</p>
+
+<h4 id="ticket-how">チケット画面の見方</h4>
+<p>チケットのカードの<b class="kw">自分でやる</b>を押すと、先にルールの画面が出ます。いちばん上の<b class="kw">S基準タイム</b>の中で終えればSを狙え、下の行に今回のチケットでやること、ミスしたら起きること、コーヒー1杯で何を助けてくれるかが書いてあります。読んだら<b class="kw">業務開始</b>を押しましょう。</p>
+<figure class="shot" data-shot="start-ticket-brief"><img src="img/start-ticket-brief.png" alt="ログ仕分けのチケットのルール画面。S基準タイム00:30、押すものと押してはいけないもの、業務開始ボタン" loading="lazy" decoding="async"><figcaption>ルール画面の例（ログ仕分け）。役職が上がると同じ種類でもルールの行が変わるので、ときどき読み直しましょう。</figcaption></figure>
+<p>部長からはミニゲームが<b>難しいバージョン</b>に変わります（似た文字探し、制限時間、行き止まりの分かれ道のような罠ができます）。さらに高い役職ではSをもらうにはミスが0回である必要があります。今何が適用されるかはルール画面にそのまま出ます。</p>
+
+<h4 id="ticket-bugfix">🐛 バグ修正</h4>
+<figure class="shot" data-shot="start-ticket-bugfix"><img src="img/start-ticket-bugfix.png" alt="バグ修正のチケットのプレイ画面。上に経過時間とコーヒーボタン、真ん中にコードファイル、右にミニマップ、下に見つけた数" loading="lazy" decoding="async"><figcaption>コードを見て怪しい行を押してから、拡大された行で間違った記号を押します。</figcaption></figure>
+<ol class="steps">
+  <li><b>怪しい行を押す</b>クラシックステージとまったく同じです。行を押すとその行が大きく拡大されます。</li>
+  <li><b>間違った文字を押す</b>拡大された行で間違った記号や文字を押すと直ります。下の状態の行の<b class="kw">0/1 発見</b>が上がります。</li>
+  <li><b>詰まったらコーヒー</b>右上の☕を押すと、コーヒー1杯でバグの行を表示してくれます。</li>
+</ol>
+<p>周回の最初の週はいつもバグ修正です。役職が上がるほどファイルが長くなり、バグの種類も増えます。</p>
+
+<h4 id="ticket-diff">🔍 リリース前後の比較</h4>
+<figure class="shot" data-shot="start-ticket-diff"><img src="img/start-ticket-diff.png" alt="リリース前後の比較のチケット。上に昨日のバージョンの表、下に今日のバージョンの表、変わった所残り3つの表示" loading="lazy" decoding="async"><figcaption>上が昨日のバージョン、下が今日のバージョンです。下で変わった行を押します。</figcaption></figure>
+<p>間違い探しです。昨日の画面と今日の画面を比べて、<b>今日のバージョンで変わった行</b>を全部押せばOKです。数字、単語、絵文字、色、ON/OFFが変わっています。右上に残りの数が出て、変わっていない行を押すと時間のペナルティが付きます。コーヒー1杯で変わった所を1か所教えてくれます。</p>
+<div class="callout tip"><b>お役立ちヒント</b><p>上から1行ずつ昨日の値と今日の値を交互に見ましょう。難しいバージョンではOと0、lとIのような似た文字や1分違いの時刻まで変わるので、数字の欄は最後の桁まで確認するのが安全です。</p></div>
+
+<h4 id="ticket-overload">🔥 サーバー過負荷を防げ</h4>
+<figure class="shot" data-shot="start-ticket-overload"><img src="img/start-ticket-overload.png" alt="サーバー過負荷を防げのチケット。サーバー4台とそれぞれの温度のバー、79%、71%、88%、100%、残りのチャンスのハート3つ" loading="lazy" decoding="async"><figcaption>温度のバーが赤く満ちたサーバーから押して冷やします。</figcaption></figure>
+<p>サーバーのカードを押すと温度が0%に下がります。温度が<b>100%になるとサーバーが壊れ</b>、チャンスのハートが1つ減ります。ウェーブの時間が終わるまで耐えれば成功、ハートを全部失うとチケット失敗（C評価）です。コーヒー1杯で全サーバーを一度に冷やしてくれます。</p>
+<div class="callout tip"><b>お役立ちヒント</b><p>いちばん熱いサーバーから押しましょう。難しいバージョンには一瞬で熱くなる⚡サーバーが混ざっているので、そのサーバーは少し早めに冷やしておくと楽です。</p></div>
+
+<h4 id="ticket-deploy">🚀 デプロイ順を決めよう</h4>
+<figure class="shot" data-shot="start-ticket-deploy"><img src="img/start-ticket-deploy.png" alt="デプロイ順を決めようのチケット。カート、クーポン、配送状況、キャッシュのカードとそれぞれのカードの必要項目" loading="lazy" decoding="async"><figcaption>カードごとに必要に書かれたサービスが先に起動している必要があります。</figcaption></figure>
+<p>サービスのカードを<b>起動できる順番どおりに</b>押すパズルです。カードの下の<b class="kw">必要</b>に書かれたサービスがすべて起動していないと、そのカードは起動できません。上の絵なら、必要なものがない<b class="kw">キャッシュ</b>を先に、次にカートとクーポン、最後にクーポンが必要な配送状況の順番です。まだ起動できないカードを押すと時間のペナルティが付きます。コーヒー1杯で今起動できるカードに☕の印を付けてくれます。</p>
+
+<h4 id="ticket-cable">🔌 ネットワーク配線</h4>
+<figure class="shot" data-shot="start-ticket-cable"><img src="img/start-ticket-cable.png" alt="ネットワーク配線のチケット。左にサーバーのアイコン、右にユーザーのアイコン、真ん中にケーブルのタイルのボード" loading="lazy" decoding="async"><figcaption>左の🖥️ サーバーから右の👤 ユーザーまでケーブルがつながるようにタイルを回します。</figcaption></figure>
+<p>タイルを押すたびに90度ずつ回ります。サーバーからユーザーまで1本でつながればそのボードは終わりです。コーヒー1杯でずれたタイルを1つ直してくれます。</p>
+<div class="callout tip"><b>お役立ちヒント</b><p>サーバー側から明かりがついた道をたどって次のタイルを合わせると速いです。難しいバージョンのT字、十字のタイルは行き止まりの分かれ道のことが多いので、ユーザーまで行く道だけ気にしましょう。</p></div>
+
+<h4 id="ticket-triage">📋 ログ仕分け</h4>
+<figure class="shot" data-shot="start-ticket-triage"><img src="img/start-ticket-triage.png" alt="ログ仕分けのチケット。ERRORだけ押してくださいの案内、ログの行の中のERRORとINFOのタグ、残りのチャンスのハート" loading="lazy" decoding="async"><figcaption>タグが⛔ ERRORの行だけを消える前に押します。</figcaption></figure>
+<p>ログが1行ずつ浮かんでは消えます。赤い<b class="kw">⛔ ERROR</b>の行だけを押して、ℹ️ INFOと⚠️ WARNはそのままにしましょう。間違えて押したりERRORを逃したりするとチャンスが1つ減り、決まった時間を耐えれば成功です。部長からは🚨 CRITICALも押す必要があり、文の内容がわざと紛らわしく出ます。コーヒー1杯で画面のERRORを全部処理してくれます。</p>
+<div class="callout tip"><b>お役立ちヒント</b><p>文は読まずに左の<b>タグの色</b>だけを見ましょう。赤いタグだけ押すと考えるとミスがぐっと減ります。</p></div>
+
+<h4>評価の基準</h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>評価</th><th>条件（基準タイムはバグが多くティアが高いほど長い）</th><th>週の締めの効果</th></tr></thead>
+  <tbody>
+    <tr><td>S</td><td>基準タイム以内 + 誤タップ1回以下</td><td>評判 +3、リーダーの好感度 +2</td></tr>
+    <tr><td>A</td><td>基準の1.6倍以内 + 誤タップ3回以下</td><td>評判 +1、リーダー +1</td></tr>
+    <tr><td>B</td><td>基準の2.6倍以内</td><td>リーダー +1</td></tr>
+    <tr><td>C</td><td>それ以外</td><td>評判 -2、リーダー -3</td></tr>
+    <tr><td>やらない</td><td>チケットをやらずに締める</td><td>成果 -3、評判 -3、リーダー -5、ストレス +3</td></tr>
+  </tbody>
+</table></div>
+<p>終わったチケットはSになるまでやり直せて、<b>よりいい評価だけ</b>が残ります。やり直しても下がらないので、気軽に再挑戦しましょう。</p>
+
+<div class="callout warn"><b>注意</b><p>ストレスが<b>70以上</b>だと、適当に処理も機械学習も止められます。リーダーが自分でやれと言います。</p></div>
+
+<h4>能力値がチケットに与える効果</h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>条件</th><th>効果</th></tr></thead>
+  <tbody>
+    <tr><td>体力20未満</td><td>誤タップごとに時間のペナルティ +5秒</td></tr>
+    <tr><td>集中力30未満</td><td>コードがふだんの明るさの55%に暗くなる</td></tr>
+    <tr><td>ストレス70以上</td><td>リーダーの催促2倍、自動処理不可</td></tr>
+    <tr><td>コーディング力70以上</td><td>ミニマップにバグの位置がうっすら見える</td></tr>
+    <tr><td>先輩の好感度70以上</td><td>チケットの開始時に先輩がバグを1つ見つけてくれる</td></tr>
+    <tr><td>次長以上 + チケット累計100 / 200 / 300個</td><td>ベテランボーナス: バグ -20% / -30% / -40%</td></tr>
+    <tr><td>レジェンド、神話の同僚を保有</td><td>同僚ごとのチケットのパッシブでバグ減少（ベテランと合わせて最大半分）</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="burnout">体力、ストレス、燃え尽き、倒れる 🔥<a class="anchor" href="#burnout" aria-label="この見出しへのリンク">#</a></h3>
+<p>ここがいちばん大事です。判定は<b>週の締めのとき</b>にしますが、締めの瞬間の数字ではなく<b>その週に記録した最低の体力と最高のストレス</b>で見ます。返信1つで体力が0になったら、週末の休憩でまた上がっても倒れたことになります。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>状況</th><th>条件</th><th>結果</th></tr></thead>
+  <tbody>
+    <tr><td>🤒 倒れる</td><td>その週に体力が一度でも0</td><td>次の1週は病欠、体力45に</td></tr>
+    <tr><td>🔥 燃え尽き</td><td>その週にストレスが一度でも100</td><td>評判 -10、髪 -5、2週の休み、ストレス40、体力最低50</td></tr>
+    <tr><td>🍗 燃え尽き3回</td><td>1周回に燃え尽き3回</td><td>唐揚げ屋のエンディングで周回終了</td></tr>
+    <tr><td>🛌 休む週</td><td>病欠、燃え尽きの休み</td><td>体力 +25、ストレス -25、集中 +10。スケジュール、チケット、恋愛のチェックは飛ばす</td></tr>
+    <tr><td>💇 ストレス70以上</td><td>週の締めのとき</td><td>毎週髪 -1</td></tr>
+  </tbody>
+</table></div>
+<p>防ぐ方法もあります: 装備<b class="kw">落ち着けよ、友よ</b>（燃え尽きを1回防ぐ）、<b class="kw">九死に一生</b>（倒れるかわりに体力100）、結婚後のあふれた好感度の特典<b class="kw">燃え尽きの盾</b>、周回ボーナス<b class="kw">医療保険</b>、<b class="kw">ゴールデンパラシュート</b>。装備は<a href="gear.html">装備、消耗品</a>、特典は<a href="heroines.html">ヒロイン攻略</a>を見てください。</p>
+<div class="callout tip"><b>初心者の公式</b><p><b>体力は0にならないように、ストレスは70を超えないように。</b>この線だけ守りながら業務、残業を入れればOKです。週末1枠の休憩、週1回のランチでストレスはほぼ抑えられます。</p></div>
+
+<h3 id="messages">メッセージの返信、既読スルー<a class="anchor" href="#messages" aria-label="この見出しへのリンク">#</a></h3>
+<p>1週間を締めるとメッセンジャーにメッセージがたまります。返信ごとに能力値と好感度が変わり、答えるとすぐ返事が来ます。先週答えなかったメッセージは次の締めのときに<b>既読スルー</b>として扱われ、<b class="kw">通知を消す</b>も全部既読スルーです。好感度がある人（ヒロイン、リーダー、先輩、後輩）は既読スルーすると好感度が削られるので気をつけましょう。プロフィールを押すといちばん上に固定されます。</p>
+
+<h3 id="run-end" data-id="system:career-points">周回の終わりの報酬: CPとコイン<a class="anchor" href="#run-end" aria-label="この見出しへのリンク">#</a></h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>報酬</th><th>条件</th><th class="r">量</th></tr></thead>
+  <tbody>
+    <tr><td>キャリアポイント（CP）</td><td>100週を最後まで終えた周回</td><td class="r">役職が高いほど多い（インターン20、1役職ごとに +1、CTO 29）</td></tr>
+    <tr><td>コイン</td><td>100週を最後まで終えた周回</td><td class="r">役職が高いほど多い（インターン2,000、1役職ごとに +100、CTO 2,900）</td></tr>
+    <tr><td>カードパック</td><td>新しいエンディングを見るたび</td><td class="r">ふつうのエンディングはレアパック、称号エンディングはエピックパック</td></tr>
+    <tr><td>広告で2倍</td><td>10分以上プレイした周回</td><td class="r">CP、コインをもう1回</td></tr>
+  </tbody>
+</table></div>
+<div class="callout trap"><b>落とし穴</b><p>退職勧告、唐揚げ屋、起業退職のように<b>100週より前に終わった周回はCP、コインが0</b>です（新しいエンディングのカードパックと図鑑の報酬はもらえます）。そして10分もかからなかった周回は100週を満たしてもCP、コイン、コミットXPがありません。起業のために退職したなら、役職なしで20です。</p></div>
+
+<h2 id="resources">通貨の総まとめ: コーヒー、コイン、カード 💰<a class="anchor" href="#resources" aria-label="この見出しへのリンク">#</a></h2>
+
+<p>ゲームには通貨が5つあります。<b>周回のお金</b>（円、周回の中だけ）、<b>コーヒー</b>（ヒント）、<b>コイン</b>（装備、同僚）、<b>神話のかけら</b>、<b>CP</b>（周回ボーナス）。</p>
+
+<h3 id="coffee" data-id="system:coffee">コーヒー ☕ の手に入れ方すべて<a class="anchor" href="#coffee" aria-label="この見出しへのリンク">#</a></h3>
+<p>コーヒーはクラシックステージ、キャリアトラック、チケットでヒント1回に1杯です。チームプロジェクトでは使えません。CTOエンディングの図鑑の報酬を受け取ると<b>無限コーヒー（∞）</b>になります。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>どこで</th><th>どれくらい</th><th>備考</th></tr></thead>
+  <tbody>
+    <tr><td>サバイバル勝利</td><td>イージー1、ノーマル3、ハード24</td><td>無制限に繰り返し。コーヒーの主な収入源。極悪はコーヒーなし</td></tr>
+    <tr><td>出席チェック</td><td>毎日5</td><td></td></tr>
+    <tr><td>デイリークエスト</td><td>4つ、1つにつき5</td><td>チームプロジェクトのクリア、無限徹夜1回、星3つでクリア、チケットを自分でやる</td></tr>
+    <tr><td>クラシックステージ、キャリアトラック、チームプロジェクト</td><td>新しい星1つにつき1（ステージごとに最大3）</td><td>同じステージは1日10回まで</td></tr>
+    <tr><td>広告<b class="kw">無料コーヒー</b></td><td>30</td><td>1日の回数制限</td></tr>
+    <tr><td>サバイバルのコーヒー2倍</td><td>その回のコーヒー2倍</td><td>広告、広告削除パックは自動</td></tr>
+    <tr><td>無限徹夜</td><td>階の初クリアごとに1（100階なら100）</td><td></td></tr>
+    <tr><td>図鑑のバグ</td><td>新しいバグの種類ごとに5</td><td>5言語56種類なら280杯</td></tr>
+    <tr><td>フレンド</td><td>3（フレンド1人が1日1回）</td><td>受信箱で</td></tr>
+    <tr><td>今日のホットフィックス</td><td>平日10、週末20</td><td></td></tr>
+    <tr><td>サーバー障害対応</td><td>最大20（週間）</td><td>みんなが見つけたバグの割合に応じて</td></tr>
+    <tr><td>シーズンパスの無料の行</td><td>合計90</td><td>パスの行は合計920</td></tr>
+    <tr><td>ニックネーム抽選</td><td>100（パスの抽選1,000）</td><td>当選したら</td></tr>
+  </tbody>
+</table></div>
+<p data-id="system:paid-coffee">コーヒーはひとまとまりに見えますが、ショップで買ったコーヒーは別に覚えておいて、<b>使うときは有料のコーヒーから</b>減ります。</p>
+<div class="callout tip"><b>お役立ちヒント</b><p>サバイバルのハードは1回でコーヒー<b>24杯</b>です。イージー（1杯）、ノーマル（3杯）で手慣らしして、慣れたらハードが時間あたりいちばん稼げます。</p></div>
+
+<h3 id="coins" data-id="system:coins">コイン 💰 の手に入れ方、使い方<a class="anchor" href="#coins" aria-label="この見出しへのリンク">#</a></h3>
+<p>最初は300コインから始まります。チームプロジェクトはコインをくれません。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>手に入る場所</th><th class="r">量</th></tr></thead>
+  <tbody>
+    <tr><td>周回の完走（100週）</td><td class="r">2,000~2,900</td></tr>
+    <tr><td>デイリークエスト<b class="kw">今日周回を1回完走する</b></td><td class="r">2,000 + CP 20</td></tr>
+    <tr><td>出席チェック</td><td class="r">毎日1,000</td></tr>
+    <tr><td>無限徹夜の階の初クリア</td><td class="r">階ごとに100（100階なら10,000）</td></tr>
+    <tr><td>Git Blameリレー</td><td class="r">チームが3個直すたびに2,000</td></tr>
+    <tr><td>今日のホットフィックス</td><td class="r">平日2,000、週末3,000</td></tr>
+    <tr><td>サーバー障害対応</td><td class="r">最大10,000（週間）</td></tr>
+    <tr><td>シーズンパスの無料の行</td><td class="r">合計7,800</td></tr>
+    <tr><td>装備を売る</td><td class="r">買った値段の10%</td></tr>
+  </tbody>
+</table></div>
+<div class="table-wrap"><table>
+  <thead><tr><th>使いどころ</th><th class="r">価格</th></tr></thead>
+  <tbody>
+    <tr><td>カードパック</td><td class="r">ノーマル2,000、レア8,000、エピック20,000（レジェンドパックは買えない）</td></tr>
+    <tr><td>装備</td><td class="r"><a href="gear.html">装備、消耗品</a>参照</td></tr>
+    <tr><td>同僚のレベルアップ</td><td class="r">レベルが上がるほど高くなる（等級が高いほどもっとかかる）</td></tr>
+    <tr><td>合成</td><td class="r">1,000, 2,500, 50,000, 100,000</td></tr>
+    <tr><td>スキルツリーのリセット</td><td class="r">500</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="packs" data-id="system:card-packs">カードパック 🃏 の確率と天井<a class="anchor" href="#packs" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-pack-odds"><img src="img/start-pack-odds.png" alt="ショップのカードパックタブの確率表。パックごとの1〜4枚目のカードと5枚目のカードの確率" loading="lazy" decoding="async"><figcaption>確率表はショップのカードパックタブでそのまま見られます。</figcaption></figure>
+<p>パック1つにカード5枚。1〜4枚目と5枚目（保証カード）の確率が違います。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>パック</th><th>1〜4枚目</th><th>5枚目</th><th>天井</th></tr></thead>
+  <tbody>
+    <tr><td>ノーマルパック（2,000コイン）</td><td>ノーマル75%、レア22.5%、エピック2.5%</td><td>レア90%、エピック10%</td><td>なし</td></tr>
+    <tr><td>レアパック（8,000コイン）</td><td>レア65%、エピック35%</td><td>レア45%、エピック54.7%、レジェンド0.3%</td><td>60パック以内にレジェンド以上1枚</td></tr>
+    <tr><td>エピックパック（20,000コイン）</td><td>レア50%、エピック47.5%、レジェンド2.5%</td><td>エピック89.5%、レジェンド10%、神話0.5%</td><td>200パック以内に神話1枚</td></tr>
+    <tr><td>レジェンドパック（購入不可）</td><td>エピック13%、レジェンド62%、神話25%</td><td>レジェンド63%、神話37%</td><td>神話なしで終わったら次のレジェンドパックで神話確定</td></tr>
+  </tbody>
+</table></div>
+<div class="table-wrap"><table>
+  <thead><tr><th>目標</th><th class="r">平均</th><th class="r">中央値</th><th class="r">90%がこの中に</th><th class="r">最初のパックで出る確率</th></tr></thead>
+  <tbody>
+    <tr><td>ノーマルパックでエピック</td><td class="r">5.3パック</td><td class="r">4パック</td><td class="r">11パック</td><td class="r">18.8%</td></tr>
+    <tr><td>レアパックでレジェンド以上</td><td class="r">54.5パック</td><td class="r">60パック</td><td class="r">60パック</td><td class="r">0.3%</td></tr>
+    <tr><td>エピックパックでレジェンド以上</td><td class="r">5.3パック</td><td class="r">4パック</td><td class="r">11パック</td><td class="r">19.1%</td></tr>
+    <tr><td>エピックパックで神話</td><td class="r">126.8パック</td><td class="r">139パック</td><td class="r">200パック</td><td class="r">0.5%</td></tr>
+    <tr><td>レジェンドパックで神話</td><td class="r">1.2パック</td><td class="r">1パック</td><td class="r">2パック</td><td class="r">79.9%</td></tr>
+  </tbody>
+</table></div>
+
+
+<h3 id="mythic-shards" data-id="system:mythic-shards">神話のかけら<a class="anchor" href="#mythic-shards" aria-label="この見出しへのリンク">#</a></h3>
+<p>神話のかけら<b>100個</b>で好きな神話の同僚1人、<b>30個</b>で持っている神話の星 +1です。神話は星5つになると虹色のカードになります。かけらは無限徹夜の30、60、100階（登るたび、1日最大3個）、シーズンパスの無料の行（合計20）、人気度、バグバウンティの報酬などから来ます。</p>
+<figure class="shot" data-shot="start-shards-panel"><img src="img/start-shards-panel.png" alt="神話のかけら画面の下のほう。保有している神話カードの一覧、神話カードと交換（100）ボタンと神話の星を上げる（30）ボタン" loading="lazy" decoding="async"><figcaption>チーム › 同僚 › 神話のかけら。下の2つのボタンがかけらを使う場所です。</figcaption></figure>
+<h4 id="mythic-shards-trade">かけら100個で好きな神話カードをもらう</h4>
+<ol class="steps">
+  <li><b>神話カードと交換を押す</b>かけらが100個以上なら<b class="kw">神話カードと交換（100）</b>ボタンがつきます。</li>
+  <li><b>カードを選ぶ</b>神話の同僚6人が全員見えます。ガチャではなく<b>自分で選ぶので</b>運は要りません。カードの下に<b class="kw">未所持</b>または<b class="kw">所持★3（交換すると星+1）</b>のように結果が先に書いてあります。</li>
+  <li><b>もう一度押して確定</b>最初に押すと黄色い枠と<b class="kw">もう一度タップで確定（100）</b>が出ます。同じカードをもう一度押すと、かけら100個が引かれて演出が出ます。</li>
+</ol>
+<div class="shots">
+<figure class="shot" data-shot="start-shards-pick"><img src="img/start-shards-pick.png" alt="好きな神話カードを選んでくださいのウィンドウ。神話カードの一覧、1枚のカードに黄色い枠ともう一度タップで確定（100）の案内" loading="lazy" decoding="async"><figcaption>最初に押すと黄色い枠ができます。間違えて押しても1回は大丈夫です。</figcaption></figure>
+<figure class="shot" data-shot="start-shards-trade"><img src="img/start-shards-trade.png" alt="神話カード交換の演出。革ジャンGPU皇帝のカードと星4つ、星+1の案内" loading="lazy" decoding="async"><figcaption>もう持っている神話を選ぶと星が1つ上がります（星5つなら複製）。</figcaption></figure>
+</div>
+<h4 id="mythic-shards-star">かけら30個で神話の星を上げる</h4>
+<p>もう持っている神話の同僚の星だけ上げたいなら<b class="kw">神話の星を上げる（30）</b>のほうが安いです。星を上げるカードを選んで、同じくもう一度押すと確定です。カードの下に<b class="kw">★3 → ★4</b>のように変わる星が見え、星5つのカードは<b class="kw">（最大）</b>と表示されて選べません。</p>
+<div class="shots">
+<figure class="shot" data-shot="start-shards-star"><img src="img/start-shards-star.png" alt="星を上げる神話カードを選んでくださいのウィンドウ。革ジャンGPU皇帝にもう一度タップで確定（30）、ほかのカードに星4から5の表示" loading="lazy" decoding="async"><figcaption>星を上げるウィンドウ。変わる星の数がカードの下に見えます。</figcaption></figure>
+<figure class="shot" data-shot="start-shards-star-done"><img src="img/start-shards-star-done.png" alt="星4達成の演出。革ジャンGPU皇帝のカードと星4つ" loading="lazy" decoding="async"><figcaption><b class="kw">★4 達成！</b>の演出が出たら終わりです。</figcaption></figure>
+</div>
+<div class="callout tip"><b>お役立ちヒント</b><p>まだ持っていない神話がいるなら、<b>100個の交換で新しい神話から</b>連れてくるのがいいです。神話はチームプロジェクトの最後の段階に必ず必要で、レジェンド、神話だけが持つチケットのパッシブもあるからです。6人全員そろったら30個ずつ星を上げればOKです。</p></div>
+
+<h2 id="daily">毎日こなすルーティン ✅<a class="anchor" href="#daily" aria-label="この見出しへのリンク">#</a></h2>
+
+<h3 id="attendance" data-id="system:attendance">出席チェック<a class="anchor" href="#attendance" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-attendance"><img src="img/start-attendance.png" alt="出席チェックのシート。上に神話の同僚までの残りの出席数（60回）、下にDAY 00/30のバーに15日と30日の表示" loading="lazy" decoding="async"><figcaption>上には神話の同僚までの残りの出席数、下のDAYバーの丸2つがD15、D30の大当たりの報酬です。</figcaption></figure>
+<div class="table-wrap"><table>
+  <thead><tr><th>日</th><th>報酬</th></tr></thead>
+  <tbody>
+    <tr><td>毎日</td><td>コーヒー5 + コイン1,000</td></tr>
+    <tr><td>3日ごと（3、6、9 …）</td><td>+ レアパック1</td></tr>
+    <tr><td>15日</td><td>+ エピックパック1</td></tr>
+    <tr><td>30日</td><td>+ レジェンドパック1（その翌日から1日目からまた）</td></tr>
+    <tr><td>累計60回ごと</td><td>神話の同僚1人（受信箱で選ぶ）</td></tr>
+  </tbody>
+</table></div>
+<p>出席チェックは<b>ログインしたアカウント</b>だけができます（ゲストは<b class="kw">ログインする</b>が出ます）。連続が途切れてもカレンダーの枠と累計の出席はそのままです。今日出席すると、明日の<a href="#draw">ニックネーム抽選</a>の対象にもなります。</p>
+
+<h3 id="quests" data-id="system:quests">クエスト<a class="anchor" href="#quests" aria-label="この見出しへのリンク">#</a></h3>
+<p>デイリークエストは0時にリセット、チャレンジクエストは1回だけ。条件を満たしたら、チームタブ › クエストで<b class="kw">受け取る</b>を押さないと入りません。デイリークエストは1つにつきコミットXP 200もくれます。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>デイリークエスト</th><th>報酬</th></tr></thead>
+  <tbody>
+    <tr><td>今日周回を1回完走する（100週、10分以上）</td><td>CP 20、コイン2,000</td></tr>
+    <tr><td>チームプロジェクトを1回クリア</td><td>コーヒー5</td></tr>
+    <tr><td>無限徹夜を1回プレイ</td><td>コーヒー5</td></tr>
+    <tr><td>チームプロジェクトを星3つでクリア</td><td>コーヒー5</td></tr>
+    <tr><td>今週のチケットを自分で1回こなす</td><td>コーヒー5</td></tr>
+    <tr><td>今日のエンディング（結婚 → 退職勧告 → 恋愛 → 育児 → 子どもが大学生、日ごとに順番に）</td><td>ノーマルパック1</td></tr>
+    <tr><td>周回を3回完走する</td><td>レアパック1</td></tr>
+  </tbody>
+</table></div>
+<p>チャレンジクエストは段階式なので、今の段階だけが見えます: チームプロジェクトの星、カードパックの開封、エンディング数、同僚のレベル、等級別の同僚の加入、同僚の数、大きなプロジェクトのクリア（行数）、プロジェクト数、親密度のハート、クラシックの星、キャリアトラックの星、サバイバルの段階別の初クリア、周回の完走数。報酬は前の段階がノーマルパック、後ろの段階がレアパックです。</p>
+
+<h3 id="ads" data-id="system:ads">報酬型広告<a class="anchor" href="#ads" aria-label="この見出しへのリンク">#</a></h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>広告</th><th>報酬</th></tr></thead>
+  <tbody>
+    <tr><td>周回の報酬2倍</td><td>10分以上プレイした周回のCP、コインをもう1回</td></tr>
+    <tr><td>無限徹夜の復活</td><td>落ちた階でハート満タンからもう一度</td></tr>
+    <tr><td>サバイバル2倍</td><td>勝った回のコーヒー2倍</td></tr>
+    <tr><td>無料カードパック</td><td>ノーマルパック1</td></tr>
+    <tr><td>無料コーヒー</td><td>コーヒー30</td></tr>
+  </tbody>
+</table></div>
+<p>広告ごとに1日の回数制限があり、残りの回数はボタンに見えます。広告削除パックがあれば広告なしですぐもらえます。</p>
+
+<h3 id="season-pass" data-id="system:season-pass">シーズンパス（コミットXP）<a class="anchor" href="#season-pass" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-season"><img src="img/start-season.png" alt="ショップのシーズンパスタブ。シーズンパスの価格、下にパスの行と無料の行の段階別の報酬" loading="lazy" decoding="async"><figcaption>報酬の行は上がパスの行、下が無料の行です。横にスワイプすると50段階まで見えます。</figcaption></figure>
+<p>シーズン（今シーズンは<b class="kw">新卒採用シーズン</b>、60日）のあいだ、コミットXP<b>1,000ごとに1段階</b>、50段階まで。無料の行は誰でも、パスの行はシーズンパスを買った人だけもらえます。シーズンが終わっても3日間は受け取れます。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>コミットXPの手に入れ方</th><th class="r">XP</th></tr></thead>
+  <tbody>
+    <tr><td>周回100週の完走（10分以上）</td><td class="r">1,000</td></tr>
+    <tr><td>クラシック、キャリアトラックのクリア</td><td class="r">50 (★★★ 100)</td></tr>
+    <tr><td>チームプロジェクトのクリア</td><td class="r">150</td></tr>
+    <tr><td>無限徹夜</td><td class="r">階ごとに3（40階なら120）</td></tr>
+    <tr><td>サバイバル勝利</td><td class="r">イージー30、ノーマル50、ハード80、極悪は階ごとに100</td></tr>
+    <tr><td>デイリークエスト</td><td class="r">1つにつき200</td></tr>
+  </tbody>
+</table></div>
+<p>1日の上限は<b>2,000 XP</b>（デイリークエストを含む）で、同じステージ、プロジェクトは1日3回までしかXPをくれません。だから50段階（50,000 XP）はどんなに早くても25日かかります。毎日少しずつが正解です。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>行</th><th>50段階までの合計</th><th>50段階の報酬</th></tr></thead>
+  <tbody>
+    <tr><td>無料</td><td>コーヒー90、コイン7,800、神話のかけら20、ノーマルパック8、レアパック6、エピックパック3</td><td>神話のかけら20</td></tr>
+    <tr><td>パス</td><td>コーヒー920、コイン66,000、神話のかけら50、レアパック10、エピックパック8、レジェンドパック1、神話の同僚1</td><td>好きな神話 + かけら30</td></tr>
+  </tbody>
+</table></div>
+<p>50段階を超えると1,000 XPごとに行ごとの<b class="kw">?</b>ボーナスボックスができます。無料ボックス: コーヒー10（40%）、コイン200（40%）、ノーマルパック（20%）。パスのボックス: コーヒー50（32%）、コイン1,000（32%）、レアパック（28%）、エピックパック（7.5%）、神話のかけら1（0.5%）。</p>
+
+<h3 id="mailbox" data-id="system:mailbox">受信箱<a class="anchor" href="#mailbox" aria-label="この見出しへのリンク">#</a></h3>
+<p>チュートリアルの報酬、出席、図鑑の神話の同僚選び、フレンドのコーヒー、抽選の当選、昨日受け取らなかった無限徹夜の報酬などが集まります。ホームの右上のアイコンです。神話の同僚は受信箱で受け取ると選ぶウィンドウが開きます。</p>
+
+<h2 id="team">同僚とチームプロジェクト 👥<a class="anchor" href="#team" aria-label="この見出しへのリンク">#</a></h2>
+
+<h3 id="coworkers" data-id="system:coworkers">同僚カード<a class="anchor" href="#coworkers" aria-label="この見出しへのリンク">#</a></h3>
+<p>同僚は84人（ノーマル24、レア22、エピック17、レジェンド15、神話6）です。最初はインターンの陽菜、チェ新人、チョンQA、オ契約社員、パクDBAの5人とノーマルパック1個から始まります。<b>同僚はチームプロジェクトでだけ</b>働きます（キャリアのチケットをかわりに探してはくれません。レジェンド、神話のチケットのパッシブだけ例外）。</p>
+<ul>
+  <li>能力値: <b>速度</b>（1秒に流し見る行数）と<b>正確度</b>（通り過ぎたバグに気づく確率、低いと誤報）。</li>
+  <li>レベル: コインで最大30。レベルが上がるとスキルツリーのポイントもできます。</li>
+  <li>星: 同じカードがまた出るとすぐ星 +1（最大5）。そのあとは<b class="kw">コピー</b>として貯まって合成の材料になります。</li>
+  <li>専門分野: その言語で1.5倍速く、そのバグの種類をよく見つけます。</li>
+</ul>
+
+<h3 id="fusion" data-id="system:fusion">合成<a class="anchor" href="#fusion" aria-label="この見出しへのリンク">#</a></h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>材料</th><th class="r">コイン</th><th>結果（いつも成功）</th></tr></thead>
+  <tbody>
+    <tr><td>ノーマルのコピー2</td><td class="r">1,000</td><td>ランダムなレア</td></tr>
+    <tr><td>レアのコピー2</td><td class="r">2,500</td><td>ランダムなエピック</td></tr>
+    <tr><td>エピックのコピー5</td><td class="r">50,000</td><td>ランダムなレジェンド</td></tr>
+    <tr><td>レジェンドのコピー4</td><td class="r">100,000</td><td>ランダムな神話</td></tr>
+  </tbody>
+</table></div>
+<p>同じ等級のカードを集めて<b>1段階高い等級の同僚1人</b>をランダムでもらう機能です。その等級の同僚はすべて同じ確率で、合成はいつも成功します。もらった同僚がすでにいれば星が1つ上がり、星5つならコピーが1枚貯まります。</p>
+<figure class="shot" data-shot="start-fusion-panel"><img src="img/start-fusion-panel.png" alt="チームタブの同僚合成画面。ノーマルからレア、レアからエピックの合成の枠、材料カード2枚とコイン、カード選択ボタン" loading="lazy" decoding="async"><figcaption>チーム › 同僚 › 合成。等級ごとに枠が1つあり、材料の数とコインが書いてあります。</figcaption></figure>
+<ol class="steps">
+  <li><b>合成タブを開く</b>チームタブ › <b class="kw">同僚</b> › <b class="kw">合成</b>に行きます。</li>
+  <li><b>カード選択を押す</b>合成する等級の枠の<b class="kw">カード選択</b>を押します。</li>
+  <li><b>材料を入れる</b>カードを押すたびに材料が1つずつ入ります。コピーが先に使われ、コピーがなければカードそのものが材料になります。全部埋めたら<b class="kw">合成</b>を押します。</li>
+  <li><b>確認</b><b class="kw">本当に合成しますか？</b>のウィンドウで<b class="kw">確認</b>を押すと、演出とともに新しい同僚が出ます。</li>
+</ol>
+<div class="shots">
+<figure class="shot" data-shot="start-fusion-pick"><img src="img/start-fusion-pick.png" alt="合成のカード選択ウィンドウ。シン・コメントのカードに材料2つの表示、下に2/2選択と合成ボタン" loading="lazy" decoding="async"><figcaption>材料を全部埋めると、下に2/2と<b class="kw">合成</b>ボタンがつきます。</figcaption></figure>
+<figure class="shot" data-shot="start-fusion-confirm"><img src="img/start-fusion-confirm.png" alt="本当に合成しますか？の確認ウィンドウ。選んだカード2枚でレアカード1枚を作るという案内と、キャンセル、確認ボタン" loading="lazy" decoding="async"><figcaption>最後の確認ウィンドウ。材料のカードは消えます。</figcaption></figure>
+<figure class="shot" data-shot="start-fusion-result"><img src="img/start-fusion-result.png" alt="合成の結果画面。レアの同僚ピョンのカードと星 +1の表示、確認ボタン" loading="lazy" decoding="async"><figcaption>結果画面。もともといた同僚なら星が上がります。</figcaption></figure>
+</div>
+<div class="callout warn"><b>注意</b><p>合成の材料にカードを自分で選ぶときは、コピーだけでなく<b>カードそのもの</b>も入れられます。カードそのものを使うとその同僚が一覧から消えます（画面に赤い警告が出ます）。</p></div>
+<div class="callout tip"><b>お役立ちヒント</b><p>合成は<b>余ったコピー</b>だけでするのがいいです。星5つを満たしたカードから出るコピーは合成しか使い道がないので、惜しまず入れてOKです。レジェンドのコピー4枚で神話の同僚が出るので、レジェンドのコピーは貯めておきましょう。</p></div>
+
+<h3 id="team-projects" data-id="system:team-projects">チームプロジェクトとチームパワー<a class="anchor" href="#team-projects" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-team"><img src="img/start-team.png" alt="チームタブのプロジェクトの一覧。分野別のプロジェクトと推奨パワー、星" loading="lazy" decoding="async"><figcaption>プロジェクトごとに推奨パワーが書いてあります。</figcaption></figure>
+<ul>
+  <li>16分野、分野ごとに12個なので<b>192個</b>です。最初は3分野が開いていて、プロジェクトを3個クリアするたびに分野が1つずつ開きます。分野の中は順番どおり。</li>
+  <li>ファイルは1,000行から始まり、最後（最終、神話だけ参加）は80,500行です。</li>
+  <li><b>チームパワー</b>は連れて行く同僚の<b class="kw">速度</b>と<b class="kw">正確度</b>が高いほど大きくなります。その言語の専門家は速度1.5倍、正確度 +5%。</li>
+  <li>チームパワーが推奨パワーより<b>1でも低いと</b>過負荷で速度が1/4になり、スキルも使えないのでほぼ失敗します。推奨以上で勝てば<b>必ず星3つ</b>です。</li>
+  <li>同僚が報告箱に上げた行が本物なら<b class="kw">修正</b>、違えば<b class="kw">誤報</b>。問題のない行を修正すると8秒、自分で押して間違えると3秒減ります。コーヒーは使えません。</li>
+  <li>周回中に勝つと、その週の成果に +1.5 / 2.5 / 4（星1/2/3、会社によって少し違う、週最大6）が付きます。人事評価の直前に使うのにぴったりです。</li>
+  <li><b>同僚の組み合わせ</b>: 決まった同僚を一緒に連れて行くとチーム全体にボーナスが付きます（23種類）。たとえば<b class="kw">QAコンビ</b>（チョンQA + ムンQAリード）は間違った報告 -25%です。編成画面でついた組み合わせは緑色です。</li>
+</ul>
+
+<h3 id="skill-trees" data-id="system:skill-trees">スキルツリー<a class="anchor" href="#skill-trees" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-skill-tree"><img src="img/start-skill-tree.png" alt="同僚の詳細のスキルツリー画面。残りのポイント、リセットボタン、枝ごとの1段階から4段階の枠" loading="lazy" decoding="async"><figcaption>同僚カードを押すと出るスキルツリー。レベル2ごとにポイント1つ、同じ枝の前の段階を覚えないと次の段階は開きません。</figcaption></figure>
+<p>同僚ごとに分野（フロントエンド、バックエンド、サーバー・インフラ、データベース、セキュリティ、データ・ML、QA）によってツリーが違います。レベルアップで得たポイントを振って、気に入らなければ<b>500コイン</b>でリセットします。</p>
+
+<h3 id="동료-채널과-친밀도" data-id="system:team-channel">同僚チャンネルと親密度<a class="anchor" href="#%EB%8F%99%EB%A3%8C-%EC%B1%84%EB%84%90%EA%B3%BC-%EC%B9%9C%EB%B0%80%EB%8F%84" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-teamchat"><img src="img/start-teamchat.png" alt="メッセンジャーの同僚チャンネル画面。チャンネルの使い方の案内、一般の部屋、等級別のダイレクトメッセージの一覧と条件の表示" loading="lazy" decoding="async"><figcaption>メッセンジャーのいちばん右の同僚チャンネル。同僚ごとに3話のストーリーがあり、話ごとにレベルと親密度の条件があります。</figcaption></figure>
+<p data-id="system:bond">カードで集めた同僚ごとに<b>3話のストーリー</b>があり、1話終えるたびにその同僚の<b class="kw">親密度のハート</b>が上がります。ハートはチームプロジェクトでその同僚をよりよく働かせてくれます。#一般の部屋はプロジェクトの反応と入社のあいさつを見る場所です。</p>
+
+<h4 id="channel-open">トークルームの開き方</h4>
+<ol class="steps">
+  <li><b>同僚チャンネルへ行く</b>メッセンジャータブの上のスイッチで<b class="kw">同僚チャンネル</b>を押します。タブに数字があれば、新しい書き込みや開いたストーリーがあるという意味です。</li>
+  <li><b>同僚を選ぶ</b><b class="kw">ダイレクトメッセージ</b>の一覧で同僚を押します。上の等級のチップ（すべて、神話、レジェンド…）で絞り込めて、ストーリーが開いた同僚には<b class="kw">新ストーリー</b>の表示、まだロックされた同僚には<b class="kw">条件 1/3</b>のように満たした数が見えます。</li>
+  <li><b>通知の整理</b>通知がたまったら、上の<b class="kw">通知N件を消す</b>で一度に既読にできます。ストーリーそのものはそのまま残ります。</li>
+</ol>
+
+<h4 id="channel-conditions">話ごとの条件の見方</h4>
+<p>トークルームの下の<b class="kw">第1話の親密度条件を確認</b>ボタンを押すか部屋に入ると、上に<b class="kw">親密度の条件</b>のウィンドウが付きます。条件ごとに✓、✗と進み具合の数字（例: 0/10）が見え、条件を押すとそのモードにすぐ移動します。条件を全部満たすとボタンが<b class="kw">新ストーリー</b>に変わります。</p>
+<figure class="shot" data-shot="start-chan-gate"><img src="img/start-chan-gate.png" alt="インターンの陽菜のトークルームの上の親密度の条件のウィンドウ。第1話を開くには、条件2/3、クラシック10を星3つでクリア 10/10、キャリアトラック1番目のステージ 0/1、サバイバルのイージーを1回成功 1/1" loading="lazy" decoding="async"><figcaption>条件2/3の状態。満たした条件は緑の✓と線が引かれます。</figcaption></figure>
+<ul>
+  <li><b>レベルの条件</b>: 第1話はすぐ、第2話はその同僚<b>Lv.10</b>、第3話は<b>Lv.25</b>が必要です。</li>
+  <li><b>条件はウィンドウを初めて開いたあとから</b>数えます。その前のプレイは入らないので、同僚を新しく手に入れたら、まずトークルームを一度開いておきましょう。何人もの同僚のウィンドウを開いておけば、1回のプレイで同時に満たされます。</li>
+  <li>クラシックステージとキャリアトラックは<b>★★★のクリアだけ</b>認められます。</li>
+</ul>
+<div class="table-wrap"><table>
+  <thead><tr><th>評価</th><th>第1話</th><th>第2話</th><th>第3話</th></tr></thead>
+  <tbody>
+    <tr><td>ノーマル</td><td>クラシック10、トラック1、イージー1回</td><td>クラシック30、トラック5、イージー2回</td><td>クラシック50、トラック10、イージー3回</td></tr>
+    <tr><td>レア</td><td>クラシック101、トラック20、イージー5回</td><td>クラシック133、トラック30、イージー10回</td><td>クラシック166、トラック40、イージー15回</td></tr>
+    <tr><td>エピック</td><td>クラシック200、トラック50、ノーマル1回</td><td>クラシック233、トラック60、ノーマル5回</td><td>クラシック266、トラック70、ノーマル10回</td></tr>
+    <tr><td>レジェンド</td><td>クラシック301、トラック81、ハード1回</td><td>クラシック350、トラック85、ハード3回</td><td>クラシック400、トラック90、ハード5回</td></tr>
+    <tr><td>神話</td><td>クラシック450、トラック91、極悪1階、メディア・配信#12</td><td>クラシック475、トラック95、極悪2階、公共・行政#12</td><td>クラシック500、トラック100、極悪4階、オープンソース#12</td></tr>
+  </tbody>
+</table></div>
+<p>表のクラシックはその番号のステージ★★★、トラックはどの章でもその番号のステージ★★★、イージー、ノーマル、ハードはサバイバルの成功回数、極悪は1回で突破した階、#12はその分野のチームプロジェクト12番です。第2話、第3話にはレベルの条件が加わります。</p>
+
+<h4 id="channel-reply">答え方</h4>
+<p><b class="kw">新ストーリー</b>を押すと同僚がメッセージを送り始めます。自分の番が来ると下に<b class="kw">返信を選ぶ</b>と答えが2〜3個出て、1つ押すとストーリーが続きます。最後まで行くと<b class="kw">ストーリー完了、親密度アップ</b>が出て、次の話の条件のウィンドウが付きます。</p>
+<div class="shots">
+<figure class="shot" data-shot="start-chan-reply"><img src="img/start-chan-reply.png" alt="インターンの陽菜の第1話の会話。インターンのメッセージ2つ、下に返信を選ぶと答え3つ" loading="lazy" decoding="async"><figcaption>自分の番が来たら答えを選びます。</figcaption></figure>
+<figure class="shot" data-shot="start-chan-done"><img src="img/start-chan-done.png" alt="第1話を終えた画面。右上にハート2つ、第2話の親密度の条件のウィンドウ、ストーリー完了、親密度アップの案内" loading="lazy" decoding="async"><figcaption>第1話を終えた様子。ハートが2つ満ちて、すぐ第2話の条件が見えます。</figcaption></figure>
+</div>
+
+<h4 id="channel-bond">親密度のハートの貯まり方と効果</h4>
+<ul>
+  <li>1話終えるとハート<b>+1</b>、その同僚らしい答えをうまく選ぶと<b>+2</b>です。3話まで全部 +2で終えると最大<b>6個</b>満ちます。右上のハート6つの枠ですぐ見えます。</li>
+  <li>ハート1個ごとに、その同僚がチームプロジェクトで<b>速度 +3%、正確度 +1%</b>です。ハート6個なら速度 +18%、正確度 +6%なので、チームパワーが目に見えて上がります。</li>
+  <li>ストーリーはハートだけくれます（コーヒーやコインはありません）。</li>
+  <li>答えが惜しかったら、<b class="kw">親密度リセット券</b>でその同僚のハートと会話を最初に戻せます。もう一度会話するときは、いい答えが黄色い枠で見えます。リセット券はショップか、トークルームの右上の↺ボタンで買います（コーヒー5,000でも買えます）。</li>
+</ul>
+
+<h2 id="challenge-modes">業務タブのチャレンジモード 🏆<a class="anchor" href="#challenge-modes" aria-label="この見出しへのリンク">#</a></h2>
+
+<h3 id="survival" data-id="system:survival">サバイバル<a class="anchor" href="#survival" aria-label="この見出しへのリンク">#</a></h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>段階</th><th>ファイル</th><th class="r">勝利のコーヒー</th><th>特徴</th></tr></thead>
+  <tbody>
+    <tr><td>イージー</td><td>20行</td><td class="r">1</td><td>正解の行番号が黄色で見える</td></tr>
+    <tr><td>ノーマル</td><td>120行</td><td class="r">3</td><td></td></tr>
+    <tr><td>ハード</td><td>500行</td><td class="r">24</td><td>コーヒーの主な収入源</td></tr>
+    <tr><td>極悪</td><td>500行から階ごとに +50行（最大2,000行）</td><td class="r">0</td><td>クラシック500クリア後に解放。ランキング用</td></tr>
+  </tbody>
+</table></div>
+<div class="tldr"><b>ひとことまとめ</b><p>1分以内にバグを3つ見つけるとコーヒーがもらえる、何回でもできるコーヒー稼ぎのモードです。イージーで感覚をつかんで、手が慣れたらハード（1回24杯）に移りましょう ☕</p></div>
+<figure class="shot" data-shot="start-survival-cards"><img src="img/start-survival-cards.png" alt="業務タブのサバイバルの欄。イージー20行コーヒー1、ノーマル120行コーヒー3、ハード500行コーヒー24、ロックされた極悪" loading="lazy" decoding="async"><figcaption>業務タブのいちばん上のサバイバル。右上に今までサバイバルで稼いだコーヒーが見えます。</figcaption></figure>
+<p>60秒以内にバグ3つ、コーヒーは使えず、誤タップは5秒減点です。何回でもできます。極悪は90秒で始まり、階1つ（バグ3つ）をクリアするたびに残り時間に30秒が足され、次のファイルは50行ずつ長くなります（2,000行まで、誤タップ10秒）。<b>途中で出ると負け</b>になります。</p>
+
+<h4 id="survival-steps">1回の遊び方</h4>
+<ol class="steps">
+  <li><b>難易度を選ぶ</b>業務タブ › サバイバルで、イージー、ノーマル、ハードのどれかを押します。極悪はクラシック500をクリアすると開きます。</li>
+  <li><b>今日の業務を確認</b>見つけるバグ3つが出ます。<b>イージーでは正解がそのまま</b>見えます（何行目で、何を何に直すか）。<b class="kw">業務開始</b>を押すと時計が回ります。</li>
+  <li><b>行を押して間違った所を押す</b>怪しい行を押すと拡大され、間違った記号を押すと直ります。イージーは左の行番号に黄色い丸が付いた行が正解です。</li>
+  <li><b>結果を受け取る</b>3つ全部見つけると<b class="kw">デプロイ成功！</b>とコーヒーが入ります。広告で<b class="kw">報酬を2倍にする</b>を押すと、その回のコーヒーをもう1回もらえます（広告削除パックがあれば自動）。<b class="kw">もう一回</b>を押すと新しいファイルですぐ続けます。</li>
+</ol>
+<div class="shots">
+<figure class="shot" data-shot="start-survival-brief"><img src="img/start-survival-brief.png" alt="サバイバルのイージーの開始画面。見つけるバグ3つと4行目、11行目の正解の説明、業務開始ボタン" loading="lazy" decoding="async"><figcaption>イージーの開始画面。正解3つが先に見えます。</figcaption></figure>
+<figure class="shot" data-shot="start-survival-play"><img src="img/start-survival-play.png" alt="サバイバルのイージーのプレイ画面。残り時間00:57、コーヒー使用不可の表示、行番号4、7、15に黄色い丸" loading="lazy" decoding="async"><figcaption>プレイ中。右上の☕✕はコーヒーが使えないという意味です。</figcaption></figure>
+<figure class="shot" data-shot="start-survival-win"><img src="img/start-survival-win.png" alt="サバイバルのハードの勝利画面。デプロイ成功、コーヒー +24、最高記録、報酬を2倍にする広告ボタン、エラー解説" loading="lazy" decoding="async"><figcaption>ハードの勝利。下の<b class="kw">エラー解説</b>で何を直したかをもう一度見られます。</figcaption></figure>
+</div>
+<ul>
+  <li>ファイルは回ごとに新しく作られるので覚えられません。そのかわり同じバグの種類が繰り返すので、目がすぐ慣れます。</li>
+  <li>難易度ごとにいちばん速い記録が🏆として残ります。</li>
+  <li>勝った回は同僚チャンネルの親密度の条件（サバイバルのイージー、ノーマル、ハードN回成功）にも入ります。条件のウィンドウを先に開いておいてからやりましょう。</li>
+  <li>極悪はコーヒーなしでランキングの順位だけを競うモードです。順位は<a href="#system-leaderboard">ランキング</a>で見ます。</li>
+</ul>
+<div class="callout warn"><b>注意</b><p>始めた回を出たり、一時停止メニューの<b class="kw">最初からやり直す</b>を押したりすると負けになり、連勝が途切れます。アプリを閉じても同じです。</p></div>
+<div class="callout tip"><b>お役立ちヒント</b><p>ハードは500行なので最初は難しいですが、勝てばイージーの24倍です。ミニマップでファイル全体を流し見して、かっこの対応やコロン、セミコロンのように目立つバグから探すと勝率が上がります。</p></div>
+
+<h3 id="tower" data-id="system:tower">無限徹夜（タワー）<a class="anchor" href="#tower" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-tower"><img src="img/start-tower.png" alt="無限徹夜の画面。下から積まれた階の一覧、上にルールの案内、下に今日の登頂開始ボタン" loading="lazy" decoding="async"><figcaption>階を押すとその階の報酬が見えます。</figcaption></figure>
+<ul>
+  <li><b>1日1回</b>1階から登ります。階ごとに<b>1分</b>、ハート<b>3つ</b>、本物のコーヒーは使えません。</li>
+  <li>階ごとに補給品が新しく出ます: 徹夜コーヒー（バグ1つをすぐ修正）、エナジードリンク（5階から、ハート +1）、夜食（7階から、+15秒）。<b>残りは次の階に持ち越せません。</b></li>
+  <li>徹夜の同僚は1、9、24、44、69階をクリアすると合流します。徹夜の装備は15階をクリアするとノイズキャンセリングヘッドホン（偽の報告 -40%）、35階をクリアするとデュアルモニター（速度 +15%）、60階をクリアするとメカニカルキーボード（階ごとに最初のミスはハートが減らない）ができます。</li>
+  <li>大きさ: 1〜30階は150〜1,455行（バグ3〜6）、31〜60階は2,000〜13,000行、61〜100階は20,000行まで（バグ最大27）。</li>
+  <li>失敗するとその日の登頂は終わり。広告（または広告削除パック）で復活すると、落ちた階を最初からもう一度やります。</li>
+  <li>31階からはインターネットにつながっていないと登れません。</li>
+</ul>
+<div class="table-wrap"><table>
+  <thead><tr><th>報酬</th><th>内容</th></tr></thead>
+  <tbody>
+    <tr><td>階の初クリア</td><td>コイン100 + コーヒー1（100階全部クリアでコイン10,000、コーヒー100）</td></tr>
+    <tr><td>30 / 60 / 100階の初クリア</td><td>+ ノーマルパック / レアパック / エピックパック</td></tr>
+    <tr><td>30 / 60 / 100階（登頂のたび）</td><td>神話のかけら1（1日最大3）</td></tr>
+  </tbody>
+</table></div>
+
+<h4 id="tower-climb">1階の登り方</h4>
+<ol class="steps">
+  <li><b>登頂開始</b>業務タブ › 無限徹夜のカードから入って<b class="kw">今日の登頂を開始</b>を押します。続けて登るときは、ボタンが<b class="kw">17階に挑戦</b>のように変わります。</li>
+  <li><b>階の情報と補給品を確認</b>その階の行数、バグの数、ルール、この階でもらう<b class="kw">補給品</b>、<b class="kw">徹夜の同僚</b>、<b class="kw">徹夜装備</b>が出ます。<b class="kw">徹夜開始</b>を押すと1分が始まります。</li>
+  <li><b>報告箱の処理</b>徹夜の同僚が怪しい行を見つけると下の<b class="kw">報告箱</b>に上がります。本物のバグなら<b class="kw">修正</b>、違えば<b class="kw">誤報</b>を押します。偽の報告を修正するとハートが1つ減ります。自分で行を押して直してもOKです。</li>
+  <li><b>補給品を使う</b>コードの下のアイコンの列が補給品です。押すとすぐ使われます。バグを全部直すとその階はクリア、次の階に進みます。</li>
+</ol>
+<div class="shots">
+<figure class="shot" data-shot="start-tower-supplies"><img src="img/start-tower-supplies.png" alt="無限徹夜の階の情報画面。この階の補給品（徹夜コーヒー4、エナジードリンク1、夜食1）、徹夜の同僚2人、徹夜装備のノイズキャンセリングヘッドホン" loading="lazy" decoding="async"><figcaption>17階の情報画面。この階で使う補給品と一緒に働く徹夜の同僚、装備が見えます。</figcaption></figure>
+<figure class="shot" data-shot="start-tower-play"><img src="img/start-tower-play.png" alt="無限徹夜のプレイ画面。17階、ハート3つ、残り時間0:54、徹夜の同僚2人、コード、補給品のアイコンの列、報告箱と修正、誤報ボタン" loading="lazy" decoding="async"><figcaption>プレイ中。下の☕×4、🥤×1、🍜×1が補給品、いちばん下が報告箱です。</figcaption></figure>
+</div>
+
+<h4 id="tower-supplies">徹夜の補給品まとめ</h4>
+<div class="table-wrap"><table>
+  <thead><tr><th>補給品</th><th>出る階</th><th>効果</th></tr></thead>
+  <tbody>
+    <tr><td>☕ 徹夜コーヒー</td><td>すべての階（30階まではバグの数だけ、その上はバグの約70%）</td><td>まだ誰も見つけていないバグを1つ直します。残りのバグが全部報告箱にあれば、そのうち1つを直します</td></tr>
+    <tr><td>🥤 エナジードリンク</td><td>5階から階ごとに1個</td><td>ハートを1つ回復（最大3つ）</td></tr>
+    <tr><td>🍜 夜食</td><td>7階から階ごとに1個</td><td>残り時間 +15秒</td></tr>
+  </tbody>
+</table></div>
+<p>補給品は<b>階ごとに決まっていて、その階でだけ</b>使えます。残りは次の階に持っていけないので、惜しまず全部使って上がりましょう。本物のコーヒー（☕の通貨）はここでは使われないので減りません。</p>
+
+<h4 id="tower-rewards">階の報酬の受け取り方</h4>
+<ol class="steps">
+  <li><b>黄色い受け取るの表示を探す</b>クリアした階のうち受け取るものがある階の右に、黄色い<b class="kw">受け取る</b>が出ます。上の案内欄にも<b class="kw">受け取れる報酬N個</b>と出ます。</li>
+  <li><b>階を押す</b>その階を押すと<b class="kw">N階の報酬</b>のウィンドウが開きます。初クリアの報酬（コイン100、コーヒー1、30、60、100階はカードパック）と神話のかけらの欄に<b class="kw">受け取れます</b>が見えます。</li>
+  <li><b>受け取る</b>ウィンドウの下の<b class="kw">受け取る</b>を押せば終わりです。</li>
+</ol>
+<div class="shots">
+<figure class="shot" data-shot="start-tower-claim-ready"><img src="img/start-tower-claim-ready.png" alt="無限徹夜の画面。最高記録30階、受け取れる報酬1個、30階の右に黄色い受け取るの表示" loading="lazy" decoding="async"><figcaption>30階の横の黄色い表示が、受け取れる報酬があるという意味です。</figcaption></figure>
+<figure class="shot" data-shot="start-tower-floor-sheet"><img src="img/start-tower-floor-sheet.png" alt="30階の報酬ウィンドウ。初クリアの報酬コイン100、コーヒー1、ノーマルパック1、神話のかけら1、受け取るボタン" loading="lazy" decoding="async"><figcaption>30階の報酬ウィンドウ。神話のかけらはその日の登頂で30階まで登れば毎日またもらえます。</figcaption></figure>
+</div>
+<p>その日受け取らなかった報酬は次の日<b>受信箱</b>に<b class="kw">無限徹夜の報酬</b>の手紙として集まります。受信箱で<b class="kw">受け取る</b>を押せばよく、その手紙も忘れたら1日後に自動で入ります。だから報酬を逃す心配はありません。</p>
+<figure class="shot" data-shot="start-tower-mail"><img src="img/start-tower-mail.png" alt="受信箱の無限徹夜の報酬の手紙。コーヒー5、コイン500、神話のかけら1、ノーマルパック1、受け取るボタン、今日受け取らなければ明日自動で入るという表示（30〜34階）" loading="lazy" decoding="async"><figcaption>受信箱の無限徹夜の報酬の手紙。どの階からの報酬かも書いてあります。</figcaption></figure>
+<div class="callout tip"><b>お役立ちヒント</b><p>徹夜コーヒーは階の最後まで取っておきましょう。同僚に先に探させて、残ったバグに使うのが得です。どうせ次の階には持っていけないので、全部使って上がりましょう。</p></div>
+
+<h3 id="no-coffee" data-id="system:no-coffee">ノーコーヒー挑戦<a class="anchor" href="#no-coffee" aria-label="この見出しへのリンク">#</a></h3>
+<p><b>CTOエンディングを見たアカウント</b>だけがオンにできるスイッチです（業務タブ）。オンにするとクラシックでコーヒーのヒントが使えず、1番から別に登っていきます（前のステージをノーコーヒー★★★でクリアすると次が開く）。★★★でクリアしたステージだけがノーコーヒー記録（☕ ✕）に残り、<b class="kw">ノーコーヒー・クラシック</b>のランキングに載ります。ノーコーヒーでクリアしても普通のクリア報酬はそのままもらえます。キャリアトラックは対象外です。</p>
+
+<h2 id="social">フレンドと一緒に 🤝<a class="anchor" href="#social" aria-label="この見出しへのリンク">#</a></h2>
+<div class="tldr"><b>ひとことまとめ</b><p>ログインして、まずランキングでニックネームを決めましょう。そのあとは毎日のホットフィックスとフレンドのコーヒー、毎週のブレイムリレーと障害対応だけでもコインとコーヒーがコツコツ入ります ☕</p></div>
+<p>下の機能はすべて<b>Google、Kakao、Appleのアカウントでログイン</b>して<b>ニックネーム</b>を決めると開きます。ニックネームはランキングで決め（2〜12文字、ハングル、英字、数字）、<b>一度決めると変えられません</b>。ほとんどはホームのいちばん上の<b class="kw">フレンド</b>アイコンの中にタブで集まっています。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>機能</th><th>周期</th><th>どこで</th><th>報酬</th></tr></thead>
+  <tbody>
+    <tr><td><a href="#system-popularity">人気度（いいね）</a></td><td>毎日</td><td>プロフィール、受信箱の人気度タブ</td><td>ティアの段階ごとにパック、コイン、コーヒー、CP、マスター10で神話の同僚</td></tr>
+    <tr><td><a href="#system-blame-relay">Git Blameリレー</a></td><td>毎週</td><td>フレンド › ブレイム</td><td>最大コイン24,000 + エピックパック</td></tr>
+    <tr><td><a href="#draw">今日のニックネーム抽選</a></td><td>毎日</td><td>出席チェック、受信箱のお知らせ</td><td>エピックパック3からコーヒー1,000まで</td></tr>
+    <tr><td><a href="#system-hotfix-outage">今日のホットフィックス</a></td><td>毎日</td><td>フレンド › ホットフィックス</td><td>平日コイン2,000 + コーヒー10、週末コイン3,000 + コーヒー20</td></tr>
+    <tr><td><a href="#outage">サーバー障害対応</a></td><td>毎週</td><td>フレンド › 障害対応</td><td>最大コイン10,000 + コーヒー20 + ノーマルパック</td></tr>
+    <tr><td><a href="#system-friends">フレンドとコーヒー</a></td><td>毎日</td><td>フレンド › フレンド</td><td>フレンドにコーヒー3</td></tr>
+    <tr><td><a href="#system-leaderboard">ランキング</a></td><td>常時</td><td>ホーム › ランキング</td><td>順位</td></tr>
+    <tr><td><a href="#system-duel">コードレビュー1対1</a></td><td>常時</td><td>プロフィール › 1対1を申し込む</td><td>戦績（通貨なし）</td></tr>
+    <tr><td><a href="#system-bug-bounty">バグバウンティ</a></td><td>常時</td><td>ホーム › バウンティ</td><td>レジェンドパック、コーヒー、神話のかけら、神話の同僚まで</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="system-popularity" data-id="system:popularity">人気度（いいね） 👍<a class="anchor" href="#system-popularity" aria-label="この見出しへのリンク">#</a></h3>
+<p>人気度は<b>ほかのプレイヤーが自分に押してくれたいいねの数</b>です。集まった数に応じてブロンズからチャレンジャーまでティアが上がり、ティアの中の段階に上がるたびに報酬を1つずつもらえます。自分では上げられず、ほかの人が押してくれたときだけ上がります。</p>
+<div class="shots">
+<figure class="shot" data-shot="start-popularity-me"><img src="img/start-popularity-me.png" alt="自分のプロフィールの人気度パネル。ゴールド4、いいね742個、ゴールド5まで38、今週 +38、人気上位12%、下に人気度ティアの報酬ロードマップと受け取るボタン" loading="lazy" decoding="async"><figcaption>フレンド › マイプロフィール。上が自分の人気度、下のロードマップで上がった段階の報酬を受け取ります。</figcaption></figure>
+<figure class="shot" data-shot="start-popularity-give"><img src="img/start-popularity-give.png" alt="ほかのプレイヤーのプロフィールの人気度パネル。プラチナ1、いいね1,870個、タップでいいねの案内、今日あと7回、0時に回復" loading="lazy" decoding="async"><figcaption>ほかの人のプロフィールでは、丸いいいねのメダルを押すといいねが届きます。</figcaption></figure>
+</div>
+<h4>いいねのやりとりの仕方</h4>
+<ol class="steps">
+  <li><b>プロフィールを開く</b>ランキングの名前やフレンド一覧のフレンドを押すと、その人のプロフィールが開きます。</li>
+  <li><b>メダルを押す</b>人気度パネルのメダルの下に<b class="kw">タップでいいね</b>が見えたら押します。右に<b class="kw">今日あとN回、0時に回復</b>で今日あと何回あげられるかが出ます。</li>
+  <li><b>同じ人には1日1回</b>です。もうあげていれば<b class="kw">今日はいいね済み</b>に変わります。1人が1日にもらえるいいねは40個までなので、その日いっぱいになった人にはあげられません。</li>
+  <li><b>いいねのお返し</b>誰かが自分にいいねをすると、受信箱の<b class="kw">人気度</b>タブに名前が出ます。<b class="kw">お返し</b>を押すとすぐ返せるので、お互いにやりとりすれば2人とも上がります。</li>
+</ol>
+<figure class="shot" data-shot="start-popularity-inbox"><img src="img/start-popularity-inbox.png" alt="受信箱の人気度タブ。いいねを押した人の一覧とお返しボタン、お返し済みの表示" loading="lazy" decoding="async"><figcaption>受信箱 › 人気度。もらったいいねは1日たつと一覧からだけ消えて、数はそのままです。</figcaption></figure>
+<h4>ティアと報酬</h4>
+<p>チャレンジャーの下の6ティアはそれぞれ<b>10段階</b>（例: ゴールド1〜ゴールド10）に分かれていて、段階に上がるたびに報酬を1つもらえます。ロードマップで<b class="kw">受け取る</b>を押すと受信箱に届きます。チャレンジャー（30,000）からは報酬なしで数だけ上がります。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>ティア</th><th class="r">開始のいいね</th><th class="r">段階ごと</th><th>10段階の報酬合計</th></tr></thead>
+  <tbody>
+    <tr><td>ブロンズ</td><td class="r">1</td><td class="r">10</td><td>ノーマルパック9、コイン6,000、コーヒー60、CP 40</td></tr>
+    <tr><td>シルバー</td><td class="r">100</td><td class="r">20</td><td>ノーマルパック6、コイン4,000、コーヒー90、CP 60</td></tr>
+    <tr><td>ゴールド</td><td class="r">300</td><td class="r">120</td><td>ノーマルパック9、コイン6,000、コーヒー60、CP 40</td></tr>
+    <tr><td>プラチナ</td><td class="r">1,500</td><td class="r">850</td><td>レアパック4、コイン10,000、コーヒー120、CP 50、神話のかけら9</td></tr>
+    <tr><td>ダイヤ</td><td class="r">10,000</td><td class="r">700</td><td>エピックパック9、コイン30,000、コーヒー200、CP 200</td></tr>
+    <tr><td>マスター</td><td class="r">17,000</td><td class="r">1,300</td><td>レジェンドパック3、コイン40,000、コーヒー2,000、CP 400、マスター10（28,700）で神話の同僚1 + 神話のかけら30</td></tr>
+    <tr><td>チャレンジャー</td><td class="r">30,000</td><td class="r">-</td><td>報酬なしで数だけ</td></tr>
+  </tbody>
+</table></div>
+<p>1段階の報酬はパック、コイン、コーヒー、CPが交互に出ます。たとえばゴールドはノーマルパック3、コイン2,000、コーヒー30、CP 20の順に回り、プラチナは3、6、9段階が神話のかけら3です。</p>
+<div class="callout tip"><b>お役立ちヒント</b><p>シルバー（100）からはランキングとフレンド一覧の自分の名前の横にティアの表示が付き、たくさんもらった人には<b class="kw">人気上位N%</b>のバッジも出ます。フレンド同士で毎日お返しのいいねをするだけでも、ブロンズとシルバーはすぐ過ぎます。段階の報酬は受け取るを押さないと入らないので、ロードマップの<b class="kw">受け取るN</b>バッジをときどき確認しましょう。</p></div>
+
+<h3 id="system-blame-relay" data-id="system:blame-relay">Git Blameリレー 🔍<a class="anchor" href="#system-blame-relay" aria-label="この見出しへのリンク">#</a></h3>
+<p>毎週フレンドとチームを組んで<b>20,000行のレガシーファイル1つ</b>に隠れた<b>バグ30個</b>を一緒に探す週間協力モードです。直した行には直した人の名前が残ります。コーヒー（ヒント）は使えず、時間制限はありません。月曜0時に新しいファイルが開き、日曜24時（韓国時間）に締め切ります。</p>
+<div class="shots">
+<figure class="shot" data-shot="start-blame-join"><img src="img/start-blame-join.png" alt="フレンド画面のブレイムタブ。Git Blameリレーの紹介、ブレイムチームの招待状の合流すると断るボタン、下にブレイムチームを作るボタン" loading="lazy" decoding="async"><figcaption>フレンド › ブレイム。招待状をもらったら合流する、なければ自分でブレイムチームを作る。</figcaption></figure>
+<figure class="shot" data-shot="start-blame-ready"><img src="img/start-blame-ready.png" alt="開始前のブレイムチーム画面。メンバー3人と除名ボタン、招待を送ったフレンド、フレンド招待の一覧、ブレイムモード開始とチーム解散ボタン" loading="lazy" decoding="async"><figcaption>リーダーの画面。フレンドを招待して2人以上ならブレイムモード開始。</figcaption></figure>
+</div>
+<ol class="steps">
+  <li><b>チームを作るか合流する</b>ホーム › フレンド › <b class="kw">ブレイム</b>タブで<b class="kw">ブレイムチームを作る</b>を押すと自分がリーダーになります。フレンドが送った<b class="kw">ブレイムチームの招待状</b>があれば<b class="kw">合流する</b>で入ります。1人は1週間に1チームにしか入れません。</li>
+  <li><b>フレンドを招待</b>メンバーなら誰でも<b>自分のフレンド一覧にいるフレンド</b>を<b class="kw">招待</b>できます。チームは自分を含めて最大30人（招待中を含む）です。</li>
+  <li><b>開始</b>2人以上集まったらリーダーが<b class="kw">ブレイムモード開始</b>を押します。始めるとチームがロックされ、ファイルが人数分の<b>区間</b>に均等に分かれて1区間ずつ担当します（6人なら約3,300行ずつ）。</li>
+  <li><b>ファイルを開く</b>タブの<b class="kw">ファイルを開く</b>で入ります。自分の区間から見ますが、ほかの区間のバグをかわりに直してもOKです。</li>
+  <li><b>保存</b>バグを見つけたら、上の<b class="kw">保存</b>を押さないとチームの記録に自分の名前が残りません。同じバグをフレンドが先に保存していたら<b class="kw">マージコンフリクト</b>が起きて、その行は先に保存した人のものになります。</li>
+  <li><b>チェックする</b><b class="kw">チェック</b>で行に旗を立てておくと、次に<b class="kw">自分のチェックから続ける</b>でその場所から見られます。1人1つです。</li>
+</ol>
+<div class="shots">
+<figure class="shot" data-shot="start-blame-team"><img src="img/start-blame-team.png" alt="チームが直したバグ14/30のゲージと今週の報酬コイン8,000、次の報酬までバグ1個、ファイルを開くボタン、今週の順位表" loading="lazy" decoding="async"><figcaption>3個ごとにマスが埋まり、30番目のマスがエピックパックです。下は今週の順位。</figcaption></figure>
+<figure class="shot" data-shot="start-blame-file"><img src="img/start-blame-file.png" alt="ブレイムのファイル画面。チームが直したバグ14/30、保存ボタン、2区間担当の表示、チェックボタンと自分のチェックの行" loading="lazy" decoding="async"><figcaption>ファイル画面。上に自分の区間と保存ボタン、赤い線が自分のチェックです。</figcaption></figure>
+</div>
+<div class="table-wrap"><table>
+  <thead><tr><th>報酬（メンバー全員）</th><th>内容</th></tr></thead>
+  <tbody>
+    <tr><td>チームがバグを3個直すごとに</td><td>コイン2,000（10段階）</td></tr>
+    <tr><td>30個全部</td><td>コイン20,000 + エピックパック1</td></tr>
+    <tr><td>キャリーボーナス（15人以上で始めたチームだけ）</td><td>自分で5個以上直すと +コイン2,000、10個以上ならスーパーキャリー +コイン4,000</td></tr>
+    <tr><td>最大</td><td>コイン24,000 + エピックパック1</td></tr>
+  </tbody>
+</table></div>
+<p>報酬は早く全部見つけても<b>日曜の締め切り後にまとめて</b>受信箱に届きます。締め切り前に保存したバグだけが入るので、見つけたらすぐ保存しましょう。</p>
+<div class="callout trap"><b>落とし穴</b><p>開始前は誰でも抜けられて、リーダーは<b class="kw">除名</b>もできます。でも<b>始まったチームから抜けると</b>今週の報酬がもらえず、来週のブレイムにも参加できません。</p></div>
+
+<h3 id="draw" data-id="system:daily-draw">今日のニックネーム抽選 🎰<a class="anchor" href="#draw" aria-label="この見出しへのリンク">#</a></h3>
+<p>毎日<b>昨日出席チェックした人</b>の中から5人を選ぶ抽選です。申し込みは不要で、出席チェックさえすれば次の日の抽選の対象になります。1〜3番は出席した全員が対象で、4〜5番はシーズンパスを持っている人の中から選びます。7日以内に当選した人は除いて選びます（人が足りなければ制限なし）。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>枠</th><th>対象</th><th>報酬</th></tr></thead>
+  <tbody>
+    <tr><td>1番</td><td>昨日出席した全員</td><td>エピックパック3</td></tr>
+    <tr><td>2番</td><td>昨日出席した全員</td><td>レアパック1</td></tr>
+    <tr><td>3番</td><td>昨日出席した全員</td><td>コーヒー100</td></tr>
+    <tr><td>4番</td><td>シーズンパスを持っている人</td><td>コイン10,000</td></tr>
+    <tr><td>5番</td><td>シーズンパスを持っている人</td><td>コーヒー1,000</td></tr>
+  </tbody>
+</table></div>
+<div class="shots">
+<figure class="shot" data-shot="start-draw-ready"><img src="img/start-draw-ready.png" alt="今日のデプロイ抽選の画面。次の抽選までの残り時間、次の抽選の対象人数、報酬の枠5つ、右にデプロイスイッチ" loading="lazy" decoding="async"><figcaption>右の黄色い取っ手がデプロイスイッチです。下に引くか押します。</figcaption></figure>
+<figure class="shot" data-shot="start-draw-result"><img src="img/start-draw-result.png" alt="抽選が終わった画面。デプロイ成功！今日の当選の一覧、自分のニックネームの当選表示、抽選をもう一度見るとメールボックスへのボタン" loading="lazy" decoding="async"><figcaption>当選すると自分の枠が黄色く光り、<b class="kw">メールボックスへ</b>が出ます。</figcaption></figure>
+</div>
+<ol class="steps">
+  <li><b>抽選を開く</b>出席チェックのシートの下の<b class="kw">今日のニックネーム抽選</b>カードの<b class="kw">スイッチを下ろしに行く</b>、または受信箱の<b class="kw">お知らせ</b>タブの抽選カードを押します。</li>
+  <li><b>デプロイスイッチを下ろす</b>右の<b class="kw">デプロイスイッチ</b>を下に引くと5つの枠が回り、順番に当選者で止まります。</li>
+  <li><b>報酬を受け取る</b>自分のニックネームが出たら、抽選を見終わった瞬間に報酬が受信箱に届きます。7日以内に見ればOKです。結果は<b class="kw">抽選をもう一度見る</b>で何回でも見られます。</li>
+</ol>
+<div class="callout tip"><b>お役立ちヒント</b><p>画面の上の<b class="kw">次の抽選対象</b>に、今日出席した人数が1時間ごとに更新されます。<b class="kw">✓ 今日出席したので次の抽選対象です</b>が見えたら、明日の抽選に入っています。出席チェックはログインしたアカウントだけできるので、ゲストならまずログインしましょう。</p></div>
+
+<h3 id="system-hotfix-outage" data-id="system:hotfix-outage">今日のホットフィックス 🔥<a class="anchor" href="#system-hotfix-outage" aria-label="この見出しへのリンク">#</a></h3>
+<p>毎日0時（韓国時間）に新しいコードファイルが1つ開く、1人でやる毎日のミッションです。バグを<b>全部</b>見つけると、次の日に受信箱に報酬が届きます。ホーム › フレンド › <b class="kw">ホットフィックス</b>タブでやります。まだやっていなければタブに赤い点が出ます。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>日</th><th>ファイル</th><th>コード</th><th>報酬（翌日の受信箱）</th></tr></thead>
+  <tbody>
+    <tr><td>平日（月〜金）</td><td>100行、バグ3つ</td><td>人ごとに違うコード</td><td>コイン2,000 + コーヒー10</td></tr>
+    <tr><td>週末（土〜日）</td><td>300行、バグ5つ</td><td>全ユーザーが同じコード</td><td>コイン3,000 + コーヒー20</td></tr>
+  </tbody>
+</table></div>
+<div class="shots">
+<figure class="shot" data-shot="start-hotfix-tab"><img src="img/start-hotfix-tab.png" alt="フレンド画面のホットフィックスタブ。今日のホットフィックス100行バグ3つ、平日個人ホットフィックス、見つけたバグ1/3、報酬コイン2,000とコーヒー10、続けるボタン、ルール" loading="lazy" decoding="async"><figcaption>フレンド › ホットフィックス。今日の締め切りまでの残り時間と見つけた数が見えます。</figcaption></figure>
+<figure class="shot" data-shot="start-hotfix-file"><img src="img/start-hotfix-file.png" alt="ホットフィックスのファイル画面。見つけたバグ1/3、しおりボタン、見つけた行にチェックの表示" loading="lazy" decoding="async"><figcaption>ファイル画面。見つけた行は緑のチェックで残ります。</figcaption></figure>
+</div>
+<ol class="steps">
+  <li><b>ホットフィックス開始</b>タブの<b class="kw">ホットフィックス開始</b>（続きなら<b class="kw">続ける</b>）を押してファイルを開きます。</li>
+  <li><b>バグの行を押す</b>バグだと思う行を押すとすぐ記録されます。間違えても減点はなく、時間制限もありません。コーヒーのヒントは使えません。</li>
+  <li><b>しおり</b><b class="kw">しおり</b>を押して行を押すと、自分にだけ見える印ができます。どこまで見たかメモしておくのにぴったりです。</li>
+  <li><b>全部見つけたら終わり</b><b class="kw">パッチ配布完了</b>が出たら今日は終わりです。次の日に受信箱に報酬が届き、タブに<b class="kw">昨日のホットフィックス完了！</b>が出ます。</li>
+</ol>
+<div class="callout warn"><b>注意</b><p>1つでも見つけられずに日付が変わると報酬はありません。週末のホットフィックスはみんな同じコードなので、フレンドと話しながら探してもOKです。</p></div>
+
+<h3 id="outage">サーバー障害対応 🚨<a class="anchor" href="#outage" aria-label="この見出しへのリンク">#</a></h3>
+<p>毎週月曜0時に<b>全ユーザーが一緒に直すコードベース1つ</b>が開く週間協力モードです（日曜24時締め切り）。ホーム › フレンド › <b class="kw">障害対応</b>タブでやります。大きさは<b>先週の参加者数</b>で決まります。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>先週の参加者</th><th>コードベース</th></tr></thead>
+  <tbody>
+    <tr><td>0人</td><td>1,000行、バグ5つ</td></tr>
+    <tr><td>30人</td><td>20,000行、バグ30個</td></tr>
+    <tr><td>それ以上</td><td>参加者数に応じてバグが増えます（最大1,000,000行、バグ2,000個）</td></tr>
+  </tbody>
+</table></div>
+<div class="shots">
+<figure class="shot" data-shot="start-outage-tab"><img src="img/start-outage-tab.png" alt="フレンド画面の障害対応タブ。サーバー障害対応111,533行、バグ214個、ファイル56個、復旧87/214、自分の貢献2/3、最大コイン10,000とコーヒー20、ノーマルパック、しおりへ移動、ファイル一覧" loading="lazy" decoding="async"><figcaption>フレンド › 障害対応。全体の復旧率、自分の貢献、今の割合でもらえるコインが見えます。</figcaption></figure>
+<figure class="shot" data-shot="start-outage-file"><img src="img/start-outage-file.png" alt="障害対応のファイル画面。復旧87/214、今週の発見2/10、しおりボタン、自分のしおりの行" loading="lazy" decoding="async"><figcaption>ファイルを1つ開いた画面。上に全体の復旧数と自分の今週の発見数。</figcaption></figure>
+</div>
+<ol class="steps">
+  <li><b>ファイルを選ぶ</b>コードベースは約2,000行ずつ、たくさんのファイルに分かれています。<b class="kw">ファイル一覧</b>にファイルごとのバグの数、残りの数、今見ている人の数が出ます。<b class="kw">残りエラーが多い順</b>で選んで開きます。</li>
+  <li><b>探す</b>同じバグは<b>先に見つけた1人だけ</b>が認められます。ほかの人が直した行にはその人の名前が付きます。1人は1週間に<b>10個</b>まで見つけられます。</li>
+  <li><b>デプロイ点検</b>すべてのバグが見つかると<b class="kw">デプロイ点検</b>が開きます。自分だけの200行のファイル（バグ3つ）なので、遅れて来ても貢献を満たせます。</li>
+  <li><b>貢献3点を満たす</b>貢献は自分が見つけたバグとデプロイ点検で見つけたバグを合わせた数です。<b>3点以上</b>でその週の報酬がもらえます。満たすとタブの赤い点が消えます。</li>
+</ol>
+<div class="table-wrap"><table>
+  <thead><tr><th>報酬（週が終わったあと受信箱、貢献3点以上）</th><th>内容</th></tr></thead>
+  <tbody>
+    <tr><td>コイン</td><td>最大10,000（みんなが直した割合だけ）</td></tr>
+    <tr><td>コーヒー</td><td>最大20（みんなが直した割合だけ）</td></tr>
+    <tr><td>100%復旧</td><td>コイン10,000、コーヒー20、ノーマルパック1</td></tr>
+  </tbody>
+</table></div>
+<p>たとえば全体が40%しか直せずに終わると、コイン4,000、コーヒー8です。自分がいくつ見つけたかより<b>みんながどれだけ直したか</b>が報酬を決めるので、3点を満たしたあとも残りのバグが多いファイルを手伝うとみんなが得をします。先週の結果はタブのいちばん上の<b class="kw">先週の障害対応結果</b>で見られます。</p>
+
+<h3 id="system-friends" data-id="system:friends">フレンドとコーヒー ☕<a class="anchor" href="#system-friends" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-friends-list"><img src="img/start-friends-list.png" alt="フレンド画面のフレンドタブ。マイプロフィール、ニックネームでフレンド追加の入力欄と申請する、フレンド5/30の一覧とログイン時間、コーヒー +3ボタン" loading="lazy" decoding="async"><figcaption>ホーム › フレンド。フレンドの横の<b class="kw">+3</b>コーヒーボタンは1日1回、送ったフレンドは灰色になります。</figcaption></figure>
+<ul>
+  <li><b>コーヒーを送る</b>: フレンド1人に<b>1日1回コーヒー3杯</b>。フレンドの受信箱に自分のニックネームと一緒に届き、受け取った側は受信箱の<b class="kw">コーヒー返し</b>ですぐ返せます。フレンドが30人なら、お互い毎日送るだけで1日コーヒー90です。</li>
+  <li><b>ログインの表示</b>: フレンドごとに<b class="kw">● たった今ログイン</b>、<b class="kw">25分前にログイン</b>のように最後のログインが見えます。フレンドを押すとプロフィール（人気度、記録、1対1の申し込み）が開きます。</li>
+</ul>
+<h4 id="friends-add">フレンドの追加</h4>
+<ol class="steps">
+  <li><b>ニックネームを決める</b>フレンドはニックネームで探します。ログインしたあと、まずランキングでニックネームを決めましょう。</li>
+  <li><b>ニックネームで申請</b>ホーム › <b class="kw">フレンド</b>の<b class="kw">ニックネームでフレンド追加</b>欄に相手のニックネームを正確に書いて<b class="kw">申請する</b>を押します。<b class="kw">申請を送りました。</b>が出たら成功です。申請は1日3回、フレンドは最大30人までです。相手も自分に申請を送っていた場合は、すぐフレンドになります。</li>
+  <li><b>ランキングから申請</b>ランキングで名前を押すと下にウィンドウが開きます。<b class="kw">👥 フレンド申請</b>を押すとすぐ送られます。先にプロフィールで記録を見てもOKです。</li>
+</ol>
+<div class="shots">
+<figure class="shot" data-shot="start-friends-add"><img src="img/start-friends-add.png" alt="ニックネームでフレンド追加の欄。フレンドのニックネームの入力欄、申請するボタン、今日の残りの申請2/3、申請を送りましたの案内" loading="lazy" decoding="async"><figcaption>申請を送った様子。1日に送れる申請の数が下に見えます。</figcaption></figure>
+<figure class="shot" data-shot="start-friends-profile"><img src="img/start-friends-profile.png" alt="ランキングでSemicolonを押したウィンドウ。プロフィールを見る、通報する、フレンド申請ボタン" loading="lazy" decoding="async"><figcaption>ランキングで名前を押すと出るウィンドウ。</figcaption></figure>
+</div>
+
+<h4 id="friends-requests">受信した申請、送信した申請</h4>
+<p>フレンド一覧の上のタブで<b class="kw">受信</b>を押すと、自分に来た申請が見えます。<b class="kw">承認</b>するとすぐフレンド、<b class="kw">拒否</b>すると申請が消えます（相手に通知は行きません）。赤い丸のボタンはその場でブロックです。<b class="kw">送信</b>タブでは自分が送った申請を<b class="kw">取り消し</b>できます。</p>
+<div class="shots">
+<figure class="shot" data-shot="start-friends-incoming"><img src="img/start-friends-incoming.png" alt="受信タブ。Refactor、GitNewbieの申請と、それぞれ承認、拒否、ブロックボタン" loading="lazy" decoding="async"><figcaption>受信タブ。右のボタンが承認、拒否、ブロックです。</figcaption></figure>
+<figure class="shot" data-shot="start-friends-sent"><img src="img/start-friends-sent.png" alt="送信タブ。CleanCodeに送った申請と取り消しボタン" loading="lazy" decoding="async"><figcaption>送信タブ。返事がなければ7日後に自然に消えます。</figcaption></figure>
+</div>
+
+<h4 id="friends-block">フレンドの削除とブロック</h4>
+<p>フレンドの行の右のボタンは順に、コーヒーを送る、人の形（<b class="kw">削除</b>）、赤い丸（<b class="kw">ブロック</b>）です。押すともう一度確認されるので、安心して押してOKです。</p>
+<ul>
+  <li><b>削除</b>: フレンドから外れるだけです。あとでまた申請できます。</li>
+  <li><b>ブロック</b>: フレンドから外れて、<b>お互いにフレンド申請を送れなくなります</b>。ブロックした人は<b class="kw">ブロック</b>タブに集まり、<b class="kw">ブロック解除</b>でいつでも解けます。</li>
+  <li>削除もブロックも相手に通知は行きません。ランキングやプロフィールのウィンドウからも<b class="kw">フレンド削除</b>、<b class="kw">ブロック</b>ができます。</li>
+</ul>
+<div class="shots">
+<figure class="shot" data-shot="start-friends-remove-confirm"><img src="img/start-friends-remove-confirm.png" alt="BugHunterさんをフレンドから削除しますかの確認ウィンドウ。相手に通知は行きません、キャンセルと削除ボタン" loading="lazy" decoding="async"><figcaption>削除の確認ウィンドウ。</figcaption></figure>
+<figure class="shot" data-shot="start-friends-block-confirm"><img src="img/start-friends-block-confirm.png" alt="BugHunterさんをブロックしますかの確認ウィンドウ。フレンドから削除され、お互いにフレンド申請を送れません、キャンセルとブロックボタン" loading="lazy" decoding="async"><figcaption>ブロックの確認ウィンドウ。</figcaption></figure>
+<figure class="shot" data-shot="start-friends-blocked"><img src="img/start-friends-blocked.png" alt="ブロックタブ。CacheMissとブロック解除ボタン" loading="lazy" decoding="async"><figcaption>ブロックタブ。ここでブロックを解きます。</figcaption></figure>
+</div>
+
+<h4 id="friends-toggle">申請の受け取りをオフにする</h4>
+<figure class="shot" data-shot="start-friends-toggle"><img src="img/start-friends-toggle.png" alt="フレンド画面の下のスイッチ。フレンド申請ON、1対1申請ONと説明" loading="lazy" decoding="async"><figcaption>フレンド画面のいちばん下のスイッチ2つ。</figcaption></figure>
+<p>知らない人からの申請がわずらわしければ、いちばん下の<b class="kw">フレンド申請</b>スイッチをOFFにしましょう。誰も申請を送れなくなり、来ていた申請も消えます。フレンド一覧はそのままです。その下の<b class="kw">1対1申請</b>スイッチは、コードレビュー1対1の申し込みを受けるかどうかを決めます。</p>
+<div class="callout tip"><b>お役立ちヒント</b><p>ブレイムリレーには<b>フレンド一覧にいる人だけ</b>招待できます。週間協力を大きくやりたければ、まずフレンドの数を増やしておきましょう。</p></div>
+
+<h3 id="system-leaderboard" data-id="system:leaderboard">ランキング 🏆<a class="anchor" href="#system-leaderboard" aria-label="この見出しへのリンク">#</a></h3>
+<figure class="shot" data-shot="start-leaderboard"><img src="img/start-leaderboard.png" alt="ランキング画面。極悪、クラシック、ノーコーヒー、徹夜のタブ、サバイバル極悪の説明、自分の社員証と17位、TOP 100と自分の周りのタブ、順位の一覧" loading="lazy" decoding="async"><figcaption>ホーム › ランキング。上のタブで順位表を切り替えて、社員証に自分の順位が出ます。</figcaption></figure>
+<div class="table-wrap"><table>
+  <thead><tr><th>タブ</th><th>順位の基準</th><th>同じなら</th></tr></thead>
+  <tbody>
+    <tr><td>極悪</td><td>サバイバル極悪1回で見つけたバグの数（高い階が上）</td><td>最後の階でより多く見つけた人、次に先に達成した人</td></tr>
+    <tr><td>クラシック</td><td>★★★でクリアしたクラシックステージの数（★1、★2は数えない）</td><td>そのステージのクリア時間の合計が短い人</td></tr>
+    <tr><td>ノーコーヒー</td><td>コーヒーのヒントなしで★★★でクリアしたクラシックステージの数</td><td>クリア時間の合計が短い人</td></tr>
+    <tr><td>徹夜</td><td>無限徹夜の最高到達階</td><td>先に達成した人</td></tr>
+  </tbody>
+</table></div>
+<ul>
+  <li>記録はプレイすると<b>自動で</b>上がります。別に提出するものはありません。</li>
+  <li><b class="kw">TOP 100</b>と、自分の上下10人を見せる<b class="kw">自分の周り</b>タブがあります。</li>
+  <li>名前を押すとその人のプロフィールが開きます。ここでいいね、フレンド申請、コードレビュー1対1の申し込みができます。</li>
+  <li>ノーコーヒータブはノーコーヒー挑戦（CTOエンディングを見たアカウント）でクリアした記録だけが載ります。</li>
+</ul>
+
+<h3 id="system-duel" data-id="system:duel">コードレビュー1対1 ⚔️<a class="anchor" href="#system-duel" aria-label="この見出しへのリンク">#</a></h3>
+<p>ほかのプレイヤーと<b>同じ200行のファイル</b>でバグ3つを誰がうまく見つけるか競う1対1です。2人が同時にログインする必要はなく、申し込んだ人が先にやって、相手があとで同じファイルをやります。通貨の報酬はなく、プロフィールに<b class="kw">コードレビュー1対1戦績</b>（勝ち、引き分け、負け）が残ります。</p>
+<div class="shots">
+<figure class="shot" data-shot="start-duel-intro"><img src="img/start-duel-intro.png" alt="コードレビュー1対1の申し込み画面。200行のファイルでバグ3つ、コーヒー使用不可、間違えると5秒追加、1分後に降参可能、勝負のルールの案内" loading="lazy" decoding="async"><figcaption>申し込むと、まずこのルール画面が出ます。<b class="kw">スタート</b>を押すと3秒後にファイルが開きます。</figcaption></figure>
+<figure class="shot" data-shot="start-duel-inbox"><img src="img/start-duel-inbox.png" alt="受信箱の1対1申請タブ。受け取った申し込みの承認と拒否ボタン、送った申し込みの勝利の結果と待機中の表示" loading="lazy" decoding="async"><figcaption>受信箱 › 1対1申請。受け取った申し込みは承認、拒否。送った申し込みは結果がここに出ます。</figcaption></figure>
+</div>
+<ol class="steps">
+  <li><b>受け取りをオンにする</b>フレンドタブのいちばん下の<b class="kw">1対1申請</b>スイッチをONにしないと、ほかの人から申し込めません。最初はオフです。</li>
+  <li><b>申し込み</b>ランキングやフレンド一覧から相手のプロフィールを開いて<b class="kw">⚔ コードレビュー1対1を申し込む</b>を押し、先にプレイします。最後まで終えると相手の受信箱に申し込みが届きます。</li>
+  <li><b>承認</b>受け取った側は受信箱の<b class="kw">1対1申請</b>タブで<b class="kw">承認</b>して同じファイルをプレイします。<b class="kw">拒否</b>すると申し込んだ人の記録は無効になります。</li>
+  <li><b>結果</b>多く見つけたほうが勝ち、同じなら時間が短いほう（0.1秒単位）が勝ちます。それも同じなら引き分けです。間違えて押すたびに +5秒です。</li>
+</ol>
+<div class="callout warn"><b>注意</b><p>途中で出たりアプリを閉じたりすると、その回は無効です。承認して途中でよく抜けると、しばらく1対1ができなくなるので、やめたいときは1分後に出る<b class="kw">降参</b>を押しましょう。降参すると、それまでに見つけた数と時間で競います。</p></div>
+
+<h3 id="system-bug-bounty" data-id="system:bug-bounty">バグバウンティ 🐛<a class="anchor" href="#system-bug-bounty" aria-label="この見出しへのリンク">#</a></h3>
+<p>ゲームのバグや新しいコンテンツの企画を送ると報酬がもらえる機能です。ホームのいちばん上の<b class="kw">バグ報告</b>アイコンで開きます。報酬はアカウントの受信箱に届くので、ログインしたアカウントだけ参加できます。</p>
+<div class="shots">
+<figure class="shot" data-shot="start-bounty-rewards"><img src="img/start-bounty-rewards.png" alt="バグバウンティのバグ報酬タブ。致命的はレジェンドパック3、神話のかけら10、コーヒー3,000。高いはレジェンドパック1、コーヒー1,500。単純なバグはノーマルパック1、コイン2,000" loading="lazy" decoding="async"><figcaption>バグ報酬タブ。バグの重要度ごとの基本の報酬です。</figcaption></figure>
+<figure class="shot" data-shot="start-bounty-ideas"><img src="img/start-bounty-ideas.png" alt="バグバウンティの企画報酬タブ。大型採用はレジェンドパック3、神話のかけら100、コーヒー5,000と好きな神話の同僚1人。コンテンツ採用はレジェンドパック2、コーヒー3,000" loading="lazy" decoding="async"><figcaption>企画報酬タブ。大型採用なら好きな神話の同僚までもらえます。</figcaption></figure>
+</div>
+<div class="table-wrap"><table>
+  <thead><tr><th>区分</th><th>評価</th><th>基本の報酬</th></tr></thead>
+  <tbody>
+    <tr><td>バグ</td><td>致命的（進行不能、通貨やデータの損失）</td><td>レジェンドパック3、神話のかけら10、コーヒー3,000</td></tr>
+    <tr><td>バグ</td><td>高い（機能の故障、間違った報酬）</td><td>レジェンドパック1、コーヒー1,500</td></tr>
+    <tr><td>バグ</td><td>単純なバグ（直す価値があって修正された場合）</td><td>ノーマルパック1、コイン2,000（エピックパック1、コイン10,000まで）</td></tr>
+    <tr><td>企画</td><td>大型採用（大型アップデートで反映）</td><td>レジェンドパック3、神話のかけら100（好きな神話の同僚1人）、コーヒー5,000</td></tr>
+    <tr><td>企画</td><td>コンテンツ採用（新しいコンテンツとして反映）</td><td>レジェンドパック2、コーヒー3,000</td></tr>
+  </tbody>
+</table></div>
+<p>アプリの案内どおり<b class="kw">上記の報酬は基本的な目安です。これより低い価値、または高い価値の報酬が支給される場合があります。</b>報酬は受信箱に届きます。</p>
+<figure class="shot" data-shot="start-bounty-form"><img src="img/start-bounty-form.png" alt="バグバウンティの報告欄。分類の選択、内容の入力欄、送信ボタン" loading="lazy" decoding="async"><figcaption>画面の下の報告欄。分類を選んで内容を書いたあと送信します。</figcaption></figure>
+<ol class="steps">
+  <li><b>分類を選ぶ</b><b class="kw">分類を選んでください</b>を押して、<b class="kw">重大な通貨バグ</b>、<b class="kw">進行不能、フリーズ</b>、<b class="kw">単純なバグ</b>、<b class="kw">その他のバグ</b>、<b class="kw">コンテンツ企画の提案</b>から選びます。</li>
+  <li><b>内容を書く</b>バグは何が起きたか、どの画面で何を押したか、どうすればまた起きるか、どう直せばいいかまで書きます。企画はどんなコンテンツか、なぜ面白いか、画面とルールと報酬を具体的に書きます。10文字以上必要です。</li>
+  <li><b>送信</b><b class="kw">送信</b>を押せば終わりです。アプリのバージョンと端末の種類も一緒に送られます。送った報告は画面のいちばん下の<b class="kw">自分の報告</b>で見られます。</li>
+</ol>
+<div class="callout tip"><b>お役立ちヒント</b><p>バグは<b>直し方まで具体的に</b>書くほど高い等級をもらいやすいです。単純なバグは直し方がわからなくてもOKです。</p></div>
+
+<h2 id="perks">周回ボーナス（CP） 🎓<a class="anchor" href="#perks" aria-label="この見出しへのリンク">#</a></h2>
+<p>周回ボーナスはCPで買う<b>永久</b>ボーナスです。周回を始める前にホームの<b class="kw">周回ボーナス</b>で買い、前の段階を買うと次の段階が開きます。費用はその段階1つの値段です。27行74段階を全部買うには<b>49,600 CP</b>です。</p>
+
+<h3 id="perk-tier">CPのティア: 何から買う？<a class="anchor" href="#perk-tier" aria-label="この見出しへのリンク">#</a></h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>評価</th><th>ボーナス</th><th>紹介</th></tr></thead>
+  <tbody>
+    <tr><td><span class="badge ok">1ティア</span></td><td>親からの仕送り、鋼の体力、平常心、年俸交渉の達人、退職金積立、経験者採用、ジム通い、常連割引、鉄人</td><td>お金、体力、ストレス、昇進のように毎周回すぐ実感できるボーナスです。CPが貯まったらまずこれを上げましょう</td></tr>
+    <tr><td><span class="badge">2ティア</span></td><td>情報系出身バフ、コミットの草、推薦状、陽キャ力、飲み込みが早い、キャリア管理、新人ウェルカムキット、先行学習、発表の天才、遺伝子ガチャ当たり、医療保険、節約上手、週末コーダー、課長と同窓、手が速い、ゴールデンパラシュート</td><td>あればいいけれど急ぎではありません。1ティアを全部上げてCPが余ったら買いましょう</td></tr>
+    <tr><td><span class="badge warn">ヒロイン専用</span></td><td>恋愛体質、恋愛上手</td><td>恋愛、結婚エンディングを狙うときだけ必要です。等級に関係なく目標ができたら買いましょう</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="perk-effects">ボーナス効果の一覧<a class="anchor" href="#perk-effects" aria-label="この見出しへのリンク">#</a></h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>ボーナス</th><th>I</th><th>II</th><th>III</th></tr></thead>
+  <tbody>
+    <tr><td>💰 親からの仕送り</td><td data-id="perk:start-money">開始残高 +33.3万円</td><td data-id="perk:start-money-2">合計 +88.9万円</td><td data-id="perk:start-money-3">合計 +200万円</td></tr>
+    <tr><td>⌨️ 情報系出身バフ</td><td data-id="perk:start-coding">開始コーディング力 +10</td><td data-id="perk:start-coding-2">合計 +20</td><td data-id="perk:start-coding-3">合計 +30</td></tr>
+    <tr><td>📦 コミットの草</td><td data-id="perk:start-commits">開始コミット +50</td><td data-id="perk:start-commits-2">合計 +100</td><td data-id="perk:start-commits-3">合計 +150</td></tr>
+    <tr><td>📣 推薦状</td><td data-id="perk:start-rep">開始評判 +10</td><td data-id="perk:start-rep-2">合計 +15</td><td data-id="perk:start-rep-3">合計 +20</td></tr>
+    <tr><td>🤝 陽キャ力</td><td data-id="perk:network">開始好感度 +5</td><td data-id="perk:network-2">合計 +10</td><td data-id="perk:network-3">合計 +15</td></tr>
+    <tr><td>💪 鋼の体力</td><td data-id="perk:iron-body">体力消耗 -5%</td><td data-id="perk:iron-body-2">合計 -10%</td><td data-id="perk:iron-body-3">合計 -15%</td></tr>
+    <tr><td>🧘 平常心</td><td data-id="perk:calm-mind">ストレス増加 -5%</td><td data-id="perk:calm-mind-2">合計 -10%</td><td data-id="perk:calm-mind-3">合計 -15%</td></tr>
+    <tr><td>⚡ 飲み込みが早い</td><td data-id="perk:fast-learner">コミット獲得 +15%</td><td data-id="perk:fast-learner-2">合計 +30%</td><td data-id="perk:fast-learner-3">合計 +45%</td></tr>
+    <tr><td>📈 年俸交渉の達人</td><td data-id="perk:pay-raise">週給 +5%</td><td data-id="perk:pay-raise-2">合計 +10%</td><td data-id="perk:pay-raise-3">合計 +15%</td></tr>
+    <tr><td>💰 退職金積立</td><td data-id="perk:coin-bonus">周回終了コイン +5%</td><td data-id="perk:coin-bonus-2">合計 +10%</td><td data-id="perk:coin-bonus-3">合計 +15%</td></tr>
+    <tr><td>🎓 キャリア管理</td><td data-id="perk:cp-bonus">周回終了CP +1</td><td data-id="perk:cp-bonus-2">合計 +3</td><td data-id="perk:cp-bonus-3">合計 +5</td></tr>
+    <tr><td>🎒 新人ウェルカムキット</td><td data-id="perk:welcome-kit">ラバーダックを持ってスタート</td><td data-id="perk:welcome-kit-2">デスクの観葉植物も一緒に</td><td data-id="perk:welcome-kit-3">メカニカルキーボードまで</td></tr>
+    <tr><td>📚 先行学習</td><td data-id="perk:pre-study">Gitを習得済みでスタート</td><td data-id="perk:pre-study-2">SQLも</td><td data-id="perk:pre-study-3">TypeScriptまで</td></tr>
+    <tr><td>🎖️ 経験者採用</td><td data-id="perk:experienced">社員からスタート（インターン省略）</td><td data-id="perk:experienced-2">主任からスタート</td><td>—</td></tr>
+    <tr><td>💌 恋愛体質</td><td data-id="perk:first-love">すべての縁の開始好感度 +4（氷室麗華を除く）</td><td data-id="perk:first-love-2">合計 +7</td><td data-id="perk:first-love-3">合計 +10</td></tr>
+    <tr><td>🌹 恋愛上手</td><td data-id="perk:dating-pro">デートがプロポーズの進み具合に +5%</td><td data-id="perk:dating-pro-2">合計 +10%</td><td data-id="perk:dating-pro-3">合計 +15%</td></tr>
+    <tr><td>🏃 ジム通い</td><td data-id="perk:gym-rat">運動1回が1.5回分（ジムの出会い）</td><td data-id="perk:gym-rat-2">2回分に</td><td>—</td></tr>
+    <tr><td>🎤 発表の天才</td><td data-id="perk:presenter">人事評価の点数 +2</td><td data-id="perk:presenter-2">合計 +4</td><td data-id="perk:presenter-3">合計 +7</td></tr>
+    <tr><td>💇 遺伝子ガチャ当たり</td><td data-id="perk:thick-hair">髪が抜ける速さが半分</td><td data-id="perk:thick-hair-2">ストレス、燃え尽きで抜けない</td><td>—</td></tr>
+    <tr><td>🛡️ 医療保険</td><td data-id="perk:insurance">周回ごとの最初の燃え尽きは評判、髪の損失なし</td><td>—</td><td>—</td></tr>
+    <tr><td>🐷 節約上手</td><td data-id="perk:frugal">生活費 -10%</td><td data-id="perk:frugal-2">合計 -20%</td><td data-id="perk:frugal-3">合計 -30%</td></tr>
+    <tr><td>🌙 週末コーダー</td><td data-id="perk:weekend-coder">サイドの進み具合 +15%</td><td data-id="perk:weekend-coder-2">合計 +30%</td><td data-id="perk:weekend-coder-3">合計 +50%</td></tr>
+    <tr><td>💪 鉄人</td><td data-id="perk:iron-man">体力100でスタート</td><td data-id="perk:iron-man-2">+ 毎週体力 +1</td><td data-id="perk:iron-man-3">+ 毎週体力 合計 +3</td></tr>
+    <tr><td>🎓 課長と同窓</td><td data-id="perk:alumni">リーダーの好感度 +4でスタート</td><td data-id="perk:alumni-2">合計 +7</td><td data-id="perk:alumni-3">合計 +10</td></tr>
+    <tr><td>🛍️ 常連割引</td><td data-id="perk:regular">消耗品の価格 -5%</td><td data-id="perk:regular-2">合計 -10%</td><td data-id="perk:regular-3">合計 -15%</td></tr>
+    <tr><td>⏱️ 手が速い</td><td data-id="perk:quick-hands">チケット評価の基準時間 +5%</td><td data-id="perk:quick-hands-2">合計 +10%</td><td data-id="perk:quick-hands-3">合計 +15%</td></tr>
+    <tr><td>💼 ゴールデンパラシュート</td><td data-id="perk:parachute">燃え尽きのペナルティ半分（損失半分、休み1週）</td><td>—</td><td>—</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="perk-costs">CP費用の一覧<a class="anchor" href="#perk-costs" aria-label="この見出しへのリンク">#</a></h3>
+<p>段階ごとにかかるCPです。前の段階を買うと次の段階が開きます。全部買うと<span class="num">49,600 CP</span>です。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>ボーナス</th><th class="r">I</th><th class="r">II</th><th class="r">III</th><th class="r">合計</th></tr></thead>
+  <tbody>
+    <tr><td>💰 親からの仕送り</td><td class="r">500</td><td class="r">1,000</td><td class="r">1,500</td><td class="r"><b>3,000</b></td></tr>
+    <tr><td>⌨️ 情報系出身バフ</td><td class="r">200</td><td class="r">400</td><td class="r">600</td><td class="r"><b>1,200</b></td></tr>
+    <tr><td>📦 コミットの草</td><td class="r">200</td><td class="r">400</td><td class="r">600</td><td class="r"><b>1,200</b></td></tr>
+    <tr><td>📣 推薦状</td><td class="r">200</td><td class="r">400</td><td class="r">600</td><td class="r"><b>1,200</b></td></tr>
+    <tr><td>🤝 陽キャ力</td><td class="r">200</td><td class="r">400</td><td class="r">600</td><td class="r"><b>1,200</b></td></tr>
+    <tr><td>💪 鋼の体力</td><td class="r">500</td><td class="r">1,000</td><td class="r">1,500</td><td class="r"><b>3,000</b></td></tr>
+    <tr><td>🧘 平常心</td><td class="r">500</td><td class="r">1,000</td><td class="r">1,500</td><td class="r"><b>3,000</b></td></tr>
+    <tr><td>⚡ 飲み込みが早い</td><td class="r">200</td><td class="r">400</td><td class="r">600</td><td class="r"><b>1,200</b></td></tr>
+    <tr><td>📈 年俸交渉の達人</td><td class="r">500</td><td class="r">1,000</td><td class="r">1,500</td><td class="r"><b>3,000</b></td></tr>
+    <tr><td>💰 退職金積立</td><td class="r">100</td><td class="r">200</td><td class="r">300</td><td class="r"><b>600</b></td></tr>
+    <tr><td>🎓 キャリア管理</td><td class="r">100</td><td class="r">200</td><td class="r">300</td><td class="r"><b>600</b></td></tr>
+    <tr><td>🎒 新人ウェルカムキット</td><td class="r">200</td><td class="r">400</td><td class="r">600</td><td class="r"><b>1,200</b></td></tr>
+    <tr><td>📚 先行学習</td><td class="r">100</td><td class="r">200</td><td class="r">300</td><td class="r"><b>600</b></td></tr>
+    <tr><td>🎖️ 経験者採用</td><td class="r">200</td><td class="r">400</td><td class="r">—</td><td class="r"><b>600</b></td></tr>
+    <tr><td>💌 恋愛体質</td><td class="r">1,000</td><td class="r">2,000</td><td class="r">4,000</td><td class="r"><b>7,000</b></td></tr>
+    <tr><td>🌹 恋愛上手</td><td class="r">1,000</td><td class="r">2,000</td><td class="r">4,000</td><td class="r"><b>7,000</b></td></tr>
+    <tr><td>🏃 ジム通い</td><td class="r">100</td><td class="r">200</td><td class="r">—</td><td class="r"><b>300</b></td></tr>
+    <tr><td>🎤 発表の天才</td><td class="r">200</td><td class="r">400</td><td class="r">600</td><td class="r"><b>1,200</b></td></tr>
+    <tr><td>💇 遺伝子ガチャ当たり</td><td class="r">100</td><td class="r">200</td><td class="r">—</td><td class="r"><b>300</b></td></tr>
+    <tr><td>🛡️ 医療保険</td><td class="r">100</td><td class="r">—</td><td class="r">—</td><td class="r"><b>100</b></td></tr>
+    <tr><td>🐷 節約上手</td><td class="r">500</td><td class="r">1,000</td><td class="r">1,500</td><td class="r"><b>3,000</b></td></tr>
+    <tr><td>🌙 週末コーダー</td><td class="r">200</td><td class="r">400</td><td class="r">600</td><td class="r"><b>1,200</b></td></tr>
+    <tr><td>💪 鉄人</td><td class="r">500</td><td class="r">1,000</td><td class="r">1,500</td><td class="r"><b>3,000</b></td></tr>
+    <tr><td>🎓 課長と同窓</td><td class="r">200</td><td class="r">400</td><td class="r">600</td><td class="r"><b>1,200</b></td></tr>
+    <tr><td>🛍️ 常連割引</td><td class="r">500</td><td class="r">1,000</td><td class="r">1,500</td><td class="r"><b>3,000</b></td></tr>
+    <tr><td>⏱️ 手が速い</td><td class="r">100</td><td class="r">200</td><td class="r">300</td><td class="r"><b>600</b></td></tr>
+    <tr><td>💼 ゴールデンパラシュート</td><td class="r">100</td><td class="r">—</td><td class="r">—</td><td class="r"><b>100</b></td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="fast-runs">次の周回を早く回すコツ ⏩<a class="anchor" href="#fast-runs" aria-label="この見出しへのリンク">#</a></h2>
+<ol class="steps">
+  <li><b>おすすめ配置を使う</b>1周回20回まで無料。同じ週にまた押しても変わらないので気軽に押しましょう。</li>
+  <li><b>適当に処理は2週まで</b>3週目から減点が付きます。連続を切るときは<b class="kw">自分でやる</b>でどの評価をもらってもOKです。</li>
+  <li><b>メッセージはまとめて</b>必須メッセージだけ答えて進めても周回は回ります。ただし好感度のある人を既読スルーすると損です。</li>
+  <li><b>経験者採用</b>社員、主任から始めると昇進ルートが短くなります。</li>
+  <li><b>狙ったエンディングがもう外れたら<b class="kw">周回を終了</b></b>ホームの<b class="kw">周回を終了</b>は報酬なしで周回を捨てます。記録も残らず、周回の番号も使い回します。特定のエンディングだけを狙うときの早い再スタート用です。</li>
+  <li><b>有料でもっと速く</b><b class="kw">CTO直行スケジュール</b>（おすすめ配置無制限 + 毎週自動 + 昇進スキル自動）と<b class="kw">機械学習オートパイロット</b>を両方オンにすると<b class="kw">⚡ フルオート</b>なので、メッセージに答えて<b class="kw">次の週へ</b>を押すだけです。</li>
+</ol>
+<div class="callout warn"><b>注意</b><p>速く進めすぎると損です。10分以内に終わった周回は100週を満たしてもCP、コイン、コミットXP、完走クエストがありません。称号エンディング（20〜34週で終わる）は周回の数には入りますが、CP、コインと<b class="kw">周回完走</b>クエストはありません。</p></div>
+
+<h2 id="shop-iap" data-id="system:shop-iap">ショップの有料商品（画面のまま）<a class="anchor" href="#shop-iap" aria-label="この見出しへのリンク">#</a></h2>
+<p>価格はストアに表示された金額を確認してください。商品の中身だけまとめました。</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>商品</th><th>内容</th></tr></thead>
+  <tbody>
+    <tr><td>広告削除パック</td><td>広告なしですぐ受け取り + サバイバルと周回の報酬2倍（永久）、コーヒー1,000</td></tr>
+    <tr><td>機械学習オートパイロット</td><td>毎週チケットをA〜Sで自動処理、ON/OFF（ストレス70以上なら休みます）、永久</td></tr>
+    <tr><td>CTO直行スケジュール</td><td>おすすめ配置無制限 + 毎週自動 + 昇進に必要なスキルを自動習得、永久</td></tr>
+    <tr><td>オールインワンパック</td><td>月間出勤パス（30日） + 広告削除 + CTO直行スケジュール + 機械学習（アカウントごとに1回）</td></tr>
+    <tr><td>親密度リセット券</td><td>同僚1人の親密度と会話を最初に戻し、いい答えを黄色い枠で表示（コーヒー5,000でも）</td></tr>
+    <tr><td>エンディング秘密ノート</td><td>エンディング図鑑のすべての発動条件を見る、永久（コーヒー10,000でも）</td></tr>
+    <tr><td>新入社員ウェルカムパック</td><td>コーヒー600、コイン20,000、レアパック2、エピックパック1（アカウントごとに1回）</td></tr>
+    <tr><td>主任昇進パック</td><td>コーヒー2,500、コイン30,000、神話のかけら3、エピックパック3、レジェンドパック1（アカウントごとに1回）</td></tr>
+    <tr><td>神話人材の特別採用パック</td><td>神話の同僚1人 + 神話のかけら150 + コイン180,000 + コーヒー2,000（アカウントごとに1回）</td></tr>
+    <tr><td>シーズンパス / シーズンパスプラス</td><td>パスの行の報酬 + 赤いニックネーム + シーズンバッジ / プラスは20段階飛ばしてスタート + レジェンドパック1</td></tr>
+    <tr><td>月間出勤パス</td><td>すぐコーヒー2,000 + 30日間毎日コーヒー300</td></tr>
+    <tr><td>神話のかけら月額パス</td><td>すぐかけら30 + 30日間毎日かけら1とコイン1,000</td></tr>
+    <tr><td>役員プレミアムパス</td><td>すぐエピックパック3、コーヒー3,000 + 30日間毎日コーヒー500とレアパック1</td></tr>
+    <tr><td>コーヒーチャージ</td><td>500 / 2,800 / 6,000 / 16,000 / 36,000杯、各商品の初回購入は2倍</td></tr>
+  </tbody>
+</table></div>
+<p>課金なしでもすべてのエンディングが見られます。コーヒーはサバイバル、コインは出席、周回完走、無限徹夜で十分回ります 🙌</p>
+
+<h2 id="mistakes">初心者によくあるミス ⚠️<a class="anchor" href="#mistakes" aria-label="この見出しへのリンク">#</a></h2>
+<div class="callout trap"><b>1. 適当に処理だけ押して退職勧告</b><p>未処理、適当にCが5週続くと周回が終わります。インターンのときの適当に処理はほぼCです。</p></div>
+<div class="callout trap"><b>2. 残業に全振り</b><p>残業5日だと1週間に体力が約39減ります。倒れると1週の病欠、燃え尽きは2週の休みに評判 -10。燃え尽き3回で唐揚げ屋エンディングです。</p></div>
+<div class="callout trap"><b>3. <b class="kw">週の締めのときだけ大丈夫ならいい</b>という勘違い</b><p>判定はその週の最低体力、最高ストレスです。返信1つで0になったら、週末に休んでも倒れます。</p></div>
+<div class="callout trap"><b>4. 100週の前に終えてCPを待つ</b><p>100週を満たせなかった周回はCP、コインが0です。起業退社、退職勧告、唐揚げ屋エンディングもみんな同じです。</p></div>
+<div class="callout warn"><b>5. <b class="kw">通知を消す</b>をむやみに押す</b><p>全部既読スルーの扱いになります。ヒロイン、リーダーの好感度が減ります。</p></div>
+<div class="callout warn"><b>6. コーヒーを1〜300で全部使う</b><p>1〜300は間違えなければ★★★です。コーヒーは時間を計る301番から必要です。</p></div>
+<div class="callout warn"><b>7. 推奨パワー未満でチームプロジェクトを始める</b><p>1足りないだけでも過負荷（速度1/4）でほぼ失敗します。開始前の画面でチームパワーが緑色か必ず見ましょう。</p></div>
+<div class="callout warn"><b>8. 出席、クエスト、無限徹夜をサボる</b><p>出席30日でコーヒー150、コイン30,000、レアパック10、エピックパック1、レジェンドパック1です。1日でも抜けるともったいないです。</p></div>
+
+<h2 id="자주-묻는-질문">よくある質問<a class="anchor" href="#%EC%9E%90%EC%A3%BC-%EB%AC%BB%EB%8A%94-%EC%A7%88%EB%AC%B8" aria-label="この見出しへのリンク">#</a></h2>
+<dl class="faq">
+  <dt>クラシックステージとキャリアトラック、どっちから？</dt><dd>どちらもコーヒーがもらえるので、やりやすいほうからでOKです。クラシックステージは1〜300が誤答の基準なのでゆっくりやれば★★★、キャリアトラックは章が全部開いているので選んでやりやすいです。</dd>
+  <dt>コーヒーが足りません。</dt><dd>サバイバルのハード（1回24杯）がいちばん効率がいいです。広告の<b class="kw">無料コーヒー</b>（30杯）とサバイバル2倍の広告も忘れずに。</dd>
+  <dt>コインが貯まりません。</dt><dd>周回を100週まで終えるのがいちばん大きいです（2,000〜2,900 + デイリークエスト2,000）。出席の毎日1,000、無限徹夜の初クリアの階ごとの100もコツコツ貯まります。</dd>
+  <dt>同僚はキャリアのチケットを手伝ってくれますか？</dt><dd>いいえ。同僚はチームプロジェクト専用です。レジェンド、神話の同僚のチケットのパッシブ（バグ減少）だけ例外です。</dd>
+  <dt>チュートリアルの報酬がもらえていません。</dt><dd>受信箱を確認してください。エピックパック1個がアカウントごとに1回届きます。</dd>
+  <dt>ノーコーヒーのスイッチがオンになりません。</dt><dd>CTOエンディングを見たアカウントだけオンにできます。</dd>
+  <dt>エンディングごとに何がもらえますか？</dt><dd>周回が終わると新しいエンディングごとにカードパック（基本エンディングはレア、称号エンディングはエピック）が届き、チームタブ › 図鑑でエンディングごとの報酬を<b class="kw">受け取る</b>でもう一度もらえます。詳しくはエンディング図鑑で。</dd>
+</dl>
+<nav class="pager" aria-label="前のページと次のページ"><a class="prev" href="index.html"><small>← 最初へ</small>攻略本ホーム</a><a class="next" href="career.html"><small>次のページ →</small>昇進、キャリア</a></nav>
+<p class="back-home"><a href="index.html">📖 攻略本ホームへ戻る</a></p>
+</article></main>
+</div>
+<button class="totop" type="button" aria-label="ページの先頭へ">↑</button>
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="拡大表示（Escで閉じる）" tabindex="-1"><div><p></p></div></div>
+<footer class="gf"><p>この攻略本は今のゲームに合わせてまとめています。アップデートで数値が変わることがあります。</p><p><a href="../../">開発者体験 (Build Failed)</a></p><p>© 2026 Dawn commit</p></footer>
+<script src="assets/guide.js?v=7457ec55" defer></script>
+</body>
+</html>
