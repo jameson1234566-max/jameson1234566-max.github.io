@@ -339,15 +339,13 @@ a.sec-card:hover { text-decoration: none; border-color: var(--accent); transform
 .back-home a { display: inline-block; padding: 12px 22px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--accent); font-weight: 700; font-size: 15.5px; }
 .back-home a:hover { background: var(--accentSoft); text-decoration: none; }
 
-/* ---------- language menu (globe) ---------- */
-.lang-menu { position: relative; flex: 0 0 auto; }
-.lang-menu > summary { list-style: none; }
-.lang-menu > summary::-webkit-details-marker { display: none; }
-.lang-pop { position: absolute; right: 0; top: calc(100% + 6px); z-index: 60; min-width: 140px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); padding: 6px; display: grid; gap: 2px; }
-.lang-pop a { display: block; padding: 9px 12px; border-radius: 8px; font-weight: 600; white-space: nowrap; }
-.lang-pop a:hover { background: var(--line); text-decoration: none; }
-.lang-pop a[aria-current] { color: var(--accent); }
-.lang-pop a[aria-current]::after { content: " \2713"; }
+/* ---------- language switch (KR · EN · JP, always visible) ---------- */
+.lang-switch { flex: 0 0 auto; display: flex; border: 1px solid rgba(255,255,255,.28); border-radius: 10px; overflow: hidden; }
+.lang-switch a { display: grid; place-items: center; min-width: 38px; min-height: 36px; padding: 0 8px; color: #fff; font-size: 13px; font-weight: 800; letter-spacing: .02em; opacity: .75; }
+.lang-switch a + a { border-left: 1px solid rgba(255,255,255,.2); }
+.lang-switch a:hover { opacity: 1; background: rgba(255,255,255,.12); text-decoration: none; }
+.lang-switch a[aria-current] { opacity: 1; background: var(--accent); color: #fff; }
+@media (max-width: 360px) { .lang-switch a { min-width: 32px; padding: 0 5px; font-size: 12px; } }
 /* Japanese has no spaces between words: keep-all (for Korean) would stop it from wrapping at all. */
 html[lang="ja"] body, html[lang="ja"] body * { word-break: normal; line-break: strict; }
 html:not([lang="ko"]) .topic-btn { overflow-wrap: anywhere; }

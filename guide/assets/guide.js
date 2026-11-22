@@ -32,7 +32,6 @@
   });
 
   /* ---------- language menu: close on outside click ---------- */
-  document.addEventListener('click', function (e) { $$('.lang-menu[open]').forEach(function (d) { if (!d.contains(e.target)) d.open = false; }); });
 
   /* ---------- sidebar (mobile drawer) ---------- */
   function setNav(open) {
